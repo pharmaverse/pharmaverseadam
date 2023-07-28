@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/404.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/404.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/LICENSE.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/articles/admiraltemplate.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/articles/adxx.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/articles/adxx.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/articles/index.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/articles/pharmaverseadam.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/authors.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/authors.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/index.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/index.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/news/index.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/news/index.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/pull_request_template.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/pull_request_template.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/reference/admiraltemplate-package.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/reference/hello_admiral.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraltemplate/main/reference/index.html</loc>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/pharmaverseadam-package.html</loc>
   </url>
 </urlset>
