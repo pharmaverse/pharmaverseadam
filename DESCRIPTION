@@ -2,8 +2,9 @@ Package: pharmaverseadam
 Type: Package
 Title: ADaM Test Data for the Pharmaverse Family of Packages
 Version: 0.1.0
-Authors@R: c(
-    person("Open", "Source", email = "admiraltemplate@pharmaverse.com", role = c("aut", "cre")))
+Authors@R:  c(
+  person("Edoardo", "Mancini", email = "edoardo.mancini@roche.com", role = c("aut", "cre"))
+  )
 Description: A set of Analysis Data Model (ADaM) datasets.
 License: Apache License (>= 2)
 URL: https://pharmaverse.github.io/pharmaverseadam, https://github.com/pharmaverse/pharmaverseadam
