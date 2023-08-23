@@ -18,5 +18,3 @@
 ^pharmaverseadam.*\.tgz$
 ^staged_dependencies.yaml$
 ^README.Rmd$
-^vignettes/adxx\.Rmd$
-^vignettes/pharmaversesdtm\.Rmd$
