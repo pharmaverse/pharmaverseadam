@@ -54,11 +54,12 @@ Test data (ADaM) for the pharmaverse family of packages
 
 To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages. This includes test ADaM data created from {admiral} templates. 
 
-There is an integration test that runs {admiral} templates and compares them with the stored version. If differences are found, it then triggers an action: either accepting the difference and storing the new ADaM, or rejecting it and identifying the cause of the differences in the templates.
+
+The ADaM contents of this package is automatically populated by a CICD action that executes `{admiral}` templates and saves the resulting dataset here. The ADaM datasets in `{pharmaversesdtm}` are updated any time the templates are updated in `{admiral}`.
 
 # Installation
 
-The package is available from CRAN and can be installed by running `install.packages("pharmaversesdtm")`. To install the latest development version of the package directly from GitHub use the following code:
+The package is available from CRAN and can be installed by running `install.packages("pharmaverseadam")`. To install the latest development version of the package directly from GitHub use the following code:
 
 ``` r
 if (!requireNamespace("remotes", quietly = TRUE)) {
