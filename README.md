@@ -23,7 +23,7 @@ templates.
 
 The ADaM contents of this package is automatically populated by a CICD
 action that executes `{admiral}` templates and saves the resulting
-dataset here. The ADaM datasets in `{pharmaversesdtm}` are updated any
+dataset here. The ADaM datasets in `{pharmaverseadam}` are updated any
 time the templates are updated in `{admiral}`.
 
 # Installation

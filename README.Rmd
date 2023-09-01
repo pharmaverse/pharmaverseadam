@@ -55,7 +55,7 @@ Test data (ADaM) for the pharmaverse family of packages
 To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages. This includes test ADaM data created from {admiral} templates. 
 
 
-The ADaM contents of this package is automatically populated by a CICD action that executes `{admiral}` templates and saves the resulting dataset here. The ADaM datasets in `{pharmaversesdtm}` are updated any time the templates are updated in `{admiral}`.
+The ADaM contents of this package is automatically populated by a CICD action that executes `{admiral}` templates and saves the resulting dataset here. The ADaM datasets in `{pharmaverseadam}` are updated any time the templates are updated in `{admiral}`.
 
 # Installation
 
