@@ -18,3 +18,4 @@
 ^pharmaverseadam.*\.tgz$
 ^staged_dependencies.yaml$
 ^README.Rmd$
+^inst/extdata/.*\.csv$
