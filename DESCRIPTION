@@ -1,17 +1,13 @@
-Package: admiraltemplate
+Package: pharmaverseadam
 Type: Package
-Title: ADaM in R Asset Library - Extension
-Version: 0.0.2
-Authors@R: c(
-    person("Open", "Source", email = "admiraltemplate@pharmaverse.com", role = c("aut", "cre")))
-Description: A toolbox for programming Clinical Data Standards Interchange Consortium
-    (CDISC) compliant Analysis Data Model (ADaM) datasets in R. ADaM datasets are a
-    mandatory part of any New Drug or Biologics License Application submitted to the
-    United States Food and Drug Administration (FDA). Analysis derivations are
-    implemented in accordance with the "Analysis Data Model Implementation Guide"
-    (CDISC Analysis Data Model Team, 2021, <https://www.cdisc.org/standards/foundational/adam/adamig-v1-3-release-package>).
+Title: ADaM Test Data for the Pharmaverse Family of Packages
+Version: 0.1.0
+Authors@R:  c(
+  person("Edoardo", "Mancini", email = "edoardo.mancini@roche.com", role = c("aut", "cre"))
+  )
+Description: A set of Analysis Data Model (ADaM) datasets.
 License: Apache License (>= 2)
-URL: https://pharmaverse.github.io/admiraltemplate, https://github.com/pharmaverse/admiraltemplate
+URL: https://pharmaverse.github.io/pharmaverseadam, https://github.com/pharmaverse/pharmaverseadam
 Encoding: UTF-8
 Language: en-US
 LazyData: true
@@ -32,7 +28,6 @@ Imports:
     tidyr (>= 1.0.2),
     tidyselect (>= 1.1.0)
 Suggests:
-    admiral.test (>= 0.5.0),
     covr,
     devtools,
     diffdf,
@@ -48,5 +43,4 @@ Suggests:
     testthat (>= 3.0.0),
     tibble,
     usethis,
-VignetteBuilder: knitr
 Config/testthat/edition: 3
