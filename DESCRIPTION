@@ -11,6 +11,7 @@ URL: https://pharmaverse.github.io/pharmaverseadam, https://github.com/pharmaver
 Encoding: UTF-8
 Language: en-US
 LazyData: true
+LazyDataCompression: bzip2
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: R (>= 3.5)
