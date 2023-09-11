@@ -25,6 +25,9 @@
     <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adbcva_ophtha.html</loc>
   </url>
   <url>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adce_vaccine.html</loc>
+  </url>
+  <url>
     <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adcm.html</loc>
   </url>
   <url>
@@ -32,6 +35,12 @@
   </url>
   <url>
     <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adex.html</loc>
+  </url>
+  <url>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adface_vaccine.html</loc>
+  </url>
+  <url>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adis_vaccine.html</loc>
   </url>
   <url>
     <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adlb.html</loc>
@@ -53,6 +62,9 @@
   </url>
   <url>
     <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adsl.html</loc>
+  </url>
+  <url>
+    <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/adsl_vaccine.html</loc>
   </url>
   <url>
     <loc>https://pharmaverse.github.io/pharmaverseadam/main/reference/advfq_ophtha.html</loc>
