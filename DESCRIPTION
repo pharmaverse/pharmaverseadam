@@ -3,7 +3,12 @@ Type: Package
 Title: ADaM Test Data for the Pharmaverse Family of Packages
 Version: 0.1.0
 Authors@R:  c(
-  person("Edoardo", "Mancini", email = "edoardo.mancini@roche.com", role = c("aut", "cre"))
+  person("Edoardo", "Mancini", email = "edoardo.mancini@roche.com", role = c("aut", "cre")),
+  person("Kangjie", "Zhang", role = "aut"),
+  person("Stefan", "Bundfuss", role = "aut"),
+  person("Gayatri", "G", role = "aut"),
+  person("Daphne", "Grassely", role = "aut"),
+  person("Zelos", "Zhu", role = "aut")
   )
 Description: A set of Analysis Data Model (ADaM) datasets.
 License: Apache License (>= 2)
@@ -16,18 +21,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: R (>= 3.5)
 Imports:
-    admiral (>= 0.10.0),
-    admiraldev (>= 0.3.0),
-    dplyr (>= 0.8.4),
-    hms (>= 0.5.3),
-    lifecycle (>= 0.1.0),
-    lubridate (>= 1.7.4),
-    magrittr (>= 1.5),
-    purrr (>= 0.3.3),
-    rlang (>= 0.4.4),
-    stringr (>= 1.4.0),
-    tidyr (>= 1.0.2),
-    tidyselect (>= 1.1.0)
 Suggests:
     covr,
     devtools,
