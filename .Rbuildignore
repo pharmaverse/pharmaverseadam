@@ -19,3 +19,4 @@
 ^staged_dependencies.yaml$
 ^README.Rmd$
 ^inst/extdata/.*\.csv$
+^CRAN-SUBMISSION$
