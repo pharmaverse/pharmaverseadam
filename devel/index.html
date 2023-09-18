@@ -48,12 +48,6 @@
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/main">main</a> </div></li>
-<!-- end dropdown for versions -->
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
@@ -85,8 +79,8 @@
 <div class="section level1">
 <h1 id="purpose">Purpose<a class="anchor" aria-label="anchor" href="#purpose"></a>
 </h1>
-<p>To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages. This includes test ADaM data created from {admiral} templates.</p>
-<p>The ADaM contents of this package is automatically populated by a CICD action that executes <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> templates and saves the resulting dataset here. The ADaM datasets in <a href="https://pharmaverse.github.io/pharmaverseadam" class="external-link">pharmaverseadam</a> are updated any time the templates are updated in <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> or the source data in <a href="https://pharmaverse.github.io/pharmaversesdtm/main/" class="external-link">pharmaversesdtm</a> is updated.</p>
+<p>To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages.</p>
+<p>The ADaM contents of this package is automatically populated by a CICD action that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a> and <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> templates and saves the resulting datasets here. The ADaM datasets in <a href="https://pharmaverse.github.io/pharmaverseadam" class="external-link">pharmaverseadam</a> are updated any time the templates are updated in <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> or the source data in <a href="https://pharmaverse.github.io/pharmaversesdtm/main/" class="external-link">pharmaversesdtm</a> is updated.</p>
 </div>
 <div class="section level1">
 <h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -126,14 +120,17 @@
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Edoardo Mancini <br><small class="roles"> Author, maintainer </small>  </li>
+<li>Kangjie Zhang <br><small class="roles"> Author </small>  </li>
+<li>Stefan Bundfuss <br><small class="roles"> Author </small>  </li>
+<li>Gayatri G <br><small class="roles"> Author </small>  </li>
+<li>Daphne Grassely <br><small class="roles"> Author </small>  </li>
+<li>Zelos Zhu <br><small class="roles"> Author </small>  </li>
 </ul>
 </div>
 
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://pharmaverse.org" class="external-link"><img src="http://pharmaverse.org/shields/admiral.svg"></a></li>
-<li><a href="https://CRAN.R-project.org/package=admiral" class="external-link"><img src="https://www.r-pkg.org/badges/version/admiral" alt="CRAN status"></a></li>
 <li><a href="https://github.com/pharmaverse/admiraltemplate/actions/workflows/code-coverage.yml" class="external-link"><img src="https://raw.githubusercontent.com/pharmaverse/admiraltemplate/badges/main/test-coverage.svg" alt="Test Coverage"></a></li>
 </ul>
 </div>
@@ -144,7 +141,7 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by Edoardo Mancini.</p>
+<p>Developed by Edoardo Mancini, Kangjie Zhang, Stefan Bundfuss, Gayatri G, Daphne Grassely, Zelos Zhu.</p>
 </div>
 
 <div class="pkgdown-footer-right">
