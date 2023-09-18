@@ -43,8 +43,6 @@ admiralci_homepage <- "https://pharmaverse.github.io/admiralci"
 # pharmaverseadam <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
 <!-- badges: start -->
-[<img src="http://pharmaverse.org/shields/admiral.svg">](https://pharmaverse.org)
-[![CRAN status](https://www.r-pkg.org/badges/version/admiral)](https://CRAN.R-project.org/package=admiral)
 [![Test Coverage](https://raw.githubusercontent.com/pharmaverse/admiraltemplate/badges/main/test-coverage.svg)](https://github.com/pharmaverse/admiraltemplate/actions/workflows/code-coverage.yml)
 <!-- badges: end -->
 
@@ -52,10 +50,10 @@ Test data (ADaM) for the pharmaverse family of packages
 
 # Purpose
 
-To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages. This includes test ADaM data created from {admiral} templates. 
+To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages.
 
 
-The ADaM contents of this package is automatically populated by a CICD action that executes `{admiral}` templates and saves the resulting dataset here. The ADaM datasets in `{pharmaverseadam}` are updated any time the templates are updated in `{admiral}` or the source data in `{pharmaversesdtm}` is updated.
+The ADaM contents of this package is automatically populated by a CICD action that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}` and `{admiralvaccine}` templates and saves the resulting datasets here. The ADaM datasets in `{pharmaverseadam}` are updated any time the templates are updated in `{admiral}` or the source data in `{pharmaversesdtm}` is updated.
 
 # Installation
 
