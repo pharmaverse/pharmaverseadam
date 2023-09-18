@@ -21,6 +21,15 @@ Useful links:
 \author{
 \strong{Maintainer}: Edoardo Mancini \email{edoardo.mancini@roche.com}
 
+Authors:
+\itemize{
+  \item Kangjie Zhang
+  \item Stefan Bundfuss
+  \item Gayatri G
+  \item Daphne Grassely
+  \item Zelos Zhu
+}
+
 }
 \concept{internal}
 \keyword{internal}
