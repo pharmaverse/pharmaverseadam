@@ -5,8 +5,6 @@
 # pharmaverseadam <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
 <!-- badges: start -->
-[![Test
-Coverage](https://raw.githubusercontent.com/pharmaverse/admiraltemplate/badges/main/test-coverage.svg)](https://github.com/pharmaverse/admiraltemplate/actions/workflows/code-coverage.yml)
 <!-- badges: end -->
 
 Test data (ADaM) for the pharmaverse family of packages
