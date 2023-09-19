@@ -13,8 +13,8 @@ A set of Analysis Data Model (ADaM) datasets.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://pharmaverse.github.io/pharmaverseadam/main}
-  \item \url{https://github.com/pharmaverse/pharmaverseadam}
+  \item \url{https://pharmaverse.github.io/pharmaverseadam/main/}
+  \item \url{https://github.com/pharmaverse/pharmaverseadam/}
 }
 
 }
