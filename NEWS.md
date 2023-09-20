@@ -1,3 +1,9 @@
+# pharmaverseadam 0.1.1
+
+## New Features
+
+ - DESCRIPTION file updated ahead of CRAN release to include references to ADaM Implementation Guide 1.3.
+
 # pharmaverseadam 0.1.0
 
 ## New Features
