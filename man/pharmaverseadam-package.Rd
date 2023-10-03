@@ -4,11 +4,11 @@
 \name{pharmaverseadam-package}
 \alias{pharmaverseadam}
 \alias{pharmaverseadam-package}
-\title{pharmaverseadam: ADaM Test Data for the Pharmaverse Family of Packages}
+\title{pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of Packages}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A set of Analysis Data Model (ADaM) datasets.
+A set of Analysis Data Model (ADaM) datasets constructed using the Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and the template scripts from the 'admiral' family of packages. ADaM dataset specifications are described in: CDISC Analysis Data Model Team (2021) \url{https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_v1.3.pdf}.
 }
 \seealso{
 Useful links:
