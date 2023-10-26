@@ -4,7 +4,7 @@
 #'
 #' @name adpp
 #' @docType data
-#' @format A data frame with 80 columns:
+#' @format A data frame with 74 columns:
 #'   \describe{
 #'     \item{ STUDYID }{STUDYID}
 #'     \item{ USUBJID }{USUBJID}
@@ -16,12 +16,12 @@
 #'     \item{ PPSTRESU }{PPSTRESU}
 #'     \item{ PPSPEC }{PPSPEC}
 #'     \item{ PPRFDTC }{PPRFDTC}
-#'     \item{ TRTSDT.x }{TRTSDT.x}
-#'     \item{ TRTEDT.x }{TRTEDT.x}
-#'     \item{ DTHDT.x }{DTHDT.x}
-#'     \item{ EOSDT.x }{EOSDT.x}
-#'     \item{ TRT01P.x }{TRT01P.x}
-#'     \item{ TRT01A.x }{TRT01A.x}
+#'     \item{ TRTSDT }{TRTSDT}
+#'     \item{ TRTEDT }{TRTEDT}
+#'     \item{ DTHDT }{DTHDT}
+#'     \item{ EOSDT }{EOSDT}
+#'     \item{ TRT01P }{TRT01P}
+#'     \item{ TRT01A }{TRT01A}
 #'     \item{ ADT }{ADT}
 #'     \item{ ADY }{ADY}
 #'     \item{ PARAMCD }{PARAMCD}
@@ -60,21 +60,15 @@
 #'     \item{ COUNTRY }{COUNTRY}
 #'     \item{ DMDTC }{DMDTC}
 #'     \item{ DMDY }{DMDY}
-#'     \item{ TRT01P.y }{TRT01P.y}
-#'     \item{ TRT01A.y }{TRT01A.y}
 #'     \item{ TRTSDTM }{TRTSDTM}
 #'     \item{ TRTSTMF }{TRTSTMF}
 #'     \item{ TRTEDTM }{TRTEDTM}
 #'     \item{ TRTETMF }{TRTETMF}
-#'     \item{ TRTSDT.y }{TRTSDT.y}
-#'     \item{ TRTEDT.y }{TRTEDT.y}
 #'     \item{ TRTDURD }{TRTDURD}
 #'     \item{ SCRFDT }{SCRFDT}
-#'     \item{ EOSDT.y }{EOSDT.y}
 #'     \item{ EOSSTT }{EOSSTT}
 #'     \item{ FRVDT }{FRVDT}
 #'     \item{ RANDDT }{RANDDT}
-#'     \item{ DTHDT.y }{DTHDT.y}
 #'     \item{ DTHADY }{DTHADY}
 #'     \item{ LDDTHELD }{LDDTHELD}
 #'     \item{ LSTALVDT }{LSTALVDT}
