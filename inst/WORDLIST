@@ -101,7 +101,6 @@ AVALCAT
 AVALU
 AVISIT
 AVISITN
-Arancibia
 BASEC
 BASECAT
 BASETYPE
@@ -143,6 +142,7 @@ CETPTNUM
 CETPTREF
 CHGCAT
 CHGNAD
+CICD
 CMCLAS
 CMDECOD
 CMDOSE
@@ -167,7 +167,6 @@ CQ
 CRCLBL
 CREATBL
 CRIT
-DM
 DMDTC
 DMDY
 DOSEA
@@ -243,8 +242,6 @@ FORMN
 FRLTU
 FRVDT
 FUPFL
-Farrugia
-GSK
 HTBL
 HTBLU
 INVID
@@ -293,7 +290,6 @@ LSASS
 LSEXP
 LSTALVDT
 LVOTFL
-LinkedIn
 MDV
 MHBODSYS
 MHCAT
@@ -342,7 +338,6 @@ OETPT
 OETPTNUM
 OETSTDTL
 ONTRTFL
-Onboarding
 PARAM
 PARAMCD
 PARAMN
@@ -399,7 +394,6 @@ QSTESTCD
 RACEGR
 RACEN
 RANDDT
-README
 RECSEQ
 RFENDTC
 RFICDTC
@@ -437,7 +431,6 @@ STUDYID
 STUDYIDN
 SUBJID
 SUBJIDN
-TAs
 TBILBL
 TRACPTFL
 TRDTC
@@ -474,7 +467,6 @@ TULOCGR
 UDTC
 USUBJID
 USUBJIDN
-USUBJIDs
 VISITDY
 VISITNUM
 VSBLFL
@@ -511,9 +503,7 @@ adlbhy
 admh
 admiralonco
 admiralophtha
-admiraltemplate
 admiralvaccine
-admiralxxx
 adoe
 adpc
 adpp
@@ -524,17 +514,7 @@ adtr
 adtte
 advfq
 advs
-anonymized
-dev
-https
-onboarding
 onco
 ophtha
 pharmaverse
 pharmaversesdtm
-pharmaverseadam
-renv
-repo
-roxygen
-Template
-CICD
