@@ -50,3 +50,6 @@ pharmaverseadam*.tgz
 
 # Docs
 docs/
+
+# github token file
+github_token.R

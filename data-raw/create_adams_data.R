@@ -32,7 +32,7 @@ for (pkg in packages_list){
     if (update_pkg) {
         # TODO: replace by main once done
         remotes::install_github(sprintf("pharmaverse/%s", pkg), ref = "workflow_dispatch_templates", 
-        auth_token = github_pat, upgrade = "always", force = TRUE, quiet = TRUE, type = "source")
+        auth_token = github_pat, upgrade = "always", force = TRUE)
     }
     templates_path <- file.path(system.file(package = pkg), "templates")
     templates <- list.files(templates_path)
@@ -65,7 +65,7 @@ for (pkg in packages_list){
         save(data, file = output_adam_path, compress = "bzip2")
 
         # create documentation for the current dataset
-        # TODO: use metatools/metacore for doc and labels
+        # TODO: use metatools/metacore for doc and labels ?
         dataset_name <- gsub("\\.rda$", "", filename)
         doc_string <- paste(
         sprintf("#' Dataset %s", dataset_name),
@@ -91,7 +91,7 @@ for (pkg in packages_list){
 }
 
 # Generate the documentation
-#roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
+roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
 
 
 # TODO: add script to display differences
