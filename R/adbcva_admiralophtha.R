@@ -1,70 +1,65 @@
-#' Dataset advs
+#' Dataset adbcva_admiralophtha
 #'
-#' advs dataset
+#' adbcva_admiralophtha dataset
 #'
-#' @name advs
+#' @name adbcva_admiralophtha
 #' @docType data
-#' @format A data frame with 103 columns:
+#' @format A data frame with 116 columns:
 #'   \describe{
 #'     \item{ STUDYID }{STUDYID}
 #'     \item{ DOMAIN }{DOMAIN}
 #'     \item{ USUBJID }{USUBJID}
-#'     \item{ VSSEQ }{VSSEQ}
-#'     \item{ VSTESTCD }{VSTESTCD}
-#'     \item{ VSTEST }{VSTEST}
-#'     \item{ VSPOS }{VSPOS}
-#'     \item{ VSORRES }{VSORRES}
-#'     \item{ VSORRESU }{VSORRESU}
-#'     \item{ VSSTRESC }{VSSTRESC}
-#'     \item{ VSSTRESN }{VSSTRESN}
-#'     \item{ VSSTRESU }{VSSTRESU}
-#'     \item{ VSSTAT }{VSSTAT}
-#'     \item{ VSLOC }{VSLOC}
-#'     \item{ VSBLFL }{VSBLFL}
-#'     \item{ VISITNUM }{VISITNUM}
+#'     \item{ OESEQ }{OESEQ}
+#'     \item{ OECAT }{OECAT}
+#'     \item{ OESCAT }{OESCAT}
+#'     \item{ OEDTC }{OEDTC}
 #'     \item{ VISIT }{VISIT}
+#'     \item{ VISITNUM }{VISITNUM}
 #'     \item{ VISITDY }{VISITDY}
-#'     \item{ VSDTC }{VSDTC}
-#'     \item{ VSDY }{VSDY}
-#'     \item{ VSTPT }{VSTPT}
-#'     \item{ VSTPTNUM }{VSTPTNUM}
-#'     \item{ VSELTM }{VSELTM}
-#'     \item{ VSTPTREF }{VSTPTREF}
+#'     \item{ OESTRESN }{OESTRESN}
+#'     \item{ OESTRESC }{OESTRESC}
+#'     \item{ OEORRES }{OEORRES}
+#'     \item{ OETEST }{OETEST}
+#'     \item{ OETESTCD }{OETESTCD}
+#'     \item{ OETSTDTL }{OETSTDTL}
+#'     \item{ OELAT }{OELAT}
+#'     \item{ OELOC }{OELOC}
+#'     \item{ OEDY }{OEDY}
+#'     \item{ OEMETHOD }{OEMETHOD}
+#'     \item{ OEORRESU }{OEORRESU}
+#'     \item{ OESTRESU }{OESTRESU}
+#'     \item{ OESTAT }{OESTAT}
+#'     \item{ OETPT }{OETPT}
+#'     \item{ OETPTNUM }{OETPTNUM}
 #'     \item{ TRTSDT }{TRTSDT}
 #'     \item{ TRTEDT }{TRTEDT}
 #'     \item{ TRT01A }{TRT01A}
 #'     \item{ TRT01P }{TRT01P}
+#'     \item{ STUDYEYE }{STUDYEYE}
+#'     \item{ AVAL }{AVAL}
+#'     \item{ AVALU }{AVALU}
+#'     \item{ DTYPE }{DTYPE}
+#'     \item{ AFEYE }{AFEYE}
+#'     \item{ PARAM }{PARAM}
+#'     \item{ PARAMCD }{PARAMCD}
+#'     \item{ AVALC }{AVALC}
 #'     \item{ ADT }{ADT}
 #'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALC }{AVALC}
 #'     \item{ ATPTN }{ATPTN}
 #'     \item{ ATPT }{ATPT}
 #'     \item{ AVISIT }{AVISIT}
 #'     \item{ AVISITN }{AVISITN}
-#'     \item{ DTYPE }{DTYPE}
-#'     \item{ ONTRTFL }{ONTRTFL}
-#'     \item{ ANRLO }{ANRLO}
-#'     \item{ ANRHI }{ANRHI}
-#'     \item{ A1LO }{A1LO}
-#'     \item{ A1HI }{A1HI}
-#'     \item{ ANRIND }{ANRIND}
 #'     \item{ BASETYPE }{BASETYPE}
+#'     \item{ ONTRTFL }{ONTRTFL}
 #'     \item{ ABLFL }{ABLFL}
+#'     \item{ ANL01FL }{ANL01FL}
+#'     \item{ ANL02FL }{ANL02FL}
+#'     \item{ WORS01FL }{WORS01FL}
 #'     \item{ BASE }{BASE}
 #'     \item{ BASEC }{BASEC}
-#'     \item{ BNRIND }{BNRIND}
 #'     \item{ CHG }{CHG}
 #'     \item{ PCHG }{PCHG}
-#'     \item{ ANL01FL }{ANL01FL}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ TRTA }{TRTA}
 #'     \item{ ASEQ }{ASEQ}
-#'     \item{ AVALCA1N }{AVALCA1N}
-#'     \item{ AVALCAT1 }{AVALCAT1}
-#'     \item{ PARAM }{PARAM}
-#'     \item{ PARAMN }{PARAMN}
 #'     \item{ SUBJID }{SUBJID}
 #'     \item{ RFSTDTC }{RFSTDTC}
 #'     \item{ RFENDTC }{RFENDTC}
@@ -109,11 +104,29 @@
 #'     \item{ DTH30FL }{DTH30FL}
 #'     \item{ DTHA30FL }{DTHA30FL}
 #'     \item{ DTHB30FL }{DTHB30FL}
+#'     \item{ CRIT1 }{CRIT1}
+#'     \item{ CRIT1FL }{CRIT1FL}
+#'     \item{ CRIT2 }{CRIT2}
+#'     \item{ CRIT2FL }{CRIT2FL}
+#'     \item{ CRIT3 }{CRIT3}
+#'     \item{ CRIT3FL }{CRIT3FL}
+#'     \item{ CRIT4 }{CRIT4}
+#'     \item{ CRIT4FL }{CRIT4FL}
+#'     \item{ CRIT5 }{CRIT5}
+#'     \item{ CRIT5FL }{CRIT5FL}
+#'     \item{ CRIT6 }{CRIT6}
+#'     \item{ CRIT6FL }{CRIT6FL}
+#'     \item{ CRIT7 }{CRIT7}
+#'     \item{ CRIT7FL }{CRIT7FL}
+#'     \item{ CRIT8 }{CRIT8}
+#'     \item{ CRIT8FL }{CRIT8FL}
+#'     \item{ AVALCA1N }{AVALCA1N}
+#'     \item{ AVALCAT1 }{AVALCAT1}
 #'   }
 #'
 #' @source Generated from create_adams_data.R script.
 #' @references None
 #'
 #' @examples
-#' data("advs")
-"advs"
+#' data("adbcva_admiralophtha")
+"adbcva_admiralophtha"

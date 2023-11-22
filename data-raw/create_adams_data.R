@@ -62,7 +62,7 @@ run_template <- function(tp) {
              pharmaverse and generate the doc", rda_file))
             suffix <- ""
             if (pkg != "admiral") {
-                suffix <- pkg
+                suffix <- sprintf("_%s", pkg)
             }
             # add suffix in case of != admiral
             filename <- gsub("\\.rda$", sprintf("%s.rda", suffix), rda_file)
@@ -125,7 +125,7 @@ for (res in all_results) {
     if (!is.null(res$exit_code)) {
         print(sprintf("template %s failed - package %s", res$template, res$pkg))
         print("error:")
-        cat(res$output)
+        cat(sprintf("%s\n\n", res$output))
     }
 }
 

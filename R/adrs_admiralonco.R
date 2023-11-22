@@ -1,43 +1,39 @@
-#' Dataset adpp
+#' Dataset adrs_admiralonco
 #'
-#' adpp dataset
+#' adrs_admiralonco dataset
 #'
-#' @name adpp
+#' @name adrs_admiralonco
 #' @docType data
-#' @format A data frame with 74 columns:
+#' @format A data frame with 75 columns:
 #'   \describe{
+#'     \item{ DOMAIN }{DOMAIN}
 #'     \item{ STUDYID }{STUDYID}
 #'     \item{ USUBJID }{USUBJID}
-#'     \item{ PPTESTCD }{PPTESTCD}
-#'     \item{ PPTEST }{PPTEST}
-#'     \item{ PPCAT }{PPCAT}
-#'     \item{ PPORRES }{PPORRES}
-#'     \item{ PPORRESU }{PPORRESU}
-#'     \item{ PPSTRESU }{PPSTRESU}
-#'     \item{ PPSPEC }{PPSPEC}
-#'     \item{ PPRFDTC }{PPRFDTC}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALC }{AVALC}
-#'     \item{ SRCDOM }{SRCDOM}
-#'     \item{ SRCVAR }{SRCVAR}
-#'     \item{ SRCSEQ }{SRCSEQ}
-#'     \item{ VISIT }{VISIT}
 #'     \item{ VISITNUM }{VISITNUM}
+#'     \item{ VISIT }{VISIT}
+#'     \item{ RSTESTCD }{RSTESTCD}
+#'     \item{ RSTEST }{RSTEST}
+#'     \item{ RSORRES }{RSORRES}
+#'     \item{ RSSTRESC }{RSSTRESC}
+#'     \item{ RSEVAL }{RSEVAL}
+#'     \item{ RSEVALID }{RSEVALID}
+#'     \item{ RSACPTFL }{RSACPTFL}
+#'     \item{ RSDTC }{RSDTC}
+#'     \item{ RSSEQ }{RSSEQ}
+#'     \item{ RANDDT }{RANDDT}
+#'     \item{ PARAMCD }{PARAMCD}
+#'     \item{ PARAM }{PARAM}
+#'     \item{ PARCAT1 }{PARCAT1}
+#'     \item{ PARCAT2 }{PARCAT2}
+#'     \item{ PARCAT3 }{PARCAT3}
+#'     \item{ ADT }{ADT}
+#'     \item{ ADTF }{ADTF}
 #'     \item{ AVISIT }{AVISIT}
-#'     \item{ AVISITN }{AVISITN}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ TRTA }{TRTA}
-#'     \item{ AVALCA1N }{AVALCA1N}
-#'     \item{ AVALCAT1 }{AVALCAT1}
+#'     \item{ AVALC }{AVALC}
+#'     \item{ AVAL }{AVAL}
+#'     \item{ ANL01FL }{ANL01FL}
+#'     \item{ ANL02FL }{ANL02FL}
+#'     \item{ ASEQ }{ASEQ}
 #'     \item{ SUBJID }{SUBJID}
 #'     \item{ RFSTDTC }{RFSTDTC}
 #'     \item{ RFENDTC }{RFENDTC}
@@ -60,15 +56,20 @@
 #'     \item{ COUNTRY }{COUNTRY}
 #'     \item{ DMDTC }{DMDTC}
 #'     \item{ DMDY }{DMDY}
+#'     \item{ TRT01P }{TRT01P}
+#'     \item{ TRT01A }{TRT01A}
 #'     \item{ TRTSDTM }{TRTSDTM}
 #'     \item{ TRTSTMF }{TRTSTMF}
 #'     \item{ TRTEDTM }{TRTEDTM}
 #'     \item{ TRTETMF }{TRTETMF}
+#'     \item{ TRTSDT }{TRTSDT}
+#'     \item{ TRTEDT }{TRTEDT}
 #'     \item{ TRTDURD }{TRTDURD}
 #'     \item{ SCRFDT }{SCRFDT}
+#'     \item{ EOSDT }{EOSDT}
 #'     \item{ EOSSTT }{EOSSTT}
 #'     \item{ FRVDT }{FRVDT}
-#'     \item{ RANDDT }{RANDDT}
+#'     \item{ DTHDT }{DTHDT}
 #'     \item{ DTHADY }{DTHADY}
 #'     \item{ LDDTHELD }{LDDTHELD}
 #'     \item{ LSTALVDT }{LSTALVDT}
@@ -86,5 +87,5 @@
 #' @references None
 #'
 #' @examples
-#' data("adpp")
-"adpp"
+#' data("adrs_admiralonco")
+"adrs_admiralonco"

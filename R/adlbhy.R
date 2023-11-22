@@ -22,7 +22,7 @@
 #'     \item{ PARAM }{PARAM}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiral.
+#' @source Generated from create_adams_data.R script.
 #' @references None
 #'
 #' @examples

@@ -120,7 +120,7 @@ A data frame with 110 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiral.
+Generated from create_adams_data.R script.
 }
 \usage{
 admh

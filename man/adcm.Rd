@@ -100,7 +100,7 @@ A data frame with 90 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiral.
+Generated from create_adams_data.R script.
 }
 \usage{
 adcm

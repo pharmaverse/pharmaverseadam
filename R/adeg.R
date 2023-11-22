@@ -113,7 +113,7 @@
 #'     \item{ DTHB30FL }{DTHB30FL}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiral.
+#' @source Generated from create_adams_data.R script.
 #' @references None
 #'
 #' @examples

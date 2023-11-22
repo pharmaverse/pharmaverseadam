@@ -1,43 +1,65 @@
-#' Dataset adpp
+#' Dataset adoe_admiralophtha
 #'
-#' adpp dataset
+#' adoe_admiralophtha dataset
 #'
-#' @name adpp
+#' @name adoe_admiralophtha
 #' @docType data
-#' @format A data frame with 74 columns:
+#' @format A data frame with 98 columns:
 #'   \describe{
 #'     \item{ STUDYID }{STUDYID}
+#'     \item{ DOMAIN }{DOMAIN}
 #'     \item{ USUBJID }{USUBJID}
-#'     \item{ PPTESTCD }{PPTESTCD}
-#'     \item{ PPTEST }{PPTEST}
-#'     \item{ PPCAT }{PPCAT}
-#'     \item{ PPORRES }{PPORRES}
-#'     \item{ PPORRESU }{PPORRESU}
-#'     \item{ PPSTRESU }{PPSTRESU}
-#'     \item{ PPSPEC }{PPSPEC}
-#'     \item{ PPRFDTC }{PPRFDTC}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALC }{AVALC}
-#'     \item{ SRCDOM }{SRCDOM}
-#'     \item{ SRCVAR }{SRCVAR}
-#'     \item{ SRCSEQ }{SRCSEQ}
+#'     \item{ OESEQ }{OESEQ}
+#'     \item{ OECAT }{OECAT}
+#'     \item{ OESCAT }{OESCAT}
+#'     \item{ OEDTC }{OEDTC}
 #'     \item{ VISIT }{VISIT}
 #'     \item{ VISITNUM }{VISITNUM}
+#'     \item{ VISITDY }{VISITDY}
+#'     \item{ OESTRESN }{OESTRESN}
+#'     \item{ OESTRESC }{OESTRESC}
+#'     \item{ OEORRES }{OEORRES}
+#'     \item{ OETEST }{OETEST}
+#'     \item{ OETESTCD }{OETESTCD}
+#'     \item{ OETSTDTL }{OETSTDTL}
+#'     \item{ OELAT }{OELAT}
+#'     \item{ OELOC }{OELOC}
+#'     \item{ OEDY }{OEDY}
+#'     \item{ OEMETHOD }{OEMETHOD}
+#'     \item{ OEORRESU }{OEORRESU}
+#'     \item{ OESTRESU }{OESTRESU}
+#'     \item{ OESTAT }{OESTAT}
+#'     \item{ OETPT }{OETPT}
+#'     \item{ OETPTNUM }{OETPTNUM}
+#'     \item{ TRTSDT }{TRTSDT}
+#'     \item{ TRTEDT }{TRTEDT}
+#'     \item{ TRT01A }{TRT01A}
+#'     \item{ TRT01P }{TRT01P}
+#'     \item{ STUDYEYE }{STUDYEYE}
+#'     \item{ AVAL }{AVAL}
+#'     \item{ AVALC }{AVALC}
+#'     \item{ AVALU }{AVALU}
+#'     \item{ DTYPE }{DTYPE}
+#'     \item{ AFEYE }{AFEYE}
+#'     \item{ PARAM }{PARAM}
+#'     \item{ PARAMCD }{PARAMCD}
+#'     \item{ ADT }{ADT}
+#'     \item{ ADY }{ADY}
+#'     \item{ ATPTN }{ATPTN}
+#'     \item{ ATPT }{ATPT}
 #'     \item{ AVISIT }{AVISIT}
 #'     \item{ AVISITN }{AVISITN}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ TRTA }{TRTA}
-#'     \item{ AVALCA1N }{AVALCA1N}
-#'     \item{ AVALCAT1 }{AVALCAT1}
+#'     \item{ BASETYPE }{BASETYPE}
+#'     \item{ ONTRTFL }{ONTRTFL}
+#'     \item{ ABLFL }{ABLFL}
+#'     \item{ ANL01FL }{ANL01FL}
+#'     \item{ ANL02FL }{ANL02FL}
+#'     \item{ WORS01FL }{WORS01FL}
+#'     \item{ BASE }{BASE}
+#'     \item{ BASEC }{BASEC}
+#'     \item{ CHG }{CHG}
+#'     \item{ PCHG }{PCHG}
+#'     \item{ ASEQ }{ASEQ}
 #'     \item{ SUBJID }{SUBJID}
 #'     \item{ RFSTDTC }{RFSTDTC}
 #'     \item{ RFENDTC }{RFENDTC}
@@ -66,9 +88,11 @@
 #'     \item{ TRTETMF }{TRTETMF}
 #'     \item{ TRTDURD }{TRTDURD}
 #'     \item{ SCRFDT }{SCRFDT}
+#'     \item{ EOSDT }{EOSDT}
 #'     \item{ EOSSTT }{EOSSTT}
 #'     \item{ FRVDT }{FRVDT}
 #'     \item{ RANDDT }{RANDDT}
+#'     \item{ DTHDT }{DTHDT}
 #'     \item{ DTHADY }{DTHADY}
 #'     \item{ LDDTHELD }{LDDTHELD}
 #'     \item{ LSTALVDT }{LSTALVDT}
@@ -86,5 +110,5 @@
 #' @references None
 #'
 #' @examples
-#' data("adpp")
-"adpp"
+#' data("adoe_admiralophtha")
+"adoe_admiralophtha"

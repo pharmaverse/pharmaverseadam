@@ -61,7 +61,7 @@ A data frame with 51 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiral.
+Generated from create_adams_data.R script.
 }
 \usage{
 adsl
