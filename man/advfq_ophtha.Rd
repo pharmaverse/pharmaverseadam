@@ -95,7 +95,7 @@ A data frame with 85 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiralophtha.
+Generated from create_adams_data.R script.
 }
 \usage{
 advfq_ophtha

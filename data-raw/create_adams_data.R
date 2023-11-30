@@ -19,9 +19,9 @@ load_rda <- function(fileName){
     get(ls()[ls() != "fileName"])
 }
 
-write_doc <- function(data, dataset_name){
+write_doc <- function(data, dataset_name) {
     # create documentation for the current dataset
-    # TODO: use metatools/metacore for doc and labels ?
+    # TODO: use metatools/metacore for doc  ?
     doc_string <- paste(
     sprintf("#' Dataset %s", dataset_name),
     "#'",
@@ -44,6 +44,24 @@ write_doc <- function(data, dataset_name){
     writeLines(doc_string, con = file.path("R", paste0(dataset_name, ".R")))
 }
 
+write_labels <- function(data, dataset_name, suffix) {
+    print(dataset_name)
+    print(suffix)
+    if (suffix != "") {
+        dataset_name <- gsub(suffix, suffixes_dict[suffix], dataset_name)
+    }
+    dataset_name <- toupper(dataset_name)
+    tryCatch({
+        spec <- metacore::select_dataset(mc, dataset_name)
+        data <- metatools::set_variable_labels(data, spec)
+    }, error = function(e) {
+        warning(sprintf("Error retrieving dataset %s specs - Please check adams-specs.xlsx file",
+        dataset_name))
+    }
+    )
+    return(data)
+}
+
 run_template <- function(tp) {
     if (!tp %in% ignore_templates_pkg) {
         print(sprintf("Running template %s", tp))
@@ -62,12 +80,15 @@ run_template <- function(tp) {
              pharmaverse and generate the doc", rda_file))
             suffix <- ""
             if (pkg != "admiral") {
-                suffix <- sprintf("_%s", pkg)
+                suffix <- sprintf("_%s", gsub("admiral", "", pkg))
             }
             # add suffix in case of != admiral
             filename <- gsub("\\.rda$", sprintf("%s.rda", suffix), rda_file)
             output_adam_path <- file.path("data", filename)
             dataset_name <- gsub("\\.rda$", "", filename)
+
+            # write labels
+            data <- write_labels(data, dataset_name, suffix)
 
             # save it to pharmaverseadam data package
             save_rda(data, file_path = output_adam_path, new_name = dataset_name)
@@ -90,14 +111,18 @@ if (update_pkg){
         if (file.exists(token_file)){
             source(token_file)
         } else {
-            "WARNING - you might have issues installing pharmaverse deps - 
+            "WARNING - you might have issues installing pharmaverse deps -
             Please follow instructions in the readme.md"
         }
     }
-    # install pharmaversesdtm dep:
+    # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
     install.packages("pharmaverse/pharmaversesdtm")
 }
 
+# dict to match admiral xlsx specs suffixes
+suffixes_dict <- list("_ophta" = "_P", "_onco" = "_O", "_vaccine" = "_V")
+mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx", where_sep_sheet = FALSE,
+        quiet = TRUE)
 
 packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine")
 all_results <- c()
@@ -131,6 +156,3 @@ for (res in all_results) {
 
 # Generate the documentation
 roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
-
-
-# TODO: add script to display differences

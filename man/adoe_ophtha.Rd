@@ -108,7 +108,7 @@ A data frame with 98 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiralophtha.
+Generated from create_adams_data.R script.
 }
 \usage{
 adoe_ophtha

@@ -124,7 +124,7 @@
 #'     \item{ AVALCAT1 }{AVALCAT1}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiralophtha.
+#' @source Generated from create_adams_data.R script.
 #' @references None
 #'
 #' @examples

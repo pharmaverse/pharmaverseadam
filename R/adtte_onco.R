@@ -28,7 +28,7 @@
 #'     \item{ SEX }{SEX}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiralonco.
+#' @source Generated from create_adams_data.R script.
 #' @references None
 #'
 #' @examples

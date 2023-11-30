@@ -126,7 +126,7 @@ A data frame with 116 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiralophtha.
+Generated from create_adams_data.R script.
 }
 \usage{
 adbcva_ophtha

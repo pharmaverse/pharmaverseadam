@@ -85,7 +85,7 @@ A data frame with 75 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiralonco.
+Generated from create_adams_data.R script.
 }
 \usage{
 adrs_onco

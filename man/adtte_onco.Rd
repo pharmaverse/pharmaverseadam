@@ -30,7 +30,7 @@ A data frame with 20 columns:
 }
 }
 \source{
-Generated from pharmaverse/admiralonco.
+Generated from create_adams_data.R script.
 }
 \usage{
 adtte_onco
