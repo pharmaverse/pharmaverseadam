@@ -7,30 +7,30 @@
 \format{
 A data frame with 20 columns:
 \describe{
-\item{ STUDYID }{STUDYID}
-\item{ USUBJID }{USUBJID}
-\item{ EVNTDESC }{EVNTDESC}
-\item{ SRCDOM }{SRCDOM}
-\item{ SRCVAR }{SRCVAR}
-\item{ SRCSEQ }{SRCSEQ}
-\item{ CNSR }{CNSR}
-\item{ ADT }{ADT}
-\item{ CNSDTDSC }{CNSDTDSC}
-\item{ STARTDT }{STARTDT}
-\item{ PARAMCD }{PARAMCD}
-\item{ PARAM }{PARAM}
-\item{ AVAL }{AVAL}
-\item{ ASEQ }{ASEQ}
-\item{ ARMCD }{ARMCD}
-\item{ ARM }{ARM}
-\item{ ACTARMCD }{ACTARMCD}
-\item{ ACTARM }{ACTARM}
-\item{ AGE }{AGE}
-\item{ SEX }{SEX}
+\item{ STUDYID }{Study Identifier}
+\item{ USUBJID }{Unique Subject Identifier}
+\item{ EVNTDESC }{Event or Censoring Description}
+\item{ SRCDOM }{Source Data}
+\item{ SRCVAR }{Source Variable}
+\item{ SRCSEQ }{Source Sequence Number}
+\item{ CNSR }{Censor}
+\item{ ADT }{Analysis Date}
+\item{ CNSDTDSC }{Censor Date Description}
+\item{ STARTDT }{Time-to-Event Origin Date for Subject}
+\item{ PARAMCD }{Parameter Code}
+\item{ PARAM }{Parameter}
+\item{ AVAL }{Analysis Value}
+\item{ ASEQ }{Analysis Sequence Number}
+\item{ ARMCD }{Planned Arm Code}
+\item{ ARM }{Description of Planned Arm}
+\item{ ACTARMCD }{Actual Arm Code}
+\item{ ACTARM }{Description of Actual Arm}
+\item{ AGE }{Age}
+\item{ SEX }{Sex}
 }
 }
 \source{
-Generated from create_adams_data.R script.
+Generated from admiralonco package (template ad_adtte.R).
 }
 \usage{
 adtte_onco

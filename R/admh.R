@@ -6,119 +6,119 @@
 #' @docType data
 #' @format A data frame with 110 columns:
 #'   \describe{
-#'     \item{ STUDYID }{STUDYID}
-#'     \item{ DOMAIN }{DOMAIN}
-#'     \item{ USUBJID }{USUBJID}
-#'     \item{ MHSEQ }{MHSEQ}
-#'     \item{ MHSPID }{MHSPID}
-#'     \item{ MHTERM }{MHTERM}
-#'     \item{ MHLLT }{MHLLT}
-#'     \item{ MHDECOD }{MHDECOD}
-#'     \item{ MHHLT }{MHHLT}
-#'     \item{ MHHLGT }{MHHLGT}
-#'     \item{ MHCAT }{MHCAT}
-#'     \item{ MHBODSYS }{MHBODSYS}
-#'     \item{ MHSEV }{MHSEV}
-#'     \item{ VISITNUM }{VISITNUM}
-#'     \item{ VISIT }{VISIT}
-#'     \item{ VISITDY }{VISITDY}
-#'     \item{ MHDTC }{MHDTC}
-#'     \item{ MHSTDTC }{MHSTDTC}
-#'     \item{ MHDY }{MHDY}
-#'     \item{ MHENDTC }{MHENDTC}
-#'     \item{ MHPRESP }{MHPRESP}
-#'     \item{ MHOCCUR }{MHOCCUR}
-#'     \item{ MHSTRTPT }{MHSTRTPT}
-#'     \item{ MHENRTPT }{MHENRTPT}
-#'     \item{ MHSTTPT }{MHSTTPT}
-#'     \item{ MHENTPT }{MHENTPT}
-#'     \item{ MHENRF }{MHENRF}
-#'     \item{ MHSTAT }{MHSTAT}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ ASTDT }{ASTDT}
-#'     \item{ AENDT }{AENDT}
-#'     \item{ ASTDY }{ASTDY}
-#'     \item{ AENDY }{AENDY}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ SMQ02NAM }{SMQ02NAM}
-#'     \item{ SMQ02CD }{SMQ02CD}
-#'     \item{ SMQ02SC }{SMQ02SC}
-#'     \item{ SMQ02SCN }{SMQ02SCN}
-#'     \item{ SMQ03NAM }{SMQ03NAM}
-#'     \item{ SMQ03CD }{SMQ03CD}
-#'     \item{ SMQ03SC }{SMQ03SC}
-#'     \item{ SMQ03SCN }{SMQ03SCN}
-#'     \item{ SMQ05NAM }{SMQ05NAM}
-#'     \item{ SMQ05CD }{SMQ05CD}
-#'     \item{ SMQ05SC }{SMQ05SC}
-#'     \item{ SMQ05SCN }{SMQ05SCN}
-#'     \item{ CQ01NAM }{CQ01NAM}
-#'     \item{ CQ04NAM }{CQ04NAM}
-#'     \item{ CQ04CD }{CQ04CD}
-#'     \item{ AHIST }{AHIST}
-#'     \item{ AOCCFL }{AOCCFL}
-#'     \item{ AOCCSFL }{AOCCSFL}
-#'     \item{ AOCCPFL }{AOCCPFL}
-#'     \item{ AOCPFL }{AOCPFL}
-#'     \item{ AOCPSFL }{AOCPSFL}
-#'     \item{ AOCPPFL }{AOCPPFL}
-#'     \item{ ANL01FL }{ANL01FL}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ TRTA }{TRTA}
-#'     \item{ APHASE }{APHASE}
-#'     \item{ APHASEN }{APHASEN}
-#'     \item{ MHTERMN }{MHTERMN}
-#'     \item{ SUBJID }{SUBJID}
-#'     \item{ RFSTDTC }{RFSTDTC}
-#'     \item{ RFENDTC }{RFENDTC}
-#'     \item{ RFXSTDTC }{RFXSTDTC}
-#'     \item{ RFXENDTC }{RFXENDTC}
-#'     \item{ RFICDTC }{RFICDTC}
-#'     \item{ RFPENDTC }{RFPENDTC}
-#'     \item{ DTHDTC }{DTHDTC}
-#'     \item{ DTHFL }{DTHFL}
-#'     \item{ SITEID }{SITEID}
-#'     \item{ AGE }{AGE}
-#'     \item{ AGEU }{AGEU}
-#'     \item{ SEX }{SEX}
-#'     \item{ RACE }{RACE}
-#'     \item{ ETHNIC }{ETHNIC}
-#'     \item{ ARMCD }{ARMCD}
-#'     \item{ ARM }{ARM}
-#'     \item{ ACTARMCD }{ACTARMCD}
-#'     \item{ ACTARM }{ACTARM}
-#'     \item{ COUNTRY }{COUNTRY}
-#'     \item{ DMDTC }{DMDTC}
-#'     \item{ DMDY }{DMDY}
-#'     \item{ TRTSDTM }{TRTSDTM}
-#'     \item{ TRTSTMF }{TRTSTMF}
-#'     \item{ TRTEDTM }{TRTEDTM}
-#'     \item{ TRTETMF }{TRTETMF}
-#'     \item{ TRTDURD }{TRTDURD}
-#'     \item{ SCRFDT }{SCRFDT}
-#'     \item{ EOSSTT }{EOSSTT}
-#'     \item{ FRVDT }{FRVDT}
-#'     \item{ RANDDT }{RANDDT}
-#'     \item{ DTHADY }{DTHADY}
-#'     \item{ LDDTHELD }{LDDTHELD}
-#'     \item{ LSTALVDT }{LSTALVDT}
-#'     \item{ AGEGR1 }{AGEGR1}
-#'     \item{ SAFFL }{SAFFL}
-#'     \item{ RACEGR1 }{RACEGR1}
-#'     \item{ REGION1 }{REGION1}
-#'     \item{ LDDTHGR1 }{LDDTHGR1}
-#'     \item{ DTH30FL }{DTH30FL}
-#'     \item{ DTHA30FL }{DTHA30FL}
-#'     \item{ DTHB30FL }{DTHB30FL}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ MHSEQ }{Sequence Number}
+#'     \item{ MHSPID }{Sponsor-Defined Identifier}
+#'     \item{ MHTERM }{Reported Term for the Medical History}
+#'     \item{ MHLLT }{Lowest Level Term}
+#'     \item{ MHDECOD }{Dictionary-Derived Term}
+#'     \item{ MHHLT }{High Level Term}
+#'     \item{ MHHLGT }{High Level Group Term}
+#'     \item{ MHCAT }{Category for Medical History}
+#'     \item{ MHBODSYS }{Body System or Organ Class}
+#'     \item{ MHSEV }{Severity/Intensity}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
+#'     \item{ MHDTC }{Date/Time of History Collection}
+#'     \item{ MHSTDTC }{Start Date/Time of Medical History Event}
+#'     \item{ MHDY }{Study Day of History Collection}
+#'     \item{ MHENDTC }{End Date/Time of Medical History Event}
+#'     \item{ MHPRESP }{Medical History Event Pre-Specified}
+#'     \item{ MHOCCUR }{Medical History Occurrence}
+#'     \item{ MHSTRTPT }{Start Relative to Reference Time Point}
+#'     \item{ MHENRTPT }{End Relative to Reference Time Point}
+#'     \item{ MHSTTPT }{Start Reference Time Point}
+#'     \item{ MHENTPT }{End Reference Time Point}
+#'     \item{ MHENRF }{End Relative to Reference Period}
+#'     \item{ MHSTAT }{Completion Status}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ ASTDT }{Analysis Start Date}
+#'     \item{ AENDT }{Analysis End Date}
+#'     \item{ ASTDY }{Analysis Start Relative Day}
+#'     \item{ AENDY }{Analysis End Relative Day}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ SMQ02NAM }{SMQ 02 Name}
+#'     \item{ SMQ02CD }{SMQ 02 Code}
+#'     \item{ SMQ02SC }{SMQ 02 Scope}
+#'     \item{ SMQ02SCN }{SMQ 02 Scope (N)}
+#'     \item{ SMQ03NAM }{SMQ 03 Name}
+#'     \item{ SMQ03CD }{SMQ 03 Code}
+#'     \item{ SMQ03SC }{SMQ 03 Scope}
+#'     \item{ SMQ03SCN }{SMQ 03 Scope (N)}
+#'     \item{ SMQ05NAM }{SMQ 05 Name}
+#'     \item{ SMQ05CD }{SMQ 05 Code}
+#'     \item{ SMQ05SC }{SMQ 05 Scope}
+#'     \item{ SMQ05SCN }{SMQ 05 Scope (N)}
+#'     \item{ CQ01NAM }{Customized Query 01 Name}
+#'     \item{ CQ04NAM }{Customized Query 04 Name}
+#'     \item{ CQ04CD }{Customized Query 04 Code}
+#'     \item{ AHIST }{Response of Med Hx (past or current)}
+#'     \item{ AOCCFL }{1st Occurrence within Subject Flag}
+#'     \item{ AOCCSFL }{1st Occurrence of SOC Flag}
+#'     \item{ AOCCPFL }{1st Occurrence of Preferred Term Flag}
+#'     \item{ AOCPFL }{1st Occur w/in Trt Prd FL}
+#'     \item{ AOCPSFL }{1st Occur of SOC w/in Trt Prd FL}
+#'     \item{ AOCPPFL }{1st Occur of PT w/in Trt Prd FL}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ TRTP }{Planned Treatment}
+#'     \item{ TRTA }{Actual Treatment}
+#'     \item{ APHASE }{Phase}
+#'     \item{ APHASEN }{Description of Phase N}
+#'     \item{ MHTERMN }{Medical History Term (N)}
+#'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
+#'     \item{ RFENDTC }{Subject Reference End Date/Time}
+#'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
+#'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RFPENDTC }{Date/Time of End of Participation}
+#'     \item{ DTHDTC }{Date/Time of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ COUNTRY }{Country}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Treatment End Datetime Imput Flag}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ SCRFDT }{Screen Failure Date}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
 #'
-#' @source Generated from create_adams_data.R script.
+#' @source Generated from admiral package (template ad_admh.R).
 #' @references None
 #'
 #' @examples

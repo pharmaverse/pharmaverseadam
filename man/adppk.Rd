@@ -7,69 +7,69 @@
 \format{
 A data frame with 59 columns:
 \describe{
-\item{ STUDYID }{STUDYID}
-\item{ USUBJID }{USUBJID}
-\item{ EVID }{EVID}
-\item{ NFRLT }{NFRLT}
-\item{ AFRLT }{AFRLT}
-\item{ APRLT }{APRLT}
-\item{ NPRLT }{NPRLT}
-\item{ DOSEA }{DOSEA}
-\item{ DOSEP }{DOSEP}
-\item{ ALLOQ }{ALLOQ}
-\item{ CMT }{CMT}
-\item{ BLQFL }{BLQFL}
-\item{ BLQFN }{BLQFN}
-\item{ AMT }{AMT}
-\item{ DV }{DV}
-\item{ AVAL }{AVAL}
-\item{ DVL }{DVL}
-\item{ MDV }{MDV}
-\item{ AVALU }{AVALU}
-\item{ UDTC }{UDTC}
-\item{ II }{II}
-\item{ SS }{SS}
-\item{ ASEQ }{ASEQ}
-\item{ PROJID }{PROJID}
-\item{ PROJIDN }{PROJIDN}
-\item{ STUDYIDN }{STUDYIDN}
-\item{ SITEID }{SITEID}
-\item{ SITEIDN }{SITEIDN}
-\item{ USUBJIDN }{USUBJIDN}
-\item{ SUBJID }{SUBJID}
-\item{ SUBJIDN }{SUBJIDN}
-\item{ AGE }{AGE}
-\item{ SEX }{SEX}
-\item{ SEXN }{SEXN}
-\item{ COHORT }{COHORT}
-\item{ COHORTC }{COHORTC}
-\item{ ROUTE }{ROUTE}
-\item{ ROUTEN }{ROUTEN}
-\item{ RACE }{RACE}
-\item{ RACEN }{RACEN}
-\item{ ETHNIC }{ETHNIC}
-\item{ ETHNICN }{ETHNICN}
-\item{ FORM }{FORM}
-\item{ FORMN }{FORMN}
-\item{ COUNTRY }{COUNTRY}
-\item{ COUNTRYN }{COUNTRYN}
-\item{ REGION1 }{REGION1}
-\item{ REGION1N }{REGION1N}
-\item{ HTBL }{HTBL}
-\item{ WTBL }{WTBL}
-\item{ ALTBL }{ALTBL}
-\item{ ASTBL }{ASTBL}
-\item{ TBILBL }{TBILBL}
-\item{ CREATBL }{CREATBL}
-\item{ BMIBL }{BMIBL}
-\item{ BSABL }{BSABL}
-\item{ CRCLBL }{CRCLBL}
-\item{ EGFRBL }{EGFRBL}
-\item{ RECSEQ }{RECSEQ}
+\item{ STUDYID }{Study Identifier}
+\item{ USUBJID }{Unique Subject Identifier}
+\item{ EVID }{Event ID}
+\item{ NFRLT }{Nom. Rel. Time from Analyte First Dose}
+\item{ AFRLT }{Act. Rel. Time from Analyte First Dose}
+\item{ APRLT }{Actual Rel Time from Previous Dose}
+\item{ NPRLT }{Nominal Rel Time from Previous Dose}
+\item{ DOSEA }{Actual Treatment Dose}
+\item{ DOSEP }{Planned Treatment Dose}
+\item{ ALLOQ }{Analysis Lower Limit of Quantitation}
+\item{ CMT }{Compartment}
+\item{ BLQFL }{Below Lower Limit of Quant Flag}
+\item{ BLQFN }{Below Lower Limit of Quant Flag (N)}
+\item{ AMT }{Actual Amount of Dose Received (unit)}
+\item{ DV }{Dependent Variable Result}
+\item{ AVAL }{Analysis Value}
+\item{ DVL }{Log DV}
+\item{ MDV }{Missing Dependent Variable Result}
+\item{ AVALU }{Analysis Value Unit}
+\item{ UDTC }{Date/Time}
+\item{ II }{Dosing Interval (unit)}
+\item{ SS }{Steady State}
+\item{ ASEQ }{Analysis Sequence Number}
+\item{ PROJID }{Project Identifier}
+\item{ PROJIDN }{Project Identifier (N)}
+\item{ STUDYIDN }{Study Identifier (N)}
+\item{ SITEID }{Study Site Identifier}
+\item{ SITEIDN }{Study Site Identifier (N)}
+\item{ USUBJIDN }{Unique Subject Identifier (N)}
+\item{ SUBJID }{Subject Identifier for the Study}
+\item{ SUBJIDN }{Subject Identifier for the Study (N)}
+\item{ AGE }{Age}
+\item{ SEX }{Sex}
+\item{ SEXN }{Sex (N)}
+\item{ COHORT }{Cohort Subject Enrolled Into}
+\item{ COHORTC }{Description of Planned Arm}
+\item{ ROUTE }{Route of Administration}
+\item{ ROUTEN }{Route of Administration (N)}
+\item{ RACE }{Race}
+\item{ RACEN }{Race (N)}
+\item{ ETHNIC }{Ethnicity}
+\item{ ETHNICN }{Ethnicity (N)}
+\item{ FORM }{Drug Formulation}
+\item{ FORMN }{Drug Formulation (N)}
+\item{ COUNTRY }{Country}
+\item{ COUNTRYN }{Country (N)}
+\item{ REGION1 }{Geographic Region 1}
+\item{ REGION1N }{Geographic Region 1 (N)}
+\item{ HTBL }{Numeric Result/Finding in Standard Units}
+\item{ WTBL }{Numeric Result/Finding in Standard Units}
+\item{ ALTBL }{Numeric Result/Finding in Standard Units}
+\item{ ASTBL }{Numeric Result/Finding in Standard Units}
+\item{ TBILBL }{Numeric Result/Finding in Standard Units}
+\item{ CREATBL }{Numeric Result/Finding in Standard Units}
+\item{ BMIBL }{Baseline Body Mass Index (kg/m2)}
+\item{ BSABL }{Numeric Result/Finding in Standard Units}
+\item{ CRCLBL }{Baseline Creatinine Clearance}
+\item{ EGFRBL }{Age}
+\item{ RECSEQ }{Record Sequence}
 }
 }
 \source{
-Generated from create_adams_data.R script.
+Generated from admiral package (template ad_adppk.R).
 }
 \usage{
 adppk

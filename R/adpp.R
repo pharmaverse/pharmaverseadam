@@ -6,83 +6,83 @@
 #' @docType data
 #' @format A data frame with 74 columns:
 #'   \describe{
-#'     \item{ STUDYID }{STUDYID}
-#'     \item{ USUBJID }{USUBJID}
-#'     \item{ PPTESTCD }{PPTESTCD}
-#'     \item{ PPTEST }{PPTEST}
-#'     \item{ PPCAT }{PPCAT}
-#'     \item{ PPORRES }{PPORRES}
-#'     \item{ PPORRESU }{PPORRESU}
-#'     \item{ PPSTRESU }{PPSTRESU}
-#'     \item{ PPSPEC }{PPSPEC}
-#'     \item{ PPRFDTC }{PPRFDTC}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALC }{AVALC}
-#'     \item{ SRCDOM }{SRCDOM}
-#'     \item{ SRCVAR }{SRCVAR}
-#'     \item{ SRCSEQ }{SRCSEQ}
-#'     \item{ VISIT }{VISIT}
-#'     \item{ VISITNUM }{VISITNUM}
-#'     \item{ AVISIT }{AVISIT}
-#'     \item{ AVISITN }{AVISITN}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ TRTA }{TRTA}
-#'     \item{ AVALCA1N }{AVALCA1N}
-#'     \item{ AVALCAT1 }{AVALCAT1}
-#'     \item{ SUBJID }{SUBJID}
-#'     \item{ RFSTDTC }{RFSTDTC}
-#'     \item{ RFENDTC }{RFENDTC}
-#'     \item{ RFXSTDTC }{RFXSTDTC}
-#'     \item{ RFXENDTC }{RFXENDTC}
-#'     \item{ RFICDTC }{RFICDTC}
-#'     \item{ RFPENDTC }{RFPENDTC}
-#'     \item{ DTHDTC }{DTHDTC}
-#'     \item{ DTHFL }{DTHFL}
-#'     \item{ SITEID }{SITEID}
-#'     \item{ AGE }{AGE}
-#'     \item{ AGEU }{AGEU}
-#'     \item{ SEX }{SEX}
-#'     \item{ RACE }{RACE}
-#'     \item{ ETHNIC }{ETHNIC}
-#'     \item{ ARMCD }{ARMCD}
-#'     \item{ ARM }{ARM}
-#'     \item{ ACTARMCD }{ACTARMCD}
-#'     \item{ ACTARM }{ACTARM}
-#'     \item{ COUNTRY }{COUNTRY}
-#'     \item{ DMDTC }{DMDTC}
-#'     \item{ DMDY }{DMDY}
-#'     \item{ TRTSDTM }{TRTSDTM}
-#'     \item{ TRTSTMF }{TRTSTMF}
-#'     \item{ TRTEDTM }{TRTEDTM}
-#'     \item{ TRTETMF }{TRTETMF}
-#'     \item{ TRTDURD }{TRTDURD}
-#'     \item{ SCRFDT }{SCRFDT}
-#'     \item{ EOSSTT }{EOSSTT}
-#'     \item{ FRVDT }{FRVDT}
-#'     \item{ RANDDT }{RANDDT}
-#'     \item{ DTHADY }{DTHADY}
-#'     \item{ LDDTHELD }{LDDTHELD}
-#'     \item{ LSTALVDT }{LSTALVDT}
-#'     \item{ AGEGR1 }{AGEGR1}
-#'     \item{ SAFFL }{SAFFL}
-#'     \item{ RACEGR1 }{RACEGR1}
-#'     \item{ REGION1 }{REGION1}
-#'     \item{ LDDTHGR1 }{LDDTHGR1}
-#'     \item{ DTH30FL }{DTH30FL}
-#'     \item{ DTHA30FL }{DTHA30FL}
-#'     \item{ DTHB30FL }{DTHB30FL}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ PPTESTCD }{Parameter Short Name}
+#'     \item{ PPTEST }{Parameter Name}
+#'     \item{ PPCAT }{Parameter Category}
+#'     \item{ PPORRES }{Result or Finding in Original Units}
+#'     \item{ PPORRESU }{Original Units}
+#'     \item{ PPSTRESU }{Standard Units}
+#'     \item{ PPSPEC }{Specimen Material Type}
+#'     \item{ PPRFDTC }{Date/Time of Reference Point}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ AVAL }{Numeric Result/Finding in Standard Units}
+#'     \item{ AVALC }{Character Result/Finding in Std Format}
+#'     \item{ SRCDOM }{Domain Abbreviation}
+#'     \item{ SRCVAR }{Source Variable}
+#'     \item{ SRCSEQ }{Sequence Number}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ TRTP }{Planned Treatment}
+#'     \item{ TRTA }{Actual Treatment}
+#'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}
+#'     \item{ AVALCAT1 }{Analysis Value Category 1}
+#'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
+#'     \item{ RFENDTC }{Subject Reference End Date/Time}
+#'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
+#'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RFPENDTC }{Date/Time of End of Participation}
+#'     \item{ DTHDTC }{Date/Time of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ COUNTRY }{Country}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ SCRFDT }{Screen Failure Date}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
 #'
-#' @source Generated from create_adams_data.R script.
+#' @source Generated from admiral package (template ad_adpp.R).
 #' @references None
 #'
 #' @examples

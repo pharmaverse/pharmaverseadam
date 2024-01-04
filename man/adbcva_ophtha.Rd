@@ -7,126 +7,126 @@
 \format{
 A data frame with 116 columns:
 \describe{
-\item{ STUDYID }{STUDYID}
-\item{ DOMAIN }{DOMAIN}
-\item{ USUBJID }{USUBJID}
-\item{ OESEQ }{OESEQ}
-\item{ OECAT }{OECAT}
-\item{ OESCAT }{OESCAT}
-\item{ OEDTC }{OEDTC}
-\item{ VISIT }{VISIT}
-\item{ VISITNUM }{VISITNUM}
-\item{ VISITDY }{VISITDY}
-\item{ OESTRESN }{OESTRESN}
-\item{ OESTRESC }{OESTRESC}
-\item{ OEORRES }{OEORRES}
-\item{ OETEST }{OETEST}
-\item{ OETESTCD }{OETESTCD}
-\item{ OETSTDTL }{OETSTDTL}
-\item{ OELAT }{OELAT}
-\item{ OELOC }{OELOC}
-\item{ OEDY }{OEDY}
-\item{ OEMETHOD }{OEMETHOD}
-\item{ OEORRESU }{OEORRESU}
-\item{ OESTRESU }{OESTRESU}
-\item{ OESTAT }{OESTAT}
-\item{ OETPT }{OETPT}
-\item{ OETPTNUM }{OETPTNUM}
-\item{ TRTSDT }{TRTSDT}
-\item{ TRTEDT }{TRTEDT}
-\item{ TRT01A }{TRT01A}
-\item{ TRT01P }{TRT01P}
-\item{ STUDYEYE }{STUDYEYE}
-\item{ AVAL }{AVAL}
-\item{ AVALU }{AVALU}
-\item{ DTYPE }{DTYPE}
-\item{ AFEYE }{AFEYE}
-\item{ PARAM }{PARAM}
-\item{ PARAMCD }{PARAMCD}
-\item{ AVALC }{AVALC}
-\item{ ADT }{ADT}
-\item{ ADY }{ADY}
-\item{ ATPTN }{ATPTN}
-\item{ ATPT }{ATPT}
-\item{ AVISIT }{AVISIT}
-\item{ AVISITN }{AVISITN}
-\item{ BASETYPE }{BASETYPE}
-\item{ ONTRTFL }{ONTRTFL}
-\item{ ABLFL }{ABLFL}
-\item{ ANL01FL }{ANL01FL}
-\item{ ANL02FL }{ANL02FL}
-\item{ WORS01FL }{WORS01FL}
-\item{ BASE }{BASE}
-\item{ BASEC }{BASEC}
-\item{ CHG }{CHG}
-\item{ PCHG }{PCHG}
-\item{ ASEQ }{ASEQ}
-\item{ SUBJID }{SUBJID}
-\item{ RFSTDTC }{RFSTDTC}
-\item{ RFENDTC }{RFENDTC}
-\item{ RFXSTDTC }{RFXSTDTC}
-\item{ RFXENDTC }{RFXENDTC}
-\item{ RFICDTC }{RFICDTC}
-\item{ RFPENDTC }{RFPENDTC}
-\item{ DTHDTC }{DTHDTC}
-\item{ DTHFL }{DTHFL}
-\item{ SITEID }{SITEID}
-\item{ AGE }{AGE}
-\item{ AGEU }{AGEU}
-\item{ SEX }{SEX}
-\item{ RACE }{RACE}
-\item{ ETHNIC }{ETHNIC}
-\item{ ARMCD }{ARMCD}
-\item{ ARM }{ARM}
-\item{ ACTARMCD }{ACTARMCD}
-\item{ ACTARM }{ACTARM}
-\item{ COUNTRY }{COUNTRY}
-\item{ DMDTC }{DMDTC}
-\item{ DMDY }{DMDY}
-\item{ TRTSDTM }{TRTSDTM}
-\item{ TRTSTMF }{TRTSTMF}
-\item{ TRTEDTM }{TRTEDTM}
-\item{ TRTETMF }{TRTETMF}
-\item{ TRTDURD }{TRTDURD}
-\item{ SCRFDT }{SCRFDT}
-\item{ EOSDT }{EOSDT}
-\item{ EOSSTT }{EOSSTT}
-\item{ FRVDT }{FRVDT}
-\item{ RANDDT }{RANDDT}
-\item{ DTHDT }{DTHDT}
-\item{ DTHADY }{DTHADY}
-\item{ LDDTHELD }{LDDTHELD}
-\item{ LSTALVDT }{LSTALVDT}
-\item{ AGEGR1 }{AGEGR1}
-\item{ SAFFL }{SAFFL}
-\item{ RACEGR1 }{RACEGR1}
-\item{ REGION1 }{REGION1}
-\item{ LDDTHGR1 }{LDDTHGR1}
-\item{ DTH30FL }{DTH30FL}
-\item{ DTHA30FL }{DTHA30FL}
-\item{ DTHB30FL }{DTHB30FL}
-\item{ CRIT1 }{CRIT1}
-\item{ CRIT1FL }{CRIT1FL}
-\item{ CRIT2 }{CRIT2}
-\item{ CRIT2FL }{CRIT2FL}
-\item{ CRIT3 }{CRIT3}
-\item{ CRIT3FL }{CRIT3FL}
-\item{ CRIT4 }{CRIT4}
-\item{ CRIT4FL }{CRIT4FL}
-\item{ CRIT5 }{CRIT5}
-\item{ CRIT5FL }{CRIT5FL}
-\item{ CRIT6 }{CRIT6}
-\item{ CRIT6FL }{CRIT6FL}
-\item{ CRIT7 }{CRIT7}
-\item{ CRIT7FL }{CRIT7FL}
-\item{ CRIT8 }{CRIT8}
-\item{ CRIT8FL }{CRIT8FL}
-\item{ AVALCA1N }{AVALCA1N}
-\item{ AVALCAT1 }{AVALCAT1}
+\item{ STUDYID }{undocumented field}
+\item{ DOMAIN }{undocumented field}
+\item{ USUBJID }{undocumented field}
+\item{ OESEQ }{undocumented field}
+\item{ OECAT }{undocumented field}
+\item{ OESCAT }{undocumented field}
+\item{ OEDTC }{undocumented field}
+\item{ VISIT }{undocumented field}
+\item{ VISITNUM }{undocumented field}
+\item{ VISITDY }{undocumented field}
+\item{ OESTRESN }{undocumented field}
+\item{ OESTRESC }{undocumented field}
+\item{ OEORRES }{undocumented field}
+\item{ OETEST }{undocumented field}
+\item{ OETESTCD }{undocumented field}
+\item{ OETSTDTL }{undocumented field}
+\item{ OELAT }{undocumented field}
+\item{ OELOC }{undocumented field}
+\item{ OEDY }{undocumented field}
+\item{ OEMETHOD }{undocumented field}
+\item{ OEORRESU }{undocumented field}
+\item{ OESTRESU }{undocumented field}
+\item{ OESTAT }{undocumented field}
+\item{ OETPT }{undocumented field}
+\item{ OETPTNUM }{undocumented field}
+\item{ TRTSDT }{undocumented field}
+\item{ TRTEDT }{undocumented field}
+\item{ TRT01A }{undocumented field}
+\item{ TRT01P }{undocumented field}
+\item{ STUDYEYE }{undocumented field}
+\item{ AVAL }{undocumented field}
+\item{ AVALU }{undocumented field}
+\item{ DTYPE }{undocumented field}
+\item{ AFEYE }{undocumented field}
+\item{ PARAM }{undocumented field}
+\item{ PARAMCD }{undocumented field}
+\item{ AVALC }{undocumented field}
+\item{ ADT }{undocumented field}
+\item{ ADY }{undocumented field}
+\item{ ATPTN }{undocumented field}
+\item{ ATPT }{undocumented field}
+\item{ AVISIT }{undocumented field}
+\item{ AVISITN }{undocumented field}
+\item{ BASETYPE }{undocumented field}
+\item{ ONTRTFL }{undocumented field}
+\item{ ABLFL }{undocumented field}
+\item{ ANL01FL }{undocumented field}
+\item{ ANL02FL }{undocumented field}
+\item{ WORS01FL }{undocumented field}
+\item{ BASE }{undocumented field}
+\item{ BASEC }{undocumented field}
+\item{ CHG }{undocumented field}
+\item{ PCHG }{undocumented field}
+\item{ ASEQ }{undocumented field}
+\item{ SUBJID }{undocumented field}
+\item{ RFSTDTC }{undocumented field}
+\item{ RFENDTC }{undocumented field}
+\item{ RFXSTDTC }{undocumented field}
+\item{ RFXENDTC }{undocumented field}
+\item{ RFICDTC }{undocumented field}
+\item{ RFPENDTC }{undocumented field}
+\item{ DTHDTC }{undocumented field}
+\item{ DTHFL }{undocumented field}
+\item{ SITEID }{undocumented field}
+\item{ AGE }{undocumented field}
+\item{ AGEU }{undocumented field}
+\item{ SEX }{undocumented field}
+\item{ RACE }{undocumented field}
+\item{ ETHNIC }{undocumented field}
+\item{ ARMCD }{undocumented field}
+\item{ ARM }{undocumented field}
+\item{ ACTARMCD }{undocumented field}
+\item{ ACTARM }{undocumented field}
+\item{ COUNTRY }{undocumented field}
+\item{ DMDTC }{undocumented field}
+\item{ DMDY }{undocumented field}
+\item{ TRTSDTM }{undocumented field}
+\item{ TRTSTMF }{undocumented field}
+\item{ TRTEDTM }{undocumented field}
+\item{ TRTETMF }{undocumented field}
+\item{ TRTDURD }{undocumented field}
+\item{ SCRFDT }{undocumented field}
+\item{ EOSDT }{undocumented field}
+\item{ EOSSTT }{undocumented field}
+\item{ FRVDT }{undocumented field}
+\item{ RANDDT }{undocumented field}
+\item{ DTHDT }{undocumented field}
+\item{ DTHADY }{undocumented field}
+\item{ LDDTHELD }{undocumented field}
+\item{ LSTALVDT }{undocumented field}
+\item{ AGEGR1 }{undocumented field}
+\item{ SAFFL }{undocumented field}
+\item{ RACEGR1 }{undocumented field}
+\item{ REGION1 }{undocumented field}
+\item{ LDDTHGR1 }{undocumented field}
+\item{ DTH30FL }{undocumented field}
+\item{ DTHA30FL }{undocumented field}
+\item{ DTHB30FL }{undocumented field}
+\item{ CRIT1 }{undocumented field}
+\item{ CRIT1FL }{undocumented field}
+\item{ CRIT2 }{undocumented field}
+\item{ CRIT2FL }{undocumented field}
+\item{ CRIT3 }{undocumented field}
+\item{ CRIT3FL }{undocumented field}
+\item{ CRIT4 }{undocumented field}
+\item{ CRIT4FL }{undocumented field}
+\item{ CRIT5 }{undocumented field}
+\item{ CRIT5FL }{undocumented field}
+\item{ CRIT6 }{undocumented field}
+\item{ CRIT6FL }{undocumented field}
+\item{ CRIT7 }{undocumented field}
+\item{ CRIT7FL }{undocumented field}
+\item{ CRIT8 }{undocumented field}
+\item{ CRIT8FL }{undocumented field}
+\item{ AVALCA1N }{undocumented field}
+\item{ AVALCAT1 }{undocumented field}
 }
 }
 \source{
-Generated from create_adams_data.R script.
+Generated from admiralophtha package (template ad_adbcva.R).
 }
 \usage{
 adbcva_ophtha

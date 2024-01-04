@@ -6,94 +6,94 @@
 #' @docType data
 #' @format A data frame with 85 columns:
 #'   \describe{
-#'     \item{ STUDYID }{STUDYID}
-#'     \item{ DOMAIN }{DOMAIN}
-#'     \item{ USUBJID }{USUBJID}
-#'     \item{ QSSEQ }{QSSEQ}
-#'     \item{ QSTESTCD }{QSTESTCD}
-#'     \item{ QSTEST }{QSTEST}
-#'     \item{ QSCAT }{QSCAT}
-#'     \item{ QSSCAT }{QSSCAT}
-#'     \item{ QSORRES }{QSORRES}
-#'     \item{ QSORRESU }{QSORRESU}
-#'     \item{ QSSTRESC }{QSSTRESC}
-#'     \item{ QSSTRESN }{QSSTRESN}
-#'     \item{ QSSTRESU }{QSSTRESU}
-#'     \item{ QSBLFL }{QSBLFL}
-#'     \item{ QSDRVFL }{QSDRVFL}
-#'     \item{ VISITNUM }{VISITNUM}
-#'     \item{ VISIT }{VISIT}
-#'     \item{ VISITDY }{VISITDY}
-#'     \item{ QSDTC }{QSDTC}
-#'     \item{ QSDY }{QSDY}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALC }{AVALC}
-#'     \item{ AVISIT }{AVISIT}
-#'     \item{ AVISITN }{AVISITN}
-#'     \item{ ONTRTFL }{ONTRTFL}
-#'     \item{ ABLFL }{ABLFL}
-#'     \item{ BASE }{BASE}
-#'     \item{ CHG }{CHG}
-#'     \item{ PCHG }{PCHG}
-#'     \item{ ANL01FL }{ANL01FL}
-#'     \item{ ASEQ }{ASEQ}
-#'     \item{ PARAM }{PARAM}
-#'     \item{ PARCAT1 }{PARCAT1}
-#'     \item{ PARCAT2 }{PARCAT2}
-#'     \item{ SUBJID }{SUBJID}
-#'     \item{ RFSTDTC }{RFSTDTC}
-#'     \item{ RFENDTC }{RFENDTC}
-#'     \item{ RFXSTDTC }{RFXSTDTC}
-#'     \item{ RFXENDTC }{RFXENDTC}
-#'     \item{ RFICDTC }{RFICDTC}
-#'     \item{ RFPENDTC }{RFPENDTC}
-#'     \item{ DTHDTC }{DTHDTC}
-#'     \item{ DTHFL }{DTHFL}
-#'     \item{ SITEID }{SITEID}
-#'     \item{ AGE }{AGE}
-#'     \item{ AGEU }{AGEU}
-#'     \item{ SEX }{SEX}
-#'     \item{ RACE }{RACE}
-#'     \item{ ETHNIC }{ETHNIC}
-#'     \item{ ARMCD }{ARMCD}
-#'     \item{ ARM }{ARM}
-#'     \item{ ACTARMCD }{ACTARMCD}
-#'     \item{ ACTARM }{ACTARM}
-#'     \item{ COUNTRY }{COUNTRY}
-#'     \item{ DMDTC }{DMDTC}
-#'     \item{ DMDY }{DMDY}
-#'     \item{ TRTSDTM }{TRTSDTM}
-#'     \item{ TRTSTMF }{TRTSTMF}
-#'     \item{ TRTEDTM }{TRTEDTM}
-#'     \item{ TRTETMF }{TRTETMF}
-#'     \item{ TRTDURD }{TRTDURD}
-#'     \item{ SCRFDT }{SCRFDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ EOSSTT }{EOSSTT}
-#'     \item{ FRVDT }{FRVDT}
-#'     \item{ RANDDT }{RANDDT}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ DTHADY }{DTHADY}
-#'     \item{ LDDTHELD }{LDDTHELD}
-#'     \item{ LSTALVDT }{LSTALVDT}
-#'     \item{ AGEGR1 }{AGEGR1}
-#'     \item{ SAFFL }{SAFFL}
-#'     \item{ RACEGR1 }{RACEGR1}
-#'     \item{ REGION1 }{REGION1}
-#'     \item{ LDDTHGR1 }{LDDTHGR1}
-#'     \item{ DTH30FL }{DTH30FL}
-#'     \item{ DTHA30FL }{DTHA30FL}
-#'     \item{ DTHB30FL }{DTHB30FL}
+#'     \item{ STUDYID }{undocumented field}
+#'     \item{ DOMAIN }{undocumented field}
+#'     \item{ USUBJID }{undocumented field}
+#'     \item{ QSSEQ }{undocumented field}
+#'     \item{ QSTESTCD }{undocumented field}
+#'     \item{ QSTEST }{undocumented field}
+#'     \item{ QSCAT }{undocumented field}
+#'     \item{ QSSCAT }{undocumented field}
+#'     \item{ QSORRES }{undocumented field}
+#'     \item{ QSORRESU }{undocumented field}
+#'     \item{ QSSTRESC }{undocumented field}
+#'     \item{ QSSTRESN }{undocumented field}
+#'     \item{ QSSTRESU }{undocumented field}
+#'     \item{ QSBLFL }{undocumented field}
+#'     \item{ QSDRVFL }{undocumented field}
+#'     \item{ VISITNUM }{undocumented field}
+#'     \item{ VISIT }{undocumented field}
+#'     \item{ VISITDY }{undocumented field}
+#'     \item{ QSDTC }{undocumented field}
+#'     \item{ QSDY }{undocumented field}
+#'     \item{ TRTSDT }{undocumented field}
+#'     \item{ TRTEDT }{undocumented field}
+#'     \item{ TRT01A }{undocumented field}
+#'     \item{ TRT01P }{undocumented field}
+#'     \item{ ADT }{undocumented field}
+#'     \item{ ADY }{undocumented field}
+#'     \item{ PARAMCD }{undocumented field}
+#'     \item{ AVAL }{undocumented field}
+#'     \item{ AVALC }{undocumented field}
+#'     \item{ AVISIT }{undocumented field}
+#'     \item{ AVISITN }{undocumented field}
+#'     \item{ ONTRTFL }{undocumented field}
+#'     \item{ ABLFL }{undocumented field}
+#'     \item{ BASE }{undocumented field}
+#'     \item{ CHG }{undocumented field}
+#'     \item{ PCHG }{undocumented field}
+#'     \item{ ANL01FL }{undocumented field}
+#'     \item{ ASEQ }{undocumented field}
+#'     \item{ PARAM }{undocumented field}
+#'     \item{ PARCAT1 }{undocumented field}
+#'     \item{ PARCAT2 }{undocumented field}
+#'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
+#'     \item{ RFENDTC }{Subject Reference End Date/Time}
+#'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
+#'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RFPENDTC }{Date/Time of End of Participation}
+#'     \item{ DTHDTC }{Date/Time of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ COUNTRY }{Country}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ TRTSDTM }{undocumented field}
+#'     \item{ TRTSTMF }{undocumented field}
+#'     \item{ TRTEDTM }{undocumented field}
+#'     \item{ TRTETMF }{undocumented field}
+#'     \item{ TRTDURD }{undocumented field}
+#'     \item{ SCRFDT }{undocumented field}
+#'     \item{ EOSDT }{undocumented field}
+#'     \item{ EOSSTT }{undocumented field}
+#'     \item{ FRVDT }{undocumented field}
+#'     \item{ RANDDT }{undocumented field}
+#'     \item{ DTHDT }{undocumented field}
+#'     \item{ DTHADY }{undocumented field}
+#'     \item{ LDDTHELD }{undocumented field}
+#'     \item{ LSTALVDT }{undocumented field}
+#'     \item{ AGEGR1 }{undocumented field}
+#'     \item{ SAFFL }{undocumented field}
+#'     \item{ RACEGR1 }{undocumented field}
+#'     \item{ REGION1 }{undocumented field}
+#'     \item{ LDDTHGR1 }{undocumented field}
+#'     \item{ DTH30FL }{undocumented field}
+#'     \item{ DTHA30FL }{undocumented field}
+#'     \item{ DTHB30FL }{undocumented field}
 #'   }
 #'
-#' @source Generated from create_adams_data.R script.
+#' @source Generated from admiralophtha package (template ad_advfq.R).
 #' @references None
 #'
 #' @examples
