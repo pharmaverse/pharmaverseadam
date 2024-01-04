@@ -23,7 +23,7 @@ get_attr <- function(data, col_name) {
   att <- attr(data[[col_name]], "label")
   if (is.null(att)) {
     att <- "undocumented field"
-  } else if ( att == "null" ) {
+  } else if (att == "null") {
     att <- "undocumented field"
   }
   return(att)
@@ -87,7 +87,7 @@ run_template <- function(tp) {
 
     if (is.null(exit_code)) {
       dataset_dir <- tools::R_user_dir(sprintf("%s_templates_data", pkg), which = "cache")
-      rda_file <- gsub(".R", ".rda",tp_basename)
+      rda_file <- gsub(".R", ".rda", tp_basename)
       rda_file <- gsub("ad_", "", rda_file)
       data <- load_rda(file.path(dataset_dir, rda_file))
 
