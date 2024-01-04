@@ -6,47 +6,47 @@
 #' @docType data
 #' @format A data frame with 85 columns:
 #'   \describe{
-#'     \item{ STUDYID }{undocumented field}
-#'     \item{ DOMAIN }{undocumented field}
-#'     \item{ USUBJID }{undocumented field}
-#'     \item{ QSSEQ }{undocumented field}
-#'     \item{ QSTESTCD }{undocumented field}
-#'     \item{ QSTEST }{undocumented field}
-#'     \item{ QSCAT }{undocumented field}
-#'     \item{ QSSCAT }{undocumented field}
-#'     \item{ QSORRES }{undocumented field}
-#'     \item{ QSORRESU }{undocumented field}
-#'     \item{ QSSTRESC }{undocumented field}
-#'     \item{ QSSTRESN }{undocumented field}
-#'     \item{ QSSTRESU }{undocumented field}
-#'     \item{ QSBLFL }{undocumented field}
-#'     \item{ QSDRVFL }{undocumented field}
-#'     \item{ VISITNUM }{undocumented field}
-#'     \item{ VISIT }{undocumented field}
-#'     \item{ VISITDY }{undocumented field}
-#'     \item{ QSDTC }{undocumented field}
-#'     \item{ QSDY }{undocumented field}
-#'     \item{ TRTSDT }{undocumented field}
-#'     \item{ TRTEDT }{undocumented field}
-#'     \item{ TRT01A }{undocumented field}
-#'     \item{ TRT01P }{undocumented field}
-#'     \item{ ADT }{undocumented field}
-#'     \item{ ADY }{undocumented field}
-#'     \item{ PARAMCD }{undocumented field}
-#'     \item{ AVAL }{undocumented field}
-#'     \item{ AVALC }{undocumented field}
-#'     \item{ AVISIT }{undocumented field}
-#'     \item{ AVISITN }{undocumented field}
-#'     \item{ ONTRTFL }{undocumented field}
-#'     \item{ ABLFL }{undocumented field}
-#'     \item{ BASE }{undocumented field}
-#'     \item{ CHG }{undocumented field}
-#'     \item{ PCHG }{undocumented field}
-#'     \item{ ANL01FL }{undocumented field}
-#'     \item{ ASEQ }{undocumented field}
-#'     \item{ PARAM }{undocumented field}
-#'     \item{ PARCAT1 }{undocumented field}
-#'     \item{ PARCAT2 }{undocumented field}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ QSSEQ }{Sequence Number}
+#'     \item{ QSTESTCD }{Question Short Name}
+#'     \item{ QSTEST }{Question Name}
+#'     \item{ QSCAT }{Category of Question}
+#'     \item{ QSSCAT }{Subcategory for Question}
+#'     \item{ QSORRES }{Finding in Original Units}
+#'     \item{ QSORRESU }{Original Units}
+#'     \item{ QSSTRESC }{Character Result/Finding in Std Format}
+#'     \item{ QSSTRESN }{Numeric Finding in Standard Units}
+#'     \item{ QSSTRESU }{Standard Units}
+#'     \item{ QSBLFL }{Baseline Flag}
+#'     \item{ QSDRVFL }{Derived Flag}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
+#'     \item{ QSDTC }{Date/Time of Finding}
+#'     \item{ QSDY }{Study Day of Finding}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ AVAL }{Analysis Value}
+#'     \item{ AVALC }{Analysis Value (C)}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
+#'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ CHG }{Change from Baseline}
+#'     \item{ PCHG }{Percent Change from Baseline}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ ASEQ }{Analysis Sequence Number}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARCAT1 }{Parameter Category 1}
+#'     \item{ PARCAT2 }{Parameter Category 2}
 #'     \item{ SUBJID }{Subject Identifier for the Study}
 #'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
 #'     \item{ RFENDTC }{Subject Reference End Date/Time}
@@ -69,28 +69,28 @@
 #'     \item{ COUNTRY }{Country}
 #'     \item{ DMDTC }{Date/Time of Collection}
 #'     \item{ DMDY }{Study Day of Collection}
-#'     \item{ TRTSDTM }{undocumented field}
-#'     \item{ TRTSTMF }{undocumented field}
-#'     \item{ TRTEDTM }{undocumented field}
-#'     \item{ TRTETMF }{undocumented field}
-#'     \item{ TRTDURD }{undocumented field}
-#'     \item{ SCRFDT }{undocumented field}
-#'     \item{ EOSDT }{undocumented field}
-#'     \item{ EOSSTT }{undocumented field}
-#'     \item{ FRVDT }{undocumented field}
-#'     \item{ RANDDT }{undocumented field}
-#'     \item{ DTHDT }{undocumented field}
-#'     \item{ DTHADY }{undocumented field}
-#'     \item{ LDDTHELD }{undocumented field}
-#'     \item{ LSTALVDT }{undocumented field}
-#'     \item{ AGEGR1 }{undocumented field}
-#'     \item{ SAFFL }{undocumented field}
-#'     \item{ RACEGR1 }{undocumented field}
-#'     \item{ REGION1 }{undocumented field}
-#'     \item{ LDDTHGR1 }{undocumented field}
-#'     \item{ DTH30FL }{undocumented field}
-#'     \item{ DTHA30FL }{undocumented field}
-#'     \item{ DTHB30FL }{undocumented field}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ SCRFDT }{Screen Failure Date}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
 #'
 #' @source Generated from admiralophtha package (template ad_advfq.R).

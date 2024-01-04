@@ -6,60 +6,60 @@
 #' @docType data
 #' @format A data frame with 98 columns:
 #'   \describe{
-#'     \item{ STUDYID }{undocumented field}
-#'     \item{ DOMAIN }{undocumented field}
-#'     \item{ USUBJID }{undocumented field}
-#'     \item{ OESEQ }{undocumented field}
-#'     \item{ OECAT }{undocumented field}
-#'     \item{ OESCAT }{undocumented field}
-#'     \item{ OEDTC }{undocumented field}
-#'     \item{ VISIT }{undocumented field}
-#'     \item{ VISITNUM }{undocumented field}
-#'     \item{ VISITDY }{undocumented field}
-#'     \item{ OESTRESN }{undocumented field}
-#'     \item{ OESTRESC }{undocumented field}
-#'     \item{ OEORRES }{undocumented field}
-#'     \item{ OETEST }{undocumented field}
-#'     \item{ OETESTCD }{undocumented field}
-#'     \item{ OETSTDTL }{undocumented field}
-#'     \item{ OELAT }{undocumented field}
-#'     \item{ OELOC }{undocumented field}
-#'     \item{ OEDY }{undocumented field}
-#'     \item{ OEMETHOD }{undocumented field}
-#'     \item{ OEORRESU }{undocumented field}
-#'     \item{ OESTRESU }{undocumented field}
-#'     \item{ OESTAT }{undocumented field}
-#'     \item{ OETPT }{undocumented field}
-#'     \item{ OETPTNUM }{undocumented field}
-#'     \item{ TRTSDT }{undocumented field}
-#'     \item{ TRTEDT }{undocumented field}
-#'     \item{ TRT01A }{undocumented field}
-#'     \item{ TRT01P }{undocumented field}
-#'     \item{ STUDYEYE }{undocumented field}
-#'     \item{ AVAL }{undocumented field}
-#'     \item{ AVALC }{undocumented field}
-#'     \item{ AVALU }{undocumented field}
-#'     \item{ DTYPE }{undocumented field}
-#'     \item{ AFEYE }{undocumented field}
-#'     \item{ PARAM }{undocumented field}
-#'     \item{ PARAMCD }{undocumented field}
-#'     \item{ ADT }{undocumented field}
-#'     \item{ ADY }{undocumented field}
-#'     \item{ ATPTN }{undocumented field}
-#'     \item{ ATPT }{undocumented field}
-#'     \item{ AVISIT }{undocumented field}
-#'     \item{ AVISITN }{undocumented field}
-#'     \item{ BASETYPE }{undocumented field}
-#'     \item{ ONTRTFL }{undocumented field}
-#'     \item{ ABLFL }{undocumented field}
-#'     \item{ ANL01FL }{undocumented field}
-#'     \item{ ANL02FL }{undocumented field}
-#'     \item{ WORS01FL }{undocumented field}
-#'     \item{ BASE }{undocumented field}
-#'     \item{ BASEC }{undocumented field}
-#'     \item{ CHG }{undocumented field}
-#'     \item{ PCHG }{undocumented field}
-#'     \item{ ASEQ }{undocumented field}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ OESEQ }{Sequence Number}
+#'     \item{ OECAT }{Category for Ophthalmic Test or Exam}
+#'     \item{ OESCAT }{Subcategory for Ophthalmic Test or Exam}
+#'     \item{ OEDTC }{Date/Time of Collection}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
+#'     \item{ OESTRESN }{Numeric Result/Finding in Standard Units}
+#'     \item{ OESTRESC }{Character Result/Finding in Std Format}
+#'     \item{ OEORRES }{Result or Finding in Original Units}
+#'     \item{ OETEST }{Name of Ophthalmic Test or Exam}
+#'     \item{ OETESTCD }{Short Name of Ophthalmic Test or Exam}
+#'     \item{ OETSTDTL }{Ophthalmic Test or Exam Detail}
+#'     \item{ OELAT }{Laterality}
+#'     \item{ OELOC }{Location Used for the Measurement}
+#'     \item{ OEDY }{Study Day of Visit/Collection/Exam}
+#'     \item{ OEMETHOD }{Method of Test or Examination}
+#'     \item{ OEORRESU }{Original Units}
+#'     \item{ OESTRESU }{Standard Units}
+#'     \item{ OESTAT }{Completion Status}
+#'     \item{ OETPT }{Planned Time Point Name}
+#'     \item{ OETPTNUM }{Planned Time Point Number}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ STUDYEYE }{Study Eye Location}
+#'     \item{ AVAL }{Analysis Value}
+#'     \item{ AVALC }{Analysis Value (C)}
+#'     \item{ AVALU }{Analysis Value Unit}
+#'     \item{ DTYPE }{Derivation Type}
+#'     \item{ AFEYE }{Affected Eye}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ ATPTN }{Analysis Timepoint (N)}
+#'     \item{ ATPT }{Analysis Timepoint}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ BASETYPE }{Baseline Type}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
+#'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ ANL02FL }{Analysis Flag 02}
+#'     \item{ WORS01FL }{Worst Post Baseline Obs}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ BASEC }{Baseline Value (C)}
+#'     \item{ CHG }{Change from Baseline}
+#'     \item{ PCHG }{Percent Change from Baseline}
+#'     \item{ ASEQ }{Analysis Sequence Number}
 #'     \item{ SUBJID }{Subject Identifier for the Study}
 #'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
 #'     \item{ RFENDTC }{Subject Reference End Date/Time}
@@ -82,28 +82,28 @@
 #'     \item{ COUNTRY }{Country}
 #'     \item{ DMDTC }{Date/Time of Collection}
 #'     \item{ DMDY }{Study Day of Collection}
-#'     \item{ TRTSDTM }{undocumented field}
-#'     \item{ TRTSTMF }{undocumented field}
-#'     \item{ TRTEDTM }{undocumented field}
-#'     \item{ TRTETMF }{undocumented field}
-#'     \item{ TRTDURD }{undocumented field}
-#'     \item{ SCRFDT }{undocumented field}
-#'     \item{ EOSDT }{undocumented field}
-#'     \item{ EOSSTT }{undocumented field}
-#'     \item{ FRVDT }{undocumented field}
-#'     \item{ RANDDT }{undocumented field}
-#'     \item{ DTHDT }{undocumented field}
-#'     \item{ DTHADY }{undocumented field}
-#'     \item{ LDDTHELD }{undocumented field}
-#'     \item{ LSTALVDT }{undocumented field}
-#'     \item{ AGEGR1 }{undocumented field}
-#'     \item{ SAFFL }{undocumented field}
-#'     \item{ RACEGR1 }{undocumented field}
-#'     \item{ REGION1 }{undocumented field}
-#'     \item{ LDDTHGR1 }{undocumented field}
-#'     \item{ DTH30FL }{undocumented field}
-#'     \item{ DTHA30FL }{undocumented field}
-#'     \item{ DTHB30FL }{undocumented field}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ SCRFDT }{Screen Failure Date}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
 #'
 #' @source Generated from admiralophtha package (template ad_adoe.R).
