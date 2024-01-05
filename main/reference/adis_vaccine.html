@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">pharmaverseadam</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +24,6 @@
 <li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/main">main</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/cran-release">cran-release</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/v0.1.1">v0.1.1</a> </div></li>
-<!-- end dropdown for versions -->
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
@@ -64,320 +56,317 @@
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 103 columns:</p><dl><dt> STUDYID </dt>
-<dd><p>STUDYID</p></dd>
+    <p>A data frame with 102 columns:</p><dl><dt> STUDYID </dt>
+<dd><p>Study Identifier</p></dd>
 
 <dt> DOMAIN </dt>
-<dd><p>DOMAIN</p></dd>
+<dd><p>Domain Abbreviation</p></dd>
 
 <dt> USUBJID </dt>
-<dd><p>USUBJID</p></dd>
+<dd><p>Unique Subject Identifier</p></dd>
 
 <dt> ISSEQ </dt>
-<dd><p>ISSEQ</p></dd>
+<dd><p>Sequence Number</p></dd>
 
 <dt> ISTESTCD </dt>
-<dd><p>ISTESTCD</p></dd>
+<dd><p>Immunogenicity Test/Exam Short Name</p></dd>
 
 <dt> ISTEST </dt>
-<dd><p>ISTEST</p></dd>
+<dd><p>Immunogenicity Test or Examination Name</p></dd>
 
 <dt> ISCAT </dt>
-<dd><p>ISCAT</p></dd>
+<dd><p>Category for Immunogenicity Test</p></dd>
 
 <dt> ISORRES </dt>
-<dd><p>ISORRES</p></dd>
+<dd><p>Results or Findings in Original Units</p></dd>
 
 <dt> ISORRESU </dt>
-<dd><p>ISORRESU</p></dd>
+<dd><p>Original Units</p></dd>
 
 <dt> ISSTRESC </dt>
-<dd><p>ISSTRESC</p></dd>
+<dd><p>Character Result/Finding in Std Format</p></dd>
 
 <dt> ISSTRESN </dt>
-<dd><p>ISSTRESN</p></dd>
+<dd><p>Numeric Results/Findings in Std. Units</p></dd>
 
 <dt> ISSTRESU </dt>
-<dd><p>ISSTRESU</p></dd>
+<dd><p>Standard Units</p></dd>
 
 <dt> ISSTAT </dt>
-<dd><p>ISSTAT</p></dd>
+<dd><p>Completion Status</p></dd>
 
 <dt> ISREASND </dt>
-<dd><p>ISREASND</p></dd>
+<dd><p>Reason Not Done</p></dd>
 
 <dt> ISNAM </dt>
-<dd><p>ISNAM</p></dd>
+<dd><p>Vendor Name</p></dd>
 
 <dt> ISSPEC </dt>
-<dd><p>ISSPEC</p></dd>
+<dd><p>Specimen Type</p></dd>
 
 <dt> ISMETHOD </dt>
-<dd><p>ISMETHOD</p></dd>
+<dd><p>Method of Test or Examination</p></dd>
 
 <dt> ISBLFL </dt>
-<dd><p>ISBLFL</p></dd>
+<dd><p>Baseline Flag</p></dd>
 
 <dt> ISLLOQ </dt>
-<dd><p>ISLLOQ</p></dd>
+<dd><p>Lower Limit of Quantitation</p></dd>
 
 <dt> VISITNUM </dt>
-<dd><p>VISITNUM</p></dd>
+<dd><p>Visit Number</p></dd>
 
 <dt> EPOCH </dt>
-<dd><p>EPOCH</p></dd>
+<dd><p>Epoch</p></dd>
 
 <dt> ISDTC </dt>
-<dd><p>ISDTC</p></dd>
+<dd><p>Date/Time of Collection</p></dd>
 
 <dt> ISDY </dt>
-<dd><p>ISDY</p></dd>
+<dd><p>Study Day of Visit/Collection/Exam</p></dd>
 
 <dt> ISULOQ </dt>
-<dd><p>ISULOQ</p></dd>
+<dd><p>Upper Limit of Quantitation</p></dd>
 
 <dt> LOD </dt>
-<dd><p>LOD</p></dd>
+<dd><p>Limit of Detection</p></dd>
 
 <dt> AVISITN </dt>
-<dd><p>AVISITN</p></dd>
+<dd><p>Analysis Visit (N)</p></dd>
 
 <dt> AVISIT </dt>
-<dd><p>AVISIT</p></dd>
+<dd><p>Analysis Visit</p></dd>
 
 <dt> ATPTN </dt>
-<dd><p>ATPTN</p></dd>
+<dd><p>Analysis Timepoint (N)</p></dd>
 
 <dt> ATPT </dt>
-<dd><p>ATPT</p></dd>
+<dd><p>Analysis Timepoint</p></dd>
 
 <dt> ATPTREF </dt>
-<dd><p>ATPTREF</p></dd>
+<dd><p>Analysis Timepoint Reference</p></dd>
 
 <dt> ADT </dt>
-<dd><p>ADT</p></dd>
+<dd><p>Analysis Date</p></dd>
 
 <dt> RFSTDTC </dt>
-<dd><p>RFSTDTC</p></dd>
+<dd><p>Subject Reference Start Date/Time</p></dd>
 
 <dt> PPROTFL </dt>
-<dd><p>PPROTFL</p></dd>
+<dd><p>Per-Protocol Population Flag</p></dd>
 
 <dt> ADY </dt>
-<dd><p>ADY</p></dd>
+<dd><p>Analysis Relative Day</p></dd>
 
 <dt> PARAMCD </dt>
-<dd><p>PARAMCD</p></dd>
+<dd><p>Parameter Code</p></dd>
 
 <dt> PARAM </dt>
-<dd><p>PARAM</p></dd>
+<dd><p>Parameter</p></dd>
 
 <dt> PARAMN </dt>
-<dd><p>PARAMN</p></dd>
+<dd><p>Parameter (N)</p></dd>
 
 <dt> PARCAT1 </dt>
-<dd><p>PARCAT1</p></dd>
+<dd><p>Parameter Category 1</p></dd>
 
 <dt> CUTOFF02 </dt>
-<dd><p>CUTOFF02</p></dd>
+<dd><p>First Cutoff Value</p></dd>
 
 <dt> CUTOFF03 </dt>
-<dd><p>CUTOFF03</p></dd>
+<dd><p>Second Cutoff Value</p></dd>
 
 <dt> AVAL </dt>
-<dd><p>AVAL</p></dd>
+<dd><p>Analysis Value</p></dd>
 
 <dt> AVALU </dt>
-<dd><p>AVALU</p></dd>
+<dd><p>Analysis Value Unit</p></dd>
 
 <dt> SERCAT1 </dt>
-<dd><p>SERCAT1</p></dd>
+<dd><p>Pre-vaccination seropositivity status</p></dd>
 
 <dt> SERCAT1N </dt>
-<dd><p>SERCAT1N</p></dd>
+<dd><p>Pre-vaccination sero status (n)</p></dd>
 
 <dt> DTYPE </dt>
-<dd><p>DTYPE</p></dd>
+<dd><p>Derivation Type</p></dd>
 
 <dt> BASETYPE </dt>
-<dd><p>BASETYPE</p></dd>
+<dd><p>Baseline Type</p></dd>
 
 <dt> BASE </dt>
-<dd><p>BASE</p></dd>
+<dd><p>Baseline Value</p></dd>
 
 <dt> ABLFL </dt>
-<dd><p>ABLFL</p></dd>
+<dd><p>Baseline Record Flag</p></dd>
 
 <dt> BASECAT1 </dt>
-<dd><p>BASECAT1</p></dd>
+<dd><p>Baseline Category 1</p></dd>
 
 <dt> CHG </dt>
-<dd><p>CHG</p></dd>
+<dd><p>Change from Baseline</p></dd>
 
 <dt> R2BASE </dt>
-<dd><p>R2BASE</p></dd>
+<dd><p>Ratio to Baseline</p></dd>
 
 <dt> CRIT1FL </dt>
-<dd><p>CRIT1FL</p></dd>
+<dd><p>Criterion 1 Evaluation Result Flag</p></dd>
 
 <dt> CRIT1FN </dt>
-<dd><p>CRIT1FN</p></dd>
+<dd><p>Criterion 1 Evaluation Result Flag (N)</p></dd>
 
 <dt> CRIT1 </dt>
-<dd><p>CRIT1</p></dd>
+<dd><p>Analysis Criterion 1</p></dd>
 
 <dt> APERIOD </dt>
-<dd><p>APERIOD</p></dd>
+<dd><p>Period</p></dd>
 
 <dt> APERSDT </dt>
-<dd><p>APERSDT</p></dd>
+<dd><p>Period Start Date</p></dd>
 
 <dt> APEREDT </dt>
-<dd><p>APEREDT</p></dd>
+<dd><p>Period End Date</p></dd>
 
 <dt> TRTA </dt>
-<dd><p>TRTA</p></dd>
+<dd><p>Actual Treatment</p></dd>
 
 <dt> TRTP </dt>
-<dd><p>TRTP</p></dd>
+<dd><p>Planned Treatment</p></dd>
 
 <dt> PPSRFL </dt>
-<dd><p>PPSRFL</p></dd>
+<dd><p>Per-Protocol Record-Level Flag</p></dd>
 
 <dt> SUBJID </dt>
-<dd><p>SUBJID</p></dd>
+<dd><p>Subject Identifier for the Study</p></dd>
 
 <dt> RFENDTC </dt>
-<dd><p>RFENDTC</p></dd>
+<dd><p>Subject Reference End Date/Time</p></dd>
 
 <dt> RFXSTDTC </dt>
-<dd><p>RFXSTDTC</p></dd>
+<dd><p>Date/Time of First Study Treatment</p></dd>
 
 <dt> RFXENDTC </dt>
-<dd><p>RFXENDTC</p></dd>
+<dd><p>Date/Time of Last Study Treatment</p></dd>
 
 <dt> RFICDTC </dt>
-<dd><p>RFICDTC</p></dd>
+<dd><p>Date/Time of Informed Consent</p></dd>
 
 <dt> RFPENDTC </dt>
-<dd><p>RFPENDTC</p></dd>
+<dd><p>Date/Time of End of Participation</p></dd>
 
 <dt> DTHDTC </dt>
-<dd><p>DTHDTC</p></dd>
+<dd><p>Date/Time of Death</p></dd>
 
 <dt> DTHFL </dt>
-<dd><p>DTHFL</p></dd>
+<dd><p>Subject Death Flag</p></dd>
 
 <dt> SITEID </dt>
-<dd><p>SITEID</p></dd>
+<dd><p>Study Site Identifier</p></dd>
 
 <dt> INVID </dt>
-<dd><p>INVID</p></dd>
+<dd><p>Investigator Identifier</p></dd>
 
 <dt> INVNAM </dt>
-<dd><p>INVNAM</p></dd>
+<dd><p>Investigator Name</p></dd>
 
 <dt> BRTHDTC </dt>
-<dd><p>BRTHDTC</p></dd>
+<dd><p>Date/Time of Birth</p></dd>
 
 <dt> AGE </dt>
-<dd><p>AGE</p></dd>
+<dd><p>Age</p></dd>
 
 <dt> AGEU </dt>
-<dd><p>AGEU</p></dd>
+<dd><p>Age Units</p></dd>
 
 <dt> SEX </dt>
-<dd><p>SEX</p></dd>
+<dd><p>Sex</p></dd>
 
 <dt> RACE </dt>
-<dd><p>RACE</p></dd>
+<dd><p>Race</p></dd>
 
 <dt> ETHNIC </dt>
-<dd><p>ETHNIC</p></dd>
+<dd><p>Ethnicity</p></dd>
 
 <dt> ARMCD </dt>
-<dd><p>ARMCD</p></dd>
+<dd><p>Planned Arm Code</p></dd>
 
 <dt> ARM </dt>
-<dd><p>ARM</p></dd>
+<dd><p>Description of Planned Arm</p></dd>
 
 <dt> ACTARMCD </dt>
-<dd><p>ACTARMCD</p></dd>
+<dd><p>Actual Arm Code</p></dd>
 
 <dt> ACTARM </dt>
-<dd><p>ACTARM</p></dd>
+<dd><p>Description of Actual Arm</p></dd>
 
 <dt> COUNTRY </dt>
-<dd><p>COUNTRY</p></dd>
+<dd><p>Country</p></dd>
 
 <dt> DMDTC </dt>
-<dd><p>DMDTC</p></dd>
+<dd><p>Date/Time of Collection</p></dd>
 
 <dt> DMDY </dt>
-<dd><p>DMDY</p></dd>
+<dd><p>Study Day of Collection</p></dd>
 
 <dt> TRT01P </dt>
-<dd><p>TRT01P</p></dd>
+<dd><p>Planned Treatment for Period 01</p></dd>
 
 <dt> TRT02P </dt>
-<dd><p>TRT02P</p></dd>
+<dd><p>Planned Treatment for Period 02</p></dd>
 
 <dt> TRT01A </dt>
-<dd><p>TRT01A</p></dd>
+<dd><p>Actual Treatment for Period 01</p></dd>
 
 <dt> TRT02A </dt>
-<dd><p>TRT02A</p></dd>
+<dd><p>Actual Treatment for Period 02</p></dd>
 
 <dt> TRTSDTM </dt>
-<dd><p>TRTSDTM</p></dd>
+<dd><p>Datetime of First Exposure to Treatment</p></dd>
 
 <dt> TRTEDTM </dt>
-<dd><p>TRTEDTM</p></dd>
+<dd><p>Datetime of Last Exposure to Treatment</p></dd>
 
 <dt> TRTSDT </dt>
-<dd><p>TRTSDT</p></dd>
+<dd><p>Date of First Exposure to Treatment</p></dd>
 
 <dt> TRTEDT </dt>
-<dd><p>TRTEDT</p></dd>
-
-<dt> TRTDURD </dt>
-<dd><p>TRTDURD</p></dd>
+<dd><p>Date of Last Exposure to Treatment</p></dd>
 
 <dt> SAFFL </dt>
-<dd><p>SAFFL</p></dd>
+<dd><p>Safety Population Flag</p></dd>
 
 <dt> RACEGR1 </dt>
-<dd><p>RACEGR1</p></dd>
+<dd><p>Pooled Race Group 1</p></dd>
 
 <dt> AGEGR1 </dt>
-<dd><p>AGEGR1</p></dd>
+<dd><p>Pooled Age Group 1</p></dd>
 
 <dt> REGION1 </dt>
-<dd><p>REGION1</p></dd>
+<dd><p>Geographic Region 1</p></dd>
 
 <dt> VAX01DT </dt>
-<dd><p>VAX01DT</p></dd>
+<dd><p>Vaccination Date 01</p></dd>
 
 <dt> VAX02DT </dt>
-<dd><p>VAX02DT</p></dd>
+<dd><p>Vaccination Date 02</p></dd>
 
 <dt> AP01SDT </dt>
-<dd><p>AP01SDT</p></dd>
+<dd><p>Period 01 Start Date</p></dd>
 
 <dt> AP01EDT </dt>
-<dd><p>AP01EDT</p></dd>
+<dd><p>Period 01 End Date</p></dd>
 
 <dt> AP02SDT </dt>
-<dd><p>AP02SDT</p></dd>
+<dd><p>Period 02 Start Date</p></dd>
 
 <dt> AP02EDT </dt>
-<dd><p>AP02EDT</p></dd>
+<dd><p>Period 02 End Date</p></dd>
 
 
 </dl></div>
     <div class="section level2">
     <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
-    <p>Generated from pharmaverse/admiralvaccine.</p>
+    <p>Generated from admiralvaccine package (template ad_adis.R).</p>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>

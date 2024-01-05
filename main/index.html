@@ -41,7 +41,7 @@
     
     <a class="navbar-brand me-2" href="index.html">pharmaverseadam</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,14 +56,6 @@
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/main">main</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/cran-release">cran-release</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/v0.1.1">v0.1.1</a> </div></li>
-<!-- end dropdown for versions -->
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
@@ -96,7 +88,15 @@
 <h1 id="purpose">Purpose<a class="anchor" aria-label="anchor" href="#purpose"></a>
 </h1>
 <p>To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages.</p>
-<p>The ADaM contents of this package is automatically populated by a CICD action that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a> and <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> templates and saves the resulting datasets here. The ADaM datasets in <a href="https://pharmaverse.github.io/pharmaverseadam/main/">pharmaverseadam</a> are updated any time the templates are updated in <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> or the source data in <a href="https://pharmaverse.github.io/pharmaversesdtm/main/" class="external-link">pharmaversesdtm</a> is updated.</p>
+</div>
+<div class="section level1">
+<h1 id="package-contents">Package Contents<a class="anchor" aria-label="anchor" href="#package-contents"></a>
+</h1>
+<p>The ADaM contents of this package is populated by an action that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a> and <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> templates and saves the resulting datasets here. This action can be triggered manually by the package maintainers in two scenarios:</p>
+<ul>
+<li>Regularly, upon new releases of <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a> and <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a>;</li>
+<li>Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using the development version of the templates.</li>
+</ul>
 </div>
 <div class="section level1">
 <h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>

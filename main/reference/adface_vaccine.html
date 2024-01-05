@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">pharmaverseadam</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +24,6 @@
 <li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/main">main</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/cran-release">cran-release</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/v0.1.1">v0.1.1</a> </div></li>
-<!-- end dropdown for versions -->
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
@@ -65,190 +57,190 @@
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
     <p>A data frame with 60 columns:</p><dl><dt> STUDYID </dt>
-<dd><p>STUDYID</p></dd>
+<dd><p>Study Identifier</p></dd>
 
 <dt> USUBJID </dt>
-<dd><p>USUBJID</p></dd>
+<dd><p>Unique Subject Identifier</p></dd>
 
 <dt> SUBJID </dt>
-<dd><p>SUBJID</p></dd>
+<dd><p>Subject Identifier for the Study</p></dd>
 
 <dt> SITEID </dt>
-<dd><p>SITEID</p></dd>
+<dd><p>Study Site Identifier</p></dd>
 
 <dt> AGE </dt>
-<dd><p>AGE</p></dd>
+<dd><p>Age</p></dd>
 
 <dt> AGEU </dt>
-<dd><p>AGEU</p></dd>
+<dd><p>Age Units</p></dd>
 
 <dt> SEX </dt>
-<dd><p>SEX</p></dd>
+<dd><p>Sex</p></dd>
 
 <dt> RACE </dt>
-<dd><p>RACE</p></dd>
+<dd><p>Race</p></dd>
 
 <dt> SAFFL </dt>
-<dd><p>SAFFL</p></dd>
+<dd><p>Safety Population Flag</p></dd>
 
 <dt> ARM </dt>
-<dd><p>ARM</p></dd>
+<dd><p>Description of Planned Arm</p></dd>
 
 <dt> ARMCD </dt>
-<dd><p>ARMCD</p></dd>
+<dd><p>Planned Arm Code</p></dd>
 
 <dt> ACTARM </dt>
-<dd><p>ACTARM</p></dd>
+<dd><p>Description of Actual Arm</p></dd>
 
 <dt> ACTARMCD </dt>
-<dd><p>ACTARMCD</p></dd>
+<dd><p>Actual Arm Code</p></dd>
 
 <dt> TRTSDT </dt>
-<dd><p>TRTSDT</p></dd>
+<dd><p>Date of First Exposure to Treatment</p></dd>
 
 <dt> TRTSDTM </dt>
-<dd><p>TRTSDTM</p></dd>
+<dd><p>Datetime of First Exposure to Treatment</p></dd>
 
 <dt> TRTEDT </dt>
-<dd><p>TRTEDT</p></dd>
+<dd><p>Date of Last Exposure to Treatment</p></dd>
 
 <dt> TRTEDTM </dt>
-<dd><p>TRTEDTM</p></dd>
+<dd><p>Datetime of Last Exposure to Treatment</p></dd>
 
 <dt> FATEST </dt>
-<dd><p>FATEST</p></dd>
+<dd><p>Findings About Test Name</p></dd>
 
 <dt> FALNKID </dt>
-<dd><p>FALNKID</p></dd>
+<dd><p>Link ID</p></dd>
 
 <dt> FALNKGRP </dt>
-<dd><p>FALNKGRP</p></dd>
+<dd><p>Link Group ID</p></dd>
 
 <dt> FATESTCD </dt>
-<dd><p>FATESTCD</p></dd>
+<dd><p>Findings About Test Short Name</p></dd>
 
 <dt> PARAMCD </dt>
-<dd><p>PARAMCD</p></dd>
+<dd><p>Parameter Code</p></dd>
 
 <dt> PARAM </dt>
-<dd><p>PARAM</p></dd>
+<dd><p>Parameter</p></dd>
 
 <dt> PARAMN </dt>
-<dd><p>PARAMN</p></dd>
+<dd><p>Parameter (N)</p></dd>
 
 <dt> FAOBJ </dt>
-<dd><p>FAOBJ</p></dd>
+<dd><p>Object of the Observation</p></dd>
 
 <dt> PARCAT1 </dt>
-<dd><p>PARCAT1</p></dd>
+<dd><p>Parameter Category 1</p></dd>
 
 <dt> PARCAT2 </dt>
-<dd><p>PARCAT2</p></dd>
+<dd><p>Parameter Category 2</p></dd>
 
 <dt> AVALC </dt>
-<dd><p>AVALC</p></dd>
+<dd><p>Analysis Value (C)</p></dd>
 
 <dt> AVAL </dt>
-<dd><p>AVAL</p></dd>
+<dd><p>Analysis Value</p></dd>
 
 <dt> FASTAT </dt>
-<dd><p>FASTAT</p></dd>
+<dd><p>Completion Status</p></dd>
 
 <dt> FAREASND </dt>
-<dd><p>FAREASND</p></dd>
+<dd><p>Reason Not Performed</p></dd>
 
 <dt> FAEVAL </dt>
-<dd><p>FAEVAL</p></dd>
+<dd><p>Evaluator</p></dd>
 
 <dt> EPOCH </dt>
-<dd><p>EPOCH</p></dd>
+<dd><p>Epoch</p></dd>
 
 <dt> ADT </dt>
-<dd><p>ADT</p></dd>
+<dd><p>Analysis Date</p></dd>
 
 <dt> ADTM </dt>
-<dd><p>ADTM</p></dd>
+<dd><p>Analysis Datetime</p></dd>
 
 <dt> FAEVINTX </dt>
-<dd><p>FAEVINTX</p></dd>
+<dd><p>Evaluation Interval Text</p></dd>
 
 <dt> ADY </dt>
-<dd><p>ADY</p></dd>
+<dd><p>Analysis Relative Day</p></dd>
 
 <dt> ATPT </dt>
-<dd><p>ATPT</p></dd>
+<dd><p>Analysis Timepoint</p></dd>
 
 <dt> ATPTN </dt>
-<dd><p>ATPTN</p></dd>
+<dd><p>Analysis Timepoint (N)</p></dd>
 
 <dt> ATPTREF </dt>
-<dd><p>ATPTREF</p></dd>
+<dd><p>Analysis Timepoint Reference</p></dd>
 
 <dt> EXDOSE </dt>
-<dd><p>EXDOSE</p></dd>
+<dd><p>Dose</p></dd>
 
 <dt> EXTRT </dt>
-<dd><p>EXTRT</p></dd>
+<dd><p>Name of Treatment</p></dd>
 
 <dt> EXSTDTC </dt>
-<dd><p>EXSTDTC</p></dd>
+<dd><p>Start Date/Time of Treatment</p></dd>
 
 <dt> EXENDTC </dt>
-<dd><p>EXENDTC</p></dd>
+<dd><p>End Date/Time of Treatment</p></dd>
 
 <dt> TRTA </dt>
-<dd><p>TRTA</p></dd>
+<dd><p>Actual Treatment</p></dd>
 
 <dt> TRTP </dt>
-<dd><p>TRTP</p></dd>
+<dd><p>Planned Treatment</p></dd>
 
 <dt> APERIOD </dt>
-<dd><p>APERIOD</p></dd>
+<dd><p>Period</p></dd>
 
 <dt> APERSDT </dt>
-<dd><p>APERSDT</p></dd>
+<dd><p>Period Start Date</p></dd>
 
 <dt> APEREDT </dt>
-<dd><p>APEREDT</p></dd>
+<dd><p>Period End Date</p></dd>
 
 <dt> FAORRES </dt>
-<dd><p>FAORRES</p></dd>
+<dd><p>Result or Finding in Original Units</p></dd>
 
 <dt> TRT01P </dt>
-<dd><p>TRT01P</p></dd>
+<dd><p>Planned Treatment for Period 01</p></dd>
 
 <dt> TRT02P </dt>
-<dd><p>TRT02P</p></dd>
+<dd><p>Planned Treatment for Period 02</p></dd>
 
 <dt> TRT01A </dt>
-<dd><p>TRT01A</p></dd>
+<dd><p>Actual Treatment for Period 01</p></dd>
 
 <dt> TRT02A </dt>
-<dd><p>TRT02A</p></dd>
+<dd><p>Actual Treatment for Period 02</p></dd>
 
 <dt> VAX01DT </dt>
-<dd><p>VAX01DT</p></dd>
+<dd><p>Vaccination Date 01</p></dd>
 
 <dt> VAX02DT </dt>
-<dd><p>VAX02DT</p></dd>
+<dd><p>Vaccination Date 02</p></dd>
 
 <dt> EVENTFL </dt>
-<dd><p>EVENTFL</p></dd>
+<dd><p>Event Value Flag</p></dd>
 
 <dt> EVENTDFL </dt>
-<dd><p>EVENTDFL</p></dd>
+<dd><p>Day Event Value Flag</p></dd>
 
 <dt> ANL01FL </dt>
-<dd><p>ANL01FL</p></dd>
+<dd><p>Analysis Flag 01</p></dd>
 
 <dt> ANL02FL </dt>
-<dd><p>ANL02FL</p></dd>
+<dd><p>Analysis Flag 02</p></dd>
 
 
 </dl></div>
     <div class="section level2">
     <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
-    <p>Generated from pharmaverse/admiralvaccine.</p>
+    <p>Generated from admiralvaccine package (template ad_adface.R).</p>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>

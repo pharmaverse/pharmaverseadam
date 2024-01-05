@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">pharmaverseadam</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +24,6 @@
 <li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/main">main</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/cran-release">cran-release</a>
-<a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/pharmaverseadam/v0.1.1">v0.1.1</a> </div></li>
-<!-- end dropdown for versions -->
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
@@ -65,313 +57,313 @@
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
     <p>A data frame with 101 columns:</p><dl><dt> STUDYID </dt>
-<dd><p>STUDYID</p></dd>
+<dd><p>Study Identifier</p></dd>
 
 <dt> DOMAIN </dt>
-<dd><p>DOMAIN</p></dd>
+<dd><p>Domain Abbreviation</p></dd>
 
 <dt> USUBJID </dt>
-<dd><p>USUBJID</p></dd>
+<dd><p>Unique Subject Identifier</p></dd>
 
 <dt> AESEQ </dt>
-<dd><p>AESEQ</p></dd>
+<dd><p>Sequence Number</p></dd>
 
 <dt> AESPID </dt>
-<dd><p>AESPID</p></dd>
+<dd><p>Sponsor-Defined Identifier</p></dd>
 
 <dt> AETERM </dt>
-<dd><p>AETERM</p></dd>
+<dd><p>Reported Term for the Adverse Event</p></dd>
 
 <dt> AELLT </dt>
-<dd><p>AELLT</p></dd>
+<dd><p>Lowest Level Term</p></dd>
 
 <dt> AELLTCD </dt>
-<dd><p>AELLTCD</p></dd>
+<dd><p>Lowest Level Term Code</p></dd>
 
 <dt> AEDECOD </dt>
-<dd><p>AEDECOD</p></dd>
+<dd><p>Dictionary-Derived Term</p></dd>
 
 <dt> AEPTCD </dt>
-<dd><p>AEPTCD</p></dd>
+<dd><p>Preferred Term Code</p></dd>
 
 <dt> AEHLT </dt>
-<dd><p>AEHLT</p></dd>
+<dd><p>High Level Term</p></dd>
 
 <dt> AEHLTCD </dt>
-<dd><p>AEHLTCD</p></dd>
+<dd><p>High Level Term Code</p></dd>
 
 <dt> AEHLGT </dt>
-<dd><p>AEHLGT</p></dd>
+<dd><p>High Level Group Term</p></dd>
 
 <dt> AEHLGTCD </dt>
-<dd><p>AEHLGTCD</p></dd>
+<dd><p>High Level Group Term Code</p></dd>
 
 <dt> AEBODSYS </dt>
-<dd><p>AEBODSYS</p></dd>
+<dd><p>Body System or Organ Class</p></dd>
 
 <dt> AEBDSYCD </dt>
-<dd><p>AEBDSYCD</p></dd>
+<dd><p>Body System or Organ Class Code</p></dd>
 
 <dt> AESOC </dt>
-<dd><p>AESOC</p></dd>
+<dd><p>Primary System Organ Class</p></dd>
 
 <dt> AESOCCD </dt>
-<dd><p>AESOCCD</p></dd>
+<dd><p>Primary System Organ Class Code</p></dd>
 
 <dt> AESEV </dt>
-<dd><p>AESEV</p></dd>
+<dd><p>Severity/Intensity</p></dd>
 
 <dt> AESER </dt>
-<dd><p>AESER</p></dd>
+<dd><p>Serious Event</p></dd>
 
 <dt> AEACN </dt>
-<dd><p>AEACN</p></dd>
+<dd><p>Action Taken with Study Treatment</p></dd>
 
 <dt> AEREL </dt>
-<dd><p>AEREL</p></dd>
+<dd><p>Causality</p></dd>
 
 <dt> AEOUT </dt>
-<dd><p>AEOUT</p></dd>
+<dd><p>Outcome of Adverse Event</p></dd>
 
 <dt> AESCAN </dt>
-<dd><p>AESCAN</p></dd>
+<dd><p>Involves Cancer</p></dd>
 
 <dt> AESCONG </dt>
-<dd><p>AESCONG</p></dd>
+<dd><p>Congenital Anomaly or Birth Defect</p></dd>
 
 <dt> AESDISAB </dt>
-<dd><p>AESDISAB</p></dd>
+<dd><p>Persist or Signif Disability/Incapacity</p></dd>
 
 <dt> AESDTH </dt>
-<dd><p>AESDTH</p></dd>
+<dd><p>Results in Death</p></dd>
 
 <dt> AESHOSP </dt>
-<dd><p>AESHOSP</p></dd>
+<dd><p>Requires or Prolongs Hospitalization</p></dd>
 
 <dt> AESLIFE </dt>
-<dd><p>AESLIFE</p></dd>
+<dd><p>Is Life Threatening</p></dd>
 
 <dt> AESOD </dt>
-<dd><p>AESOD</p></dd>
+<dd><p>Occurred with Overdose</p></dd>
 
 <dt> AEDTC </dt>
-<dd><p>AEDTC</p></dd>
+<dd><p>Date/Time of Collection</p></dd>
 
 <dt> AESTDTC </dt>
-<dd><p>AESTDTC</p></dd>
+<dd><p>Start Date/Time of Adverse Event</p></dd>
 
 <dt> AEENDTC </dt>
-<dd><p>AEENDTC</p></dd>
+<dd><p>End Date/Time of Adverse Event</p></dd>
 
 <dt> AESTDY </dt>
-<dd><p>AESTDY</p></dd>
+<dd><p>Study Day of Start of Adverse Event</p></dd>
 
 <dt> AEENDY </dt>
-<dd><p>AEENDY</p></dd>
+<dd><p>Study Day of End of Adverse Event</p></dd>
 
 <dt> TRTSDT </dt>
-<dd><p>TRTSDT</p></dd>
+<dd><p>Date of First Exposure to Treatment</p></dd>
 
 <dt> TRTEDT </dt>
-<dd><p>TRTEDT</p></dd>
+<dd><p>Date of Last Exposure to Treatment</p></dd>
 
 <dt> DTHDT </dt>
-<dd><p>DTHDT</p></dd>
+<dd><p>Date of Death</p></dd>
 
 <dt> EOSDT </dt>
-<dd><p>EOSDT</p></dd>
+<dd><p>End of Study Date</p></dd>
 
 <dt> ASTDTM </dt>
-<dd><p>ASTDTM</p></dd>
+<dd><p>Analysis Start Date/Time</p></dd>
 
 <dt> ASTDTF </dt>
-<dd><p>ASTDTF</p></dd>
+<dd><p>Analysis Start Date Imputation Flag</p></dd>
 
 <dt> ASTTMF </dt>
-<dd><p>ASTTMF</p></dd>
+<dd><p>Analysis Start Time Imputation Flag</p></dd>
 
 <dt> AENDTM </dt>
-<dd><p>AENDTM</p></dd>
+<dd><p>Analysis End Date/Time</p></dd>
 
 <dt> AENDTF </dt>
-<dd><p>AENDTF</p></dd>
+<dd><p>Analysis End Date Imputation Flag</p></dd>
 
 <dt> AENTMF </dt>
-<dd><p>AENTMF</p></dd>
+<dd><p>Analysis End Time Imputation Flag</p></dd>
 
 <dt> ASTDT </dt>
-<dd><p>ASTDT</p></dd>
+<dd><p>Analysis Start Date</p></dd>
 
 <dt> AENDT </dt>
-<dd><p>AENDT</p></dd>
+<dd><p>Analysis End Date</p></dd>
 
 <dt> ASTDY </dt>
-<dd><p>ASTDY</p></dd>
+<dd><p>Analysis Start Relative Day</p></dd>
 
 <dt> AENDY </dt>
-<dd><p>AENDY</p></dd>
+<dd><p>Analysis End Relative Day</p></dd>
 
 <dt> ADURN </dt>
-<dd><p>ADURN</p></dd>
+<dd><p>Analysis Duration (N)</p></dd>
 
 <dt> ADURU </dt>
-<dd><p>ADURU</p></dd>
+<dd><p>Analysis Duration Units</p></dd>
 
 <dt> LDOSEDTM </dt>
-<dd><p>LDOSEDTM</p></dd>
+<dd><p>End Date/Time of Last Dose</p></dd>
 
 <dt> ASEV </dt>
-<dd><p>ASEV</p></dd>
+<dd><p>Analysis Severity/Intensity</p></dd>
 
 <dt> AREL </dt>
-<dd><p>AREL</p></dd>
+<dd><p>Analysis Causality</p></dd>
 
 <dt> TRTEMFL </dt>
-<dd><p>TRTEMFL</p></dd>
+<dd><p>Treatment Emergent Analysis Flag</p></dd>
 
 <dt> ASEVN </dt>
-<dd><p>ASEVN</p></dd>
+<dd><p>Analysis Severity/Intensity (N)</p></dd>
 
 <dt> AOCCIFL </dt>
-<dd><p>AOCCIFL</p></dd>
+<dd><p>1st Max Sev./Int. Occurrence Flag</p></dd>
 
 <dt> SUBJID </dt>
-<dd><p>SUBJID</p></dd>
+<dd><p>Subject Identifier for the Study</p></dd>
 
 <dt> RFSTDTC </dt>
-<dd><p>RFSTDTC</p></dd>
+<dd><p>Subject Reference Start Date/Time</p></dd>
 
 <dt> RFENDTC </dt>
-<dd><p>RFENDTC</p></dd>
+<dd><p>Subject Reference End Date/Time</p></dd>
 
 <dt> RFXSTDTC </dt>
-<dd><p>RFXSTDTC</p></dd>
+<dd><p>Date/Time of First Study Treatment</p></dd>
 
 <dt> RFXENDTC </dt>
-<dd><p>RFXENDTC</p></dd>
+<dd><p>Date/Time of Last Study Treatment</p></dd>
 
 <dt> RFICDTC </dt>
-<dd><p>RFICDTC</p></dd>
+<dd><p>Date/Time of Informed Consent</p></dd>
 
 <dt> RFPENDTC </dt>
-<dd><p>RFPENDTC</p></dd>
+<dd><p>Date/Time of End of Participation</p></dd>
 
 <dt> DTHDTC </dt>
-<dd><p>DTHDTC</p></dd>
+<dd><p>Date/Time of Death</p></dd>
 
 <dt> DTHFL </dt>
-<dd><p>DTHFL</p></dd>
+<dd><p>Subject Death Flag</p></dd>
 
 <dt> SITEID </dt>
-<dd><p>SITEID</p></dd>
+<dd><p>Study Site Identifier</p></dd>
 
 <dt> AGE </dt>
-<dd><p>AGE</p></dd>
+<dd><p>Age</p></dd>
 
 <dt> AGEU </dt>
-<dd><p>AGEU</p></dd>
+<dd><p>Age Units</p></dd>
 
 <dt> SEX </dt>
-<dd><p>SEX</p></dd>
+<dd><p>Sex</p></dd>
 
 <dt> RACE </dt>
-<dd><p>RACE</p></dd>
+<dd><p>Race</p></dd>
 
 <dt> ETHNIC </dt>
-<dd><p>ETHNIC</p></dd>
+<dd><p>Ethnicity</p></dd>
 
 <dt> ARMCD </dt>
-<dd><p>ARMCD</p></dd>
+<dd><p>Planned Arm Code</p></dd>
 
 <dt> ARM </dt>
-<dd><p>ARM</p></dd>
+<dd><p>Description of Planned Arm</p></dd>
 
 <dt> ACTARMCD </dt>
-<dd><p>ACTARMCD</p></dd>
+<dd><p>Actual Arm Code</p></dd>
 
 <dt> ACTARM </dt>
-<dd><p>ACTARM</p></dd>
+<dd><p>Description of Actual Arm</p></dd>
 
 <dt> COUNTRY </dt>
-<dd><p>COUNTRY</p></dd>
+<dd><p>Country</p></dd>
 
 <dt> DMDTC </dt>
-<dd><p>DMDTC</p></dd>
+<dd><p>Date/Time of Collection</p></dd>
 
 <dt> DMDY </dt>
-<dd><p>DMDY</p></dd>
+<dd><p>Study Day of Collection</p></dd>
 
 <dt> TRT01P </dt>
-<dd><p>TRT01P</p></dd>
+<dd><p>Planned Treatment for Period 01</p></dd>
 
 <dt> TRT01A </dt>
-<dd><p>TRT01A</p></dd>
+<dd><p>Actual Treatment for Period 01</p></dd>
 
 <dt> TRTSDTM </dt>
-<dd><p>TRTSDTM</p></dd>
+<dd><p>Datetime of First Exposure to Treatment</p></dd>
 
 <dt> TRTSTMF </dt>
-<dd><p>TRTSTMF</p></dd>
+<dd><p>Time of First Exposure Imput. Flag</p></dd>
 
 <dt> TRTEDTM </dt>
-<dd><p>TRTEDTM</p></dd>
+<dd><p>Datetime of Last Exposure to Treatment</p></dd>
 
 <dt> TRTETMF </dt>
-<dd><p>TRTETMF</p></dd>
+<dd><p>Time of Last Exposure Imput. Flag</p></dd>
 
 <dt> TRTDURD </dt>
-<dd><p>TRTDURD</p></dd>
+<dd><p>Total Treatment Duration (Days)</p></dd>
 
 <dt> SCRFDT </dt>
-<dd><p>SCRFDT</p></dd>
+<dd><p>Screen Failure Date</p></dd>
 
 <dt> EOSSTT </dt>
-<dd><p>EOSSTT</p></dd>
+<dd><p>End of Study Status</p></dd>
 
 <dt> FRVDT </dt>
-<dd><p>FRVDT</p></dd>
+<dd><p>Final Retrievel Visit Date</p></dd>
 
 <dt> RANDDT </dt>
-<dd><p>RANDDT</p></dd>
+<dd><p>Date of Randomization</p></dd>
 
 <dt> DTHADY </dt>
-<dd><p>DTHADY</p></dd>
+<dd><p>Relative Day of Death</p></dd>
 
 <dt> LDDTHELD </dt>
-<dd><p>LDDTHELD</p></dd>
+<dd><p>Elapsed Days from Last Dose to Death</p></dd>
 
 <dt> LSTALVDT </dt>
-<dd><p>LSTALVDT</p></dd>
+<dd><p>Date Last Known Alive</p></dd>
 
 <dt> AGEGR1 </dt>
-<dd><p>AGEGR1</p></dd>
+<dd><p>Pooled Age Group 1</p></dd>
 
 <dt> SAFFL </dt>
-<dd><p>SAFFL</p></dd>
+<dd><p>Safety Population Flag</p></dd>
 
 <dt> RACEGR1 </dt>
-<dd><p>RACEGR1</p></dd>
+<dd><p>Pooled Race Group 1</p></dd>
 
 <dt> REGION1 </dt>
-<dd><p>REGION1</p></dd>
+<dd><p>Geographic Region 1</p></dd>
 
 <dt> LDDTHGR1 </dt>
-<dd><p>LDDTHGR1</p></dd>
+<dd><p>Last Dose to Death - Days Elapsed Grp 1</p></dd>
 
 <dt> DTH30FL </dt>
-<dd><p>DTH30FL</p></dd>
+<dd><p>Death Within 30 Days of Last Trt Flag</p></dd>
 
 <dt> DTHA30FL </dt>
-<dd><p>DTHA30FL</p></dd>
+<dd><p>Death After 30 Days from Last Trt Flag</p></dd>
 
 <dt> DTHB30FL </dt>
-<dd><p>DTHB30FL</p></dd>
+<dd><p>Death Within 30 Days of First Trt Flag</p></dd>
 
 
 </dl></div>
     <div class="section level2">
     <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
-    <p>Generated from pharmaverse/admiral.</p>
+    <p>Generated from admiral package (template ad_adae.R).</p>
     </div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
