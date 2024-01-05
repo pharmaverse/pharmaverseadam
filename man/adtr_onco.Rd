@@ -5,112 +5,108 @@
 \alias{adtr_onco}
 \title{Dataset adtr_onco}
 \format{
-A data frame with 100 columns:
+A data frame with 96 columns:
 \describe{
-\item{ STUDYID }{STUDYID}
-\item{ DOMAIN }{DOMAIN}
-\item{ USUBJID }{USUBJID}
-\item{ TRSEQ }{TRSEQ}
-\item{ TRGRPID }{TRGRPID}
-\item{ TRLNKGRP }{TRLNKGRP}
-\item{ TRLNKID }{TRLNKID}
-\item{ TRTESTCD }{TRTESTCD}
-\item{ TRTEST }{TRTEST}
-\item{ TRORRES }{TRORRES}
-\item{ TRORRESU }{TRORRESU}
-\item{ TRSTRESC }{TRSTRESC}
-\item{ TRSTRESN }{TRSTRESN}
-\item{ TRSTRESU }{TRSTRESU}
-\item{ TRSTAT }{TRSTAT}
-\item{ TRREASND }{TRREASND}
-\item{ TRMETHOD }{TRMETHOD}
-\item{ TREVAL }{TREVAL}
-\item{ TREVALID }{TREVALID}
-\item{ TRACPTFL }{TRACPTFL}
-\item{ VISITNUM }{VISITNUM}
-\item{ VISIT }{VISIT}
-\item{ TRDTC }{TRDTC}
-\item{ TRDY }{TRDY}
-\item{ RANDDT }{RANDDT}
-\item{ TULOC }{TULOC}
-\item{ TULOCGR1 }{TULOCGR1}
-\item{ LSEXP }{LSEXP}
-\item{ LSASS }{LSASS}
-\item{ ADT }{ADT}
-\item{ ADTF }{ADTF}
-\item{ ADY }{ADY}
-\item{ AVISIT }{AVISIT}
-\item{ AVISITN }{AVISITN}
-\item{ PARAMCD }{PARAMCD}
-\item{ PARAM }{PARAM}
-\item{ PARCAT1 }{PARCAT1}
-\item{ PARCAT2 }{PARCAT2}
-\item{ PARCAT3 }{PARCAT3}
-\item{ AVAL }{AVAL}
-\item{ ANL01FL }{ANL01FL}
-\item{ ABLFL }{ABLFL}
-\item{ BASE }{BASE}
+\item{ DOMAIN }{Domain Abbreviation}
+\item{ STUDYID }{Study Identifier}
+\item{ USUBJID }{Unique Subject Identifier}
+\item{ TRGRPID }{Group ID}
+\item{ TRLNKID }{Link ID}
+\item{ TRTESTCD }{Tumor/Lesion Assessment Short Name}
+\item{ TRTEST }{Tumor/Lesion Assessment Test Name}
+\item{ TRORRES }{Result or Finding in Original Units}
+\item{ TRORRESU }{Original Units}
+\item{ TRSTRESC }{Character Result/Finding in Std Format}
+\item{ TRSTRESN }{Numeric Result/Finding in Standard Units}
+\item{ TRSTRESU }{Standard Units}
+\item{ VISITNUM }{Visit Number}
+\item{ VISIT }{Visit Name}
+\item{ TREVAL }{Evaluator}
+\item{ TREVALID }{Evaluator Identifier}
+\item{ TRACPTFL }{Accepted Record Flag}
+\item{ TRDTC }{Date/Time of Tumor/Lesion Measurement}
+\item{ TRSEQ }{Sequence Number}
+\item{ RANDDT }{Date of Randomization}
+\item{ TULOC }{Location of the Tumor/Lesion}
+\item{ TULOCGR1 }{Tumor Site Group 1}
+\item{ LSEXP }{Lesion IDs Expected}
+\item{ LSASS }{Lesion IDs Assessed}
+\item{ ADT }{Analysis Date}
+\item{ ADTF }{Analysis Date Imputation Flag}
+\item{ ADY }{Analysis Relative Day}
+\item{ AVISIT }{Analysis Visit}
+\item{ AVISITN }{Analysis Visit (N)}
+\item{ PARAMCD }{Parameter Code}
+\item{ PARAM }{Parameter}
+\item{ PARCAT1 }{Parameter Category 1}
+\item{ PARCAT2 }{Parameter Category 2}
+\item{ PARCAT3 }{Parameter Category 3}
+\item{ AVAL }{Analysis Value}
+\item{ ANL01FL }{Analysis Flag 01}
+\item{ ABLFL }{Baseline Record Flag}
+\item{ BASE }{Baseline Value}
 \item{ NADIR }{NADIR}
-\item{ CHG }{CHG}
-\item{ PCHG }{PCHG}
-\item{ CHGNAD }{CHGNAD}
-\item{ PCHGNAD }{PCHGNAD}
-\item{ PDFL }{PDFL}
-\item{ ANL02FL }{ANL02FL}
-\item{ ANL03FL }{ANL03FL}
-\item{ ANL04FL }{ANL04FL}
-\item{ ASEQ }{ASEQ}
-\item{ SUBJID }{SUBJID}
-\item{ RFSTDTC }{RFSTDTC}
-\item{ RFENDTC }{RFENDTC}
-\item{ RFXSTDTC }{RFXSTDTC}
-\item{ RFXENDTC }{RFXENDTC}
-\item{ RFICDTC }{RFICDTC}
-\item{ RFPENDTC }{RFPENDTC}
-\item{ DTHDTC }{DTHDTC}
-\item{ DTHFL }{DTHFL}
-\item{ SITEID }{SITEID}
-\item{ AGE }{AGE}
-\item{ AGEU }{AGEU}
-\item{ SEX }{SEX}
-\item{ RACE }{RACE}
-\item{ ETHNIC }{ETHNIC}
-\item{ ARMCD }{ARMCD}
-\item{ ARM }{ARM}
-\item{ ACTARMCD }{ACTARMCD}
-\item{ ACTARM }{ACTARM}
-\item{ COUNTRY }{COUNTRY}
-\item{ DMDTC }{DMDTC}
-\item{ DMDY }{DMDY}
-\item{ TRT01P }{TRT01P}
-\item{ TRT01A }{TRT01A}
-\item{ TRTSDTM }{TRTSDTM}
-\item{ TRTSTMF }{TRTSTMF}
-\item{ TRTEDTM }{TRTEDTM}
-\item{ TRTETMF }{TRTETMF}
-\item{ TRTSDT }{TRTSDT}
-\item{ TRTEDT }{TRTEDT}
-\item{ TRTDURD }{TRTDURD}
-\item{ SCRFDT }{SCRFDT}
-\item{ EOSDT }{EOSDT}
-\item{ EOSSTT }{EOSSTT}
-\item{ FRVDT }{FRVDT}
-\item{ DTHDT }{DTHDT}
-\item{ DTHADY }{DTHADY}
-\item{ LDDTHELD }{LDDTHELD}
-\item{ LSTALVDT }{LSTALVDT}
-\item{ AGEGR1 }{AGEGR1}
-\item{ SAFFL }{SAFFL}
-\item{ RACEGR1 }{RACEGR1}
-\item{ REGION1 }{REGION1}
-\item{ LDDTHGR1 }{LDDTHGR1}
-\item{ DTH30FL }{DTH30FL}
-\item{ DTHA30FL }{DTHA30FL}
-\item{ DTHB30FL }{DTHB30FL}
+\item{ CHG }{Change from Baseline}
+\item{ PCHG }{Percent Change from Baseline}
+\item{ CHGNAD }{Change from NADIR}
+\item{ PCHGNAD }{Percent Change from NADIR}
+\item{ PDFL }{Pharmacodynamic Analysis Set Flag}
+\item{ ANL02FL }{Analysis Flag 02}
+\item{ ANL03FL }{Analysis Flag 03}
+\item{ ANL04FL }{Analysis Flag 04}
+\item{ ASEQ }{Analysis Sequence Number}
+\item{ SUBJID }{Subject Identifier for the Study}
+\item{ RFSTDTC }{Subject Reference Start Date/Time}
+\item{ RFENDTC }{Subject Reference End Date/Time}
+\item{ RFXSTDTC }{Date/Time of First Study Treatment}
+\item{ RFXENDTC }{Date/Time of Last Study Treatment}
+\item{ RFICDTC }{Date/Time of Informed Consent}
+\item{ RFPENDTC }{Date/Time of End of Participation}
+\item{ DTHDTC }{Date/Time of Death}
+\item{ DTHFL }{Subject Death Flag}
+\item{ SITEID }{Study Site Identifier}
+\item{ AGE }{Age}
+\item{ AGEU }{Age Units}
+\item{ SEX }{Sex}
+\item{ RACE }{Race}
+\item{ ETHNIC }{Ethnicity}
+\item{ ARMCD }{Planned Arm Code}
+\item{ ARM }{Description of Planned Arm}
+\item{ ACTARMCD }{Actual Arm Code}
+\item{ ACTARM }{Description of Actual Arm}
+\item{ COUNTRY }{Country}
+\item{ DMDTC }{Date/Time of Collection}
+\item{ DMDY }{Study Day of Collection}
+\item{ TRT01P }{Planned Treatment for Period 01}
+\item{ TRT01A }{Actual Treatment for Period 01}
+\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+\item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+\item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+\item{ TRTSDT }{Date of First Exposure to Treatment}
+\item{ TRTEDT }{Date of Last Exposure to Treatment}
+\item{ TRTDURD }{Total Treatment Duration (Days)}
+\item{ SCRFDT }{Screen Failure Date}
+\item{ EOSDT }{End of Study Date}
+\item{ EOSSTT }{End of Study Status}
+\item{ FRVDT }{Final Retrievel Visit Date}
+\item{ DTHDT }{Date of Death}
+\item{ DTHDTF }{undocumented field}
+\item{ DTHADY }{Relative Day of Death}
+\item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ LSTALVDT }{Date Last Known Alive}
+\item{ SAFFL }{Safety Population Flag}
+\item{ RACEGR1 }{Pooled Race Group 1}
+\item{ AGEGR1 }{Pooled Age Group 1}
+\item{ REGION1 }{Geographic Region 1}
+\item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+\item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+\item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+\item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 }
 }
 \source{
-Generated from pharmaverse/admiralonco.
+Generated from admiralonco package (template ad_adtr.R).
 }
 \usage{
 adtr_onco

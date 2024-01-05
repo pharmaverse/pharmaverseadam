@@ -6,125 +6,125 @@
 #' @docType data
 #' @format A data frame with 116 columns:
 #'   \describe{
-#'     \item{ STUDYID }{STUDYID}
-#'     \item{ DOMAIN }{DOMAIN}
-#'     \item{ USUBJID }{USUBJID}
-#'     \item{ OESEQ }{OESEQ}
-#'     \item{ OECAT }{OECAT}
-#'     \item{ OESCAT }{OESCAT}
-#'     \item{ OEDTC }{OEDTC}
-#'     \item{ VISIT }{VISIT}
-#'     \item{ VISITNUM }{VISITNUM}
-#'     \item{ VISITDY }{VISITDY}
-#'     \item{ OESTRESN }{OESTRESN}
-#'     \item{ OESTRESC }{OESTRESC}
-#'     \item{ OEORRES }{OEORRES}
-#'     \item{ OETEST }{OETEST}
-#'     \item{ OETESTCD }{OETESTCD}
-#'     \item{ OETSTDTL }{OETSTDTL}
-#'     \item{ OELAT }{OELAT}
-#'     \item{ OELOC }{OELOC}
-#'     \item{ OEDY }{OEDY}
-#'     \item{ OEMETHOD }{OEMETHOD}
-#'     \item{ OEORRESU }{OEORRESU}
-#'     \item{ OESTRESU }{OESTRESU}
-#'     \item{ OESTAT }{OESTAT}
-#'     \item{ OETPT }{OETPT}
-#'     \item{ OETPTNUM }{OETPTNUM}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ STUDYEYE }{STUDYEYE}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALU }{AVALU}
-#'     \item{ DTYPE }{DTYPE}
-#'     \item{ AFEYE }{AFEYE}
-#'     \item{ PARAM }{PARAM}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVALC }{AVALC}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ ATPTN }{ATPTN}
-#'     \item{ ATPT }{ATPT}
-#'     \item{ AVISIT }{AVISIT}
-#'     \item{ AVISITN }{AVISITN}
-#'     \item{ BASETYPE }{BASETYPE}
-#'     \item{ ONTRTFL }{ONTRTFL}
-#'     \item{ ABLFL }{ABLFL}
-#'     \item{ ANL01FL }{ANL01FL}
-#'     \item{ ANL02FL }{ANL02FL}
-#'     \item{ WORS01FL }{WORS01FL}
-#'     \item{ BASE }{BASE}
-#'     \item{ BASEC }{BASEC}
-#'     \item{ CHG }{CHG}
-#'     \item{ PCHG }{PCHG}
-#'     \item{ ASEQ }{ASEQ}
-#'     \item{ SUBJID }{SUBJID}
-#'     \item{ RFSTDTC }{RFSTDTC}
-#'     \item{ RFENDTC }{RFENDTC}
-#'     \item{ RFXSTDTC }{RFXSTDTC}
-#'     \item{ RFXENDTC }{RFXENDTC}
-#'     \item{ RFICDTC }{RFICDTC}
-#'     \item{ RFPENDTC }{RFPENDTC}
-#'     \item{ DTHDTC }{DTHDTC}
-#'     \item{ DTHFL }{DTHFL}
-#'     \item{ SITEID }{SITEID}
-#'     \item{ AGE }{AGE}
-#'     \item{ AGEU }{AGEU}
-#'     \item{ SEX }{SEX}
-#'     \item{ RACE }{RACE}
-#'     \item{ ETHNIC }{ETHNIC}
-#'     \item{ ARMCD }{ARMCD}
-#'     \item{ ARM }{ARM}
-#'     \item{ ACTARMCD }{ACTARMCD}
-#'     \item{ ACTARM }{ACTARM}
-#'     \item{ COUNTRY }{COUNTRY}
-#'     \item{ DMDTC }{DMDTC}
-#'     \item{ DMDY }{DMDY}
-#'     \item{ TRTSDTM }{TRTSDTM}
-#'     \item{ TRTSTMF }{TRTSTMF}
-#'     \item{ TRTEDTM }{TRTEDTM}
-#'     \item{ TRTETMF }{TRTETMF}
-#'     \item{ TRTDURD }{TRTDURD}
-#'     \item{ SCRFDT }{SCRFDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ EOSSTT }{EOSSTT}
-#'     \item{ FRVDT }{FRVDT}
-#'     \item{ RANDDT }{RANDDT}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ DTHADY }{DTHADY}
-#'     \item{ LDDTHELD }{LDDTHELD}
-#'     \item{ LSTALVDT }{LSTALVDT}
-#'     \item{ AGEGR1 }{AGEGR1}
-#'     \item{ SAFFL }{SAFFL}
-#'     \item{ RACEGR1 }{RACEGR1}
-#'     \item{ REGION1 }{REGION1}
-#'     \item{ LDDTHGR1 }{LDDTHGR1}
-#'     \item{ DTH30FL }{DTH30FL}
-#'     \item{ DTHA30FL }{DTHA30FL}
-#'     \item{ DTHB30FL }{DTHB30FL}
-#'     \item{ CRIT1 }{CRIT1}
-#'     \item{ CRIT1FL }{CRIT1FL}
-#'     \item{ CRIT2 }{CRIT2}
-#'     \item{ CRIT2FL }{CRIT2FL}
-#'     \item{ CRIT3 }{CRIT3}
-#'     \item{ CRIT3FL }{CRIT3FL}
-#'     \item{ CRIT4 }{CRIT4}
-#'     \item{ CRIT4FL }{CRIT4FL}
-#'     \item{ CRIT5 }{CRIT5}
-#'     \item{ CRIT5FL }{CRIT5FL}
-#'     \item{ CRIT6 }{CRIT6}
-#'     \item{ CRIT6FL }{CRIT6FL}
-#'     \item{ CRIT7 }{CRIT7}
-#'     \item{ CRIT7FL }{CRIT7FL}
-#'     \item{ CRIT8 }{CRIT8}
-#'     \item{ CRIT8FL }{CRIT8FL}
-#'     \item{ AVALCA1N }{AVALCA1N}
-#'     \item{ AVALCAT1 }{AVALCAT1}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ OESEQ }{Sequence Number}
+#'     \item{ OECAT }{Category for Ophthalmic Test or Exam}
+#'     \item{ OESCAT }{Subcategory for Ophthalmic Test or Exam}
+#'     \item{ OEDTC }{Date/Time of Collection}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
+#'     \item{ OESTRESN }{Numeric Result/Finding in Standard Units}
+#'     \item{ OESTRESC }{Character Result/Finding in Std Format}
+#'     \item{ OEORRES }{Result or Finding in Original Units}
+#'     \item{ OETEST }{Name of Ophthalmic Test or Exam}
+#'     \item{ OETESTCD }{Short Name of Ophthalmic Test or Exam}
+#'     \item{ OETSTDTL }{Ophthalmic Test or Exam Detail}
+#'     \item{ OELAT }{Laterality}
+#'     \item{ OELOC }{Location Used for the Measurement}
+#'     \item{ OEDY }{Study Day of Visit/Collection/Exam}
+#'     \item{ OEMETHOD }{Method of Test or Examination}
+#'     \item{ OEORRESU }{Original Units}
+#'     \item{ OESTRESU }{Standard Units}
+#'     \item{ OESTAT }{Completion Status}
+#'     \item{ OETPT }{Planned Time Point Name}
+#'     \item{ OETPTNUM }{Planned Time Point Number}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ STUDYEYE }{Study Eye Location}
+#'     \item{ AVAL }{Analysis Value}
+#'     \item{ AVALU }{Analysis Value Unit}
+#'     \item{ DTYPE }{Derivation Type}
+#'     \item{ AFEYE }{Affected Eye}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ AVALC }{Analysis Value (C)}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ ATPTN }{Analysis Timepoint (N)}
+#'     \item{ ATPT }{Analysis Timepoint}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ BASETYPE }{Baseline Type}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
+#'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ ANL02FL }{Analysis Flag 02}
+#'     \item{ WORS01FL }{Worst Post Baseline Obs}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ BASEC }{Baseline Value (C)}
+#'     \item{ CHG }{Change from Baseline}
+#'     \item{ PCHG }{Percent Change from Baseline}
+#'     \item{ ASEQ }{Analysis Sequence Number}
+#'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
+#'     \item{ RFENDTC }{Subject Reference End Date/Time}
+#'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
+#'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RFPENDTC }{Date/Time of End of Participation}
+#'     \item{ DTHDTC }{Date/Time of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ COUNTRY }{Country/Region}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ SCRFDT }{Screen Failure Date}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
+#'     \item{ CRIT1 }{Analysis Criterion 1}
+#'     \item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
+#'     \item{ CRIT2 }{Analysis Criterion 2}
+#'     \item{ CRIT2FL }{Criterion 2 Evaluation Result Flag}
+#'     \item{ CRIT3 }{Analysis Criterion 3}
+#'     \item{ CRIT3FL }{Criterion 3 Evaluation Result Flag}
+#'     \item{ CRIT4 }{Analysis Criterion 4}
+#'     \item{ CRIT4FL }{Criterion 4 Evaluation Result Flag}
+#'     \item{ CRIT5 }{Analysis Criterion 5}
+#'     \item{ CRIT5FL }{Criterion 5 Evaluation Result Flag}
+#'     \item{ CRIT6 }{Analysis Criterion 6}
+#'     \item{ CRIT6FL }{Criterion 6 Evaluation Result Flag}
+#'     \item{ CRIT7 }{Analysis Criterion 7}
+#'     \item{ CRIT7FL }{Criterion 7 Evaluation Result Flag}
+#'     \item{ CRIT8 }{Analysis Criterion 8}
+#'     \item{ CRIT8FL }{Criterion 8 Evaluation Result Flag}
+#'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}
+#'     \item{ AVALCAT1 }{Analysis Value Category 1}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiralophtha.
+#' @source Generated from admiralophtha package (template ad_adbcva.R).
 #' @references None
 #'
 #' @examples

@@ -41,4 +41,6 @@ Suggests:
     testthat (>= 3.0.0),
     tibble,
     usethis,
+    metacore,
+    metatools
 Config/testthat/edition: 3

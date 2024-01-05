@@ -6,112 +6,112 @@
 #' @docType data
 #' @format A data frame with 103 columns:
 #'   \describe{
-#'     \item{ STUDYID }{STUDYID}
-#'     \item{ DOMAIN }{DOMAIN}
-#'     \item{ USUBJID }{USUBJID}
-#'     \item{ VSSEQ }{VSSEQ}
-#'     \item{ VSTESTCD }{VSTESTCD}
-#'     \item{ VSTEST }{VSTEST}
-#'     \item{ VSPOS }{VSPOS}
-#'     \item{ VSORRES }{VSORRES}
-#'     \item{ VSORRESU }{VSORRESU}
-#'     \item{ VSSTRESC }{VSSTRESC}
-#'     \item{ VSSTRESN }{VSSTRESN}
-#'     \item{ VSSTRESU }{VSSTRESU}
-#'     \item{ VSSTAT }{VSSTAT}
-#'     \item{ VSLOC }{VSLOC}
-#'     \item{ VSBLFL }{VSBLFL}
-#'     \item{ VISITNUM }{VISITNUM}
-#'     \item{ VISIT }{VISIT}
-#'     \item{ VISITDY }{VISITDY}
-#'     \item{ VSDTC }{VSDTC}
-#'     \item{ VSDY }{VSDY}
-#'     \item{ VSTPT }{VSTPT}
-#'     \item{ VSTPTNUM }{VSTPTNUM}
-#'     \item{ VSELTM }{VSELTM}
-#'     \item{ VSTPTREF }{VSTPTREF}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ ADT }{ADT}
-#'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALC }{AVALC}
-#'     \item{ ATPTN }{ATPTN}
-#'     \item{ ATPT }{ATPT}
-#'     \item{ AVISIT }{AVISIT}
-#'     \item{ AVISITN }{AVISITN}
-#'     \item{ DTYPE }{DTYPE}
-#'     \item{ ONTRTFL }{ONTRTFL}
-#'     \item{ ANRLO }{ANRLO}
-#'     \item{ ANRHI }{ANRHI}
-#'     \item{ A1LO }{A1LO}
-#'     \item{ A1HI }{A1HI}
-#'     \item{ ANRIND }{ANRIND}
-#'     \item{ BASETYPE }{BASETYPE}
-#'     \item{ ABLFL }{ABLFL}
-#'     \item{ BASE }{BASE}
-#'     \item{ BASEC }{BASEC}
-#'     \item{ BNRIND }{BNRIND}
-#'     \item{ CHG }{CHG}
-#'     \item{ PCHG }{PCHG}
-#'     \item{ ANL01FL }{ANL01FL}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ TRTA }{TRTA}
-#'     \item{ ASEQ }{ASEQ}
-#'     \item{ AVALCA1N }{AVALCA1N}
-#'     \item{ AVALCAT1 }{AVALCAT1}
-#'     \item{ PARAM }{PARAM}
-#'     \item{ PARAMN }{PARAMN}
-#'     \item{ SUBJID }{SUBJID}
-#'     \item{ RFSTDTC }{RFSTDTC}
-#'     \item{ RFENDTC }{RFENDTC}
-#'     \item{ RFXSTDTC }{RFXSTDTC}
-#'     \item{ RFXENDTC }{RFXENDTC}
-#'     \item{ RFICDTC }{RFICDTC}
-#'     \item{ RFPENDTC }{RFPENDTC}
-#'     \item{ DTHDTC }{DTHDTC}
-#'     \item{ DTHFL }{DTHFL}
-#'     \item{ SITEID }{SITEID}
-#'     \item{ AGE }{AGE}
-#'     \item{ AGEU }{AGEU}
-#'     \item{ SEX }{SEX}
-#'     \item{ RACE }{RACE}
-#'     \item{ ETHNIC }{ETHNIC}
-#'     \item{ ARMCD }{ARMCD}
-#'     \item{ ARM }{ARM}
-#'     \item{ ACTARMCD }{ACTARMCD}
-#'     \item{ ACTARM }{ACTARM}
-#'     \item{ COUNTRY }{COUNTRY}
-#'     \item{ DMDTC }{DMDTC}
-#'     \item{ DMDY }{DMDY}
-#'     \item{ TRTSDTM }{TRTSDTM}
-#'     \item{ TRTSTMF }{TRTSTMF}
-#'     \item{ TRTEDTM }{TRTEDTM}
-#'     \item{ TRTETMF }{TRTETMF}
-#'     \item{ TRTDURD }{TRTDURD}
-#'     \item{ SCRFDT }{SCRFDT}
-#'     \item{ EOSDT }{EOSDT}
-#'     \item{ EOSSTT }{EOSSTT}
-#'     \item{ FRVDT }{FRVDT}
-#'     \item{ RANDDT }{RANDDT}
-#'     \item{ DTHDT }{DTHDT}
-#'     \item{ DTHADY }{DTHADY}
-#'     \item{ LDDTHELD }{LDDTHELD}
-#'     \item{ LSTALVDT }{LSTALVDT}
-#'     \item{ AGEGR1 }{AGEGR1}
-#'     \item{ SAFFL }{SAFFL}
-#'     \item{ RACEGR1 }{RACEGR1}
-#'     \item{ REGION1 }{REGION1}
-#'     \item{ LDDTHGR1 }{LDDTHGR1}
-#'     \item{ DTH30FL }{DTH30FL}
-#'     \item{ DTHA30FL }{DTHA30FL}
-#'     \item{ DTHB30FL }{DTHB30FL}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ VSSEQ }{Sequence Number}
+#'     \item{ VSTESTCD }{Vital Signs Test Short Name}
+#'     \item{ VSTEST }{Vital Signs Test Name}
+#'     \item{ VSPOS }{Vital Signs Position of Subject}
+#'     \item{ VSORRES }{Result or Finding in Original Units}
+#'     \item{ VSORRESU }{Original Units}
+#'     \item{ VSSTRESC }{Character Result/Finding in Std Format}
+#'     \item{ VSSTRESN }{Numeric Result/Finding in Standard Units}
+#'     \item{ VSSTRESU }{Standard Units}
+#'     \item{ VSSTAT }{Completion Status}
+#'     \item{ VSLOC }{Location of Vital Signs Measurement}
+#'     \item{ VSBLFL }{Baseline Flag}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
+#'     \item{ VSDTC }{Date/Time of Measurements}
+#'     \item{ VSDY }{Study Day of Vital Signs}
+#'     \item{ VSTPT }{Planned Time Point Name}
+#'     \item{ VSTPTNUM }{Planned Time Point Number}
+#'     \item{ VSELTM }{Planned Elapsed Time from Time Point Ref}
+#'     \item{ VSTPTREF }{Time Point Reference}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ AVAL }{Analysis Value}
+#'     \item{ AVALC }{Analysis Value (C)}
+#'     \item{ ATPTN }{Analysis Timepoint (N)}
+#'     \item{ ATPT }{Analysis Timepoint}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ DTYPE }{Derivation Type}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
+#'     \item{ ANRLO }{Analysis Normal Range Lower Limit}
+#'     \item{ ANRHI }{Analysis Normal Range Upper Limit}
+#'     \item{ A1LO }{Analysis Range 1 Lower Limit}
+#'     \item{ A1HI }{Analysis Range 1 Upper Limit}
+#'     \item{ ANRIND }{Analysis Reference Range Indicator}
+#'     \item{ BASETYPE }{Baseline Type}
+#'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ BASEC }{Baseline Value (C)}
+#'     \item{ BNRIND }{Baseline Reference Range Indicator}
+#'     \item{ CHG }{Change from Baseline}
+#'     \item{ PCHG }{Percent Change from Baseline}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ TRTP }{Planned Treatment}
+#'     \item{ TRTA }{Actual Treatment}
+#'     \item{ ASEQ }{Analysis Sequence Number}
+#'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}
+#'     \item{ AVALCAT1 }{Analysis Value Category 1}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMN }{Parameter (N)}
+#'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
+#'     \item{ RFENDTC }{Subject Reference End Date/Time}
+#'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
+#'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RFPENDTC }{Date/Time of End of Participation}
+#'     \item{ DTHDTC }{Date/Time of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ COUNTRY }{Country}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ SCRFDT }{Screen Failure Date}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiral.
+#' @source Generated from admiral package (template ad_advs.R).
 #' @references None
 #'
 #' @examples

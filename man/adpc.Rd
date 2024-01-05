@@ -7,132 +7,132 @@
 \format{
 A data frame with 122 columns:
 \describe{
-\item{ STUDYID }{STUDYID}
-\item{ USUBJID }{USUBJID}
-\item{ NFRLT }{NFRLT}
-\item{ PCTESTCD }{PCTESTCD}
-\item{ PCTEST }{PCTEST}
-\item{ PCORRES }{PCORRES}
-\item{ PCORRESU }{PCORRESU}
-\item{ PCSTRESC }{PCSTRESC}
-\item{ PCSTRESN }{PCSTRESN}
-\item{ PCSTRESU }{PCSTRESU}
-\item{ PCNAM }{PCNAM}
-\item{ PCSPEC }{PCSPEC}
-\item{ PCLLOQ }{PCLLOQ}
-\item{ VISIT }{VISIT}
-\item{ VISITNUM }{VISITNUM}
-\item{ PCDTC }{PCDTC}
-\item{ PCDY }{PCDY}
-\item{ PCTPT }{PCTPT}
-\item{ PCTPTNUM }{PCTPTNUM}
-\item{ TRTSDT }{TRTSDT}
-\item{ TRTSDTM }{TRTSDTM}
-\item{ TRT01P }{TRT01P}
-\item{ TRT01A }{TRT01A}
-\item{ ADTM }{ADTM}
-\item{ ATMF }{ATMF}
-\item{ ADT }{ADT}
-\item{ ATM }{ATM}
-\item{ ADY }{ADY}
-\item{ FANLDTM }{FANLDTM}
-\item{ AVISITN }{AVISITN}
-\item{ AVISIT }{AVISIT}
-\item{ ASTDT }{ASTDT}
-\item{ ASTDTM }{ASTDTM}
-\item{ AENDT }{AENDT}
-\item{ AENDTM }{AENDTM}
-\item{ ASTTM }{ASTTM}
-\item{ AENTM }{AENTM}
-\item{ AFRLT }{AFRLT}
-\item{ ARRLT }{ARRLT}
-\item{ PCRFTDTM }{PCRFTDTM}
-\item{ FANLDT }{FANLDT}
-\item{ FANLTM }{FANLTM}
-\item{ PCRFTDT }{PCRFTDT}
-\item{ PCRFTTM }{PCRFTTM}
-\item{ NRRLT }{NRRLT}
-\item{ ATPTN }{ATPTN}
-\item{ ATPT }{ATPT}
-\item{ ATPTREF }{ATPTREF}
-\item{ ABLFL }{ABLFL}
-\item{ BASETYPE }{BASETYPE}
-\item{ DOSEA }{DOSEA}
-\item{ DOSEP }{DOSEP}
-\item{ DOSEU }{DOSEU}
-\item{ FRLTU }{FRLTU}
-\item{ RRLTU }{RRLTU}
-\item{ PARAMCD }{PARAMCD}
-\item{ ALLOQ }{ALLOQ}
-\item{ AVAL }{AVAL}
-\item{ AVALU }{AVALU}
-\item{ AVALCAT1 }{AVALCAT1}
-\item{ SRCDOM }{SRCDOM}
-\item{ SRCVAR }{SRCVAR}
-\item{ SRCSEQ }{SRCSEQ}
-\item{ DTYPE }{DTYPE}
-\item{ MRRLT }{MRRLT}
-\item{ ANL01FL }{ANL01FL}
-\item{ ANL02FL }{ANL02FL}
-\item{ BASE }{BASE}
-\item{ CHG }{CHG}
-\item{ ASEQ }{ASEQ}
-\item{ PARAM }{PARAM}
-\item{ PARAMN }{PARAMN}
-\item{ HTBL }{HTBL}
-\item{ HTBLU }{HTBLU}
-\item{ WTBL }{WTBL}
-\item{ WTBLU }{WTBLU}
-\item{ BMIBL }{BMIBL}
-\item{ BMIBLU }{BMIBLU}
-\item{ SUBJID }{SUBJID}
-\item{ RFSTDTC }{RFSTDTC}
-\item{ RFENDTC }{RFENDTC}
-\item{ RFXSTDTC }{RFXSTDTC}
-\item{ RFXENDTC }{RFXENDTC}
-\item{ RFICDTC }{RFICDTC}
-\item{ RFPENDTC }{RFPENDTC}
-\item{ DTHDTC }{DTHDTC}
-\item{ DTHFL }{DTHFL}
-\item{ SITEID }{SITEID}
-\item{ AGE }{AGE}
-\item{ AGEU }{AGEU}
-\item{ SEX }{SEX}
-\item{ RACE }{RACE}
-\item{ ETHNIC }{ETHNIC}
-\item{ ARMCD }{ARMCD}
-\item{ ARM }{ARM}
-\item{ ACTARMCD }{ACTARMCD}
-\item{ ACTARM }{ACTARM}
-\item{ COUNTRY }{COUNTRY}
-\item{ DMDTC }{DMDTC}
-\item{ DMDY }{DMDY}
-\item{ TRTSTMF }{TRTSTMF}
-\item{ TRTEDTM }{TRTEDTM}
-\item{ TRTETMF }{TRTETMF}
-\item{ TRTEDT }{TRTEDT}
-\item{ TRTDURD }{TRTDURD}
-\item{ SCRFDT }{SCRFDT}
-\item{ EOSDT }{EOSDT}
-\item{ EOSSTT }{EOSSTT}
-\item{ FRVDT }{FRVDT}
-\item{ RANDDT }{RANDDT}
-\item{ DTHDT }{DTHDT}
-\item{ DTHADY }{DTHADY}
-\item{ LDDTHELD }{LDDTHELD}
-\item{ LSTALVDT }{LSTALVDT}
-\item{ AGEGR1 }{AGEGR1}
-\item{ SAFFL }{SAFFL}
-\item{ RACEGR1 }{RACEGR1}
-\item{ REGION1 }{REGION1}
-\item{ LDDTHGR1 }{LDDTHGR1}
-\item{ DTH30FL }{DTH30FL}
-\item{ DTHA30FL }{DTHA30FL}
-\item{ DTHB30FL }{DTHB30FL}
+\item{ STUDYID }{Study Identifier}
+\item{ USUBJID }{Unique Subject Identifier}
+\item{ NFRLT }{Nom. Rel. Time from Analyte First Dose}
+\item{ PCTESTCD }{Pharmacokinetic Test Short Name}
+\item{ PCTEST }{Pharmacokinetic Test Name}
+\item{ PCORRES }{Result or Finding in Original Units}
+\item{ PCORRESU }{Original Units}
+\item{ PCSTRESC }{Character Result/Finding in Std Format}
+\item{ PCSTRESN }{Numeric Result/Finding in Standard Units}
+\item{ PCSTRESU }{Standard Units}
+\item{ PCNAM }{Vendor Name}
+\item{ PCSPEC }{Specimen Material Type}
+\item{ PCLLOQ }{Lower Limit of Quantitation}
+\item{ VISIT }{Visit Name}
+\item{ VISITNUM }{Visit Number}
+\item{ PCDTC }{Date/Time of Specimen Collection}
+\item{ PCDY }{Actual Study Day of Specimen Collection}
+\item{ PCTPT }{Planned Time Point Name}
+\item{ PCTPTNUM }{Planned Time Point Number}
+\item{ TRTSDT }{Date of First Exposure to Treatment}
+\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+\item{ TRT01P }{Planned Treatment for Period 01}
+\item{ TRT01A }{Actual Treatment for Period 01}
+\item{ ADTM }{Analysis Datetime}
+\item{ ATMF }{Analysis Time Imputation Flag}
+\item{ ADT }{Analysis Date}
+\item{ ATM }{Analysis Time}
+\item{ ADY }{Analysis Relative Day}
+\item{ FANLDTM }{First Datetime of Dose for Analyte}
+\item{ AVISITN }{Analysis Visit (N)}
+\item{ AVISIT }{Analysis Visit}
+\item{ ASTDT }{Analysis Start Date}
+\item{ ASTDTM }{Analysis Start Datetime}
+\item{ AENDT }{Analysis End Date}
+\item{ AENDTM }{Analysis End Datetime}
+\item{ ASTTM }{Analysis Start Time}
+\item{ AENTM }{Analysis End Time}
+\item{ AFRLT }{Act. Rel. Time from Analyte First Dose}
+\item{ ARRLT }{Actual Rel. Time from Ref. Dose}
+\item{ PCRFTDTM }{Reference Datetime of Dose for Analyte}
+\item{ FANLDT }{First Date of Dose for Analyte}
+\item{ FANLTM }{First Time of Dose for Analyte}
+\item{ PCRFTDT }{Reference Date of Dose for Analyte}
+\item{ PCRFTTM }{Reference Time of Dose for Analyte}
+\item{ NRRLT }{Nominal Rel. Time from Ref. Dose}
+\item{ ATPTN }{Analysis Timepoint (N)}
+\item{ ATPT }{Analysis Timepoint}
+\item{ ATPTREF }{Analysis Timepoint Reference}
+\item{ ABLFL }{Baseline Record Flag}
+\item{ BASETYPE }{Baseline Type}
+\item{ DOSEA }{Actual Treatment Dose}
+\item{ DOSEP }{Planned Treatment Dose}
+\item{ DOSEU }{Treatment Dose Units}
+\item{ FRLTU }{Rel. Time from First Dose Unit}
+\item{ RRLTU }{Rel. Time from Ref. Dose Unit}
+\item{ PARAMCD }{Parameter Code}
+\item{ ALLOQ }{Analysis Lower Limit of Quantitation}
+\item{ AVAL }{Analysis Value}
+\item{ AVALU }{Analysis Value Unit}
+\item{ AVALCAT1 }{Analysis Value Category 1}
+\item{ SRCDOM }{Source Data}
+\item{ SRCVAR }{Source Variable}
+\item{ SRCSEQ }{Source Sequence Number}
+\item{ DTYPE }{Derivation Type}
+\item{ MRRLT }{Modified Rel. Time from Ref. Dose}
+\item{ ANL01FL }{Analysis Flag 01}
+\item{ ANL02FL }{Analysis Flag 02}
+\item{ BASE }{Baseline Value}
+\item{ CHG }{Change from Baseline}
+\item{ ASEQ }{Analysis Sequence Number}
+\item{ PARAM }{Parameter}
+\item{ PARAMN }{Parameter (N)}
+\item{ HTBL }{Numeric Result/Finding in Standard Units}
+\item{ HTBLU }{Standard Units}
+\item{ WTBL }{Numeric Result/Finding in Standard Units}
+\item{ WTBLU }{Standard Units}
+\item{ BMIBL }{Baseline Body Mass Index (kg/m2)}
+\item{ BMIBLU }{BMI at Baseline (Unit)}
+\item{ SUBJID }{Subject Identifier for the Study}
+\item{ RFSTDTC }{Subject Reference Start Date/Time}
+\item{ RFENDTC }{Subject Reference End Date/Time}
+\item{ RFXSTDTC }{Date/Time of First Study Treatment}
+\item{ RFXENDTC }{Date/Time of Last Study Treatment}
+\item{ RFICDTC }{Date/Time of Informed Consent}
+\item{ RFPENDTC }{Date/Time of End of Participation}
+\item{ DTHDTC }{Date/Time of Death}
+\item{ DTHFL }{Subject Death Flag}
+\item{ SITEID }{Study Site Identifier}
+\item{ AGE }{Age}
+\item{ AGEU }{Age Units}
+\item{ SEX }{Sex}
+\item{ RACE }{Race}
+\item{ ETHNIC }{Ethnicity}
+\item{ ARMCD }{Planned Arm Code}
+\item{ ARM }{Description of Planned Arm}
+\item{ ACTARMCD }{Actual Arm Code}
+\item{ ACTARM }{Description of Actual Arm}
+\item{ COUNTRY }{Country}
+\item{ DMDTC }{Date/Time of Collection}
+\item{ DMDY }{Study Day of Collection}
+\item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+\item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+\item{ TRTEDT }{Date of Last Exposure to Treatment}
+\item{ TRTDURD }{Total Treatment Duration (Days)}
+\item{ SCRFDT }{Screen Failure Date}
+\item{ EOSDT }{End of Study Date}
+\item{ EOSSTT }{End of Study Status}
+\item{ FRVDT }{Final Retrievel Visit Date}
+\item{ RANDDT }{Date of Randomization}
+\item{ DTHDT }{Date of Death}
+\item{ DTHADY }{Relative Day of Death}
+\item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ LSTALVDT }{Date Last Known Alive}
+\item{ AGEGR1 }{Pooled Age Group 1}
+\item{ SAFFL }{Safety Population Flag}
+\item{ RACEGR1 }{Pooled Race Group 1}
+\item{ REGION1 }{Geographic Region 1}
+\item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+\item{ DTH30FL }{Under 30  Group}
+\item{ DTHA30FL }{Over 30  Group}
+\item{ DTHB30FL }{Over 30 plus 30 days Group}
 }
 }
 \source{
-Generated from pharmaverse/admiral.
+Generated from admiral package (template ad_adpc.R).
 }
 \usage{
 adpc
