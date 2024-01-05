@@ -20,3 +20,5 @@
 ^README.Rmd$
 ^inst/extdata/.*\.csv$
 ^CRAN-SUBMISSION$
+^data-raw
+^tmp
