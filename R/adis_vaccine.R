@@ -4,114 +4,113 @@
 #'
 #' @name adis_vaccine
 #' @docType data
-#' @format A data frame with 103 columns:
+#' @format A data frame with 102 columns:
 #'   \describe{
-#'     \item{ STUDYID }{STUDYID}
-#'     \item{ DOMAIN }{DOMAIN}
-#'     \item{ USUBJID }{USUBJID}
-#'     \item{ ISSEQ }{ISSEQ}
-#'     \item{ ISTESTCD }{ISTESTCD}
-#'     \item{ ISTEST }{ISTEST}
-#'     \item{ ISCAT }{ISCAT}
-#'     \item{ ISORRES }{ISORRES}
-#'     \item{ ISORRESU }{ISORRESU}
-#'     \item{ ISSTRESC }{ISSTRESC}
-#'     \item{ ISSTRESN }{ISSTRESN}
-#'     \item{ ISSTRESU }{ISSTRESU}
-#'     \item{ ISSTAT }{ISSTAT}
-#'     \item{ ISREASND }{ISREASND}
-#'     \item{ ISNAM }{ISNAM}
-#'     \item{ ISSPEC }{ISSPEC}
-#'     \item{ ISMETHOD }{ISMETHOD}
-#'     \item{ ISBLFL }{ISBLFL}
-#'     \item{ ISLLOQ }{ISLLOQ}
-#'     \item{ VISITNUM }{VISITNUM}
-#'     \item{ EPOCH }{EPOCH}
-#'     \item{ ISDTC }{ISDTC}
-#'     \item{ ISDY }{ISDY}
-#'     \item{ ISULOQ }{ISULOQ}
-#'     \item{ LOD }{LOD}
-#'     \item{ AVISITN }{AVISITN}
-#'     \item{ AVISIT }{AVISIT}
-#'     \item{ ATPTN }{ATPTN}
-#'     \item{ ATPT }{ATPT}
-#'     \item{ ATPTREF }{ATPTREF}
-#'     \item{ ADT }{ADT}
-#'     \item{ RFSTDTC }{RFSTDTC}
-#'     \item{ PPROTFL }{PPROTFL}
-#'     \item{ ADY }{ADY}
-#'     \item{ PARAMCD }{PARAMCD}
-#'     \item{ PARAM }{PARAM}
-#'     \item{ PARAMN }{PARAMN}
-#'     \item{ PARCAT1 }{PARCAT1}
-#'     \item{ CUTOFF02 }{CUTOFF02}
-#'     \item{ CUTOFF03 }{CUTOFF03}
-#'     \item{ AVAL }{AVAL}
-#'     \item{ AVALU }{AVALU}
-#'     \item{ SERCAT1 }{SERCAT1}
-#'     \item{ SERCAT1N }{SERCAT1N}
-#'     \item{ DTYPE }{DTYPE}
-#'     \item{ BASETYPE }{BASETYPE}
-#'     \item{ BASE }{BASE}
-#'     \item{ ABLFL }{ABLFL}
-#'     \item{ BASECAT1 }{BASECAT1}
-#'     \item{ CHG }{CHG}
-#'     \item{ R2BASE }{R2BASE}
-#'     \item{ CRIT1FL }{CRIT1FL}
-#'     \item{ CRIT1FN }{CRIT1FN}
-#'     \item{ CRIT1 }{CRIT1}
-#'     \item{ APERIOD }{APERIOD}
-#'     \item{ APERSDT }{APERSDT}
-#'     \item{ APEREDT }{APEREDT}
-#'     \item{ TRTA }{TRTA}
-#'     \item{ TRTP }{TRTP}
-#'     \item{ PPSRFL }{PPSRFL}
-#'     \item{ SUBJID }{SUBJID}
-#'     \item{ RFENDTC }{RFENDTC}
-#'     \item{ RFXSTDTC }{RFXSTDTC}
-#'     \item{ RFXENDTC }{RFXENDTC}
-#'     \item{ RFICDTC }{RFICDTC}
-#'     \item{ RFPENDTC }{RFPENDTC}
-#'     \item{ DTHDTC }{DTHDTC}
-#'     \item{ DTHFL }{DTHFL}
-#'     \item{ SITEID }{SITEID}
-#'     \item{ INVID }{INVID}
-#'     \item{ INVNAM }{INVNAM}
-#'     \item{ BRTHDTC }{BRTHDTC}
-#'     \item{ AGE }{AGE}
-#'     \item{ AGEU }{AGEU}
-#'     \item{ SEX }{SEX}
-#'     \item{ RACE }{RACE}
-#'     \item{ ETHNIC }{ETHNIC}
-#'     \item{ ARMCD }{ARMCD}
-#'     \item{ ARM }{ARM}
-#'     \item{ ACTARMCD }{ACTARMCD}
-#'     \item{ ACTARM }{ACTARM}
-#'     \item{ COUNTRY }{COUNTRY}
-#'     \item{ DMDTC }{DMDTC}
-#'     \item{ DMDY }{DMDY}
-#'     \item{ TRT01P }{TRT01P}
-#'     \item{ TRT02P }{TRT02P}
-#'     \item{ TRT01A }{TRT01A}
-#'     \item{ TRT02A }{TRT02A}
-#'     \item{ TRTSDTM }{TRTSDTM}
-#'     \item{ TRTEDTM }{TRTEDTM}
-#'     \item{ TRTSDT }{TRTSDT}
-#'     \item{ TRTEDT }{TRTEDT}
-#'     \item{ TRTDURD }{TRTDURD}
-#'     \item{ SAFFL }{SAFFL}
-#'     \item{ RACEGR1 }{RACEGR1}
-#'     \item{ AGEGR1 }{AGEGR1}
-#'     \item{ REGION1 }{REGION1}
-#'     \item{ VAX01DT }{VAX01DT}
-#'     \item{ VAX02DT }{VAX02DT}
-#'     \item{ AP01SDT }{AP01SDT}
-#'     \item{ AP01EDT }{AP01EDT}
-#'     \item{ AP02SDT }{AP02SDT}
-#'     \item{ AP02EDT }{AP02EDT}
+#'     \item{ STUDYID }{Study Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ ISSEQ }{Sequence Number}
+#'     \item{ ISTESTCD }{Immunogenicity Test/Exam Short Name}
+#'     \item{ ISTEST }{Immunogenicity Test or Examination Name}
+#'     \item{ ISCAT }{Category for Immunogenicity Test}
+#'     \item{ ISORRES }{Results or Findings in Original Units}
+#'     \item{ ISORRESU }{Original Units}
+#'     \item{ ISSTRESC }{Character Result/Finding in Std Format}
+#'     \item{ ISSTRESN }{Numeric Results/Findings in Std. Units}
+#'     \item{ ISSTRESU }{Standard Units}
+#'     \item{ ISSTAT }{Completion Status}
+#'     \item{ ISREASND }{Reason Not Done}
+#'     \item{ ISNAM }{Vendor Name}
+#'     \item{ ISSPEC }{Specimen Type}
+#'     \item{ ISMETHOD }{Method of Test or Examination}
+#'     \item{ ISBLFL }{Baseline Flag}
+#'     \item{ ISLLOQ }{Lower Limit of Quantitation}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ EPOCH }{Epoch}
+#'     \item{ ISDTC }{Date/Time of Collection}
+#'     \item{ ISDY }{Study Day of Visit/Collection/Exam}
+#'     \item{ ISULOQ }{Upper Limit of Quantitation}
+#'     \item{ LOD }{Limit of Detection}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ ATPTN }{Analysis Timepoint (N)}
+#'     \item{ ATPT }{Analysis Timepoint}
+#'     \item{ ATPTREF }{Analysis Timepoint Reference}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
+#'     \item{ PPROTFL }{Per-Protocol Population Flag}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMN }{Parameter (N)}
+#'     \item{ PARCAT1 }{Parameter Category 1}
+#'     \item{ CUTOFF02 }{First Cutoff Value}
+#'     \item{ CUTOFF03 }{Second Cutoff Value}
+#'     \item{ AVAL }{Analysis Value}
+#'     \item{ AVALU }{Analysis Value Unit}
+#'     \item{ SERCAT1 }{Pre-vaccination seropositivity status}
+#'     \item{ SERCAT1N }{Pre-vaccination sero status (n)}
+#'     \item{ DTYPE }{Derivation Type}
+#'     \item{ BASETYPE }{Baseline Type}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ BASECAT1 }{Baseline Category 1}
+#'     \item{ CHG }{Change from Baseline}
+#'     \item{ R2BASE }{Ratio to Baseline}
+#'     \item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
+#'     \item{ CRIT1FN }{Criterion 1 Evaluation Result Flag (N)}
+#'     \item{ CRIT1 }{Analysis Criterion 1}
+#'     \item{ APERIOD }{Period}
+#'     \item{ APERSDT }{Period Start Date}
+#'     \item{ APEREDT }{Period End Date}
+#'     \item{ TRTA }{Actual Treatment}
+#'     \item{ TRTP }{Planned Treatment}
+#'     \item{ PPSRFL }{Per-Protocol Record-Level Flag}
+#'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ RFENDTC }{Subject Reference End Date/Time}
+#'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
+#'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RFPENDTC }{Date/Time of End of Participation}
+#'     \item{ DTHDTC }{Date/Time of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ INVID }{Investigator Identifier}
+#'     \item{ INVNAM }{Investigator Name}
+#'     \item{ BRTHDTC }{Date/Time of Birth}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ COUNTRY }{Country}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ TRT02P }{Planned Treatment for Period 02}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRT02A }{Actual Treatment for Period 02}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ VAX01DT }{Vaccination Date 01}
+#'     \item{ VAX02DT }{Vaccination Date 02}
+#'     \item{ AP01SDT }{Period 01 Start Date}
+#'     \item{ AP01EDT }{Period 01 End Date}
+#'     \item{ AP02SDT }{Period 02 Start Date}
+#'     \item{ AP02EDT }{Period 02 End Date}
 #'   }
 #'
-#' @source Generated from pharmaverse/admiralvaccine.
+#' @source Generated from admiralvaccine package (template ad_adis.R).
 #' @references None
 #'
 #' @examples
