@@ -4,7 +4,7 @@
 #'
 #' @name adppk
 #' @docType data
-#' @format A data frame with 59 columns:
+#' @format A data frame with 62 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -15,6 +15,7 @@
 #'     \item{ NPRLT }{Nominal Rel Time from Previous Dose}
 #'     \item{ DOSEA }{Actual Treatment Dose}
 #'     \item{ DOSEP }{Planned Treatment Dose}
+#'     \item{ PARAMCD }{undocumented field}
 #'     \item{ ALLOQ }{Analysis Lower Limit of Quantitation}
 #'     \item{ CMT }{Compartment}
 #'     \item{ BLQFL }{Below Lower Limit of Quant Flag}
@@ -29,6 +30,8 @@
 #'     \item{ II }{Dosing Interval (unit)}
 #'     \item{ SS }{Steady State}
 #'     \item{ ASEQ }{Analysis Sequence Number}
+#'     \item{ PARAM }{undocumented field}
+#'     \item{ PARAMN }{undocumented field}
 #'     \item{ PROJID }{Project Identifier}
 #'     \item{ PROJIDN }{Project Identifier (N)}
 #'     \item{ STUDYIDN }{Study Identifier (N)}

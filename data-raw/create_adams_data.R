@@ -1,6 +1,6 @@
 # ensure every packages are installed
 
-update_pkg <- FALSE
+update_pkg <- TRUE
 ignore_templates <- list(
   "admiralonco" = c("ad_adrs_basic.R")
 )
@@ -122,16 +122,16 @@ run_template <- function(tp) {
 
 
 if (update_pkg) {
-  github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
-  if (github_pat == "") {
-    token_file <- "data-raw/github_token.R"
-    if (file.exists(token_file)) {
-      source(token_file)
-    } else {
-      "WARNING - you might have issues installing pharmaverse deps -
-            Please follow instructions in the readme.md"
-    }
-  }
+  # github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
+  # if (github_pat == "") {
+  #   token_file <- "data-raw/github_token.R"
+  #   if (file.exists(token_file)) {
+  #     source(token_file)
+  #   } else {
+  #     "WARNING - you might have issues installing pharmaverse deps -
+  #           Please follow instructions in the readme.md"
+  #   }
+  # }
   # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
   install.packages("pharmaverse/pharmaversesdtm")
 }
@@ -152,7 +152,7 @@ for (pkg in packages_list) {
   if (update_pkg) {
     # TODO: replace by main once done
     remotes::install_github(sprintf("pharmaverse/%s", pkg),
-      ref = "workflow_dispatch_templates", auth_token = github_pat,
+      ref = "main",
       upgrade = "always", force = TRUE
     )
   }
