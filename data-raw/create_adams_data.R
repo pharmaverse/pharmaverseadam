@@ -133,7 +133,7 @@ if (update_pkg) {
   #   }
   # }
   # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
-  install.packages("pharmaverse/pharmaversesdtm")
+  remotes::install_github("pharmaverse/pharmaversesdtm", ref = "main")
 }
 
 # dict to match admiral xlsx specs suffixes
