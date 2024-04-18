@@ -2,8 +2,8 @@
 
 ## New Features
 
- - Variables labels are applied to datasets by `metacore`/`metatools`.
- - ADPC, ADPPK and ADPP are updated to handle urine records.
+ - Variables labels are applied to datasets by `metacore`/`metatools`. (#50)
+ - ADPC, ADPPK and ADPP are updated to handle urine records. (#57)
 
 # pharmaverseadam 0.1.1
 
