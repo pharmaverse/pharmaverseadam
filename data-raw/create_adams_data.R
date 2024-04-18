@@ -122,18 +122,18 @@ run_template <- function(tp) {
 
 
 if (update_pkg) {
-  # github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
-  # if (github_pat == "") {
-  #   token_file <- "data-raw/github_token.R"
-  #   if (file.exists(token_file)) {
-  #     source(token_file)
-  #   } else {
-  #     "WARNING - you might have issues installing pharmaverse deps -
-  #           Please follow instructions in the readme.md"
-  #   }
-  # }
+  github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
+  if (github_pat == "") {
+    token_file <- "data-raw/github_token.R"
+    if (file.exists(token_file)) {
+      source(token_file)
+    } else {
+      "WARNING - you might have issues installing pharmaverse deps -
+            Please follow instructions in the readme.md"
+    }
+  }
   # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
-  remotes::install_github("pharmaverse/pharmaversesdtm", ref = "main")
+  remotes::install_github("pharmaverse/pharmaversesdtm", ref = "main", force = TRUE)
 }
 
 # dict to match admiral xlsx specs suffixes
@@ -152,7 +152,11 @@ for (pkg in packages_list) {
   if (update_pkg) {
     # TODO: replace by main once done
     remotes::install_github(sprintf("pharmaverse/%s", pkg),
-      ref = "main",
+      ref = "main", auth_token = if (github_pat == "") {
+        NULL
+      } else {
+        github_pat
+      },
       upgrade = "always", force = TRUE
     )
   }
