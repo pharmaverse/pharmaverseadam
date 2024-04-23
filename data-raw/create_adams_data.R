@@ -124,7 +124,11 @@ run_template <- function(tp) {
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
   # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
-  remotes::install_github("pharmaverse/pharmaversesdtm", ref = "main", force = TRUE)
+  remotes::install_github(
+    "pharmaverse/pharmaversesdtm",
+    ref = "main",
+    force = TRUE
+  )
 }
 
 # dict to match admiral xlsx specs suffixes
