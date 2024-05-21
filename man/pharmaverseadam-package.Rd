@@ -28,6 +28,7 @@ Authors:
   \item Gayatri G
   \item Daphne Grassely
   \item Zelos Zhu
+  \item Sadchla Mascary
 }
 
 }
