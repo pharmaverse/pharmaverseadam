@@ -3,7 +3,7 @@
 \docType{data}
 \name{adface_vaccine}
 \alias{adface_vaccine}
-\title{Dataset adface_vaccine}
+\title{Findings About Clinical Events Analysis Dataset for Vaccine}
 \format{
 A data frame with 60 columns:
 \describe{

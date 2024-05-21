@@ -1,4 +1,4 @@
-#' Dataset adcm
+#' Concomitant Medications Analysis
 #'
 #' adcm dataset
 #'

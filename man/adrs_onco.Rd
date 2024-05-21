@@ -3,7 +3,7 @@
 \docType{data}
 \name{adrs_onco}
 \alias{adrs_onco}
-\title{Dataset adrs_onco}
+\title{Tumor Response Analysis Data for Oncology}
 \format{
 A data frame with 76 columns:
 \describe{

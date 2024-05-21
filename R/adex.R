@@ -1,4 +1,4 @@
-#' Dataset adex
+#' Exposure Analysis Dataset
 #'
 #' adex dataset
 #'

@@ -3,7 +3,7 @@
 \docType{data}
 \name{adbcva_ophtha}
 \alias{adbcva_ophtha}
-\title{Dataset adbcva_ophtha}
+\title{Best Corrected Visual Acuity Analysis Dataset for Ophthalmology}
 \format{
 A data frame with 116 columns:
 \describe{

@@ -1,4 +1,4 @@
-#' Dataset adlbhy
+#' Laboratory Analysis of Hy's Law Assessment
 #'
 #' adlbhy dataset
 #'

@@ -1,4 +1,4 @@
-#' Dataset adlb
+#' Laboratory Analysis Dataset
 #'
 #' adlb dataset
 #'

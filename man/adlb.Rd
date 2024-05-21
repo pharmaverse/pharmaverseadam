@@ -3,7 +3,7 @@
 \docType{data}
 \name{adlb}
 \alias{adlb}
-\title{Dataset adlb}
+\title{Laboratory Analysis Dataset}
 \format{
 A data frame with 111 columns:
 \describe{

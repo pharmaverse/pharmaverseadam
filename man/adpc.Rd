@@ -3,7 +3,7 @@
 \docType{data}
 \name{adpc}
 \alias{adpc}
-\title{Dataset adpc}
+\title{Analysis Dataset of Pharmacokinetic Concentrations}
 \format{
 A data frame with 122 columns:
 \describe{

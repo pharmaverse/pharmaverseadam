@@ -3,7 +3,7 @@
 \docType{data}
 \name{adlbhy}
 \alias{adlbhy}
-\title{Dataset adlbhy}
+\title{Laboratory Analysis of Hy's Law Assessment}
 \format{
 A data frame with 14 columns:
 \describe{

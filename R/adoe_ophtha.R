@@ -1,4 +1,4 @@
-#' Dataset adoe_ophtha
+#' Exam Analysis Dataset for Ophthalmology
 #'
 #' adoe_ophtha dataset
 #'

@@ -1,4 +1,4 @@
-#' Dataset adae
+#' Adverse Event Analysis
 #'
 #' adae dataset
 #'

@@ -3,7 +3,7 @@
 \docType{data}
 \name{adis_vaccine}
 \alias{adis_vaccine}
-\title{Dataset adis_vaccine}
+\title{Immunogenicity Specimen Assessments Analysis for Vaccine}
 \format{
 A data frame with 102 columns:
 \describe{

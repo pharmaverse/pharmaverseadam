@@ -3,7 +3,7 @@
 \docType{data}
 \name{adae}
 \alias{adae}
-\title{Dataset adae}
+\title{Adverse Event Analysis}
 \format{
 A data frame with 101 columns:
 \describe{

@@ -1,4 +1,4 @@
-#' Dataset adce_vaccine
+#' Clinical Events Analysis Dataset for Vaccine
 #'
 #' adce_vaccine dataset
 #'

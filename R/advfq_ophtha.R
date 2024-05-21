@@ -1,4 +1,4 @@
-#' Dataset advfq_ophtha
+#' Visual Function Questionnaire Analysis for Ophthalmology
 #'
 #' advfq_ophtha dataset
 #'

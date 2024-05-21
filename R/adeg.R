@@ -1,4 +1,4 @@
-#' Dataset adeg
+#' Electrocardiogram Tests Analysis
 #'
 #' adeg dataset
 #'

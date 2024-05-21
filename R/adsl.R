@@ -1,4 +1,4 @@
-#' Dataset adsl
+#' Subject Level Analysis Dataset
 #'
 #' adsl dataset
 #'
