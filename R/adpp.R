@@ -1,4 +1,4 @@
-#' Pharmacokinetics Parameters Analysis
+#' Analysis Dataset of Pharmacokinetics Parameters
 #'
 #' adpp dataset
 #'
