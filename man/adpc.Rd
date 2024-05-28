@@ -3,7 +3,7 @@
 \docType{data}
 \name{adpc}
 \alias{adpc}
-\title{Dataset adpc}
+\title{Analysis of Pharmacokinetic Concentrations}
 \format{
 A data frame with 123 columns:
 \describe{
@@ -139,7 +139,7 @@ Generated from admiral package (template ad_adpc.R).
 adpc
 }
 \description{
-adpc dataset
+Analysis of Pharmacokinetic Concentrations
 }
 \examples{
 data("adpc")

@@ -1,6 +1,5 @@
-#' Dataset adsl
+#' Subject Level Analysis
 #'
-#' adsl dataset
 #'
 #' @name adsl
 #' @docType data

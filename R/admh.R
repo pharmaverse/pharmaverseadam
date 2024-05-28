@@ -1,6 +1,5 @@
-#' Dataset admh
+#' Medical History Analysis
 #'
-#' admh dataset
 #'
 #' @name admh
 #' @docType data

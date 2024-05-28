@@ -1,6 +1,5 @@
-#' Dataset adppk
+#' Analysis of Population Pharmacokinetic
 #'
-#' adppk dataset
 #'
 #' @name adppk
 #' @docType data

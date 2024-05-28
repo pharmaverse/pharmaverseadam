@@ -3,7 +3,7 @@
 \docType{data}
 \name{adppk}
 \alias{adppk}
-\title{Dataset adppk}
+\title{Analysis of Population Pharmacokinetic}
 \format{
 A data frame with 62 columns:
 \describe{
@@ -78,7 +78,7 @@ Generated from admiral package (template ad_adppk.R).
 adppk
 }
 \description{
-adppk dataset
+Analysis of Population Pharmacokinetic
 }
 \examples{
 data("adppk")

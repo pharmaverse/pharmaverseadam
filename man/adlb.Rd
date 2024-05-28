@@ -3,7 +3,7 @@
 \docType{data}
 \name{adlb}
 \alias{adlb}
-\title{Dataset adlb}
+\title{Laboratory Analysis}
 \format{
 A data frame with 111 columns:
 \describe{
@@ -127,7 +127,7 @@ Generated from admiral package (template ad_adlb.R).
 adlb
 }
 \description{
-adlb dataset
+Laboratory Analysis
 }
 \examples{
 data("adlb")

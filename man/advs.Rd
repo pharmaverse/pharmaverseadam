@@ -3,7 +3,7 @@
 \docType{data}
 \name{advs}
 \alias{advs}
-\title{Dataset advs}
+\title{Vital Signs Analysis}
 \format{
 A data frame with 103 columns:
 \describe{
@@ -119,7 +119,7 @@ Generated from admiral package (template ad_advs.R).
 advs
 }
 \description{
-advs dataset
+Vital Signs Analysis
 }
 \examples{
 data("advs")
