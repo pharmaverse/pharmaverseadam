@@ -69,5 +69,5 @@ if (!requireNamespace("remotes", quietly = TRUE)) {
   install.packages("remotes")
 }
 
-remotes::install_github("pharmaverse/pharmaverseadam", ref = "devel")
+remotes::install_github("pharmaverse/pharmaverseadam", ref = "main")
 ```

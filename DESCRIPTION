@@ -8,7 +8,8 @@ Authors@R:  c(
   person("Stefan", "Bundfuss", role = "aut"),
   person("Gayatri", "G", role = "aut"),
   person("Daphne", "Grassely", role = "aut"),
-  person("Zelos", "Zhu", role = "aut")
+  person("Zelos", "Zhu", role = "aut"),
+  person("Sadchla", "Mascary", role = "aut")
   )
 Description: A set of Analysis Data Model (ADaM) datasets constructed using the 
     Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and 
