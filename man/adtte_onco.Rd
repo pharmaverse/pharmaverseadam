@@ -3,7 +3,7 @@
 \docType{data}
 \name{adtte_onco}
 \alias{adtte_onco}
-\title{Time to Event Analysis Dataset for Oncology}
+\title{Time to Event Analysis for Oncology}
 \format{
 A data frame with 20 columns:
 \describe{
@@ -36,7 +36,7 @@ Generated from admiralonco package (template ad_adtte.R).
 adtte_onco
 }
 \description{
-adtte_onco dataset
+Time to Event Analysis for Oncology
 }
 \examples{
 data("adtte_onco")

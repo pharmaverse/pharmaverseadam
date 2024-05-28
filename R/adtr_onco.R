@@ -1,6 +1,5 @@
-#' Tumor Results Analysis Dataset for Oncology
+#' Tumor Results Analysis for Oncology
 #'
-#' adtr_onco dataset
 #'
 #' @name adtr_onco
 #' @docType data

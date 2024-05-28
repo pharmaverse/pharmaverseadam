@@ -119,7 +119,7 @@ Generated from admiral package (template ad_advs.R).
 advs
 }
 \description{
-advs dataset
+Vital Signs Analysis
 }
 \examples{
 data("advs")

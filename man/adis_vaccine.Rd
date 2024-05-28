@@ -118,7 +118,7 @@ Generated from admiralvaccine package (template ad_adis.R).
 adis_vaccine
 }
 \description{
-adis_vaccine dataset
+Immunogenicity Specimen Assessments Analysis for Vaccine
 }
 \examples{
 data("adis_vaccine")

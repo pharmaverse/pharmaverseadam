@@ -126,7 +126,7 @@ Generated from admiral package (template ad_admh.R).
 admh
 }
 \description{
-admh dataset
+Medical History Analysis
 }
 \examples{
 data("admh")

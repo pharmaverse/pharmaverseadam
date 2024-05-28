@@ -1,6 +1,5 @@
 #' Immunogenicity Specimen Assessments Analysis for Vaccine
 #'
-#' adis_vaccine dataset
 #'
 #' @name adis_vaccine
 #' @docType data

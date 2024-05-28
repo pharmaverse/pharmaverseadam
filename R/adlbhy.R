@@ -1,6 +1,5 @@
-#' Laboratory Analysis of Hy's Law Assessment
+#' Analysis of Lab Hy’s Law
 #'
-#' adlbhy dataset
 #'
 #' @name adlbhy
 #' @docType data

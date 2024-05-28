@@ -1,6 +1,5 @@
-#' Clinical Events Analysis Dataset for Vaccine
+#' Clinical Events Analysis for Vaccine
 #'
-#' adce_vaccine dataset
 #'
 #' @name adce_vaccine
 #' @docType data

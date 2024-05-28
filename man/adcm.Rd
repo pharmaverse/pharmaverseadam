@@ -106,7 +106,7 @@ Generated from admiral package (template ad_adcm.R).
 adcm
 }
 \description{
-adcm dataset
+Concomitant Medications Analysis
 }
 \examples{
 data("adcm")

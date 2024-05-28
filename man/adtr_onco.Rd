@@ -3,7 +3,7 @@
 \docType{data}
 \name{adtr_onco}
 \alias{adtr_onco}
-\title{Tumor Results Analysis Dataset for Oncology}
+\title{Tumor Results Analysis for Oncology}
 \format{
 A data frame with 96 columns:
 \describe{
@@ -112,7 +112,7 @@ Generated from admiralonco package (template ad_adtr.R).
 adtr_onco
 }
 \description{
-adtr_onco dataset
+Tumor Results Analysis for Oncology
 }
 \examples{
 data("adtr_onco")

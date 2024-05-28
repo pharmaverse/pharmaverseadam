@@ -1,6 +1,5 @@
-#' Subject Level Analysis Dataset for Vaccine
+#' Subject Level Analysis for Vaccine
 #'
-#' adsl_vaccine dataset
 #'
 #' @name adsl_vaccine
 #' @docType data

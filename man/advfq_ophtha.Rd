@@ -101,7 +101,7 @@ Generated from admiralophtha package (template ad_advfq.R).
 advfq_ophtha
 }
 \description{
-advfq_ophtha dataset
+Visual Function Questionnaire Analysis for Ophthalmology
 }
 \examples{
 data("advfq_ophtha")

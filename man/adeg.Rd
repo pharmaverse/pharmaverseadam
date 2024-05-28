@@ -121,7 +121,7 @@ Generated from admiral package (template ad_adeg.R).
 adeg
 }
 \description{
-adeg dataset
+Electrocardiogram Tests Analysis
 }
 \examples{
 data("adeg")

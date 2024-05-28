@@ -117,7 +117,7 @@ Generated from admiral package (template ad_adae.R).
 adae
 }
 \description{
-adae dataset
+Adverse Event Analysis
 }
 \examples{
 data("adae")
