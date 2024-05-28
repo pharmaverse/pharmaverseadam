@@ -1,6 +1,5 @@
-#' Dataset adlbhy
+#' Analysis of Lab Hy’s Law
 #'
-#' adlbhy dataset
 #'
 #' @name adlbhy
 #' @docType data

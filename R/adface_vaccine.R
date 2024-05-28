@@ -1,6 +1,5 @@
-#' Dataset adface_vaccine
+#' Findings About Clinical Events Analysis for Vaccine
 #'
-#' adface_vaccine dataset
 #'
 #' @name adface_vaccine
 #' @docType data

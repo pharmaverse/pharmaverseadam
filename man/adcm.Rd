@@ -3,7 +3,7 @@
 \docType{data}
 \name{adcm}
 \alias{adcm}
-\title{Dataset adcm}
+\title{Concomitant Medications Analysis}
 \format{
 A data frame with 90 columns:
 \describe{
@@ -106,7 +106,7 @@ Generated from admiral package (template ad_adcm.R).
 adcm
 }
 \description{
-adcm dataset
+Concomitant Medications Analysis
 }
 \examples{
 data("adcm")

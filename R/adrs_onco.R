@@ -1,6 +1,5 @@
-#' Dataset adrs_onco
+#' Tumor Response Analysis for Oncology
 #'
-#' adrs_onco dataset
 #'
 #' @name adrs_onco
 #' @docType data

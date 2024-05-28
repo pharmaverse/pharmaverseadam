@@ -1,6 +1,5 @@
-#' Dataset advs
+#' Vital Signs Analysis
 #'
-#' advs dataset
 #'
 #' @name advs
 #' @docType data
