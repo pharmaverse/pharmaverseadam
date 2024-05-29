@@ -29,13 +29,14 @@ get_attr <- function(data, col_name) {
   return(att)
 }
 
-write_doc <- function(data, dataset_name, pkg, template_name) {
+write_doc <- function(data, dataset_name, dataset_label, pkg, template_name) {
   # create documentation for the current dataset
   # TODO: use metatools/metacore for doc  ?
+  dataset_label <- str_replace(dataset_label, "Hys Law", "Hy's Law")
   doc_string <- paste(
     sprintf("#' Dataset %s", dataset_name),
     "#'",
-    sprintf("#' %s dataset", dataset_name),
+    sprintf("#' %s", dataset_label),
     "#'",
     sprintf("#' @name %s", dataset_name),
     "#' @docType data",
@@ -65,6 +66,7 @@ write_labels <- function(data, dataset_name, suffix) {
     {
       spec <- metacore::select_dataset(mc, dataset_name)
       data <- metatools::set_variable_labels(data, spec)
+      data <- xportr::xportr_df_label(data, spec, domain = dataset_name)
     },
     error = function(e) {
       warning(sprintf(
@@ -109,7 +111,8 @@ run_template <- function(tp) {
       save_rda(data, file_path = output_adam_path, new_name = dataset_name)
 
       # write doc
-      write_doc(data, dataset_name, pkg, tp_basename)
+      dataset_label <- attributes(data)$label
+      write_doc(data, dataset_name, dataset_label, pkg, tp_basename)
     }
 
     # return output cmd from templates
