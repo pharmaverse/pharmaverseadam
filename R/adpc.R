@@ -1,5 +1,6 @@
-#' Analysis of Pharmacokinetic Concentrations
+#' Dataset adpc
 #'
+#' Pharmacokinetic Concentrations
 #'
 #' @name adpc
 #' @docType data

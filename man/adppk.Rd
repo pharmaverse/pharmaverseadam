@@ -3,9 +3,9 @@
 \docType{data}
 \name{adppk}
 \alias{adppk}
-\title{Analysis of Population Pharmacokinetic}
+\title{Dataset adppk}
 \format{
-A data frame with 62 columns:
+A data frame with 61 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -56,8 +56,7 @@ A data frame with 62 columns:
 \item{ FORMN }{Drug Formulation (N)}
 \item{ COUNTRY }{Country}
 \item{ COUNTRYN }{Country (N)}
-\item{ REGION1 }{Geographic Region 1}
-\item{ REGION1N }{Geographic Region 1 (N)}
+\item{ COUNTRYL }{undocumented field}
 \item{ HTBL }{Numeric Result/Finding in Standard Units}
 \item{ WTBL }{Numeric Result/Finding in Standard Units}
 \item{ ALTBL }{Numeric Result/Finding in Standard Units}
@@ -78,7 +77,7 @@ Generated from admiral package (template ad_adppk.R).
 adppk
 }
 \description{
-Analysis of Population Pharmacokinetic
+Population Pharmacokinetic
 }
 \examples{
 data("adppk")

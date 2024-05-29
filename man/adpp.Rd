@@ -3,7 +3,7 @@
 \docType{data}
 \name{adpp}
 \alias{adpp}
-\title{Analysis of Pharmacokinetic Parameters}
+\title{Dataset adpp}
 \format{
 A data frame with 76 columns:
 \describe{
@@ -92,7 +92,7 @@ Generated from admiral package (template ad_adpp.R).
 adpp
 }
 \description{
-Analysis of Pharmacokinetic Parameters
+Pharmacokinetic Parameters
 }
 \examples{
 data("adpp")

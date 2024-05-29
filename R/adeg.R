@@ -1,5 +1,6 @@
-#' Electrocardiogram Tests Analysis
+#' Dataset adeg
 #'
+#' Electrocardiogram Tests Analysis
 #'
 #' @name adeg
 #' @docType data

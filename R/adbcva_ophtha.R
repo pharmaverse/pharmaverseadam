@@ -1,5 +1,6 @@
-#' Best Corrected Visual Acuity Analysis for Ophthalmology
+#' Dataset adbcva_ophtha
 #'
+#' Best Corrected Visual Acuity Analysis
 #'
 #' @name adbcva_ophtha
 #' @docType data

@@ -1,5 +1,6 @@
-#' Exposure Analysis
+#' Dataset adex
 #'
+#' Exposure Analysis
 #'
 #' @name adex
 #' @docType data

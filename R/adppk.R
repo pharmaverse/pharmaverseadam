@@ -1,9 +1,10 @@
-#' Analysis of Population Pharmacokinetic
+#' Dataset adppk
 #'
+#' Population Pharmacokinetic
 #'
 #' @name adppk
 #' @docType data
-#' @format A data frame with 62 columns:
+#' @format A data frame with 61 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -54,8 +55,7 @@
 #'     \item{ FORMN }{Drug Formulation (N)}
 #'     \item{ COUNTRY }{Country}
 #'     \item{ COUNTRYN }{Country (N)}
-#'     \item{ REGION1 }{Geographic Region 1}
-#'     \item{ REGION1N }{Geographic Region 1 (N)}
+#'     \item{ COUNTRYL }{undocumented field}
 #'     \item{ HTBL }{Numeric Result/Finding in Standard Units}
 #'     \item{ WTBL }{Numeric Result/Finding in Standard Units}
 #'     \item{ ALTBL }{Numeric Result/Finding in Standard Units}

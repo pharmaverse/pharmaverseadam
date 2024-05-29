@@ -1,9 +1,10 @@
-#' Tumor Results Analysis for Oncology
+#' Dataset adtr_onco
 #'
+#' Tumor Results Analysis for Oncology
 #'
 #' @name adtr_onco
 #' @docType data
-#' @format A data frame with 96 columns:
+#' @format A data frame with 99 columns:
 #'   \describe{
 #'     \item{ DOMAIN }{Domain Abbreviation}
 #'     \item{ STUDYID }{Study Identifier}
@@ -89,9 +90,12 @@
 #'     \item{ EOSSTT }{End of Study Status}
 #'     \item{ FRVDT }{Final Retrievel Visit Date}
 #'     \item{ DTHDT }{Date of Death}
-#'     \item{ DTHDTF }{undocumented field}
+#'     \item{ DTHDTF }{Date of Death Imputation Flag}
 #'     \item{ DTHADY }{Relative Day of Death}
 #'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+#'     \item{ DTHCAUS }{undocumented field}
+#'     \item{ DTHDOM }{undocumented field}
+#'     \item{ DTHCGR1 }{undocumented field}
 #'     \item{ LSTALVDT }{Date Last Known Alive}
 #'     \item{ SAFFL }{Safety Population Flag}
 #'     \item{ RACEGR1 }{Pooled Race Group 1}

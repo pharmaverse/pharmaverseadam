@@ -1,5 +1,6 @@
-#' Adverse Event Analysis
+#' Dataset adae
 #'
+#' Adverse Events Analysis
 #'
 #' @name adae
 #' @docType data
