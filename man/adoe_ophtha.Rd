@@ -3,7 +3,7 @@
 \docType{data}
 \name{adoe_ophtha}
 \alias{adoe_ophtha}
-\title{Dataset adoe_ophtha}
+\title{adoe_ophtha}
 \format{
 A data frame with 98 columns:
 \describe{

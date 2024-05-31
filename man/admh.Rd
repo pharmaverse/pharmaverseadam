@@ -3,7 +3,7 @@
 \docType{data}
 \name{admh}
 \alias{admh}
-\title{Dataset admh}
+\title{admh}
 \format{
 A data frame with 110 columns:
 \describe{

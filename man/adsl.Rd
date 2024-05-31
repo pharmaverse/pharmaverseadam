@@ -3,7 +3,7 @@
 \docType{data}
 \name{adsl}
 \alias{adsl}
-\title{Dataset adsl}
+\title{adsl}
 \format{
 A data frame with 54 columns:
 \describe{

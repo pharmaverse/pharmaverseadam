@@ -1,10 +1,10 @@
-#' Dataset adpp
+#' adpp
 #'
 #' Pharmacokinetic Parameters
 #'
 #' @name adpp
 #' @docType data
-#' @format A data frame with 76 columns:
+#' @format A data frame with 75 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -27,7 +27,6 @@
 #'     \item{ PARAMCD }{Parameter Code}
 #'     \item{ PARCAT1 }{Parameter Category}
 #'     \item{ AVAL }{Numeric Result/Finding in Standard Units}
-#'     \item{ AVALC }{Character Result/Finding in Std Format}
 #'     \item{ AVALU }{Standard Units}
 #'     \item{ SRCDOM }{Domain Abbreviation}
 #'     \item{ SRCVAR }{Source Variable}

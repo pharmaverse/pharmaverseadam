@@ -1,4 +1,4 @@
-#' Dataset adtte_onco
+#' adtte_onco
 #'
 #' Time to Event Analysis for Oncology
 #'

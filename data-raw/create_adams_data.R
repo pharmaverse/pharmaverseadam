@@ -1,5 +1,5 @@
 # ensure every packages are installed
-
+library(stringr)
 update_pkg <- TRUE
 ignore_templates <- list(
   "admiralonco" = c("ad_adrs_basic.R")
@@ -34,7 +34,7 @@ write_doc <- function(data, dataset_name, dataset_label, pkg, template_name) {
   # TODO: use metatools/metacore for doc  ?
   dataset_label <- str_replace(dataset_label, "Hys Law", "Hy's Law")
   doc_string <- paste(
-    sprintf("#' Dataset %s", dataset_name),
+    sprintf("#' %s", dataset_name),
     "#'",
     sprintf("#' %s", dataset_label),
     "#'",

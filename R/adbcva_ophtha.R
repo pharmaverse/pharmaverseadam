@@ -1,4 +1,4 @@
-#' Dataset adbcva_ophtha
+#' adbcva_ophtha
 #'
 #' Best Corrected Visual Acuity Analysis
 #'

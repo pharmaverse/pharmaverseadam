@@ -3,7 +3,7 @@
 \docType{data}
 \name{adbcva_ophtha}
 \alias{adbcva_ophtha}
-\title{Dataset adbcva_ophtha}
+\title{adbcva_ophtha}
 \format{
 A data frame with 116 columns:
 \describe{

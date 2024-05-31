@@ -1,4 +1,4 @@
-#' Dataset adsl_vaccine
+#' adsl_vaccine
 #'
 #' Subject Level Analysis for Vaccine
 #'

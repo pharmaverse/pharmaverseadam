@@ -1,4 +1,4 @@
-#' Dataset adppk
+#' adppk
 #'
 #' Population Pharmacokinetic
 #'
@@ -15,7 +15,7 @@
 #'     \item{ NPRLT }{Nominal Rel Time from Previous Dose}
 #'     \item{ DOSEA }{Actual Treatment Dose}
 #'     \item{ DOSEP }{Planned Treatment Dose}
-#'     \item{ PARAMCD }{undocumented field}
+#'     \item{ PARAMCD }{Parameter Code}
 #'     \item{ ALLOQ }{Analysis Lower Limit of Quantitation}
 #'     \item{ CMT }{Compartment}
 #'     \item{ BLQFL }{Below Lower Limit of Quant Flag}
@@ -30,8 +30,8 @@
 #'     \item{ II }{Dosing Interval (unit)}
 #'     \item{ SS }{Steady State}
 #'     \item{ ASEQ }{Analysis Sequence Number}
-#'     \item{ PARAM }{undocumented field}
-#'     \item{ PARAMN }{undocumented field}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMN }{Parameter (N)}
 #'     \item{ PROJID }{Project Identifier}
 #'     \item{ PROJIDN }{Project Identifier (N)}
 #'     \item{ STUDYIDN }{Study Identifier (N)}
@@ -55,7 +55,7 @@
 #'     \item{ FORMN }{Drug Formulation (N)}
 #'     \item{ COUNTRY }{Country}
 #'     \item{ COUNTRYN }{Country (N)}
-#'     \item{ COUNTRYL }{undocumented field}
+#'     \item{ COUNTRYL }{Country Name}
 #'     \item{ HTBL }{Numeric Result/Finding in Standard Units}
 #'     \item{ WTBL }{Numeric Result/Finding in Standard Units}
 #'     \item{ ALTBL }{Numeric Result/Finding in Standard Units}

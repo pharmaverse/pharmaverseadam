@@ -1,4 +1,4 @@
-#' Dataset adlbhy
+#' adlbhy
 #'
 #' Analysis of Lab Hy's Law
 #'

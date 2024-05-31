@@ -3,7 +3,7 @@
 \docType{data}
 \name{adtr_onco}
 \alias{adtr_onco}
-\title{Dataset adtr_onco}
+\title{adtr_onco}
 \format{
 A data frame with 99 columns:
 \describe{
@@ -94,9 +94,9 @@ A data frame with 99 columns:
 \item{ DTHDTF }{Date of Death Imputation Flag}
 \item{ DTHADY }{Relative Day of Death}
 \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
-\item{ DTHCAUS }{undocumented field}
-\item{ DTHDOM }{undocumented field}
-\item{ DTHCGR1 }{undocumented field}
+\item{ DTHCAUS }{Cause of Death}
+\item{ DTHDOM }{Domain for Date of Death Collection}
+\item{ DTHCGR1 }{Cause of Death Reason 1}
 \item{ LSTALVDT }{Date Last Known Alive}
 \item{ SAFFL }{Safety Population Flag}
 \item{ RACEGR1 }{Pooled Race Group 1}

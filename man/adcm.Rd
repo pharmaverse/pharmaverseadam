@@ -3,7 +3,7 @@
 \docType{data}
 \name{adcm}
 \alias{adcm}
-\title{Dataset adcm}
+\title{adcm}
 \format{
 A data frame with 90 columns:
 \describe{

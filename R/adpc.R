@@ -1,4 +1,4 @@
-#' Dataset adpc
+#' adpc
 #'
 #' Pharmacokinetic Concentrations
 #'
@@ -51,7 +51,7 @@
 #'     \item{ PCRFTDT }{Reference Date of Dose for Analyte}
 #'     \item{ PCRFTTM }{Reference Time of Dose for Analyte}
 #'     \item{ NRRLT }{Nominal Rel. Time from Ref. Dose}
-#'     \item{ PARCAT1 }{undocumented field}
+#'     \item{ PARCAT1 }{Parameter Category 1}
 #'     \item{ ATPTN }{Analysis Timepoint (N)}
 #'     \item{ ATPT }{Analysis Timepoint}
 #'     \item{ ATPTREF }{Analysis Timepoint Reference}

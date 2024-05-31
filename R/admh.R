@@ -1,4 +1,4 @@
-#' Dataset admh
+#' admh
 #'
 #' Medical History Analysis
 #'

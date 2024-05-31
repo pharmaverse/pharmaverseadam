@@ -1,4 +1,4 @@
-#' Dataset adis_vaccine
+#' adis_vaccine
 #'
 #' Immunogenicity Specimen Assessments
 #'

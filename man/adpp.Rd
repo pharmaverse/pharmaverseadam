@@ -3,9 +3,9 @@
 \docType{data}
 \name{adpp}
 \alias{adpp}
-\title{Dataset adpp}
+\title{adpp}
 \format{
-A data frame with 76 columns:
+A data frame with 75 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -28,7 +28,6 @@ A data frame with 76 columns:
 \item{ PARAMCD }{Parameter Code}
 \item{ PARCAT1 }{Parameter Category}
 \item{ AVAL }{Numeric Result/Finding in Standard Units}
-\item{ AVALC }{Character Result/Finding in Std Format}
 \item{ AVALU }{Standard Units}
 \item{ SRCDOM }{Domain Abbreviation}
 \item{ SRCVAR }{Source Variable}

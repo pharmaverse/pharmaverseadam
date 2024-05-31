@@ -3,7 +3,7 @@
 \docType{data}
 \name{adlbhy}
 \alias{adlbhy}
-\title{Dataset adlbhy}
+\title{adlbhy}
 \format{
 A data frame with 14 columns:
 \describe{

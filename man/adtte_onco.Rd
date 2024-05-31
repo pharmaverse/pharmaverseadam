@@ -3,7 +3,7 @@
 \docType{data}
 \name{adtte_onco}
 \alias{adtte_onco}
-\title{Dataset adtte_onco}
+\title{adtte_onco}
 \format{
 A data frame with 20 columns:
 \describe{

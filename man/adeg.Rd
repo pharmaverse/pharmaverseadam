@@ -3,7 +3,7 @@
 \docType{data}
 \name{adeg}
 \alias{adeg}
-\title{Dataset adeg}
+\title{adeg}
 \format{
 A data frame with 105 columns:
 \describe{
