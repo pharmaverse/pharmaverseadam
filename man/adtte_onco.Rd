@@ -3,18 +3,18 @@
 \docType{data}
 \name{adtte_onco}
 \alias{adtte_onco}
-\title{Time to Event Analysis for Oncology}
+\title{adtte_onco}
 \format{
 A data frame with 20 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
+\item{ ADT }{Analysis Date}
 \item{ EVNTDESC }{Event or Censoring Description}
 \item{ SRCDOM }{Source Data}
 \item{ SRCVAR }{Source Variable}
 \item{ SRCSEQ }{Source Sequence Number}
 \item{ CNSR }{Censor}
-\item{ ADT }{Analysis Date}
 \item{ CNSDTDSC }{Censor Date Description}
 \item{ STARTDT }{Time-to-Event Origin Date for Subject}
 \item{ PARAMCD }{Parameter Code}

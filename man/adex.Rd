@@ -3,7 +3,7 @@
 \docType{data}
 \name{adex}
 \alias{adex}
-\title{Exposure Analysis}
+\title{adex}
 \format{
 A data frame with 88 columns:
 \describe{

@@ -3,9 +3,9 @@
 \docType{data}
 \name{advs}
 \alias{advs}
-\title{Vital Signs Analysis}
+\title{advs}
 \format{
-A data frame with 103 columns:
+A data frame with 101 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ DOMAIN }{Domain Abbreviation}
@@ -39,7 +39,6 @@ A data frame with 103 columns:
 \item{ ADY }{Analysis Relative Day}
 \item{ PARAMCD }{Parameter Code}
 \item{ AVAL }{Analysis Value}
-\item{ AVALC }{Analysis Value (C)}
 \item{ ATPTN }{Analysis Timepoint (N)}
 \item{ ATPT }{Analysis Timepoint}
 \item{ AVISIT }{Analysis Visit}
@@ -54,7 +53,6 @@ A data frame with 103 columns:
 \item{ BASETYPE }{Baseline Type}
 \item{ ABLFL }{Baseline Record Flag}
 \item{ BASE }{Baseline Value}
-\item{ BASEC }{Baseline Value (C)}
 \item{ BNRIND }{Baseline Reference Range Indicator}
 \item{ CHG }{Change from Baseline}
 \item{ PCHG }{Percent Change from Baseline}

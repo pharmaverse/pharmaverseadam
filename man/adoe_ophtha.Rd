@@ -3,7 +3,7 @@
 \docType{data}
 \name{adoe_ophtha}
 \alias{adoe_ophtha}
-\title{Exam Analysis for Ophthalmology}
+\title{adoe_ophtha}
 \format{
 A data frame with 98 columns:
 \describe{

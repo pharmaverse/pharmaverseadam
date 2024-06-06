@@ -1,5 +1,6 @@
-#' Findings About Clinical Events Analysis for Vaccine
+#' adface_vaccine
 #'
+#' Findings About Clinical Events Analysis
 #'
 #' @name adface_vaccine
 #' @docType data

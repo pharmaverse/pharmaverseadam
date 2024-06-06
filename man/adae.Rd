@@ -3,7 +3,7 @@
 \docType{data}
 \name{adae}
 \alias{adae}
-\title{Adverse Event Analysis}
+\title{adae}
 \format{
 A data frame with 101 columns:
 \describe{
@@ -117,7 +117,7 @@ Generated from admiral package (template ad_adae.R).
 adae
 }
 \description{
-Adverse Event Analysis
+Adverse Events Analysis
 }
 \examples{
 data("adae")

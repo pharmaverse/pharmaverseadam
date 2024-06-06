@@ -1,5 +1,6 @@
-#' Concomitant Medications Analysis
+#' adcm
 #'
+#' Concomitant Medications Analysis
 #'
 #' @name adcm
 #' @docType data

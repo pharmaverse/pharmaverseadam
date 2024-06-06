@@ -1,9 +1,10 @@
-#' Analysis of Pharmacokinetic Parameters
+#' adpp
 #'
+#' Pharmacokinetic Parameters
 #'
 #' @name adpp
 #' @docType data
-#' @format A data frame with 74 columns:
+#' @format A data frame with 75 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -24,15 +25,16 @@
 #'     \item{ ADT }{Analysis Date}
 #'     \item{ ADY }{Analysis Relative Day}
 #'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ PARCAT1 }{Parameter Category}
 #'     \item{ AVAL }{Numeric Result/Finding in Standard Units}
-#'     \item{ AVALC }{Character Result/Finding in Std Format}
+#'     \item{ AVALU }{Standard Units}
 #'     \item{ SRCDOM }{Domain Abbreviation}
 #'     \item{ SRCVAR }{Source Variable}
 #'     \item{ SRCSEQ }{Sequence Number}
-#'     \item{ VISIT }{Visit Name}
-#'     \item{ VISITNUM }{Visit Number}
-#'     \item{ AVISIT }{Analysis Visit}
 #'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISIT }{Visit Name}
 #'     \item{ TRTP }{Planned Treatment}
 #'     \item{ TRTA }{Actual Treatment}
 #'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}

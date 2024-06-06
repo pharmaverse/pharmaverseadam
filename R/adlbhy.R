@@ -1,5 +1,6 @@
-#' Analysis of Lab Hy’s Law
+#' adlbhy
 #'
+#' Analysis of Lab Hy's Law
 #'
 #' @name adlbhy
 #' @docType data

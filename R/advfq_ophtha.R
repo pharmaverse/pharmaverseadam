@@ -1,5 +1,6 @@
-#' Visual Function Questionnaire Analysis for Ophthalmology
+#' advfq_ophtha
 #'
+#' Visual Function Questionnaire Analysis
 #'
 #' @name advfq_ophtha
 #' @docType data

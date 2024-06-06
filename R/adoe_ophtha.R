@@ -1,5 +1,6 @@
-#' Exam Analysis for Ophthalmology
+#' adoe_ophtha
 #'
+#' Exam Analysis for Ophthalmology
 #'
 #' @name adoe_ophtha
 #' @docType data

@@ -1,5 +1,6 @@
-#' Laboratory Analysis
+#' adlb
 #'
+#' Laboratory Analysis
 #'
 #' @name adlb
 #' @docType data

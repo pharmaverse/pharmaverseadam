@@ -3,9 +3,9 @@
 \docType{data}
 \name{adrs_onco}
 \alias{adrs_onco}
-\title{Tumor Response Analysis for Oncology}
+\title{adrs_onco}
 \format{
-A data frame with 76 columns:
+A data frame with 79 columns:
 \describe{
 \item{ DOMAIN }{Domain Abbreviation}
 \item{ STUDYID }{Study Identifier}
@@ -71,9 +71,12 @@ A data frame with 76 columns:
 \item{ EOSSTT }{End of Study Status}
 \item{ FRVDT }{Final Retrievel Visit Date}
 \item{ DTHDT }{Date of Death}
-\item{ DTHDTF }{undocumented field}
+\item{ DTHDTF }{Date of Death Imputation Flag}
 \item{ DTHADY }{Relative Day of Death}
 \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ DTHCAUS }{Cause of Death}
+\item{ DTHDOM }{Domain for Date of Death Collection}
+\item{ DTHCGR1 }{Cause of Death Reason 1}
 \item{ LSTALVDT }{Date Last Known Alive}
 \item{ SAFFL }{Safety Population Flag}
 \item{ RACEGR1 }{Pooled Race Group 1}
@@ -92,7 +95,7 @@ Generated from admiralonco package (template ad_adrs.R).
 adrs_onco
 }
 \description{
-Tumor Response Analysis for Oncology
+Tumor Response Analysis
 }
 \examples{
 data("adrs_onco")
