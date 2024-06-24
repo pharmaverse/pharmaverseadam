@@ -1,3 +1,7 @@
+# pharmaverseadam 1.0.0
+
+## New Features
+
 # pharmaverseadam 0.2.0
 
 ## New Features
