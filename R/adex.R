@@ -1,4 +1,4 @@
-#' xposure Analysis
+#' Exposure Analysis
 #'
 #' An example of ADEX ADaM dataset
 #'
