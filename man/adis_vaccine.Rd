@@ -3,7 +3,7 @@
 \docType{data}
 \name{adis_vaccine}
 \alias{adis_vaccine}
-\title{adis_vaccine}
+\title{Immunogenicity Specimen Assessments}
 \format{
 A data frame with 102 columns:
 \describe{
@@ -118,7 +118,7 @@ Generated from admiralvaccine package (template ad_adis.R).
 adis_vaccine
 }
 \description{
-Immunogenicity Specimen Assessments
+An example of ADIS dataset for Vaccine studies
 }
 \examples{
 data("adis_vaccine")

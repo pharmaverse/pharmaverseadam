@@ -1,6 +1,6 @@
-#' advfq_ophtha
-#'
 #' Visual Function Questionnaire Analysis
+#'
+#' An example of ADVFQ ADaM dataset for Ophthalmology studies
 #'
 #' @name advfq_ophtha
 #' @docType data

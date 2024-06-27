@@ -3,7 +3,7 @@
 \docType{data}
 \name{adlbhy}
 \alias{adlbhy}
-\title{adlbhy}
+\title{Analysis of Lab Hy's Law}
 \format{
 A data frame with 14 columns:
 \describe{
@@ -30,7 +30,7 @@ Generated from admiral package (template ad_adlbhy.R).
 adlbhy
 }
 \description{
-Analysis of Lab Hy's Law
+A template of the ADLBHY dataset
 }
 \examples{
 data("adlbhy")

@@ -3,7 +3,7 @@
 \docType{data}
 \name{adrs_onco}
 \alias{adrs_onco}
-\title{adrs_onco}
+\title{Tumor Response Analysis}
 \format{
 A data frame with 79 columns:
 \describe{
@@ -95,7 +95,7 @@ Generated from admiralonco package (template ad_adrs.R).
 adrs_onco
 }
 \description{
-Tumor Response Analysis
+An example of ADRS dataset for Oncology studies
 }
 \examples{
 data("adrs_onco")

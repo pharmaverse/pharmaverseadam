@@ -1,6 +1,7 @@
-#' adae
-#'
 #' Adverse Events Analysis
+#'
+#' An example of ADAE ADaM dataset
+#'
 #'
 #' @name adae
 #' @docType data

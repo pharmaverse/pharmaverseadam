@@ -1,6 +1,6 @@
-#' adpp
-#'
 #' Pharmacokinetic Parameters
+#'
+#' An example of ADPP ADaM dataset
 #'
 #' @name adpp
 #' @docType data

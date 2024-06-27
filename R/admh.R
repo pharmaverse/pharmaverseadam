@@ -1,6 +1,6 @@
-#' admh
-#'
 #' Medical History Analysis
+#'
+#' A template of ADMH ADaM dataset
 #'
 #' @name admh
 #' @docType data

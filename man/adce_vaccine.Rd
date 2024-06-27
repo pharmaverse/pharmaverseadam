@@ -3,7 +3,7 @@
 \docType{data}
 \name{adce_vaccine}
 \alias{adce_vaccine}
-\title{adce_vaccine}
+\title{Clinical Events Analysis for Vaccine}
 \format{
 A data frame with 56 columns:
 \describe{
@@ -72,7 +72,7 @@ Generated from admiralvaccine package (template ad_adce.R).
 adce_vaccine
 }
 \description{
-Clinical Events Analysis for Vaccine
+An example of ADCE dataset for Vaccine studies
 }
 \examples{
 data("adce_vaccine")
