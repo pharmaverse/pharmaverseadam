@@ -1,6 +1,6 @@
-#' adtte_onco
-#'
 #' Time to Event Analysis for Oncology
+#'
+#' An example of ADTTE ADaM dataset for Oncology studies
 #'
 #' @name adtte_onco
 #' @docType data

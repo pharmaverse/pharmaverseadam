@@ -3,7 +3,7 @@
 \docType{data}
 \name{admh}
 \alias{admh}
-\title{admh}
+\title{Medical History Analysis}
 \format{
 A data frame with 110 columns:
 \describe{
@@ -126,7 +126,7 @@ Generated from admiral package (template ad_admh.R).
 admh
 }
 \description{
-Medical History Analysis
+A template of ADMH ADaM dataset
 }
 \examples{
 data("admh")

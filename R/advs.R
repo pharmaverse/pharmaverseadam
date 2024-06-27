@@ -1,6 +1,6 @@
-#' advs
-#'
 #' Vital Signs Analysis
+#'
+#' An example of ADVS ADaM dataset
 #'
 #' @name advs
 #' @docType data

@@ -3,7 +3,7 @@
 \docType{data}
 \name{adbcva_ophtha}
 \alias{adbcva_ophtha}
-\title{adbcva_ophtha}
+\title{Best Corrected Visual Acuity Analysis}
 \format{
 A data frame with 116 columns:
 \describe{
@@ -132,7 +132,7 @@ Generated from admiralophtha package (template ad_adbcva.R).
 adbcva_ophtha
 }
 \description{
-Best Corrected Visual Acuity Analysis
+An example of ADBCVA ADaM dataset for Ophthalmology studies
 }
 \examples{
 data("adbcva_ophtha")

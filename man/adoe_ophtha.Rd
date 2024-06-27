@@ -3,7 +3,7 @@
 \docType{data}
 \name{adoe_ophtha}
 \alias{adoe_ophtha}
-\title{adoe_ophtha}
+\title{Exam Analysis for Ophthalmology}
 \format{
 A data frame with 98 columns:
 \describe{
@@ -114,7 +114,7 @@ Generated from admiralophtha package (template ad_adoe.R).
 adoe_ophtha
 }
 \description{
-Exam Analysis for Ophthalmology
+An example of ADOE dataset for Ophthalmology studies
 }
 \examples{
 data("adoe_ophtha")

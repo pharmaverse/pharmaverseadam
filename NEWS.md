@@ -1,6 +1,9 @@
 # pharmaverseadam 1.0.0
 
-## New Features
+## Documentation
+  - The first stable version of `pharmaverseadam`!
+  - Dataset labels are updated to align with ADaM IG (#64) 
+  - Refreshed dataset with ADaM datasets created by admiral 1.1.1, admiralophtha 1.1 (#58)
 
 # pharmaverseadam 0.2.0
 

@@ -1,6 +1,6 @@
-#' adpc
-#'
 #' Pharmacokinetic Concentrations
+#'
+#' An example of ADPC dataset
 #'
 #' @name adpc
 #' @docType data

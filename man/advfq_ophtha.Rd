@@ -3,7 +3,7 @@
 \docType{data}
 \name{advfq_ophtha}
 \alias{advfq_ophtha}
-\title{advfq_ophtha}
+\title{Visual Function Questionnaire Analysis}
 \format{
 A data frame with 85 columns:
 \describe{
@@ -101,7 +101,7 @@ Generated from admiralophtha package (template ad_advfq.R).
 advfq_ophtha
 }
 \description{
-Visual Function Questionnaire Analysis
+An example of ADVFQ ADaM dataset for Ophthalmology studies
 }
 \examples{
 data("advfq_ophtha")

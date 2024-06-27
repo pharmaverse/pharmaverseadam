@@ -1,6 +1,6 @@
-#' adeg
-#'
 #' Electrocardiogram Tests Analysis
+#'
+#' An example of ADEG ADaM dataset
 #'
 #' @name adeg
 #' @docType data

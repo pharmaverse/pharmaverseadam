@@ -3,7 +3,7 @@
 \docType{data}
 \name{adex}
 \alias{adex}
-\title{adex}
+\title{xposure Analysis}
 \format{
 A data frame with 88 columns:
 \describe{
@@ -104,7 +104,7 @@ Generated from admiral package (template ad_adex.R).
 adex
 }
 \description{
-Exposure Analysis
+An example of ADEX ADaM dataset
 }
 \examples{
 data("adex")
