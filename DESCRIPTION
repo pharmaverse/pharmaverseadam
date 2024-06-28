@@ -17,7 +17,7 @@ Description: A set of Analysis Data Model (ADaM) datasets constructed using the
     described in: CDISC Analysis Data Model Team
     (2021) <https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_v1.3.pdf>.
 License: Apache License (>= 2)
-URL: https://pharmaverse.github.io/pharmaverseadam/main/, https://github.com/pharmaverse/pharmaverseadam/
+URL: https://pharmaverse.github.io/pharmaverseadam, https://github.com/pharmaverse/pharmaverseadam/
 Encoding: UTF-8
 Language: en-US
 LazyData: true
