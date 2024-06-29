@@ -22,3 +22,4 @@
 ^CRAN-SUBMISSION$
 ^data-raw
 ^tmp
+^cran-comments\.md$
