@@ -13,7 +13,7 @@ A set of Analysis Data Model (ADaM) datasets constructed using the Study Data Ta
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://pharmaverse.github.io/pharmaverseadam}
+  \item \url{https://pharmaverse.github.io/pharmaverseadam/}
   \item \url{https://github.com/pharmaverse/pharmaverseadam/}
 }
 
