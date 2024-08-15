@@ -3,10 +3,7 @@ current_repo:
   repo: pharmaverse/pharmaverseadam
   host: https://github.com
 upstream_repos:
-  - repo: pharmaverse/admiral
-    host: https://github.com
-  - repo: pharmaverse/pharmaversesdtm
-    host: https://github.com
-  - repo: pharmaverse/admiraldev
-    host: https://github.com
 downstream_repos:
+  insightsengineering/scda.test:
+    repo: insightsengineering/scda.test
+    host: https://github.com
