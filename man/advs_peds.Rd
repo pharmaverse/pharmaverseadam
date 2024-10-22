@@ -31,7 +31,7 @@ A data frame with 80 columns:
 \item{ VSTPTNUM }{Planned Time Point Number}
 \item{ VSELTM }{Planned Elapsed Time from Time Point Ref}
 \item{ VSTPTREF }{Time Point Reference}
-\item{ VSEVAL }{Evalutator}
+\item{ VSEVAL }{Evaluator}
 \item{ EPOCH }{Epoch}
 \item{ SEX }{Sex}
 \item{ BRTHDTC }{Date/Time of Birth (Character)}

@@ -1,4 +1,4 @@
-# pharmaversesadam 1.1.0
+# pharmaverseadam 1.1.0
 
 Ad-hoc release.
 
