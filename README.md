@@ -21,8 +21,8 @@ of packages.
 # Package Contents
 
 The ADaM contents of this package is populated by an action that
-executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}` and
-`{admiralvaccine}` templates and saves the resulting datasets here. This
+executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`,
+`{admiralvaccine}` and `{admiralpeds}` templates and saves the resulting datasets here. This
 action can be triggered manually by the package maintainers in two
 scenarios:
 
