@@ -135,13 +135,13 @@ if (update_pkg) {
 }
 
 # dict to match admiral xlsx specs suffixes
-suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V")
+suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E")
 mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   where_sep_sheet = FALSE,
   quiet = TRUE
 )
 
-packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine")
+packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
 
 all_results <- c()
 for (pkg in packages_list) {

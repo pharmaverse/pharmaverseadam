@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A set of Analysis Data Model (ADaM) datasets constructed using the Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and the template scripts from the 'admiral' family of packages. ADaM dataset specifications are described in: CDISC Analysis Data Model Team (2021) \url{https://www.cdisc.org/system/files/members/standard/foundational/ADaMIG_v1.3.pdf}.
+A set of Analysis Data Model (ADaM) datasets constructed using the Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and the template scripts from the 'admiral' family of packages. ADaM dataset specifications are described in the CDISC ADaM implementation guide, accessible by creating a free account on \url{https://www.cdisc.org/}.
 }
 \seealso{
 Useful links:
