@@ -1,6 +1,6 @@
-#' Tumor Results Analysis for Oncology
+#' adtr_onco
 #'
-#' An example of ADTR ADaM dataset for Oncology studies
+#' Tumor Results Analysis for Oncology
 #'
 #' @name adtr_onco
 #' @docType data

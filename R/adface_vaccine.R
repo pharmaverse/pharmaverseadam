@@ -1,10 +1,10 @@
-#' Findings About Clinical Events Analysis
+#' adface_vaccine
 #'
-#' An example of ADFACE for Vaccine studies
+#' Findings About Clinical Events Analysis
 #'
 #' @name adface_vaccine
 #' @docType data
-#' @format A data frame with 60 columns:
+#' @format A data frame with 61 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -66,6 +66,7 @@
 #'     \item{ EVENTDFL }{Day Event Value Flag}
 #'     \item{ ANL01FL }{Analysis Flag 01}
 #'     \item{ ANL02FL }{Analysis Flag 02}
+#'     \item{ ANL03FL }{undocumented field}
 #'   }
 #'
 #' @source Generated from admiralvaccine package (template ad_adface.R).

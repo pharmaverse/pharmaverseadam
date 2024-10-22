@@ -1,6 +1,6 @@
-#' Subject Level Analysis
+#' adsl
 #'
-#' An example of ADSL ADaM dataset
+#' Subject Level Analysis
 #'
 #' @name adsl
 #' @docType data

@@ -3,7 +3,7 @@
 \docType{data}
 \name{adsl}
 \alias{adsl}
-\title{Subject Level Analysis}
+\title{adsl}
 \format{
 A data frame with 54 columns:
 \describe{
@@ -70,7 +70,7 @@ Generated from admiral package (template ad_adsl.R).
 adsl
 }
 \description{
-An example of ADSL ADaM dataset
+Subject Level Analysis
 }
 \examples{
 data("adsl")

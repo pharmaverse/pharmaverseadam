@@ -1,6 +1,6 @@
-#' Population Pharmacokinetic
+#' adppk
 #'
-#' A template of ADPPK ADaM dataset
+#' Population Pharmacokinetic
 #'
 #' @name adppk
 #' @docType data

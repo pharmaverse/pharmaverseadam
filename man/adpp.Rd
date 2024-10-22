@@ -3,9 +3,9 @@
 \docType{data}
 \name{adpp}
 \alias{adpp}
-\title{Pharmacokinetic Parameters}
+\title{adpp}
 \format{
-A data frame with 75 columns:
+A data frame with 79 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -38,8 +38,8 @@ A data frame with 75 columns:
 \item{ VISIT }{Visit Name}
 \item{ TRTP }{Planned Treatment}
 \item{ TRTA }{Actual Treatment}
-\item{ AVALCA1N }{Analysis Value Category 1 (N)}
 \item{ AVALCAT1 }{Analysis Value Category 1}
+\item{ AVALCA1N }{Analysis Value Category 1 (N)}
 \item{ SUBJID }{Subject Identifier for the Study}
 \item{ RFSTDTC }{Subject Reference Start Date/Time}
 \item{ RFENDTC }{Subject Reference End Date/Time}
@@ -71,12 +71,16 @@ A data frame with 75 columns:
 \item{ EOSSTT }{End of Study Status}
 \item{ FRVDT }{Final Retrievel Visit Date}
 \item{ RANDDT }{Date of Randomization}
+\item{ DTHDTF }{undocumented field}
 \item{ DTHADY }{Relative Day of Death}
 \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ DTHCAUS }{undocumented field}
+\item{ DTHDOM }{undocumented field}
+\item{ DTHCGR1 }{undocumented field}
 \item{ LSTALVDT }{Date Last Known Alive}
-\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ SAFFL }{Safety Population Flag}
 \item{ RACEGR1 }{Pooled Race Group 1}
+\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ REGION1 }{Geographic Region 1}
 \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
 \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
@@ -91,7 +95,7 @@ Generated from admiral package (template ad_adpp.R).
 adpp
 }
 \description{
-An example of ADPP ADaM dataset
+Pharmacokinetic Parameters
 }
 \examples{
 data("adpp")

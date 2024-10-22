@@ -3,9 +3,9 @@
 \docType{data}
 \name{adface_vaccine}
 \alias{adface_vaccine}
-\title{Findings About Clinical Events Analysis}
+\title{adface_vaccine}
 \format{
-A data frame with 60 columns:
+A data frame with 61 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -67,6 +67,7 @@ A data frame with 60 columns:
 \item{ EVENTDFL }{Day Event Value Flag}
 \item{ ANL01FL }{Analysis Flag 01}
 \item{ ANL02FL }{Analysis Flag 02}
+\item{ ANL03FL }{undocumented field}
 }
 }
 \source{
@@ -76,7 +77,7 @@ Generated from admiralvaccine package (template ad_adface.R).
 adface_vaccine
 }
 \description{
-An example of ADFACE for Vaccine studies
+Findings About Clinical Events Analysis
 }
 \examples{
 data("adface_vaccine")

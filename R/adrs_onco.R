@@ -1,6 +1,6 @@
-#' Tumor Response Analysis
+#' adrs_onco
 #'
-#' An example of ADRS dataset for Oncology studies
+#' Tumor Response Analysis
 #'
 #' @name adrs_onco
 #' @docType data

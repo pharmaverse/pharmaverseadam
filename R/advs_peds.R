@@ -1,52 +1,64 @@
-#' advfq_ophtha
+#' advs_peds
 #'
-#' Visual Function Questionnaire Analysis
+#' Vital Signs Analysis for Pediatrics
 #'
-#' @name advfq_ophtha
+#' @name advs_peds
 #' @docType data
-#' @format A data frame with 89 columns:
+#' @format A data frame with 80 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ DOMAIN }{Domain Abbreviation}
 #'     \item{ USUBJID }{Unique Subject Identifier}
-#'     \item{ QSSEQ }{Sequence Number}
-#'     \item{ QSTESTCD }{Question Short Name}
-#'     \item{ QSTEST }{Question Name}
-#'     \item{ QSCAT }{Category of Question}
-#'     \item{ QSSCAT }{Subcategory for Question}
-#'     \item{ QSORRES }{Finding in Original Units}
-#'     \item{ QSORRESU }{Original Units}
-#'     \item{ QSSTRESC }{Character Result/Finding in Std Format}
-#'     \item{ QSSTRESN }{Numeric Finding in Standard Units}
-#'     \item{ QSSTRESU }{Standard Units}
-#'     \item{ QSBLFL }{Baseline Flag}
-#'     \item{ QSDRVFL }{Derived Flag}
+#'     \item{ VSSEQ }{Sequence Number}
+#'     \item{ VSTESTCD }{Vital Signs Test Short Name}
+#'     \item{ VSTEST }{Vital Signs Test Name}
+#'     \item{ VSPOS }{Vital Signs Position of Subject}
+#'     \item{ VSORRES }{Result or Finding in Original Units}
+#'     \item{ VSORRESU }{Original Units}
+#'     \item{ VSSTRESC }{Character Result/Finding in Std Format}
+#'     \item{ VSSTRESN }{Numeric Result/Finding in Standard Units}
+#'     \item{ VSSTRESU }{Standard Units}
+#'     \item{ VSSTAT }{Completion Status}
+#'     \item{ VSLOC }{Location of Vital Signs Measurement}
+#'     \item{ VSBLFL }{Baseline Flag}
 #'     \item{ VISITNUM }{Visit Number}
 #'     \item{ VISIT }{Visit Name}
 #'     \item{ VISITDY }{Planned Study Day of Visit}
-#'     \item{ QSDTC }{Date/Time of Finding}
-#'     \item{ QSDY }{Study Day of Finding}
+#'     \item{ VSDTC }{Date/Time of Measurements}
+#'     \item{ VSDY }{Study Day of Vital Signs}
+#'     \item{ VSTPT }{Planned Time Point Name}
+#'     \item{ VSTPTNUM }{Planned Time Point Number}
+#'     \item{ VSELTM }{Planned Elapsed Time from Time Point Ref}
+#'     \item{ VSTPTREF }{Time Point Reference}
+#'     \item{ VSEVAL }{Evaluator}
+#'     \item{ EPOCH }{Epoch}
+#'     \item{ SEX }{Sex}
+#'     \item{ BRTHDTC }{Date/Time of Birth (Character)}
 #'     \item{ TRTSDT }{Date of First Exposure to Treatment}
 #'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
 #'     \item{ TRT01A }{Actual Treatment for Period 01}
 #'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ BRTHDT }{Date/Time of Birth}
 #'     \item{ ADT }{Analysis Date}
 #'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ AAGECUR }{Current Analysis Age (Days)}
+#'     \item{ AAGECURU }{Current Analysis Age Units}
 #'     \item{ PARAMCD }{Parameter Code}
 #'     \item{ AVAL }{Analysis Value}
-#'     \item{ AVALC }{Analysis Value (C)}
+#'     \item{ ATPTN }{Analysis Timepoint (N)}
+#'     \item{ ATPT }{Analysis Timepoint}
 #'     \item{ AVISIT }{Analysis Visit}
 #'     \item{ AVISITN }{Analysis Visit (N)}
-#'     \item{ ONTRTFL }{On Treatment Record Flag}
+#'     \item{ HGTTMP }{Temporary Height at Timepoint}
+#'     \item{ HGTTMPU }{Temporary Height at Timepoint Units}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMN }{Parameter (N)}
 #'     \item{ ABLFL }{Baseline Record Flag}
 #'     \item{ BASE }{Baseline Value}
 #'     \item{ CHG }{Change from Baseline}
 #'     \item{ PCHG }{Percent Change from Baseline}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
 #'     \item{ ANL01FL }{Analysis Flag 01}
-#'     \item{ ASEQ }{Analysis Sequence Number}
-#'     \item{ PARAM }{Parameter}
-#'     \item{ PARCAT1 }{Parameter Category 1}
-#'     \item{ PARCAT2 }{Parameter Category 2}
 #'     \item{ SUBJID }{Subject Identifier for the Study}
 #'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
 #'     \item{ RFENDTC }{Subject Reference End Date/Time}
@@ -59,7 +71,6 @@
 #'     \item{ SITEID }{Study Site Identifier}
 #'     \item{ AGE }{Age}
 #'     \item{ AGEU }{Age Units}
-#'     \item{ SEX }{Sex}
 #'     \item{ RACE }{Race}
 #'     \item{ ETHNIC }{Ethnicity}
 #'     \item{ ARMCD }{Planned Arm Code}
@@ -74,32 +85,12 @@
 #'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
 #'     \item{ TRTETMF }{Time of Last Exposure Imput. Flag}
 #'     \item{ TRTDURD }{Total Treatment Duration (Days)}
-#'     \item{ SCRFDT }{Screen Failure Date}
-#'     \item{ EOSDT }{End of Study Date}
-#'     \item{ EOSSTT }{End of Study Status}
-#'     \item{ FRVDT }{Final Retrievel Visit Date}
-#'     \item{ RANDDT }{Date of Randomization}
-#'     \item{ DTHDT }{Date of Death}
-#'     \item{ DTHDTF }{undocumented field}
-#'     \item{ DTHADY }{Relative Day of Death}
-#'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
-#'     \item{ DTHCAUS }{undocumented field}
-#'     \item{ DTHDOM }{undocumented field}
-#'     \item{ DTHCGR1 }{undocumented field}
-#'     \item{ LSTALVDT }{Date Last Known Alive}
-#'     \item{ SAFFL }{Safety Population Flag}
-#'     \item{ RACEGR1 }{Pooled Race Group 1}
-#'     \item{ AGEGR1 }{Pooled Age Group 1}
-#'     \item{ REGION1 }{Geographic Region 1}
-#'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
-#'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
-#'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
-#'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
+#'     \item{ ASEQ }{Analysis Sequence Number}
 #'   }
 #'
-#' @source Generated from admiralophtha package (template ad_advfq.R).
+#' @source Generated from admiralpeds package (template ad_advs.R).
 #' @references None
 #'
 #' @examples
-#' data("advfq_ophtha")
-"advfq_ophtha"
+#' data("advs_peds")
+"advs_peds"
