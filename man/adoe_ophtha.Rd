@@ -3,9 +3,9 @@
 \docType{data}
 \name{adoe_ophtha}
 \alias{adoe_ophtha}
-\title{Exam Analysis for Ophthalmology}
+\title{adoe_ophtha}
 \format{
-A data frame with 98 columns:
+A data frame with 102 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ DOMAIN }{Domain Abbreviation}
@@ -94,12 +94,16 @@ A data frame with 98 columns:
 \item{ FRVDT }{Final Retrievel Visit Date}
 \item{ RANDDT }{Date of Randomization}
 \item{ DTHDT }{Date of Death}
+\item{ DTHDTF }{undocumented field}
 \item{ DTHADY }{Relative Day of Death}
 \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ DTHCAUS }{undocumented field}
+\item{ DTHDOM }{undocumented field}
+\item{ DTHCGR1 }{undocumented field}
 \item{ LSTALVDT }{Date Last Known Alive}
-\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ SAFFL }{Safety Population Flag}
 \item{ RACEGR1 }{Pooled Race Group 1}
+\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ REGION1 }{Geographic Region 1}
 \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
 \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
@@ -114,7 +118,7 @@ Generated from admiralophtha package (template ad_adoe.R).
 adoe_ophtha
 }
 \description{
-An example of ADOE dataset for Ophthalmology studies
+Exam Analysis for Ophthalmology
 }
 \examples{
 data("adoe_ophtha")

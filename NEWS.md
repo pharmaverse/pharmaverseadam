@@ -1,8 +1,18 @@
-# pharmaversesdtm (development version)
+# pharmaverseadam 1.1.0
 
-# New features
+Ad-hoc release.
 
-<details>
+## New features
+
+  - Added `ADVS` from `{admiralpeds}` using version 0.1.1.9001 of the package.
+
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9012 (development version) `{admiralophtha}` 1.1.0.9004 (development version), `{admiralonco}` 1.1.0, `{admiralvaccine}` 0.2.0, `{pharmaversesdtm}` 1.1.0. (#85)
+
+## Documentation
+
+ - DESCRIPTION file updated ahead of CRAN release to fix link to CDISC website.
+ 
+ <details>
 <summary>Developer Notes</summary>
 
 - Activated automatic version bumping CICD workflow. (#72)
@@ -11,21 +21,27 @@
 
 # pharmaverseadam 1.0.0
 
+The first stable version of `{pharmaverseadam}`!
+
+## New features
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1, `{admiralophtha}` 1.1.0, `{admiralonco}` 1.1.0, `{admiralvaccine}` 0.2.0. (#58)
+  
 ## Documentation
-  - The first stable version of `{pharmaverseadam}`!
-  - Dataset labels are updated to align with ADaM IG (#64) 
-  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1, `{admiralophtha}` 1.1.0, `{admiralonco}` 1.1.0, `{admiralvaccine}` 0.2.0.  (#58)
+  - Dataset labels were updated to align with ADaM IG. (#64) 
 
 # pharmaverseadam 0.2.0
 
 ## New Features
 
- - Variables labels are applied to datasets by `metacore`/`metatools`. (#50)
- - ADPC, ADPPK and ADPP are updated to handle urine records. (#57)
+  - ADPC, ADPPK and ADPP were updated to handle urine records. (#57)
+  
+## Documentation
+
+  - Variables labels were applied to datasets by `metacore`/`metatools`. (#50)
 
 # pharmaverseadam 0.1.1
 
-## New Features
+## Documentation
 
  - DESCRIPTION file updated ahead of CRAN release to include references to ADaM Implementation Guide 1.3.
 

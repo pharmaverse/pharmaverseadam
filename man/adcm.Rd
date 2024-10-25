@@ -3,9 +3,9 @@
 \docType{data}
 \name{adcm}
 \alias{adcm}
-\title{Concomitant Medications Analysis}
+\title{adcm}
 \format{
-A data frame with 90 columns:
+A data frame with 95 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ DOMAIN }{Domain Abbreviation}
@@ -28,6 +28,7 @@ A data frame with 90 columns:
 \item{ CMENDTC }{End Date/Time of Medication}
 \item{ CMSTDY }{Study Day of Start of Medication}
 \item{ CMENDY }{Study Day of End of Medication}
+\item{ CMENRTPT }{undocumented field}
 \item{ TRTSDT }{Date of First Exposure to Treatment}
 \item{ TRTEDT }{Date of Last Exposure to Treatment}
 \item{ DTHDT }{Date of Death}
@@ -86,12 +87,16 @@ A data frame with 90 columns:
 \item{ EOSSTT }{End of Study Status}
 \item{ FRVDT }{Final Retrievel Visit Date}
 \item{ RANDDT }{Date of Randomization}
+\item{ DTHDTF }{undocumented field}
 \item{ DTHADY }{Relative Day of Death}
 \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ DTHCAUS }{undocumented field}
+\item{ DTHDOM }{undocumented field}
+\item{ DTHCGR1 }{undocumented field}
 \item{ LSTALVDT }{Date Last Known Alive}
-\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ SAFFL }{Safety Population Flag}
 \item{ RACEGR1 }{Pooled Race Group 1}
+\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ REGION1 }{Geographic Region 1}
 \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
 \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
@@ -106,7 +111,7 @@ Generated from admiral package (template ad_adcm.R).
 adcm
 }
 \description{
-An example of ADCM ADaM dataset
+Concomitant Medications Analysis
 }
 \examples{
 data("adcm")

@@ -3,9 +3,9 @@
 \docType{data}
 \name{adeg}
 \alias{adeg}
-\title{Electrocardiogram Tests Analysis}
+\title{adeg}
 \format{
-A data frame with 105 columns:
+A data frame with 108 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ DOMAIN }{Domain Abbreviation}
@@ -30,7 +30,6 @@ A data frame with 105 columns:
 \item{ EGTPTNUM }{Planned Time Point Number}
 \item{ EGELTM }{Planned Elapsed Time from Time Point Ref}
 \item{ EGTPTREF }{Time Point Reference}
-\item{ temp }{undocumented field}
 \item{ TRTSDT }{Date of First Exposure to Treatment}
 \item{ TRTEDT }{Date of Last Exposure to Treatment}
 \item{ TRT01A }{Actual Treatment for Period 01}
@@ -62,10 +61,10 @@ A data frame with 105 columns:
 \item{ TRTP }{Planned Treatment}
 \item{ TRTA }{Actual Treatment}
 \item{ ASEQ }{Analysis Sequence Number}
-\item{ AVALCA1N }{Analysis Value Category 1 (N)}
 \item{ AVALCAT1 }{Analysis Value Category 1}
-\item{ CHGCAT1N }{Change from Baseline Category 1 (N)}
+\item{ AVALCA1N }{Analysis Value Category 1 (N)}
 \item{ CHGCAT1 }{Change from Baseline Category 1}
+\item{ CHGCAT1N }{Change from Baseline Category 1 (N)}
 \item{ PARAM }{Parameter}
 \item{ PARAMN }{Parameter (N)}
 \item{ SUBJID }{Subject Identifier for the Study}
@@ -101,12 +100,16 @@ A data frame with 105 columns:
 \item{ FRVDT }{Final Retrievel Visit Date}
 \item{ RANDDT }{Date of Randomization}
 \item{ DTHDT }{Date of Death}
+\item{ DTHDTF }{undocumented field}
 \item{ DTHADY }{Relative Day of Death}
 \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ DTHCAUS }{undocumented field}
+\item{ DTHDOM }{undocumented field}
+\item{ DTHCGR1 }{undocumented field}
 \item{ LSTALVDT }{Date Last Known Alive}
-\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ SAFFL }{Safety Population Flag}
 \item{ RACEGR1 }{Pooled Race Group 1}
+\item{ AGEGR1 }{Pooled Age Group 1}
 \item{ REGION1 }{Geographic Region 1}
 \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
 \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
@@ -121,7 +124,7 @@ Generated from admiral package (template ad_adeg.R).
 adeg
 }
 \description{
-An example of ADEG ADaM dataset
+Electrocardiogram Tests Analysis
 }
 \examples{
 data("adeg")
