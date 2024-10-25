@@ -2,7 +2,7 @@
 
 Ad-hoc release.
 
-# New features
+## New features
 
   - Added `ADVS` from `{admiralpeds}` using version 0.1.1.9001 of the package.
 
