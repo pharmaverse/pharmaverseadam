@@ -1,3 +1,11 @@
+# pharmaverseadam (development version)
+
+## New features
+
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9027 (development version). (#91)
+
+## Documentation
+
 # pharmaverseadam 1.1.0
 
 Ad-hoc release.
