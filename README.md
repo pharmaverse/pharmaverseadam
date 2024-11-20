@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 <!-- Please do not edit the README.md file as it is auto-generated after PR merges. Only edit the README.Rmd file -->
 
 <!-- The purpose of this is to enable dynamic links using dyn_link function above to access devel/main admiral homepage respectively -->
@@ -49,10 +43,8 @@ version of the package directly from GitHub use the following code:
 
 ```         
 if (!requireNamespace("remotes", quietly = TRUE)) {
-  install.packages("remotes")
-}
-
-remotes::install_github("pharmaverse/pharmaverseadam", ref = "main")
+      install.packages("remotes")
+    }
 ```
 
 # Documentation Process
