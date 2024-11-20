@@ -3,7 +3,7 @@
 <!-- badges: start -->
 
 [<img src="http://pharmaverse.org/shields/pharmaverseadam.svg"/>](https://pharmaverse.org)
-[![CRANstatus](https://www.r-pkg.org/badges/version/pharmaverseadam)](https://CRAN.R-project.org/package=pharmaverseadam)
+[![CRAN status](https://www.r-pkg.org/badges/version/pharmaverseadam)](https://CRAN.R-project.org/package=pharmaverseadam)
 
 <!-- badges: end -->
 
