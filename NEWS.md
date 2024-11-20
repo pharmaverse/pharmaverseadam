@@ -17,6 +17,8 @@ Ad-hoc release.
 
 - Activated automatic version bumping CICD workflow. (#72)
 
+- Imported `{tibble}` so that tibble formatting is not lost. (#95)
+
 </details>
 
 # pharmaverseadam 1.0.0
