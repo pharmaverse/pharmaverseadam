@@ -9,7 +9,8 @@ Authors@R:  c(
   person("Gayatri", "G", role = "aut"),
   person("Daphne", "Grassely", role = "aut"),
   person("Zelos", "Zhu", role = "aut"),
-  person("Sadchla", "Mascary", role = "aut")
+  person("Sadchla", "Mascary", role = "aut"),
+  person("Vladyslav", "Shuliar", role = "aut", comment = c(ORCID = "0009-0008-2354-8999"))
   )
 Description: A set of Analysis Data Model (ADaM) datasets constructed using the 
     Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and 
