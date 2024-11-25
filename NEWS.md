@@ -6,6 +6,13 @@
 
 ## Documentation
 
+ <details>
+<summary>Developer Notes</summary>
+
+- Imported `{tibble}` so that tibble formatting is not lost. (#95)
+
+</details>
+
 # pharmaverseadam 1.1.0
 
 Ad-hoc release.
