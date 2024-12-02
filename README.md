@@ -16,8 +16,7 @@ To provide a one-stop-shop for ADaM test data in the pharmaverse family of packa
 # Package Contents
 
 The ADaM contents of this package is populated by an action that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}` and `{admiralpeds}` templates and saves the resulting datasets here. This action can be triggered manually by the package maintainers in two scenarios:
-
--   Regularly, upon new releases of `{admiral}`, `{admiralonco}`, `{admiralophtha}` and `{admiralvaccine}`;
+-   Regularly, upon new releases of these packages;
 -   Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using the development version of the templates.
 
 # Installation
@@ -43,11 +42,3 @@ The documentation process in `{pharmaverseadam}` is automated for consistency an
     -   The `data-raw/create_adams_data.R` script dynamically retrieves metadata, enriches it with dataset attributes, and generates `.R` files in the `R/` directory.
 3.  **Generate Documentation**:
     -   Use `roxygen2::roxygenize()` to update `.Rd` files in the `man/` directory.
-
-## Key Benefits of this Documentation Approach
-
--   **Automation**: Eliminates manual effort in maintaining documentation.
--   **Consistency**: Ensures uniform documentation for all datasets.
--   **Flexibility**: Easily update metadata centrally via the XLSX file.
-
-This streamlined approach aligns with best practices for efficient package development.
