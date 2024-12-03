@@ -27,6 +27,8 @@ The package is available from CRAN and can be installed by running `install.pack
 if (!requireNamespace("remotes", quietly = TRUE)) {
       install.packages("remotes")
     }
+    
+remotes::install_github("pharmaverse/pharmaverseadam", ref = "main")
 ```
 
 # Documentation Process
