@@ -60,6 +60,7 @@
 </div>
 <!-- badges: start -->
 
+<!-- badges: end -->
 <p>Test data (ADaM) for the pharmaverse family of packages</p>
 </div>
 <div class="section level1">
@@ -70,21 +71,47 @@
 <div class="section level1">
 <h1 id="package-contents">Package Contents<a class="anchor" aria-label="anchor" href="#package-contents"></a>
 </h1>
-<p>The ADaM contents of this package is populated by an action that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a>, <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> and <a href="https://pharmaverse.github.io/admiralpeds/" class="external-link">admiralpeds</a> templates and saves the resulting datasets here. This action can be triggered manually by the package maintainers in two scenarios:</p>
-<ul>
-<li>Regularly, upon new releases of <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a> and <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a>;</li>
-<li>Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using the development version of the templates.</li>
-</ul>
+<p>The ADaM contents of this package is populated by an action that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a>, <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> and <a href="https://pharmaverse.github.io/admiralpeds/" class="external-link">admiralpeds</a> templates and saves the resulting datasets here. This action can be triggered manually by the package maintainers in two scenarios: - Regularly, upon new releases of these packages; - Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using the development version of the templates.</p>
 </div>
 <div class="section level1">
 <h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h1>
 <p>The package is available from CRAN and can be installed by running <code>install.packages("pharmaverseadam")</code>. To install the latest development version of the package directly from GitHub use the following code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"remotes"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"pharmaverse/pharmaverseadam"</span>, <span class="at">ref =</span> <span class="st">"main"</span>)</span></code></pre></div>
+<pre><code><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html" class="external-link">requireNamespace</a></span><span class="op">(</span><span class="st">"remotes"</span>, quietly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>      <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
+<span>    <span class="op">}</span></span>
+<span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"pharmaverse/pharmaverseadam"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="section level1">
+<h1 id="documentation-process">Documentation Process<a class="anchor" aria-label="anchor" href="#documentation-process"></a>
+</h1>
+<p>The documentation process in <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a> is automated for consistency and ease of maintenance. Metadata for each dataset, such as names, labels, descriptions, authors, and sources, is managed in a centralized XLSX file (<code>inst/extdata/adams-specs.xlsx</code>) and used to generate <code>.R</code> documentation files.</p>
+<div class="section level2">
+<h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Metadata Preparation</strong>:
+<ul>
+<li>Ensure <code>adams-specs.xlsx</code> contains up-to-date metadata for all datasets.</li>
+<li>Missing fields default to “No label/description/source available.”</li>
+</ul>
+</li>
+<li>
+<strong>Run Script</strong>:
+<ul>
+<li>The <code>data-raw/create_adams_data.R</code> script dynamically retrieves metadata, enriches it with dataset attributes, and generates <code>.R</code> files in the <code>R/</code> directory.</li>
+</ul>
+</li>
+<li>
+<strong>Generate Documentation</strong>:
+<ul>
+<li>Use <code><a href="https://roxygen2.r-lib.org/reference/roxygenize.html" class="external-link">roxygen2::roxygenize()</a></code> to update <code>.Rd</code> files in the <code>man/</code> directory.</li>
+</ul>
+</li>
+</ol>
+</div>
 </div>
 
   </main><aside class="col-md-3"><div class="links">
@@ -121,6 +148,7 @@
 <li>Daphne Grassely <br><small class="roles"> Author </small>  </li>
 <li>Zelos Zhu <br><small class="roles"> Author </small>  </li>
 <li>Sadchla Mascary <br><small class="roles"> Author </small>  </li>
+<li>Vladyslav Shuliar <br><small class="roles"> Author </small> <a href="https://orcid.org/0009-0008-2354-8999" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -137,7 +165,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Edoardo Mancini, Kangjie Zhang, Stefan Bundfuss, Gayatri G, Daphne Grassely, Zelos Zhu, Sadchla Mascary.</p>
+  <p>Developed by Edoardo Mancini, Kangjie Zhang, Stefan Bundfuss, Gayatri G, Daphne Grassely, Zelos Zhu, Sadchla Mascary, Vladyslav Shuliar.</p>
 </div>
 
 <div class="pkgdown-footer-right">
