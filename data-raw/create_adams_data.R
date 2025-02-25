@@ -1,3 +1,6 @@
+
+# Package README.md explains what this script does.
+
 # ensure every packages are installed
 library(stringr)
 update_pkg <- TRUE
@@ -126,6 +129,8 @@ run_template <- function(tp) {
 }
 
 
+## main script
+
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
   # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
@@ -161,10 +166,16 @@ for (pkg in packages_list) {
     )
   }
   # get templates scripts
+  # templates_path is path to ADaM templates where `pkg` is  installed (not sourced)
   templates_path <- file.path(system.file(package = pkg), "templates")
+  # templates are R files with a prefix `ad_`
   templates <- list.files(templates_path)
   # copy paste pkg/data folder content to pharmaverseadam/data (some templates have dependency with their internal data,
   # for example admiral templates have all dependencies with admiral_adsl dataset)
+
+
+  # NEED data_path, data_files ??
+
   data_path <- file.path(system.file(package = pkg), "data")
   data_files <- list.files(data_path)
 
