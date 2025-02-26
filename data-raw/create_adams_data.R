@@ -1,5 +1,26 @@
+#from DESCRIPTION file
+#
+#Description: A set of Analysis Data Model (ADaM) datasets constructed using the
+#    Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and
+#    the template scripts from the 'admiral' family of packages. ADaM dataset specifications
+#    are described in the CDISC ADaM implementation guide, accessible by creating a free account on <https://www.cdisc.org/>.
 
-# Package README.md explains what this script does.
+
+# Ignoring metacore for now.
+
+# For main code:
+# templates_path: path to ADaM templates where `pkg` is  installed (not sourced)
+# templates: R files to generate ADaM dataset in each `pkg`, prefix `ad_`
+
+# NEED data_path, data_files ??
+# data_path
+# data_files
+
+# For function: run_template()
+# tp:  template R file to run
+# dataset_dir:  cache dir where template places ADaM file"
+# ("/home/jim/.config/cache/R/admiral_templates_data")
+
 
 # ensure every packages are installed
 library(stringr)
@@ -149,7 +170,6 @@ mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
 )
 
 packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
-
 all_results <- c()
 for (pkg in packages_list) {
   ignore_templates_pkg <- ignore_templates[pkg]
@@ -182,10 +202,6 @@ for (pkg in packages_list) {
   print(sprintf("Processing templates from %s package", pkg))
 
   # run templates in parallel
-  # TODO: reput parallel debug
-  # for (tp in templates) {
-  #   run_template(tp)
-  # }
   results <- parallel::mclapply(templates, run_template, mc.cores = length(templates))
   all_results <- c(all_results, results)
 }
