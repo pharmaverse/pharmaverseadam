@@ -1,25 +1,24 @@
-#from DESCRIPTION file
-#
-#Description: A set of Analysis Data Model (ADaM) datasets constructed using the
+# Description: A set of Analysis Data Model (ADaM) datasets constructed using the
 #    Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and
 #    the template scripts from the 'admiral' family of packages. ADaM dataset specifications
 #    are described in the CDISC ADaM implementation guide, accessible by creating a free account on <https://www.cdisc.org/>.
 
-
-# Ignoring metacore for now.
+# (Ignoring metacore for now.)
 
 # For main code:
 # templates_path: path to ADaM templates where `pkg` is  installed (not sourced)
-# templates: R files to generate ADaM dataset in each `pkg`, prefix `ad_`
+#   (ex: admiral/templates)
+# templates: R files to generate ADaM dataset for `pkg`, prefix `ad_` (templates_path/ad_adae.R)
 
-# NEED data_path, data_files ??
+# Do we NEED data_path, data_files ??
 # data_path
 # data_files
 
 # For function: run_template()
 # tp:  template R file to run
-# dataset_dir:  cache dir where template places ADaM file"
-# ("/home/jim/.config/cache/R/admiral_templates_data")
+# dataset_dir:  cache dir where template places ADaM file
+#   (ex: "/home/jim/.config/cache/R/admiral_templates_data")
+# output_adam_path:    pharmaverseadam/data/
 
 
 # ensure every packages are installed
@@ -105,20 +104,22 @@ write_labels <- function(data, dataset_name, suffix) {
 }
 
 run_template <- function(tp) {
+  # tp is of form `ad_adae.R`
   if (!tp %in% ignore_templates_pkg) {
     print(sprintf("Running template %s", tp))
-    # run template
+    # run template, via Rscript in OS
     cmd <- c("Rscript", file.path(templates_path, tp))
     system_result <- system2(cmd, stdout = TRUE, stderr = TRUE)
     exit_code <- attr(system_result, "status")
     tp_basename <- basename(tp)
 
     if (is.null(exit_code)) {
+      # cache directory to store  ADaM file rda_file (adae.rda  )
       dataset_dir <- tools::R_user_dir(sprintf("%s_templates_data", pkg), which = "cache")
       rda_file <- gsub(".R", ".rda", tp_basename)
       rda_file <- gsub("ad_", "", rda_file)
+      # load the ADaM file as tibble
       data <- load_rda(file.path(dataset_dir, rda_file))
-
       print(sprintf("Processing %s file - move it to
              pharmaverse and generate the doc", rda_file))
       suffix <- ""
@@ -133,7 +134,7 @@ run_template <- function(tp) {
       # write labels
       data <- write_labels(data, dataset_name, suffix)
 
-      # save it to pharmaverseadam data package
+      # save file to pharmaverseadam data dir (pharmaverseadam/data/adae.rda)
       save_rda(data, file_path = output_adam_path, new_name = dataset_name)
 
       # write doc
@@ -150,7 +151,7 @@ run_template <- function(tp) {
 }
 
 
-## main script
+## main script ----
 
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
@@ -185,16 +186,17 @@ for (pkg in packages_list) {
       upgrade = "always", force = TRUE
     )
   }
-  # get templates scripts
-  # templates_path is path to ADaM templates where `pkg` is  installed (not sourced)
+  # find templates scripts and rum them
+  #
+  # find path to ADaM templates for the installed pkg (ex: ~/R/86_64...library/4.4/admiral/templates)
   templates_path <- file.path(system.file(package = pkg), "templates")
-  # templates are R files with a prefix `ad_`
+  # templates are R files with a prefix `ad_` (1 or more files)
   templates <- list.files(templates_path)
   # copy paste pkg/data folder content to pharmaverseadam/data (some templates have dependency with their internal data,
   # for example admiral templates have all dependencies with admiral_adsl dataset)
 
 
-  # NEED data_path, data_files ??
+  # NEED this? data_path, data_files ?? (remove?)
 
   data_path <- file.path(system.file(package = pkg), "data")
   data_files <- list.files(data_path)
@@ -206,7 +208,7 @@ for (pkg in packages_list) {
   all_results <- c(all_results, results)
 }
 
-
+# check for errors
 for (res in all_results) {
   if (!is.null(res$exit_code)) {
     print(sprintf("template %s failed - package %s", res$template, res$pkg))
