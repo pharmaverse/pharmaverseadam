@@ -134,7 +134,7 @@ run_template <- function(tp) {
       # write labels
       data <- write_labels(data, dataset_name, suffix)
 
-      # save file to pharmaverseadam data dir (pharmaverseadam/data/adae.rda)
+      # save file to pharmaverseadam data dir (pharmaverseadam/data/\<adamname\>.rda)
       save_rda(data, file_path = output_adam_path, new_name = dataset_name)
 
       # write doc
@@ -186,7 +186,7 @@ for (pkg in packages_list) {
       upgrade = "always", force = TRUE
     )
   }
-  # find templates scripts and rum them
+  # find templates scripts and run them
   #
   # find path to ADaM templates for the installed pkg (ex: ~/R/86_64...library/4.4/admiral/templates)
   templates_path <- file.path(system.file(package = pkg), "templates")
