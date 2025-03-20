@@ -2,23 +2,28 @@
 #    Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and
 #    the template scripts from the 'admiral' family of packages. ADaM dataset specifications
 #    are described in the CDISC ADaM implementation guide, accessible by creating a free account on <https://www.cdisc.org/>.
-
-# (Ignoring metacore for now.)
-
+#
+# To run, this script collects and saves information from different directories and files:
 # For main code:
-# templates_path: path to ADaM templates where `pkg` is  installed (not sourced)
+# templates_path:
+#    path to ADaM templates where `pkg` is  installed (not sourced)
 #   (ex: admiral/templates)
-# templates: R files to generate ADaM dataset for `pkg`, prefix `ad_` (templates_path/ad_adae.R)
-
+# templates:
+#    R files to generate ADaM dataset for `pkg`, prefix `ad_` (templates_path/ad_adae.R)
+# dataset_dir:
+#    cache directory where template places ADaM files. ( tools::R_user_dir("admiral_templates_data", which = "cache") where generated ADaM.rda files are located.)
+#    This cache directory depends upon configuration  (see: tools::R_user_dir())
+#    (ex: "/home/jim/.config/cache/R/admiral_templates_data")
+# -----------------------------------
 # Do we NEED data_path, data_files ??
-# data_path
-# data_files
+# I am ignoring metacore for now.
+# ----------------------------------
 
-# For function: run_template()
-# tp:  template R file to run
-# dataset_dir:  cache dir where template places ADaM file
-#   (ex: "/home/jim/.config/cache/R/admiral_templates_data")
-# output_adam_path:    pharmaverseadam/data/
+# For function:
+# run_template():
+#   tp:  template R file to run
+# output_adam_path:
+#   pharmaverseadam/data/
 
 
 # ensure every packages are installed
