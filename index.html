@@ -62,20 +62,24 @@
 
 <!-- badges: end -->
 <p>Test data (ADaM) for the pharmaverse family of packages</p>
-</div>
-<div class="section level1">
-<h1 id="purpose">Purpose<a class="anchor" aria-label="anchor" href="#purpose"></a>
-</h1>
+<div class="section level2">
+<h2 id="purpose">Purpose<a class="anchor" aria-label="anchor" href="#purpose"></a>
+</h2>
 <p>To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages.</p>
 </div>
-<div class="section level1">
-<h1 id="package-contents">Package Contents<a class="anchor" aria-label="anchor" href="#package-contents"></a>
-</h1>
-<p>The ADaM contents of this package is populated by an action that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a>, <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> and <a href="https://pharmaverse.github.io/admiralpeds/" class="external-link">admiralpeds</a> templates and saves the resulting datasets here. This action can be triggered manually by the package maintainers in two scenarios: - Regularly, upon new releases of these packages; - Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using the development version of the templates.</p>
+<div class="section level2">
+<h2 id="package-contents">Package Contents<a class="anchor" aria-label="anchor" href="#package-contents"></a>
+</h2>
+<p>The ADaM contents of this package is populated by an script that executes the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>, <a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a>, <a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a>, <a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a> and <a href="https://pharmaverse.github.io/admiralpeds/" class="external-link">admiralpeds</a> templates and saves the resulting datasets here. This script can be executed by the package maintainers in two scenarios:</p>
+<ul>
+<li>Regularly, upon new releases of these packages;</li>
+<li>Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using a development version of the templates.</li>
+</ul>
+<p>Please check the <a href="https://pharmaverse.github.io/pharmaverseadam/news/index.html">Changelog</a> to see the versions of the packages used to generate the ADaM datasets in current or past version of <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a>. Please see the <a href="#doc">Dataset Creation and Documentation Process</a> for details on the script.</p>
 </div>
-<div class="section level1">
-<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
-</h1>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <p>The package is available from CRAN and can be installed by running <code>install.packages("pharmaverseadam")</code>. To install the latest development version of the package directly from GitHub use the following code:</p>
 <pre><code><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html" class="external-link">requireNamespace</a></span><span class="op">(</span><span class="st">"remotes"</span>, quietly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span>      <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
@@ -83,37 +87,55 @@
 <span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"pharmaverse/pharmaverseadam"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></span></code></pre>
 </div>
-<div class="section level1">
-<h1 id="documentation-process">Documentation Process<a class="anchor" aria-label="anchor" href="#documentation-process"></a>
-</h1>
-<p>The documentation process in <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a> is automated for consistency and ease of maintenance. Metadata for each dataset, such as names, labels, descriptions, authors, and sources, is managed in a centralized XLSX file (<code>inst/extdata/adams-specs.xlsx</code>) and used to generate <code>.R</code> documentation files.</p>
 <div class="section level2">
-<h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
+<h2 id="doc">Dataset Creation and Documentation Process<a class="anchor" aria-label="anchor" href="#doc"></a>
 </h2>
+<p>The execution of the ADaM templates and creation of the package documentation in <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a> is semi-automated for consistency and ease of maintenance. Metadata for each dataset such as names, labels, descriptions, authors, and sources, is managed in a centralized XLSX file (<code>inst/extdata/adams-specs.xlsx</code>) and used to generate <code>.R</code> documentation files. These are then used to populate the <a href="https://pharmaverse.github.io/pharmaverseadam/reference/index.html">reference pages</a> in the package documentation.</p>
+<p>The workflow consists of two main steps:</p>
+<div class="section level3">
+<h3 id="id_1-metadata-preparation">1. Metadata Preparation<a class="anchor" aria-label="anchor" href="#id_1-metadata-preparation"></a>
+</h3>
+<p>Firstly, the user reviews <code>inst/extdata/adams-specs.xlsx</code> and ensures its contents is up-to-date. If a new template has been added to an existing package, or if a new extension package has been created whose ADaM templates they wish to execute in <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a>, then the user should update <code>adams-specs.xlsx</code> with specifications for the new dataset(s). Note that any missing metadata fields will be set by default to “No label/description/source available.”</p>
+</div>
+<div class="section level3">
+<h3 id="id_2-execute-create_adams_data">2. Execute <code>create_adams_data</code>
+<a class="anchor" aria-label="anchor" href="#id_2-execute-create_adams_data"></a>
+</h3>
+<p>Secondly, the user runs <code>data-raw/create_adams_data.R</code>. This script handles the installation of each package, the execution of the templates, the saving of the ADaM datasets and the creation of the documentation pages.</p>
+<div class="section level4">
+<h4 id="script-steps">Script steps<a class="anchor" aria-label="anchor" href="#script-steps"></a>
+</h4>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Metadata Preparation</strong>:
+<p><strong>Installs Required Packages</strong><br>
+Installs the following packages:</p>
 <ul>
-<li>Ensure <code>adams-specs.xlsx</code> contains up-to-date metadata for all datasets.</li>
-<li>Missing fields default to “No label/description/source available.”</li>
+<li><a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a></li>
+<li><a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a></li>
+<li><a href="https://pharmaverse.github.io/admiralophtha/" class="external-link">admiralophtha</a></li>
+<li><a href="https://pharmaverse.github.io/admiralvaccine/" class="external-link">admiralvaccine</a></li>
+<li><a href="https://pharmaverse.github.io/admiralpeds/" class="external-link">admiralpeds</a></li>
+<li>
+<a href="https://pharmaverse.github.io/pharmaversesdtm/" class="external-link">pharmaversesdtm</a> By default, the latest development versions of each package will be used, but the user can also select a different version instead (e.g. a released version) with which to refresh <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a>. The user may also deselect some packages whose templates they do not wish to run. If a new extension package has been created, this should be added to the script in each relevant section (see the script itself for more details).</li>
 </ul>
 </li>
+<li><p><strong>Executes Templates from Each Package</strong></p></li>
+<li><p><strong>Processes and Saves Datasets into {pharmaverseadam}</strong></p></li>
 <li>
-<strong>Run Script</strong>:
+<p><strong>Generates Dataset Documentation</strong><br>
+For every dataset, a matching <code>.R</code> file is created in the <code>R/</code> folder containing:</p>
 <ul>
-<li>The <code>data-raw/create_adams_data.R</code> script dynamically retrieves metadata, enriches it with dataset attributes, and generates <code>.R</code> files in the <code>R/</code> directory.</li>
-</ul>
-</li>
-<li>
-<strong>Generate Documentation</strong>:
-<ul>
-<li>Use <code><a href="https://roxygen2.r-lib.org/reference/roxygenize.html" class="external-link">roxygen2::roxygenize()</a></code> to update <code>.Rd</code> files in the <code>man/</code> directory.</li>
+<li>Dataset name and title,</li>
+<li>Variable-level documentation (names and labels),</li>
+<li>Source information indicating which template and package generated it,</li>
+<li>Example usage with <code>data("&lt;dataset&gt;")</code>.</li>
 </ul>
 </li>
 </ol>
 </div>
 </div>
-
+</div>
+</div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
