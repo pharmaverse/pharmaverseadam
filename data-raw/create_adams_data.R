@@ -1,6 +1,6 @@
 # ensure every packages are installed
 library(stringr)
-update_pkg <- FALSE
+update_pkg <- TRUE
 ignore_templates <- list(
   "admiralonco" = c("ad_adrs_basic.R")
 )
