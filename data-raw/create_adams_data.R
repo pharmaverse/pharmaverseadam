@@ -1,7 +1,9 @@
-# Description: A set of Analysis Data Model (ADaM) datasets constructed using the
-#    Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and
-#    the template scripts from the 'admiral' family of packages. ADaM dataset specifications
-#    are described in the CDISC ADaM implementation guide, accessible by creating a free account on <https://www.cdisc.org/>.
+# Description: A set of Analysis Data Model (ADaM) datasets constructed using
+# the Study Data Tabulation Model (SDTM) datasets contained in the
+# 'pharmaversesdtm' package and the template scripts from the 'admiral' family
+# of packages. ADaM dataset specifications are described in the CDISC ADaM
+# implementation guide, accessible by creating a free account on
+# <https://www.cdisc.org/>.
 #
 # To run, this script collects and saves information from different directories and files:
 # For main code:
@@ -11,12 +13,14 @@
 # templates:
 #    R files to generate ADaM dataset for `pkg`, prefix `ad_` (templates_path/ad_adae.R)
 # dataset_dir:
-#    cache directory where template places ADaM files. ( tools::R_user_dir("admiral_templates_data", which = "cache") where generated ADaM.rda files are located.)
-#    This cache directory depends upon configuration  (see: tools::R_user_dir())
-#    (ex: "/home/jim/.config/cache/R/admiral_templates_data")
+#    cache directory where template places ADaM files. (
+#    tools::R_user_dir("admiral_templates_data", which = "cache") where generated
+#    ADaM.rda files are located.) This cache directory depends upon configuration
+#    (see: tools::R_user_dir()) (ex: # "/home/jim/.config/cache/R/admiral_templates_data")
 # -----------------------------------
 # Do we NEED data_path, data_files ??
 # I am ignoring metacore for now.
+# install pharmaversesdtm dep?
 # ----------------------------------
 
 # For function:
@@ -35,7 +39,7 @@ ignore_templates <- list(
 
 save_rda <- function(data, file_path, new_name) {
   if (missing(new_name)) {
-    save(data, file = file_path, compress = "bzip2")
+    save(data, file = file_path, comdnepress = "bzip2")
   } else {
     assign(new_name, data)
     save(list = new_name, file = file_path, compress = "bzip2")
@@ -122,7 +126,7 @@ run_template <- function(tp) {
       # cache directory to store  ADaM file rda_file (adae.rda  )
       dataset_dir <- tools::R_user_dir(sprintf("%s_templates_data", pkg), which = "cache")
       rda_file <- gsub(".R", ".rda", tp_basename)
-      rda_file <- gsub("ad_", "", rda_file)
+      rda_file <- gsub("ad_", "", rda_file) # now xxxx.rda
       # load the ADaM file as tibble
       data <- load_rda(file.path(dataset_dir, rda_file))
       print(sprintf("Processing %s file - move it to
