@@ -3,7 +3,7 @@
 \docType{data}
 \name{adpp}
 \alias{adpp}
-\title{adpp}
+\title{Pharmacokinetic Parameters}
 \format{
 A data frame with 79 columns:
 \describe{

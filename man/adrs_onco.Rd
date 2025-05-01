@@ -3,7 +3,7 @@
 \docType{data}
 \name{adrs_onco}
 \alias{adrs_onco}
-\title{adrs_onco}
+\title{Tumor Response Analysis}
 \format{
 A data frame with 79 columns:
 \describe{

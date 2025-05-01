@@ -3,7 +3,7 @@
 \docType{data}
 \name{adsl_vaccine}
 \alias{adsl_vaccine}
-\title{adsl_vaccine}
+\title{Subject Level Analysis for Vaccine}
 \format{
 A data frame with 46 columns:
 \describe{

@@ -3,7 +3,7 @@
 \docType{data}
 \name{adpc}
 \alias{adpc}
-\title{adpc}
+\title{Pharmacokinetic Concentrations}
 \format{
 A data frame with 127 columns:
 \describe{
@@ -56,7 +56,6 @@ A data frame with 127 columns:
 \item{ ATPTN }{Analysis Timepoint (N)}
 \item{ ATPT }{Analysis Timepoint}
 \item{ ATPTREF }{Analysis Timepoint Reference}
-\item{ ABLFL }{Baseline Record Flag}
 \item{ BASETYPE }{Baseline Type}
 \item{ DOSEA }{Actual Treatment Dose}
 \item{ DOSEP }{Planned Treatment Dose}
@@ -72,6 +71,7 @@ A data frame with 127 columns:
 \item{ SRCVAR }{Source Variable}
 \item{ SRCSEQ }{Source Sequence Number}
 \item{ DTYPE }{Derivation Type}
+\item{ ABLFL }{Baseline Record Flag}
 \item{ MRRLT }{Modified Rel. Time from Ref. Dose}
 \item{ ANL01FL }{Analysis Flag 01}
 \item{ ANL02FL }{Analysis Flag 02}

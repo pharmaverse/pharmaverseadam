@@ -1,10 +1,14 @@
 # pharmaverseadam (development version)
 
 ## New features
-
-  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9027 (development version). (#91)
+  
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9019 (development version) `{admiralophtha}` 1.2.0.9001 (development version), `{admiralonco}` 1.2.0, `{admiralvaccine}` 0.4.0, `{pharmaversesdtm}` 1.2.0 (development version). (#103)
 
 ## Documentation
+
+- Added more details to README "Documentation Process" section. (#103)
+
+- Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
  <details>
 <summary>Developer Notes</summary>

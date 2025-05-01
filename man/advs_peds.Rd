@@ -3,7 +3,7 @@
 \docType{data}
 \name{advs_peds}
 \alias{advs_peds}
-\title{advs_peds}
+\title{Vital Signs Analysis for Pediatrics}
 \format{
 A data frame with 80 columns:
 \describe{

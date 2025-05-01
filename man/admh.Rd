@@ -3,7 +3,7 @@
 \docType{data}
 \name{admh}
 \alias{admh}
-\title{admh}
+\title{Medical History Analysis}
 \format{
 A data frame with 114 columns:
 \describe{
