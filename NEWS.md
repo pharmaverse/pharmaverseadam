@@ -6,6 +6,10 @@
 
 ## Documentation
 
+- Added more details to README "Documentation Process" section. (#103)
+
+- Improved reference page so that dataset labels are displayed under each dataset name. (#103)
+
  <details>
 <summary>Developer Notes</summary>
 

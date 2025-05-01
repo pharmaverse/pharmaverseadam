@@ -9,17 +9,20 @@
 
 Test data (ADaM) for the pharmaverse family of packages
 
-# Purpose
+## Purpose
 
 To provide a one-stop-shop for ADaM test data in the pharmaverse family of packages.
 
-# Package Contents
+## Package Contents
 
-The ADaM contents of this package is populated by an action that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}` and `{admiralpeds}` templates and saves the resulting datasets here. This action can be triggered manually by the package maintainers in two scenarios:
--   Regularly, upon new releases of these packages;
--   Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using the development version of the templates.
+The ADaM contents of this package is populated by an script that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}` and `{admiralpeds}` templates and saves the resulting datasets here. This script can be executed by the package maintainers in two scenarios:
 
-# Installation
+*   Regularly, upon new releases of these packages;
+*   Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using a development version of the templates.
+
+Please check the [Changelog](https://pharmaverse.github.io/pharmaverseadam/news/index.html) to see the versions of the packages used to generate the ADaM datasets in current or past version of `{pharmaverseadam}`. Please see the [Dataset Creation and Documentation Process](#doc) for details on the script.
+
+## Installation
 
 The package is available from CRAN and can be installed by running `install.packages("pharmaverseadam")`. To install the latest development version of the package directly from GitHub use the following code:
 
@@ -31,57 +34,39 @@ if (!requireNamespace("remotes", quietly = TRUE)) {
 remotes::install_github("pharmaverse/pharmaverseadam", ref = "main")
 ```
 
-# Documentation Process
+## Dataset Creation and Documentation Process {#doc}
 
-The documentation process in `{pharmaverseadam}` is automated for consistency and ease of maintenance. Metadata for each dataset, such as names, labels, descriptions, authors, and sources, is managed in a centralized XLSX file (`inst/extdata/adams-specs.xlsx`) and used to generate `.R` documentation files.
+The execution of the ADaM templates and creation of the package documentation in `{pharmaverseadam}` is semi-automated for consistency and ease of maintenance. Metadata for each dataset such as names, labels, descriptions, authors, and sources, is managed in a centralized XLSX file (`inst/extdata/adams-specs.xlsx`) and used to generate `.R` documentation files. These are then used to populate the [reference pages](https://pharmaverse.github.io/pharmaverseadam/reference/index.html) in the package documentation.
 
-## Workflow
-
-The creation and maintenance of ADaM test datasets in `{pharmaverseadam}` is automated to ensure reproducibility and ease of updates. The workflow consists of two main steps:
+The workflow consists of two main steps:
 
 ### 1. Metadata Preparation
 
-- All metadata for datasets is defined in a centralized Excel file: `inst/extdata/adams-specs.xlsx`.
-- This file includes dataset names, labels, descriptions, variable metadata, and source information.
-- Any missing metadata fields will be set by default to "No label/description/source available."
+Firstly, the user reviews `inst/extdata/adams-specs.xlsx` and ensures its contents is up-to-date. If a new template has been added to an existing package, or if a new extension package has been created whose ADaM templates they wish to execute in `{pharmaverseadam}`, then the user should update `adams-specs.xlsx` with specifications for the new dataset(s). Note that any missing metadata fields will be set by default to "No label/description/source available."
 
-### 2. Run Script
+### 2. Execute `create_adams_data`
 
-`data-raw/create_adams_data.R` handles the generation, processing, and documentation of ADaM datasets by executing template scripts from the `{admiral}` package family.
+Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the installation of each package, the execution of the templates, the saving of the ADaM datasets and the creation of the documentation pages.
 
-#### What the Script Does
+#### Script steps
 
-1. **Install or Update Required Packages**  
-   Installs or updates the latest development versions of:
+1. **Installs Required Packages**  
+   Installs the following packages:
    - `{admiral}`
    - `{admiralonco}`
    - `{admiralophtha}`
    - `{admiralvaccine}`
    - `{admiralpeds}`
-   - Any dependencies such as `{pharmaversesdtm}`
+   - `{pharmaversesdtm}`
+   By default, the latest development versions of each package will be used, but the user can also select a different version instead (e.g. a released version) with which to refresh `{pharmaverseadam}`. The user may also deselect some packages whose templates they do not wish to run. If a new extension package has been created, this should be added to the script in each relevant section (see the script itself for more details).
 
-2. **Execute Templates from Each Package**  
-   - Finds all template scripts located in each package’s `inst/templates` directory.
-   - Executes these templates, which create the ADaM datasets (e.g., `adsl`, `advs`, etc.).
-   - Some templates may be excluded via the `ignore_templates` configuration.
+2. **Executes Templates from Each Package**  
 
-3. **Process and Save Datasets**  
-   For each dataset:
-   - It is loaded from the temporary output,
-   - Variables are labeled using metadata from `adams-specs.xlsx` via `{metacore}` and `{metatools}`,
-   - A domain-specific suffix is applied if needed (e.g., `_O`, `_P`),
-   - The dataset is saved to `data/` as a compressed `.rda` file.
+3. **Processes and Saves Datasets into {pharmaverseadam}**  
 
-4. **Generate Dataset Documentation**  
+4. **Generates Dataset Documentation**  
    For every dataset, a matching `.R` file is created in the `R/` folder containing:
    - Dataset name and title,
    - Variable-level documentation (names and labels),
    - Source information indicating which template and package generated it,
    - Example usage with `data("<dataset>")`.
-
-5. **Log Errors and Failures**  
-   - Errors such as missing metadata or template failures are caught and logged,
-   - Any issues are printed in the console output to assist debugging.
-
-6. **Finalize Documentation**  
-   After all datasets and `.R` files are generated, the script calls: `roxygen2::roxygenize()` to update .Rd files in the man/ directory.
