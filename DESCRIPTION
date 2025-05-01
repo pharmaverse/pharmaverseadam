@@ -1,30 +1,33 @@
-Package: pharmaverseadam
 Type: Package
+Package: pharmaverseadam
 Title: ADaM Test Data for the 'Pharmaverse' Family of Packages
-Version: 1.1.0
+Version: 1.1.0.9000
 Authors@R: c(
-  person("Edoardo", "Mancini", email = "edoardo.mancini@roche.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0006-4899-8641")),
-  person("Kangjie", "Zhang", role = "aut"),
-  person("Stefan", "Bundfuss", role = "aut", comment = c(ORCID = "0009-0005-0027-1198")),
-  person("Gayatri", "G", role = "aut"),
-  person("Daphne", "Grassely", role = "aut"),
-  person("Zelos", "Zhu", role = "aut"),
-  person("Sadchla", "Mascary", role = "aut"),
-  person("Vladyslav", "Shuliar", role = "aut", comment = c(ORCID = "0009-0008-2354-8999"))
+    person("Edoardo", "Mancini", , "edoardo.mancini@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0006-4899-8641")),
+    person("Kangjie", "Zhang", role = "aut"),
+    person("Stefan", "Bundfuss", role = "aut",
+           comment = c(ORCID = "0009-0005-0027-1198")),
+    person("Gayatri", "G", role = "aut"),
+    person("Daphne", "Grassely", role = "aut"),
+    person("Zelos", "Zhu", role = "aut"),
+    person("Sadchla", "Mascary", role = "aut"),
+    person("Vladyslav", "Shuliar", role = "aut",
+           comment = c(ORCID = "0009-0008-2354-8999"))
   )
-Description: A set of Analysis Data Model (ADaM) datasets constructed using the 
-    Study Data Tabulation Model (SDTM) datasets contained in the 'pharmaversesdtm' package and 
-    the template scripts from the 'admiral' family of packages. ADaM dataset specifications 
-    are described in the CDISC ADaM implementation guide, accessible by creating a free account on <https://www.cdisc.org/>.
+Description: A set of Analysis Data Model (ADaM) datasets constructed
+    using the Study Data Tabulation Model (SDTM) datasets contained in the
+    'pharmaversesdtm' package and the template scripts from the 'admiral'
+    family of packages. ADaM dataset specifications are described in the
+    CDISC ADaM implementation guide, accessible by creating a free account
+    on <https://www.cdisc.org/>.
 License: Apache License (>= 2)
-URL: https://pharmaverse.github.io/pharmaverseadam/, https://github.com/pharmaverse/pharmaverseadam/
-Encoding: UTF-8
-Language: en-US
-LazyData: true
-LazyDataCompression: bzip2
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-Depends: R (>= 3.5)
+URL: https://pharmaverse.github.io/pharmaverseadam/,
+    https://github.com/pharmaverse/pharmaverseadam/
+Depends: 
+    R (>= 3.5)
+Imports:
+    tibble
 Suggests:
     covr,
     devtools,
@@ -32,6 +35,8 @@ Suggests:
     DT,
     knitr,
     lintr,
+    metacore,
+    metatools,
     methods,
     miniUI,
     pkgdown,
@@ -39,9 +44,11 @@ Suggests:
     roxygen2,
     spelling,
     testthat (>= 3.0.0),
-    usethis,
-    metacore,
-    metatools
+    usethis
 Config/testthat/edition: 3
-Imports:
-    tibble
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: bzip2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
