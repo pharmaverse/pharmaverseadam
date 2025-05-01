@@ -3,7 +3,7 @@
 \docType{data}
 \name{adppk}
 \alias{adppk}
-\title{adppk}
+\title{Population Pharmacokinetic}
 \format{
 A data frame with 61 columns:
 \describe{

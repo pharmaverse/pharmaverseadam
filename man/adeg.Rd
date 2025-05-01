@@ -3,7 +3,7 @@
 \docType{data}
 \name{adeg}
 \alias{adeg}
-\title{adeg}
+\title{Electrocardiogram Tests Analysis}
 \format{
 A data frame with 108 columns:
 \describe{

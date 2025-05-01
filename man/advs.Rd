@@ -3,7 +3,7 @@
 \docType{data}
 \name{advs}
 \alias{advs}
-\title{advs}
+\title{Vital Signs Analysis}
 \format{
 A data frame with 105 columns:
 \describe{

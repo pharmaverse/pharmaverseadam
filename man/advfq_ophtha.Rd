@@ -3,7 +3,7 @@
 \docType{data}
 \name{advfq_ophtha}
 \alias{advfq_ophtha}
-\title{advfq_ophtha}
+\title{Visual Function Questionnaire Analysis}
 \format{
 A data frame with 89 columns:
 \describe{

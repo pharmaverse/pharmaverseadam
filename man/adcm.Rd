@@ -3,7 +3,7 @@
 \docType{data}
 \name{adcm}
 \alias{adcm}
-\title{adcm}
+\title{Concomitant Medications Analysis}
 \format{
 A data frame with 95 columns:
 \describe{

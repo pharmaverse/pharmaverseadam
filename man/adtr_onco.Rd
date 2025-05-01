@@ -3,7 +3,7 @@
 \docType{data}
 \name{adtr_onco}
 \alias{adtr_onco}
-\title{adtr_onco}
+\title{Tumor Results Analysis for Oncology}
 \format{
 A data frame with 99 columns:
 \describe{
