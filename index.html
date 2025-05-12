@@ -29,7 +29,7 @@
 
     <a class="navbar-brand me-2" href="index.html">pharmaverseadam</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,17 +98,19 @@
 <p>Firstly, the user reviews <code>inst/extdata/adams-specs.xlsx</code> and ensures its contents is up-to-date. If a new template has been added to an existing package, or if a new extension package has been created whose ADaM templates they wish to execute in <a href="https://pharmaverse.github.io/pharmaverseadam/">pharmaverseadam</a>, then the user should update <code>adams-specs.xlsx</code> with specifications for the new dataset(s). Note that any missing metadata fields will be set by default to “No label/description/source available.”</p>
 </div>
 <div class="section level3">
-<h3 id="id_2-execute-create_adams_data">2. Execute <code>create_adams_data</code>
-<a class="anchor" aria-label="anchor" href="#id_2-execute-create_adams_data"></a>
+<h3 id="id_2-execute-create_adams_datar">2. Execute <code>create_adams_data.R</code>
+<a class="anchor" aria-label="anchor" href="#id_2-execute-create_adams_datar"></a>
 </h3>
 <p>Secondly, the user runs <code>data-raw/create_adams_data.R</code>. This script handles the installation of each package, the execution of the templates, the saving of the ADaM datasets and the creation of the documentation pages.</p>
 <div class="section level4">
 <h4 id="script-steps">Script steps<a class="anchor" aria-label="anchor" href="#script-steps"></a>
 </h4>
 <ol style="list-style-type: decimal">
+<li><p><strong>Save specs as JSON</strong><br>
+The script saves the specs stored in <code>inst/extdata/adams-specs.xlsx</code> as a JSON file located here: <code>inst/extdata/adams-specs.json</code>. This is so that the specs themselves, as well as any diffs across commits, are easily viewable on Github and R Studio.</p></li>
 <li>
 <p><strong>Installs Required Packages</strong><br>
-Installs the following packages:</p>
+The script installs the following packages:</p>
 <ul>
 <li><a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a></li>
 <li><a href="https://pharmaverse.github.io/admiralonco/" class="external-link">admiralonco</a></li>
