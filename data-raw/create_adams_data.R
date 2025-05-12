@@ -1,4 +1,26 @@
-# ensure every packages are installed
+# Save specs as JSON file for traceability of changes ----
+
+library(readxl)
+library(jsonlite)
+
+json_file <- "inst/extdata/adams-specs.json"
+excel_file <- "inst/extdata/adams-specs.xlsx"
+
+specs_xlsx <- readxl::read_excel(excel_file)
+specs_json <- toJSON(specs_xlsx, pretty = TRUE)
+
+sheet_names <- excel_sheets(excel_file)
+
+all_sheets <- lapply(sheet_names, function(sheet) {
+  read_excel(excel_file, sheet = sheet)
+})
+
+names(all_sheets) <- sheet_names
+json_data <- toJSON(all_sheets, pretty = TRUE)
+
+write(json_data, file = json_file)
+
+# Ensure all packages are installed ----
 library(stringr)
 update_pkg <- TRUE
 ignore_templates <- list(
@@ -29,6 +51,7 @@ get_attr <- function(data, col_name) {
   return(att)
 }
 
+# Create documentation ----
 write_doc <- function(data, dataset_name, dataset_label, pkg, template_name) {
   # create documentation for the current dataset
   # TODO: use metatools/metacore for doc  ?
@@ -138,8 +161,8 @@ if (update_pkg) {
 # dict to match admiral xlsx specs suffixes
 suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E")
 mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
-                                 where_sep_sheet = FALSE,
-                                 quiet = TRUE
+  where_sep_sheet = FALSE,
+  quiet = TRUE
 )
 
 packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
@@ -151,12 +174,12 @@ for (pkg in packages_list) {
   if (update_pkg) {
     # TODO: replace by main once done
     remotes::install_github(sprintf("pharmaverse/%s", pkg),
-                            ref = "main", auth_token = if (github_pat == "") {
-                              NULL
-                            } else {
-                              github_pat
-                            },
-                            upgrade = "always", force = TRUE
+      ref = "main", auth_token = if (github_pat == "") {
+        NULL
+      } else {
+        github_pat
+      },
+      upgrade = "always", force = TRUE
     )
   }
   # get templates scripts
@@ -187,5 +210,5 @@ for (res in all_results) {
   }
 }
 
-# Generate the documentation
+# Generate the documentation ----
 roxygen2::roxygenize(".", roclets = c("rd", "collate", "namespace"))

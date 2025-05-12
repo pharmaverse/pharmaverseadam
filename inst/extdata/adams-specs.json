@@ -21,6 +21,7 @@
       "Attribute": "Language",
       "Value": "en"
     },
+    {},
     {
       "Attribute": "Legend",
       "Value": "Highlighted cells are required for Define-XML 2.1 and can be ignored for prior versions."
@@ -81,7 +82,7 @@
     },
     {
       "Dataset": "ADEX",
-      "Label": "Exposure Analysis ",
+      "Label": "Exposure Analysis",
       "Class": "BASIC DATA STRUCTURE",
       "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
       "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
@@ -166,7 +167,7 @@
     },
     {
       "Dataset": "ADPP",
-      "Label": " Pharmacokinetic Parameters",
+      "Label": "Pharmacokinetic Parameters",
       "Class": "BASIC DATA STRUCTURE",
       "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
       "Key Variables": "STUDYID, USUBJID, PARAMCD, AVAL",
@@ -196,7 +197,7 @@
     },
     {
       "Dataset": "ADSL",
-      "Label": "Subject Level Analysis ",
+      "Label": "Subject Level Analysis",
       "Class": "SUBJECT LEVEL ANALYSIS DATASET",
       "Structure": "One record per subject",
       "Key Variables": "STUDYID, USUBJID",
@@ -1344,6 +1345,47 @@
       "Label": "Death Within 30 Days of First Trt Flag",
       "Data Type": "text",
       "Length": "1",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "102",
+      "Dataset": "ADAE",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "103",
+      "Dataset": "ADAE",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "104",
+      "Dataset": "ADAE",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "105",
+      "Dataset": "ADAE",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
       "Mandatory": "No",
       "Has No Data": "No"
     },
@@ -2943,7 +2985,7 @@
       "Order": "39",
       "Dataset": "ADCE_V",
       "Variable": "APERSTDY",
-      "Label": "Analysis Sub-period Start Relative Day ",
+      "Label": "Analysis Sub-period Start Relative Day",
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
@@ -3243,6 +3285,16 @@
     {
       "Order": "13",
       "Dataset": "ADCM",
+      "Variable": "CMENRTPT",
+      "Label": "End Relative to Reference Time Point",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "14",
+      "Dataset": "ADCM",
       "Variable": "CMROUTE",
       "Label": "Route of Administration",
       "Data Type": "text",
@@ -3251,7 +3303,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "14",
+      "Order": "15",
       "Dataset": "ADCM",
       "Variable": "VISITNUM",
       "Label": "Visit Number",
@@ -3261,7 +3313,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "15",
+      "Order": "16",
       "Dataset": "ADCM",
       "Variable": "VISIT",
       "Label": "Visit Name",
@@ -3271,7 +3323,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "16",
+      "Order": "17",
       "Dataset": "ADCM",
       "Variable": "VISITDY",
       "Label": "Planned Study Day of Visit",
@@ -3281,7 +3333,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "17",
+      "Order": "18",
       "Dataset": "ADCM",
       "Variable": "CMDTC",
       "Label": "Date/Time of Collection",
@@ -3290,7 +3342,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "18",
+      "Order": "19",
       "Dataset": "ADCM",
       "Variable": "CMSTDTC",
       "Label": "Start Date/Time of Medication",
@@ -3299,7 +3351,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "19",
+      "Order": "20",
       "Dataset": "ADCM",
       "Variable": "CMENDTC",
       "Label": "End Date/Time of Medication",
@@ -3308,7 +3360,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "20",
+      "Order": "21",
       "Dataset": "ADCM",
       "Variable": "CMSTDY",
       "Label": "Study Day of Start of Medication",
@@ -3318,7 +3370,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "21",
+      "Order": "22",
       "Dataset": "ADCM",
       "Variable": "CMENDY",
       "Label": "Study Day of End of Medication",
@@ -3328,7 +3380,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "22",
+      "Order": "23",
       "Dataset": "ADCM",
       "Variable": "TRTSDT",
       "Label": "Date of First Exposure to Treatment",
@@ -3339,7 +3391,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "23",
+      "Order": "24",
       "Dataset": "ADCM",
       "Variable": "TRTEDT",
       "Label": "Date of Last Exposure to Treatment",
@@ -3350,7 +3402,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "24",
+      "Order": "25",
       "Dataset": "ADCM",
       "Variable": "DTHDT",
       "Label": "Date of Death",
@@ -3361,7 +3413,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "25",
+      "Order": "26",
       "Dataset": "ADCM",
       "Variable": "EOSDT",
       "Label": "End of Study Date",
@@ -3372,7 +3424,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "26",
+      "Order": "27",
       "Dataset": "ADCM",
       "Variable": "TRT01P",
       "Label": "Planned Treatment for Period 01",
@@ -3382,7 +3434,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "27",
+      "Order": "28",
       "Dataset": "ADCM",
       "Variable": "TRT01A",
       "Label": "Actual Treatment for Period 01",
@@ -3392,7 +3444,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "28",
+      "Order": "29",
       "Dataset": "ADCM",
       "Variable": "ASTDTM",
       "Label": "Analysis Start Date/Time",
@@ -3403,7 +3455,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "29",
+      "Order": "30",
       "Dataset": "ADCM",
       "Variable": "ASTDTF",
       "Label": "Analysis Start Date Imputation Flag",
@@ -3413,7 +3465,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "30",
+      "Order": "31",
       "Dataset": "ADCM",
       "Variable": "ASTTMF",
       "Label": "Analysis Start Time Imputation Flag",
@@ -3423,7 +3475,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "31",
+      "Order": "32",
       "Dataset": "ADCM",
       "Variable": "AENDTM",
       "Label": "Analysis End Date/Time",
@@ -3434,7 +3486,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "32",
+      "Order": "33",
       "Dataset": "ADCM",
       "Variable": "AENDTF",
       "Label": "Analysis End Date Imputation Flag",
@@ -3444,7 +3496,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "33",
+      "Order": "34",
       "Dataset": "ADCM",
       "Variable": "AENTMF",
       "Label": "Analysis End Time Imputation Flag",
@@ -3454,7 +3506,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "34",
+      "Order": "35",
       "Dataset": "ADCM",
       "Variable": "ASTDT",
       "Label": "Analysis Start Date",
@@ -3465,7 +3517,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "35",
+      "Order": "36",
       "Dataset": "ADCM",
       "Variable": "AENDT",
       "Label": "Analysis End Date",
@@ -3476,7 +3528,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "36",
+      "Order": "37",
       "Dataset": "ADCM",
       "Variable": "ASTDY",
       "Label": "Analysis Start Relative Day",
@@ -3486,7 +3538,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "37",
+      "Order": "38",
       "Dataset": "ADCM",
       "Variable": "AENDY",
       "Label": "Analysis End Relative Day",
@@ -3496,7 +3548,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "38",
+      "Order": "39",
       "Dataset": "ADCM",
       "Variable": "ADURN",
       "Label": "Analysis Duration (N)",
@@ -3506,7 +3558,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "39",
+      "Order": "40",
       "Dataset": "ADCM",
       "Variable": "ADURU",
       "Label": "Analysis Duration Units",
@@ -3516,7 +3568,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "40",
+      "Order": "41",
       "Dataset": "ADCM",
       "Variable": "ONTRTFL",
       "Label": "On Treatment Record Flag",
@@ -3526,7 +3578,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "41",
+      "Order": "42",
       "Dataset": "ADCM",
       "Variable": "PREFL",
       "Label": "Pre-treatment Flag",
@@ -3536,7 +3588,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "42",
+      "Order": "43",
       "Dataset": "ADCM",
       "Variable": "FUPFL",
       "Label": "Follow-up Flag",
@@ -3546,7 +3598,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "43",
+      "Order": "44",
       "Dataset": "ADCM",
       "Variable": "ANL01FL",
       "Label": "Analysis Flag 01",
@@ -3556,7 +3608,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "44",
+      "Order": "45",
       "Dataset": "ADCM",
       "Variable": "AOCCPFL",
       "Label": "1st Occurrence of Preferred Term Flag",
@@ -3566,7 +3618,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "45",
+      "Order": "46",
       "Dataset": "ADCM",
       "Variable": "APHASE",
       "Label": "Phase",
@@ -3576,7 +3628,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "46",
+      "Order": "47",
       "Dataset": "ADCM",
       "Variable": "APHASEN",
       "Label": "Description of Phase N",
@@ -3586,7 +3638,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "47",
+      "Order": "48",
       "Dataset": "ADCM",
       "Variable": "TRTP",
       "Label": "Planned Treatment",
@@ -3596,7 +3648,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "48",
+      "Order": "49",
       "Dataset": "ADCM",
       "Variable": "TRTA",
       "Label": "Actual Treatment",
@@ -3606,7 +3658,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "49",
+      "Order": "50",
       "Dataset": "ADCM",
       "Variable": "SUBJID",
       "Label": "Subject Identifier for the Study",
@@ -3616,7 +3668,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "50",
+      "Order": "51",
       "Dataset": "ADCM",
       "Variable": "RFSTDTC",
       "Label": "Subject Reference Start Date/Time",
@@ -3625,7 +3677,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "51",
+      "Order": "52",
       "Dataset": "ADCM",
       "Variable": "RFENDTC",
       "Label": "Subject Reference End Date/Time",
@@ -3634,7 +3686,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "52",
+      "Order": "53",
       "Dataset": "ADCM",
       "Variable": "RFXSTDTC",
       "Label": "Date/Time of First Study Treatment",
@@ -3643,7 +3695,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "53",
+      "Order": "54",
       "Dataset": "ADCM",
       "Variable": "RFXENDTC",
       "Label": "Date/Time of Last Study Treatment",
@@ -3652,7 +3704,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "54",
+      "Order": "55",
       "Dataset": "ADCM",
       "Variable": "RFICDTC",
       "Label": "Date/Time of Informed Consent",
@@ -3662,7 +3714,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "55",
+      "Order": "56",
       "Dataset": "ADCM",
       "Variable": "RFPENDTC",
       "Label": "Date/Time of End of Participation",
@@ -3671,7 +3723,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "56",
+      "Order": "57",
       "Dataset": "ADCM",
       "Variable": "DTHDTC",
       "Label": "Date/Time of Death",
@@ -3680,7 +3732,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "57",
+      "Order": "58",
       "Dataset": "ADCM",
       "Variable": "DTHFL",
       "Label": "Subject Death Flag",
@@ -3690,7 +3742,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "58",
+      "Order": "59",
       "Dataset": "ADCM",
       "Variable": "SITEID",
       "Label": "Study Site Identifier",
@@ -3700,7 +3752,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "59",
+      "Order": "60",
       "Dataset": "ADCM",
       "Variable": "AGE",
       "Label": "Age",
@@ -3710,7 +3762,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "60",
+      "Order": "61",
       "Dataset": "ADCM",
       "Variable": "AGEU",
       "Label": "Age Units",
@@ -3720,7 +3772,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "61",
+      "Order": "62",
       "Dataset": "ADCM",
       "Variable": "SEX",
       "Label": "Sex",
@@ -3730,7 +3782,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "62",
+      "Order": "63",
       "Dataset": "ADCM",
       "Variable": "RACE",
       "Label": "Race",
@@ -3740,7 +3792,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "63",
+      "Order": "64",
       "Dataset": "ADCM",
       "Variable": "ETHNIC",
       "Label": "Ethnicity",
@@ -3750,7 +3802,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "64",
+      "Order": "65",
       "Dataset": "ADCM",
       "Variable": "ARMCD",
       "Label": "Planned Arm Code",
@@ -3760,7 +3812,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "65",
+      "Order": "66",
       "Dataset": "ADCM",
       "Variable": "ARM",
       "Label": "Description of Planned Arm",
@@ -3770,7 +3822,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "66",
+      "Order": "67",
       "Dataset": "ADCM",
       "Variable": "ACTARMCD",
       "Label": "Actual Arm Code",
@@ -3780,7 +3832,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "67",
+      "Order": "68",
       "Dataset": "ADCM",
       "Variable": "ACTARM",
       "Label": "Description of Actual Arm",
@@ -3790,7 +3842,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "68",
+      "Order": "69",
       "Dataset": "ADCM",
       "Variable": "COUNTRY",
       "Label": "Country",
@@ -3800,7 +3852,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "69",
+      "Order": "70",
       "Dataset": "ADCM",
       "Variable": "DMDTC",
       "Label": "Date/Time of Collection",
@@ -3809,7 +3861,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "70",
+      "Order": "71",
       "Dataset": "ADCM",
       "Variable": "DMDY",
       "Label": "Study Day of Collection",
@@ -3819,7 +3871,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "71",
+      "Order": "72",
       "Dataset": "ADCM",
       "Variable": "TRTSDTM",
       "Label": "Datetime of First Exposure to Treatment",
@@ -3830,7 +3882,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "72",
+      "Order": "73",
       "Dataset": "ADCM",
       "Variable": "TRTSTMF",
       "Label": "Time of First Exposure Imput. Flag",
@@ -3840,7 +3892,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "73",
+      "Order": "74",
       "Dataset": "ADCM",
       "Variable": "TRTEDTM",
       "Label": "Datetime of Last Exposure to Treatment",
@@ -3851,7 +3903,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "74",
+      "Order": "75",
       "Dataset": "ADCM",
       "Variable": "TRTETMF",
       "Label": "Treatment End Datetime Imput Flag",
@@ -3861,7 +3913,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "75",
+      "Order": "76",
       "Dataset": "ADCM",
       "Variable": "TRTDURD",
       "Label": "Total Treatment Duration (Days)",
@@ -3871,7 +3923,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "76",
+      "Order": "77",
       "Dataset": "ADCM",
       "Variable": "SCRFDT",
       "Label": "Screen Failure Date",
@@ -3882,7 +3934,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "77",
+      "Order": "78",
       "Dataset": "ADCM",
       "Variable": "EOSSTT",
       "Label": "End of Study Status",
@@ -3892,7 +3944,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "78",
+      "Order": "79",
       "Dataset": "ADCM",
       "Variable": "FRVDT",
       "Label": "Final Retrievel Visit Date",
@@ -3903,7 +3955,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "79",
+      "Order": "80",
       "Dataset": "ADCM",
       "Variable": "RANDDT",
       "Label": "Date of Randomization",
@@ -3914,7 +3966,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "80",
+      "Order": "81",
       "Dataset": "ADCM",
       "Variable": "DTHADY",
       "Label": "Relative Day of Death",
@@ -3924,7 +3976,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "81",
+      "Order": "82",
       "Dataset": "ADCM",
       "Variable": "LDDTHELD",
       "Label": "Elapsed Days from Last Dose to Death",
@@ -3934,7 +3986,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "82",
+      "Order": "83",
       "Dataset": "ADCM",
       "Variable": "LSTALVDT",
       "Label": "Date Last Known Alive",
@@ -3945,7 +3997,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "83",
+      "Order": "84",
       "Dataset": "ADCM",
       "Variable": "AGEGR1",
       "Label": "Pooled Age Group 1",
@@ -3955,7 +4007,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "84",
+      "Order": "85",
       "Dataset": "ADCM",
       "Variable": "SAFFL",
       "Label": "Safety Population Flag",
@@ -3965,7 +4017,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "85",
+      "Order": "86",
       "Dataset": "ADCM",
       "Variable": "RACEGR1",
       "Label": "Pooled Race Group 1",
@@ -3975,7 +4027,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "86",
+      "Order": "87",
       "Dataset": "ADCM",
       "Variable": "REGION1",
       "Label": "Geographic Region 1",
@@ -3985,7 +4037,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "87",
+      "Order": "88",
       "Dataset": "ADCM",
       "Variable": "LDDTHGR1",
       "Label": "Last Dose to Death - Days Elapsed Grp 1",
@@ -3995,7 +4047,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "88",
+      "Order": "89",
       "Dataset": "ADCM",
       "Variable": "DTH30FL",
       "Label": "Death Within 30 Days of Last Trt Flag",
@@ -4005,7 +4057,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "89",
+      "Order": "90",
       "Dataset": "ADCM",
       "Variable": "DTHA30FL",
       "Label": "Death After 30 Days from Last Trt Flag",
@@ -4015,7 +4067,48 @@
       "Has No Data": "No"
     },
     {
-      "Order": "90",
+      "Order": "91",
+      "Dataset": "ADCM",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "92",
+      "Dataset": "ADCM",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "93",
+      "Dataset": "ADCM",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "94",
+      "Dataset": "ADCM",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "95",
       "Dataset": "ADCM",
       "Variable": "DTHB30FL",
       "Label": "Death Within 30 Days of First Trt Flag",
@@ -5135,6 +5228,47 @@
       "Has No Data": "No"
     },
     {
+      "Order": "106",
+      "Dataset": "ADEG",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "107",
+      "Dataset": "ADEG",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "108",
+      "Dataset": "ADEG",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "109",
+      "Dataset": "ADEG",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "1",
       "Dataset": "ADEX",
       "Variable": "STUDYID",
@@ -6060,6 +6194,47 @@
       "Has No Data": "No"
     },
     {
+      "Order": "89",
+      "Dataset": "ADEX",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "90",
+      "Dataset": "ADEX",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "91",
+      "Dataset": "ADEX",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "92",
+      "Dataset": "ADEX",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "1",
       "Dataset": "ADFACE_V",
       "Variable": "STUDYID",
@@ -6694,6 +6869,16 @@
       "Dataset": "ADFACE_V",
       "Variable": "ANL02FL",
       "Label": "Analysis Flag 02",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "61",
+      "Dataset": "ADFACE_V",
+      "Variable": "ANL03FL",
+      "Label": "Analysis Flag 03",
       "Data Type": "text",
       "Length": "1",
       "Mandatory": "No",
@@ -8958,6 +9143,47 @@
       "Has No Data": "No"
     },
     {
+      "Order": "112",
+      "Dataset": "ADLB",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "113",
+      "Dataset": "ADLB",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "114",
+      "Dataset": "ADLB",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "115",
+      "Dataset": "ADLB",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "1",
       "Dataset": "ADLBHY",
       "Variable": "STUDYID",
@@ -9677,7 +9903,7 @@
       "Order": "57",
       "Dataset": "ADMH",
       "Variable": "AOCCFL",
-      "Label": "1st Occurrence within Subject Flag\t",
+      "Label": "1st Occurrence within Subject Flag",
       "Data Type": "text",
       "Length": "1",
       "Mandatory": "No",
@@ -10195,8 +10421,8 @@
     {
       "Order": "109",
       "Dataset": "ADMH",
-      "Variable": "DTHA30FL",
-      "Label": "Death After 30 Days from Last Trt Flag",
+      "Variable": "DTHB30FL",
+      "Label": "Death Within 30 Days of First Trt Flag",
       "Data Type": "text",
       "Length": "1",
       "Mandatory": "No",
@@ -10205,10 +10431,51 @@
     {
       "Order": "110",
       "Dataset": "ADMH",
-      "Variable": "DTHB30FL",
-      "Label": "Death Within 30 Days of First Trt Flag",
+      "Variable": "DTHA30FL",
+      "Label": "Death After 30 Days from Last Trt Flag",
       "Data Type": "text",
       "Length": "1",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "111",
+      "Dataset": "ADMH",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "112",
+      "Dataset": "ADMH",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "113",
+      "Dataset": "ADMH",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "114",
+      "Dataset": "ADMH",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
       "Mandatory": "No",
       "Has No Data": "No"
     },
@@ -11240,6 +11507,47 @@
       "Has No Data": "No"
     },
     {
+      "Order": "99",
+      "Dataset": "ADOE_P",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "100",
+      "Dataset": "ADOE_P",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "101",
+      "Dataset": "ADOE_P",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "102",
+      "Dataset": "ADOE_P",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "1",
       "Dataset": "ADPC",
       "Variable": "STUDYID",
@@ -11940,7 +12248,7 @@
       "Order": "65",
       "Dataset": "ADPC",
       "Variable": "MRRLT",
-      "Label": "Modified Rel. Time from Ref. Dose ",
+      "Label": "Modified Rel. Time from Ref. Dose",
       "Data Type": "float",
       "Length": "10",
       "Significant Digits": "8",
@@ -12554,6 +12862,47 @@
       "Label": "Parameter Category 1",
       "Data Type": "text",
       "Length": "40",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "124",
+      "Dataset": "ADPC",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "125",
+      "Dataset": "ADPC",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "126",
+      "Dataset": "ADPC",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "127",
+      "Dataset": "ADPC",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
       "Mandatory": "No",
       "Has No Data": "No"
     },
@@ -13335,6 +13684,47 @@
       "Label": "Death Within 30 Days of First Trt Flag",
       "Data Type": "text",
       "Length": "1",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "75",
+      "Dataset": "ADPP",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "76",
+      "Dataset": "ADPP",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "77",
+      "Dataset": "ADPP",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "78",
+      "Dataset": "ADPP",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
       "Mandatory": "No",
       "Has No Data": "No"
     },
@@ -15336,6 +15726,36 @@
       "Label": "Death Within 30 Days of First Trt Flag",
       "Data Type": "text",
       "Length": "1",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "52",
+      "Dataset": "ADSL",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "53",
+      "Dataset": "ADSL",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "54",
+      "Dataset": "ADSL",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
       "Mandatory": "No",
       "Has No Data": "No"
     },
@@ -17997,6 +18417,47 @@
       "Has No Data": "No"
     },
     {
+      "Order": "86",
+      "Dataset": "ADVFQ_P",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "87",
+      "Dataset": "ADVFQ_P",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "88",
+      "Dataset": "ADVFQ_P",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "89",
+      "Dataset": "ADVFQ_P",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "1",
       "Dataset": "ADVS",
       "Variable": "STUDYID",
@@ -19083,6 +19544,47 @@
       "Label": "Death Within 30 Days of First Trt Flag",
       "Data Type": "text",
       "Length": "1",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "104",
+      "Dataset": "ADVS",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No",
+      "Role": "ADSL Subject-Level Trial Experience Variables",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "105",
+      "Dataset": "ADVS",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "106",
+      "Dataset": "ADVS",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "107",
+      "Dataset": "ADVS",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
       "Mandatory": "No",
       "Has No Data": "No"
     },
