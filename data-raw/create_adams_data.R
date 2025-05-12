@@ -3,12 +3,22 @@
 library(readxl)
 library(jsonlite)
 
-# Read the .xlsx file
-specs_xlsx <- readxl::read_excel("inst/extdata/adams-specs.xlsx")
+json_file <- "inst/extdata/adams-specs.json"
+excel_file <- "inst/extdata/adams-specs.xlsx"
 
+specs_xlsx <- readxl::read_excel(excel_file)
 specs_json <- toJSON(specs_xlsx, pretty = TRUE)
 
-write(json_data, "inst/extdata/adams-specs.json")
+sheet_names <- excel_sheets(excel_file)
+
+all_sheets <- lapply(sheet_names, function(sheet) {
+  read_excel(excel_file, sheet = sheet)
+})
+
+names(all_sheets) <- sheet_names
+json_data <- toJSON(all_sheets, pretty = TRUE)
+
+write(json_data, file = json_file)
 
 # Ensure all packages are installed ----
 library(stringr)
