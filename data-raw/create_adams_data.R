@@ -1,4 +1,16 @@
-# ensure every packages are installed
+# Save specs as JSON file for traceability of changes ----
+
+library(readxl)
+library(jsonlite)
+
+# Read the .xlsx file
+specs_xlsx <- readxl::read_excel("inst/extdata/adams-specs.xlsx")
+
+specs_json <- toJSON(specs_xlsx, pretty = TRUE)
+
+write(json_data, "inst/extdata/adams-specs.json")
+
+# Ensure all packages are installed ----
 library(stringr)
 update_pkg <- TRUE
 ignore_templates <- list(
@@ -29,6 +41,7 @@ get_attr <- function(data, col_name) {
   return(att)
 }
 
+# Create documentation ----
 write_doc <- function(data, dataset_name, dataset_label, pkg, template_name) {
   # create documentation for the current dataset
   # TODO: use metatools/metacore for doc  ?
@@ -187,5 +200,5 @@ for (res in all_results) {
   }
 }
 
-# Generate the documentation
+# Generate the documentation ----
 roxygen2::roxygenize(".", roclets = c("rd", "collate", "namespace"))

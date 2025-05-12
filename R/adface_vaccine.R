@@ -67,7 +67,7 @@
 #'     \item{ EVENTDFL }{Day Event Value Flag}
 #'     \item{ ANL01FL }{Analysis Flag 01}
 #'     \item{ ANL02FL }{Analysis Flag 02}
-#'     \item{ ANL03FL }{undocumented field}
+#'     \item{ ANL03FL }{Analysis Flag 03}
 #'   }
 #'
 #' @source Generated from admiralvaccine package (template ad_adface.R).

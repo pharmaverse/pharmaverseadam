@@ -44,14 +44,18 @@ The workflow consists of two main steps:
 
 Firstly, the user reviews `inst/extdata/adams-specs.xlsx` and ensures its contents is up-to-date. If a new template has been added to an existing package, or if a new extension package has been created whose ADaM templates they wish to execute in `{pharmaverseadam}`, then the user should update `adams-specs.xlsx` with specifications for the new dataset(s). Note that any missing metadata fields will be set by default to "No label/description/source available."
 
-### 2. Execute `create_adams_data`
+### 2. Execute `create_adams_data.R`
 
 Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the installation of each package, the execution of the templates, the saving of the ADaM datasets and the creation of the documentation pages.
 
 #### Script steps
 
-1. **Installs Required Packages**  
-   Installs the following packages:
+1. **Save specs as JSON**  
+   The script saves the specs stored in `inst/extdata/adams-specs.xlsx` as a JSON file located here: `inst/extdata/adams-specs.json`. 
+   This is so that the specs themselves, as well as any diffs across commits, are easily viewable on Github and R Studio.
+
+2. **Installs Required Packages**  
+   The script installs the following packages:
    - `{admiral}`
    - `{admiralonco}`
    - `{admiralophtha}`
@@ -60,11 +64,11 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - `{pharmaversesdtm}`
    By default, the latest development versions of each package will be used, but the user can also select a different version instead (e.g. a released version) with which to refresh `{pharmaverseadam}`. The user may also deselect some packages whose templates they do not wish to run. If a new extension package has been created, this should be added to the script in each relevant section (see the script itself for more details).
 
-2. **Executes Templates from Each Package**  
+3. **Executes Templates from Each Package**  
 
-3. **Processes and Saves Datasets into {pharmaverseadam}**  
+4. **Processes and Saves Datasets into {pharmaverseadam}**  
 
-4. **Generates Dataset Documentation**  
+5. **Generates Dataset Documentation**  
    For every dataset, a matching `.R` file is created in the `R/` folder containing:
    - Dataset name and title,
    - Variable-level documentation (names and labels),
