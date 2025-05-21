@@ -69,7 +69,7 @@ A data frame with 79 columns:
 \item{ TRTDURD }{Total Treatment Duration (Days)}
 \item{ SCRFDT }{Screen Failure Date}
 \item{ EOSSTT }{End of Study Status}
-\item{ FRVDT }{Final Retrievel Visit Date}
+\item{ FRVDT }{Final Retrieval Visit Date}
 \item{ RANDDT }{Date of Randomization}
 \item{ DTHDTF }{Date of Death Imputation Flag}
 \item{ DTHADY }{Relative Day of Death}
