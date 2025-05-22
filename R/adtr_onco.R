@@ -89,7 +89,7 @@
 #'     \item{ SCRFDT }{Screen Failure Date}
 #'     \item{ EOSDT }{End of Study Date}
 #'     \item{ EOSSTT }{End of Study Status}
-#'     \item{ FRVDT }{Final Retrievel Visit Date}
+#'     \item{ FRVDT }{Final Retrieval Visit Date}
 #'     \item{ DTHDT }{Date of Death}
 #'     \item{ DTHDTF }{Date of Death Imputation Flag}
 #'     \item{ DTHADY }{Relative Day of Death}
