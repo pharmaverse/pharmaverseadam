@@ -23,3 +23,5 @@
 ^data-raw
 ^tmp
 ^cran-comments\.md$
+^revdep
+^.revdeprefs.yaml

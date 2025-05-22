@@ -1,0 +1,10 @@
+---
+name: Scheduled 🕰️
+
+on:
+  schedule:
+    - cron: '45 3 * * 0'
+  workflow_dispatch:
+
+    name: revdepcheck ↩️
+    uses: insightsengineering/r.pkg.template/.github/workflows/revdepcheck.yaml@main
