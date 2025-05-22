@@ -5,22 +5,6 @@ on:
   schedule:
     - cron: '45 3 * * 0'
   workflow_dispatch:
-    inputs:
-      chosen-workflow:
-        description: |
-          Select which workflow you'd like to run
-        required: true
-        type: choice
-        default: rhub
-        options:
-          - revdepcheck
 
-jobs:
-  revdepcheck:
-    if: >
-      github.event_name == 'schedule' || (
-        github.event_name == 'workflow_dispatch' &&
-        inputs.chosen-workflow == 'revdepcheck'
-      )
     name: revdepcheck ↩️
     uses: insightsengineering/r.pkg.template/.github/workflows/revdepcheck.yaml@main
