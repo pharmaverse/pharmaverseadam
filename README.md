@@ -62,6 +62,7 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - `{admiralvaccine}`
    - `{admiralpeds}`
    - `{pharmaversesdtm}`
+   
    By default, the latest development versions of each package will be used, but the user can also select a different version instead (e.g. a released version) with which to refresh `{pharmaverseadam}`. The user may also deselect some packages whose templates they do not wish to run. If a new extension package has been created, this should be added to the script in each relevant section (see the script itself for more details).
 
 3. **Executes Templates from Each Package**  
