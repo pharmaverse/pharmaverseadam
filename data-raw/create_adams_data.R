@@ -77,17 +77,23 @@ write_doc <- function(data, dataset_name, dataset_label, pkg, template_name, dat
       paste(sprintf("#'     \\item{ %s }{%s}", col_name, get_attr(data, col_name)))
     }, USE.NAMES = FALSE), collapse = "\n"),
     "#'   }",
+    sep = "\n"
+  )
+
+  # Add PARAM and PARAMCD in details section if available
+  if (!is.null(dataset_paramnames) && dataset_paramnames != "") {
+    doc_string <- paste(doc_string, sprintf("#' @details %s", dataset_paramnames), sep = "\n")
+  }
+
+  # Append source, references and examples after Details section
+  doc_string <- paste(
+    doc_string,
     "#'", sprintf("#' @source Generated from %s package (template %s).", pkg, template_name),
     "#' @references None",
     "#'", sprintf("#' @examples\n#' data(\"%s\")", dataset_name),
     sep = "\n",
     sprintf("\"%s\"", dataset_name)
   )
-
-  # Add PARAM and PARAMCD in details section
-  if (!is.null(dataset_paramnames) && dataset_paramnames != "") {
-    doc_string <- paste(doc_string, sprintf("#' @details %s", dataset_paramnames), sep = "\n")
-  }
 
   writeLines(doc_string, con = file.path("R", paste0(dataset_name, ".R")))
 }
@@ -142,7 +148,7 @@ run_template <- function(tp) {
       dataset_name <- gsub("\\.rda$", "", filename)
 
       # add PARAM and PARAMCD details
-      # check if data contains PARAMCD/PARAM
+      # check if data contains PARAMCD/PARAM variables
       param_col <- names(data)[grepl("PARAM$", names(data))]
       paramcd_col <- names(data)[grepl("PARAMCD", names(data))]
 
