@@ -170,10 +170,10 @@ run_template <- function(tp) {
           )
 
           paste(sprintf("Contains a set of %d unique Parameter Code%s and Parameter%s: ", nrow(unique_params), ifelse(nrow(unique_params) == 1, "", "s"), ifelse(nrow(unique_params) == 1, "", "s")),
-                "\\tabular{", paste(col_align, collapse = ""), "}{\n#'   ",
-                paste0("\\strong{", names(df), "}", sep = "", collapse = " \\tab "), " \\cr\n#'   ",
-                contents, "\n#' }\n",
-                sep = ""
+            "\\tabular{", paste(col_align, collapse = ""), "}{\n#'   ",
+            paste0("\\strong{", names(df), "}", sep = "", collapse = " \\tab "), " \\cr\n#'   ",
+            contents, "\n#' }\n",
+            sep = ""
           )
         }
 
@@ -190,9 +190,9 @@ run_template <- function(tp) {
 
       # write doc
       dataset_label <- attributes(data)$label
-      if (is.null(paramnames)){
+      if (is.null(paramnames)) {
         dataset_paramnames <- NULL
-      } else{
+      } else {
         dataset_paramnames <- if (!is.null(paramnames) && paramnames != "") paramnames else NULL
       }
       write_doc(data, dataset_name, dataset_label, pkg, tp_basename, dataset_paramnames)
@@ -205,7 +205,6 @@ run_template <- function(tp) {
     ))
   }
 }
-
 
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
@@ -259,7 +258,6 @@ for (pkg in packages_list) {
   results <- parallel::mclapply(templates, run_template, mc.cores = length(templates))
   all_results <- c(all_results, results)
 }
-
 
 for (res in all_results) {
   if (!is.null(res$exit_code)) {
