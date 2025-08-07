@@ -12,6 +12,8 @@
 
 - Added labels to variables within datasets that were missing them. (#100)
 
+- `Cytel Inc.` was added to the `LICENSE.md`. (#116)
+
  <details>
 <summary>Developer Notes</summary>
 
