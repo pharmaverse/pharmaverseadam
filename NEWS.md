@@ -6,16 +6,26 @@
 
 ## Documentation
 
-- Added more details to README "Documentation Process" section. (#103)
+  - Added more details to README "Documentation Process" section. (#103)
 
-- Improved reference page so that dataset labels are displayed under each dataset name. (#103)
+  - Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
-- Added labels to variables within datasets that were missing them. (#100)
+  - Added labels to variables within datasets that were missing them. (#100)
 
  <details>
 <summary>Developer Notes</summary>
 
 - Imported `{tibble}` so that tibble formatting is not lost. (#95)
+
+</details>
+
+## Various
+
+<details>
+
+<summary>Developer Notes</summary>
+
+- Added copyright holder logos (#113)
 
 </details>
 
@@ -31,7 +41,7 @@ Ad-hoc release.
 
 ## Documentation
 
- - DESCRIPTION file updated ahead of CRAN release to fix link to CDISC website.
+  - DESCRIPTION file updated ahead of CRAN release to fix link to CDISC website.
  
  <details>
 <summary>Developer Notes</summary>
@@ -45,9 +55,11 @@ Ad-hoc release.
 The first stable version of `{pharmaverseadam}`!
 
 ## New features
+
   - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1, `{admiralophtha}` 1.1.0, `{admiralonco}` 1.1.0, `{admiralvaccine}` 0.2.0. (#58)
   
 ## Documentation
+
   - Dataset labels were updated to align with ADaM IG. (#64) 
 
 # pharmaverseadam 0.2.0
