@@ -80,4 +80,4 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
 
 Along with the authors and contributors, thanks to the following people for their work on the package:
 
-Daphne Grassely, Sadchla Mascary, Kangjie Zhang and Zelos Zhu.
+G Gayatri, Daphne Grassely, Sadchla Mascary, Kangjie Zhang and Zelos Zhu.
