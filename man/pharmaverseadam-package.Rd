@@ -24,10 +24,7 @@ Useful links:
 Authors:
 \itemize{
   \item Stefan Bundfuss (\href{https://orcid.org/0009-0005-0027-1198}{ORCID})
-  \item Stefan Bundfuss (\href{https://orcid.org/0009-0005-0027-1198}{ORCID})
-  \item Gayatri G
   \item Edoardo Mancini \email{edoardo.mancini@roche.com} (\href{https://orcid.org/0009-0006-4899-8641}{ORCID})
-  \item Gayatri G
   \item Lina Patil \email{lina.patil@cytel.com}
   \item Vladyslav Shuliar (\href{https://orcid.org/0009-0008-2354-8999}{ORCID})
 }

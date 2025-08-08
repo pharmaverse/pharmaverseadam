@@ -6,7 +6,7 @@
 
 ## Documentation
 
-- The package maintainer was updated from Edoardo Mancini to Fanny Gautier. (#186)
+- The package maintainer was updated from Edoardo Mancini to Fanny Gautier. (#115)
 
 - Added more details to README "Documentation Process" section. (#103)
 
