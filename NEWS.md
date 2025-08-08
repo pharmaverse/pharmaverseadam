@@ -25,7 +25,7 @@
 
 <summary>Developer Notes</summary>
 
-- Added copyright holder logos (#113)
+- Added copyright holder logos. (#113)
 
 </details>
 
