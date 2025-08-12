@@ -17,6 +17,8 @@
 
 - Imported `{tibble}` so that tibble formatting is not lost. (#95)
 
+- Added clearer error messages for template failures. (#121)
+
 </details>
 
 # pharmaverseadam 1.1.0
