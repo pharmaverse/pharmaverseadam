@@ -147,6 +147,25 @@ run_template <- function(tp) {
   }
 }
 
+# Wrapper Function for Error Handling
+safe_run_template <- function(tp) {
+  tryCatch(
+    run_template(tp),
+    error = function(e) {
+      list(
+        pkg = pkg,
+        template = tp,
+        exit_code = 1,
+        output = paste(
+          "ERROR in template:", tp, "\n",
+          "Package:", pkg, "\n",
+          "Message:", e$message, "\n",
+          "Call:", paste(capture.output(traceback()), collapse = "\n")
+        )
+      )
+    }
+  )
+}
 
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
@@ -197,16 +216,30 @@ for (pkg in packages_list) {
   # for (tp in templates) {
   #   run_template(tp)
   # }
-  results <- parallel::mclapply(templates, run_template, mc.cores = length(templates))
+  results <- parallel::mclapply(templates, safe_run_template, mc.cores = length(templates))
   all_results <- c(all_results, results)
 }
 
-
-for (res in all_results) {
-  if (!is.null(res$exit_code)) {
-    print(sprintf("template %s failed - package %s", res$template, res$pkg))
-    print("error:")
-    cat(sprintf("%s\n\n", res$output))
+# Display error message when a template fails
+if (requireNamespace("cli", quietly = TRUE)) {
+  # Using cli for colored and formatted output
+  for (res in all_results) {
+    if (!is.null(res$exit_code) && res$exit_code != 0) {
+      cli::cli_alert_danger("Template {.val {res$template}} failed for package {.pkg {res$pkg}}")
+      cli::cli_div(theme = list(".cli-text-error" = list(color = "red", margin_left = 2)))
+      cli::cli_text("{.cli-text-error Error details:}")
+      cli::cli_text("{.cli-text-error {res$output}}")
+      cli::cli_end()
+    }
+  }
+} else {
+  # Fallback - plain text output (if cli is not installed)
+  for (res in all_results) {
+    if (!is.null(res$exit_code) && res$exit_code != 0) {
+      cat(sprintf("template %s failed - package %s\n", res$template, res$pkg))
+      cat("error:\n")
+      cat(sprintf("%s\n\n", res$output))
+    }
   }
 }
 
