@@ -223,15 +223,19 @@ for (pkg in packages_list) {
 # Display error message when a template fails
 if (requireNamespace("cli", quietly = TRUE)) {
   # Using cli for colored and formatted output
+  cli::cli_div(theme = list(".error-detail" = list(color = "red")))
   for (res in all_results) {
     if (!is.null(res$exit_code) && res$exit_code != 0) {
-      cli::cli_alert_danger("Template {.val {res$template}} failed for package {.pkg {res$pkg}}")
-      cli::cli_div(theme = list(".cli-text-error" = list(color = "red", margin_left = 2)))
-      cli::cli_text("{.cli-text-error Error details:}")
-      cli::cli_text("{.cli-text-error {res$output}}")
-      cli::cli_end()
+      cli::cli_alert_danger("template {.val {res$template}} failed - package {.pkg {res$pkg}}")
+      cli::cli_alert_danger("Error details:")
+      error_lines <- strsplit(res$output, "\n")[[1]]
+      for (line in error_lines) {
+        cli::cli_text("{.error-detail {line}}")
+      }
+      cli::cli_text("")
     }
   }
+  cli::cli_end()
 } else {
   # Fallback - plain text output (if cli is not installed)
   for (res in all_results) {
