@@ -17,13 +17,6 @@
 
 - Imported `{tibble}` so that tibble formatting is not lost. (#95)
 
-</details>
-
-## Various
-
-<details>
-<summary>Developer Notes</summary>
-
 - Added alternative text to the pharmaverse badge and logo (#114)
 
 </details>
