@@ -1,15 +1,15 @@
 Type: Package
 Package: pharmaverseadam
 Title: ADaM Test Data for the 'Pharmaverse' Family of Packages
-Version: 1.1.0.9006
+Version: 1.1.0.9007
 Authors@R: c(
-    person("Fanny", "Gautier", email = "fanny.gautier@cytel.com", role = c("aut", "cre"),
+    person("Fanny", "Gautier", , "fanny.gautier@cytel.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0004-3581-0131")),
     person("Stefan", "Bundfuss", role = "aut",
            comment = c(ORCID = "0009-0005-0027-1198")),
-    person("Edoardo", "Mancini", email = "edoardo.mancini@roche.com", role = "aut",
+    person("Edoardo", "Mancini", , "edoardo.mancini@roche.com", role = "aut",
            comment = c(ORCID = "0009-0006-4899-8641")),
-    person("Lina", "Patil", email = "lina.patil@cytel.com", role = "aut"),
+    person("Lina", "Patil", , "lina.patil@cytel.com", role = "aut"),
     person("Vladyslav", "Shuliar", role = "aut",
            comment = c(ORCID = "0009-0008-2354-8999"))
   )
