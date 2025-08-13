@@ -1,8 +1,8 @@
-# pharmaverseadam <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
+# pharmaverseadam <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;" alt="pharmaverse adam hex"/>
 
 <!-- badges: start -->
 
-[<img src="http://pharmaverse.org/shields/pharmaverseadam.svg"/>](https://pharmaverse.org)
+[![pharmaverse adam Badge](http://pharmaverse.org/shields/pharmaverseadam.svg)](https://pharmaverse.org)
 [![CRAN status](https://www.r-pkg.org/badges/version/pharmaverseadam)](https://CRAN.R-project.org/package=pharmaverseadam)
 
 <!-- badges: end -->
