@@ -268,6 +268,39 @@
       "Has No Data": "No",
       "Repeating": "Yes",
       "Reference Data": "No"
+    },
+    {
+      "Dataset": "ADVS_M",
+      "Label": "Vital Signs Analysis for Metabolic",
+      "Class": "BASIC DATA STRUCTURE",
+      "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
+      "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
+      "Standard": "ADaM-IG 1.1",
+      "Has No Data": "No",
+      "Repeating": "Yes",
+      "Reference Data": "No"
+    },
+    {
+      "Dataset": "ADLB_M",
+      "Label": "Laboratory Analysis for Metabolic",
+      "Class": "BASIC DATA STRUCTURE",
+      "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
+      "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
+      "Standard": "ADaM-IG 1.1",
+      "Has No Data": "No",
+      "Repeating": "Yes",
+      "Reference Data": "No"
+    },
+    {
+      "Dataset": "ADCOEQ_M",
+      "Label": "Control of Eating Questionnaire Analysis for Metabolic",
+      "Class": "BASIC DATA STRUCTURE",
+      "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
+      "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
+      "Standard": "ADaM-IG 1.1",
+      "Has No Data": "No",
+      "Repeating": "Yes",
+      "Reference Data": "No"
     }
   ],
   "Variables": [
@@ -21757,6 +21790,780 @@
       "Data Type": "float",
       "Length": "6",
       "Significant Digits": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "1",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "STUDYID",
+      "Label": "Study Identifier",
+      "Data Type": "text",
+      "Length": "12",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "2",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "USUBJID",
+      "Label": "Unique Subject Identifier",
+      "Data Type": "text",
+      "Length": "11",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "3",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DOMAIN",
+      "Label": "Domain Abbreviation",
+      "Data Type": "text",
+      "Length": "2",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "4",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "VISIT",
+      "Label": "Visit Name",
+      "Data Type": "text",
+      "Length": "19",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "5",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "VISITNUM",
+      "Label": "Visit Number",
+      "Data Type": "float",
+      "Length": "4",
+      "Significant Digits": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "6",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "VISITDY",
+      "Label": "Planned Study Day of Visit",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "7",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSBLFL",
+      "Label": "Baseline Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "8",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSDTC",
+      "Label": "Date/Time of Finding",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "9",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSDY",
+      "Label": "Study Day of Finding",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "10",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSCAT",
+      "Label": "Category for Questionnaire",
+      "Data Type": "text",
+      "Length": "10",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "11",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSTEST",
+      "Label": "Questionnaire Test Name",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "12",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSTESTCD",
+      "Label": "Questionnaire Test Short Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "13",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSORRES",
+      "Label": "Result or Finding in Original Units",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "14",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSORRESU",
+      "Label": "Original Units",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "15",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSSTRESC",
+      "Label": "Character Result/Finding in Std Format",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "16",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSSTRESN",
+      "Label": "Numeric Result/Finding in Standard Units",
+      "Data Type": "float",
+      "Length": "9",
+      "Significant Digits": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "17",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSSTRESU",
+      "Label": "Standard Units",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "18",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "QSSEQ",
+      "Label": "Sequence Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "19",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTSDT",
+      "Label": "Date of First Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "20",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTEDT",
+      "Label": "Date of Last Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "21",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRT01P",
+      "Label": "Planned Treatment for Period 01",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "22",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRT01A",
+      "Label": "Actual Treatment for Period 01",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "23",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "PARAMCD",
+      "Label": "Parameter Code",
+      "Data Type": "text",
+      "Length": "6",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "24",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "PARAM",
+      "Label": "Parameter",
+      "Data Type": "text",
+      "Length": "31",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "25",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "PARAMN",
+      "Label": "Parameter (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "26",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "PARCAT1",
+      "Label": "Parameter Category 1",
+      "Data Type": "text",
+      "Length": "40",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "27",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ADT",
+      "Label": "Analysis Date",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "28",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ADY",
+      "Label": "Analysis Relative Day",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "29",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AVISIT",
+      "Label": "Analysis Visit",
+      "Data Type": "text",
+      "Length": "16",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "30",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AVISITN",
+      "Label": "Analysis Visit (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "31",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AVAL",
+      "Label": "Analysis Value",
+      "Data Type": "float",
+      "Length": "11",
+      "Significant Digits": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "32",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AVALC",
+      "Label": "Analysis Value (C)",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "33",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ABLFL",
+      "Label": "Baseline Record Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "34",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "BASE",
+      "Label": "Baseline Value",
+      "Data Type": "float",
+      "Length": "11",
+      "Significant Digits": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "35",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "CHG",
+      "Label": "Change from Baseline",
+      "Data Type": "float",
+      "Length": "11",
+      "Significant Digits": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "36",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "PCHG",
+      "Label": "Percent Change from Baseline",
+      "Data Type": "float",
+      "Length": "11",
+      "Significant Digits": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "37",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ASEQ",
+      "Label": "Analysis Sequence Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "38",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "SUBJID",
+      "Label": "Subject Identifier for the Study",
+      "Data Type": "text",
+      "Length": "4",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "39",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RFSTDTC",
+      "Label": "Subject Reference Start Date/Time",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "40",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RFENDTC",
+      "Label": "Subject Reference End Date/Time",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "41",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RFXSTDTC",
+      "Label": "Date/Time of First Study Treatment",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "42",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RFXENDTC",
+      "Label": "Date/Time of Last Study Treatment",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "43",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RFICDTC",
+      "Label": "Date/Time of Informed Consent",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "44",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RFPENDTC",
+      "Label": "Date/Time of End of Participation",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "45",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHDTC",
+      "Label": "Date/Time of Death",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "46",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHFL",
+      "Label": "Subject Death Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "47",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "SITEID",
+      "Label": "Study Site Identifier",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "48",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AGE",
+      "Label": "Age",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "49",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AGEU",
+      "Label": "Age Units",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "50",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "SEX",
+      "Label": "Sex",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "51",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RACE",
+      "Label": "Race",
+      "Data Type": "text",
+      "Length": "32",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "52",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ETHNIC",
+      "Label": "Ethnicity",
+      "Data Type": "text",
+      "Length": "22",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "53",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ARMCD",
+      "Label": "Planned Arm Code",
+      "Data Type": "text",
+      "Length": "6",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "54",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ARM",
+      "Label": "Description of Planned Arm",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "55",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ACTARMCD",
+      "Label": "Actual Arm Code",
+      "Data Type": "text",
+      "Length": "6",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "56",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "ACTARM",
+      "Label": "Description of Actual Arm",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "57",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "COUNTRY",
+      "Label": "Country",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "58",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DMDTC",
+      "Label": "Date/Time of Collection",
+      "Data Type": "datetime",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "59",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DMDY",
+      "Label": "Study Day of Collection",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "60",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTSDTM",
+      "Label": "Datetime of First Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "61",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTSTMF",
+      "Label": "Time of First Exposure Imput. Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "62",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTEDTM",
+      "Label": "Datetime of Last Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "63",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTETMF",
+      "Label": "Time of Last Exposure Imput. Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "64",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "TRTDURD",
+      "Label": "Total Treatment Duration (Days)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "65",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "SCRFDT",
+      "Label": "Screen Failure Date",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "66",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "EOSDT",
+      "Label": "End of Study Date",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "67",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "EOSSTT",
+      "Label": "End of Study Status",
+      "Data Type": "text",
+      "Length": "12",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "68",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "FRVDT",
+      "Label": "Final Retrieval Visit Date",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "69",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RANDDT",
+      "Label": "Date of Randomization",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "70",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHDT",
+      "Label": "Date of Death",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "71",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHDTF",
+      "Label": "Date of Death Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "72",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHADY",
+      "Label": "Relative Day of Death",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "73",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "LDDTHELD",
+      "Label": "Elapsed Days from Last Dose to Death",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "74",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHCAUS",
+      "Label": "Cause of Death",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "75",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHDOM",
+      "Label": "Domain for Date of Death Collection",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "76",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHCGR1",
+      "Label": "Cause of Death Reason 1",
+      "Data Type": "text",
+      "Length": "200",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "77",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "LSTALVDT",
+      "Label": "Date Last Known Alive",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "78",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "SAFFL",
+      "Label": "Safety Population Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "79",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "RACEGR1",
+      "Label": "Pooled Race Group 1",
+      "Data Type": "text",
+      "Length": "9",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "80",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "AGEGR1",
+      "Label": "Pooled Age Group 1",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "81",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "REGION1",
+      "Label": "Geographic Region 1",
+      "Data Type": "text",
+      "Length": "2",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "82",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "LDDTHGR1",
+      "Label": "Last Dose to Death - Days Elapsed Grp 1",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "83",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTH30FL",
+      "Label": "Death Within 30 Days of Last Trt Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "84",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHA30FL",
+      "Label": "Death After 30 Days from Last Trt Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "85",
+      "Dataset": "ADCOEQ_M",
+      "Variable": "DTHB30FL",
+      "Label": "Death Within 30 Days of First Trt Flag",
+      "Data Type": "text",
+      "Length": "1",
       "Mandatory": "No"
     }
   ],
