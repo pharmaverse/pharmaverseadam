@@ -15,7 +15,7 @@ To provide a one-stop-shop for ADaM test data in the pharmaverse family of packa
 
 ## Package Contents
 
-The ADaM contents of this package is populated by an script that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}` and `{admiralpeds}` templates and saves the resulting datasets here. This script can be executed by the package maintainers in two scenarios:
+The ADaM contents of this package is populated by an script that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}`, `{admiralpeds}` and `{admiralmetabolic}` templates and saves the resulting datasets here. This script can be executed by the package maintainers in two scenarios:
 
 *   Regularly, upon new releases of these packages;
 *   Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using a development version of the templates.
@@ -61,6 +61,7 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - `{admiralophtha}`
    - `{admiralvaccine}`
    - `{admiralpeds}`
+   - `{admiralmetabolic}`
    - `{pharmaversesdtm}`
    
    By default, the latest development versions of each package will be used, but the user can also select a different version instead (e.g. a released version) with which to refresh `{pharmaverseadam}`. The user may also deselect some packages whose templates they do not wish to run. If a new extension package has been created, this should be added to the script in each relevant section (see the script itself for more details).
