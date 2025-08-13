@@ -1,8 +1,8 @@
-# pharmaverseadam <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
+# pharmaverseadam <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;" alt="pharmaverse adam hex"/>
 
 <!-- badges: start -->
 
-[<img src="http://pharmaverse.org/shields/pharmaverseadam.svg"/>](https://pharmaverse.org)
+[![pharmaverse adam Badge](http://pharmaverse.org/shields/pharmaverseadam.svg)](https://pharmaverse.org)
 [![CRAN status](https://www.r-pkg.org/badges/version/pharmaverseadam)](https://CRAN.R-project.org/package=pharmaverseadam)
 
 <!-- badges: end -->
@@ -75,3 +75,9 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - Variable-level documentation (names and labels),
    - Source information indicating which template and package generated it,
    - Example usage with `data("<dataset>")`.
+   
+## Acknowledgments
+
+Along with the authors and contributors, thanks to the following people for their work on the package:
+
+G Gayatri, Daphne Grassely, Sadchla Mascary, Kangjie Zhang and Zelos Zhu.
