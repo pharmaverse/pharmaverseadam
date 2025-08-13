@@ -8,13 +8,13 @@
 
   - The package maintainer was updated from Edoardo Mancini to Fanny Gautier. (#115)
 
+  - `Cytel Inc.` was added to the `LICENSE.md`. (#116)
+
   - Added more details to README "Documentation Process" section. (#103)
 
   - Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
   - Added labels to variables within datasets that were missing them. (#100)
-
-  - `Cytel Inc.` was added to the `LICENSE.md`. (#116)
 
 <details>
 <summary>Developer Notes</summary>
@@ -22,6 +22,16 @@
 - Imported `{tibble}` so that tibble formatting is not lost. (#95)
 
 - Added alternative text to the pharmaverse badge and logo (#114)
+
+</details>
+
+## Various
+
+<details>
+
+<summary>Developer Notes</summary>
+
+- Added copyright holder logos. (#113)
 
 </details>
 

@@ -29,6 +29,13 @@ Authors:
   \item Vladyslav Shuliar (\href{https://orcid.org/0009-0008-2354-8999}{ORCID})
 }
 
+Other contributors:
+\itemize{
+  \item Cytel Inc. [copyright holder, funder]
+  \item F. Hoffmann-La Roche AG [copyright holder, funder]
+  \item GlaxoSmithKline LLC [copyright holder, funder]
+}
+
 }
 \concept{internal}
 \keyword{internal}
