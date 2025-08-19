@@ -185,8 +185,8 @@ mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   quiet = TRUE
 )
 
-#packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
-packages_list <- c("admiralvaccine")
+packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
+
 all_results <- c()
 for (pkg in packages_list) {
   ignore_templates_pkg <- ignore_templates[pkg]
