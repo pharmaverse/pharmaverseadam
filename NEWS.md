@@ -15,6 +15,8 @@
   - Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
   - Added labels to variables within datasets that were missing them. (#100)
+  
+  - Added parameter code and parameter (`PARAMCD` / `PARAM`) description in the "Details" section, when available. (#101)
 
 <details>
 <summary>Developer Notes</summary>
