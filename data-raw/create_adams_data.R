@@ -173,7 +173,7 @@ run_template <- function(tp) {
           paste(sprintf("Contains a set of %d unique Parameter Code%s and Parameter%s: ", nrow(unique_params), ifelse(nrow(unique_params) == 1, "", "s"), ifelse(nrow(unique_params) == 1, "", "s")),
             "\\tabular{", paste(col_align, collapse = ""), "}{\n#'   ",
             paste0("\\strong{", names(df), "}", sep = "", collapse = " \\tab "), " \\cr\n#'   ",
-            contents, "\n#' }\n",
+            trimws(contents), "\n#' }\n",
             sep = ""
           )
         }
