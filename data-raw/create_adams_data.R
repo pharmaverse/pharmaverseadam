@@ -3,6 +3,7 @@
 # Load required library
 library(readxl)
 library(jsonlite)
+library(cli)
 
 # Load metadata
 json_file <- "inst/extdata/adams-specs.json"
@@ -206,6 +207,26 @@ run_template <- function(tp) {
   }
 }
 
+# Wrapper Function for Error Handling
+safe_run_template <- function(tp) {
+  tryCatch(
+    run_template(tp),
+    error = function(e) {
+      list(
+        pkg = pkg,
+        template = tp,
+        exit_code = 1,
+        output = paste(
+          "ERROR in template:", tp, "\n",
+          "Package:", pkg, "\n",
+          "Message:", e$message, "\n",
+          "Call:", paste(capture.output(traceback()), collapse = "\n")
+        )
+      )
+    }
+  )
+}
+
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
   # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
@@ -255,17 +276,24 @@ for (pkg in packages_list) {
   # for (tp in templates) {
   #   run_template(tp)
   # }
-  results <- parallel::mclapply(templates, run_template, mc.cores = length(templates))
+  results <- parallel::mclapply(templates, safe_run_template, mc.cores = length(templates))
   all_results <- c(all_results, results)
 }
 
+# Display error message when a template fails
+cli_div(theme = list(".error-detail" = list(color = "red")))
 for (res in all_results) {
-  if (!is.null(res$exit_code)) {
-    print(sprintf("template %s failed - package %s", res$template, res$pkg))
-    print("error:")
-    cat(sprintf("%s\n\n", res$output))
+  if (!is.null(res$exit_code) && res$exit_code != 0) {
+    cli_alert_danger("template {.val {res$template}} failed - package {.pkg {res$pkg}}")
+    cli_alert_danger("Error details:")
+    error_lines <- strsplit(res$output, "\n")[[1]]
+    for (line in error_lines) {
+      cli_text("{.error-detail {line}}")
+    }
+    cli_text("")
   }
 }
+cli_end()
 
 # Generate the documentation ----
 roxygen2::roxygenize(".", roclets = c("rd", "collate", "namespace"))
