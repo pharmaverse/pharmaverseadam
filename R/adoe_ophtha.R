@@ -120,7 +120,7 @@
 #'   SCSUBTH \tab Study Eye Center Subfield Thickness (um)   \cr
 #'   SDRSSR  \tab Study Eye Diabetic Retinopathy Severity    \cr
 #'   SIOP    \tab Study Eye IOP (mmHg)                       \cr
-#'   SIOPCHG \tab Study Eye IOP Pre to Post Dose Diff (mmHg) 
+#'   SIOPCHG \tab Study Eye IOP Pre to Post Dose Diff (mmHg)
 #' }
 
 #'

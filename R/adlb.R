@@ -171,7 +171,7 @@
 #'   URATE   \tab Urate (umol/L)                                  \cr
 #'   UROBIL  \tab Urobilinogen                                    \cr
 #'   VITB12  \tab Vitamin B12 (pmol/L)                            \cr
-#'   WBC     \tab Leukocytes (10^9/L)                             
+#'   WBC     \tab Leukocytes (10^9/L)
 #' }
 
 #'

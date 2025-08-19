@@ -120,7 +120,7 @@
 #'   TDOSE   \tab Total dose administered (mg)                              \cr
 #'   TDOSINT \tab Overall dose intensity (%)                                \cr
 #'   TDURD   \tab Overall duration (days)                                   \cr
-#'   TPDOSE  \tab Total planned dose (mg)                                   
+#'   TPDOSE  \tab Total planned dose (mg)
 #' }
 
 #'

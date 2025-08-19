@@ -100,7 +100,7 @@
 #'   SEVNWMP  \tab New or worsened muscle pain severity/intensity                 \cr
 #'   SEVPIS   \tab Pain at injection site severity/intensity deltoid muscle left  \cr
 #'   SEVREDN  \tab Redness severity/intensity deltoid muscle left                 \cr
-#'   SEVSWEL  \tab Swelling severity/intensity deltoid muscle left                
+#'   SEVSWEL  \tab Swelling severity/intensity deltoid muscle left
 #' }
 
 #'

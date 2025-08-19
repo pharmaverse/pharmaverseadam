@@ -101,7 +101,7 @@
 #'   MDIS  \tab Measurable Disease at Baseline by Investigator                            \cr
 #'   OVR   \tab Overall Response by Investigator                                          \cr
 #'   PD    \tab Disease Progression by Investigator                                       \cr
-#'   RSP   \tab Response by Investigator (confirmation not required)                      
+#'   RSP   \tab Response by Investigator (confirmation not required)
 #' }
 
 #'

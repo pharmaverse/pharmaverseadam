@@ -125,7 +125,7 @@
 #'   QTCFR  \tab QTcF - Fridericia's Correction Formula Rederived (ms)\cr
 #'   QTLCR  \tab QTlc - Sagie's Correction Formula Rederived (ms)     \cr
 #'   RR     \tab RR Duration (ms)                                     \cr
-#'   RRR    \tab RR Duration Rederived (ms)                           
+#'   RRR    \tab RR Duration Rederived (ms)
 #' }
 
 #'

@@ -84,7 +84,7 @@
 #'   FBCVA    \tab Fellow Eye Visual Acuity Score (letters)\cr
 #'   FBCVALOG \tab Fellow Eye Visual Acuity LogMAR Score   \cr
 #'   SBCVA    \tab Study Eye Visual Acuity Score (letters) \cr
-#'   SBCVALOG \tab Study Eye Visual Acuity LogMAR Score    
+#'   SBCVALOG \tab Study Eye Visual Acuity LogMAR Score
 #' }
 
 #'

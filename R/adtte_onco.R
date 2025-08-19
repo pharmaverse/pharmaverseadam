@@ -32,7 +32,7 @@
 #'   \strong{PARAMCD} \tab \strong{PARAM} \cr
 #'   OS  \tab Overall Survival         \cr
 #'   PFS \tab Progression Free Survival\cr
-#'   RSD \tab Duration of Response     
+#'   RSD \tab Duration of Response
 #' }
 
 #'

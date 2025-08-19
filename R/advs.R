@@ -123,7 +123,7 @@
 #'   PULSE  \tab Pulse Rate (beats/min)         \cr
 #'   SYSBP  \tab Systolic Blood Pressure (mmHg) \cr
 #'   TEMP   \tab Temperature (C)                \cr
-#'   WEIGHT \tab Weight (kg)                    
+#'   WEIGHT \tab Weight (kg)
 #' }
 
 #'

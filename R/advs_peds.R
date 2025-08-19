@@ -103,7 +103,7 @@
 #'   WGTAPCTL \tab Weight-for-age percentile            \cr
 #'   WGTASDS  \tab Weight-for-age z-score               \cr
 #'   WGTHPCTL \tab Weight-for-length/height Percentile  \cr
-#'   WGTHSDS  \tab Weight-for-length/height Z-Score     
+#'   WGTHSDS  \tab Weight-for-length/height Z-Score
 #' }
 
 #'
