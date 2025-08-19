@@ -185,8 +185,8 @@ mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   quiet = TRUE
 )
 
-packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
-
+#packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
+packages_list <- c("admiralvaccine")
 all_results <- c()
 for (pkg in packages_list) {
   ignore_templates_pkg <- ignore_templates[pkg]
@@ -222,21 +222,19 @@ for (pkg in packages_list) {
 }
 
 # Display error message when a template fails
-if (requireNamespace("cli", quietly = TRUE)) {
-  cli_div(theme = list(".error-detail" = list(color = "red")))
-  for (res in all_results) {
-    if (!is.null(res$exit_code) && res$exit_code != 0) {
-      cli_alert_danger("template {.val {res$template}} failed - package {.pkg {res$pkg}}")
-      cli_alert_danger("Error details:")
-      error_lines <- strsplit(res$output, "\n")[[1]]
-      for (line in error_lines) {
-        cli_text("{.error-detail {line}}")
-      }
-      cli_text("")
+cli_div(theme = list(".error-detail" = list(color = "red")))
+for (res in all_results) {
+  if (!is.null(res$exit_code) && res$exit_code != 0) {
+    cli_alert_danger("template {.val {res$template}} failed - package {.pkg {res$pkg}}")
+    cli_alert_danger("Error details:")
+    error_lines <- strsplit(res$output, "\n")[[1]]
+    for (line in error_lines) {
+      cli_text("{.error-detail {line}}")
     }
+    cli_text("")
   }
-  cli_end()
 }
+cli_end()
 
 # Generate the documentation ----
 roxygen2::roxygenize(".", roclets = c("rd", "collate", "namespace"))
