@@ -30,6 +30,7 @@ Depends:
 Imports:
     tibble
 Suggests:
+    cli,
     covr,
     devtools,
     diffdf,
@@ -42,6 +43,7 @@ Suggests:
     methods,
     miniUI,
     pkgdown,
+    readxl,
     rmarkdown,
     roxygen2,
     spelling,
