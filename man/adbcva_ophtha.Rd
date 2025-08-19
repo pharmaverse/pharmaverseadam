@@ -89,6 +89,15 @@ adbcva_ophtha
 \description{
 Best Corrected Visual Acuity Analysis
 }
+\details{
+Contains a set of 4 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+FBCVA    \tab Fellow Eye Visual Acuity Score (letters)\cr
+FBCVALOG \tab Fellow Eye Visual Acuity LogMAR Score   \cr
+SBCVA    \tab Study Eye Visual Acuity Score (letters) \cr
+SBCVALOG \tab Study Eye Visual Acuity LogMAR Score
+}
+}
 \examples{
 data("adbcva_ophtha")
 }

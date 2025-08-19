@@ -97,6 +97,24 @@ adrs_onco
 \description{
 Tumor Response Analysis
 }
+\details{
+Contains a set of 13 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+BCP   \tab Best Overall Response of CR/PR by Investigator (confirmation not required)\cr
+BOR   \tab Best Overall Response by Investigator (confirmation not required)         \cr
+CB    \tab Clinical Benefit by Investigator (confirmation for response not required) \cr
+CBCP  \tab Best Confirmed Overall Response of CR/PR by Investigator                  \cr
+CBOR  \tab Best Confirmed Overall Response by Investigator                           \cr
+CCB   \tab Confirmed Clinical Benefit by Investigator                                \cr
+CRSP  \tab Confirmed Response by Investigator                                        \cr
+DEATH \tab Death                                                                     \cr
+LSTA  \tab Last Disease Assessment by Investigator                                   \cr
+MDIS  \tab Measurable Disease at Baseline by Investigator                            \cr
+OVR   \tab Overall Response by Investigator                                          \cr
+PD    \tab Disease Progression by Investigator                                       \cr
+RSP   \tab Response by Investigator (confirmation not required)
+}
+}
 \examples{
 data("adrs_onco")
 }

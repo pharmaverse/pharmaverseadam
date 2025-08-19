@@ -145,6 +145,13 @@ adpc
 \description{
 Pharmacokinetic Concentrations
 }
+\details{
+Contains a set of 2 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+DOSE \tab Xanomeline Patch Dose                      \cr
+XAN  \tab Pharmacokinetic concentration of Xanomeline
+}
+}
 \examples{
 data("adpc")
 }

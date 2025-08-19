@@ -100,6 +100,29 @@
 #'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
 #'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
+#' @details Contains a set of 19 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   ADJ     \tab Dose adjusted during constant dosing interval             \cr
+#'   ADJAE   \tab Dose adjusted  due to AE during constant dosing interval  \cr
+#'   AVDDSE  \tab Average daily dose administered (mg/mg)                   \cr
+#'   DOSE    \tab Dose administered during constant dosing interval (mg)    \cr
+#'   DURD    \tab Study drug duration during constant dosing interval (days)\cr
+#'   PADJ    \tab Dose adjusted during W2-W24                               \cr
+#'   PADJAE  \tab Dose adjusted  in W2-W24 due to AE                        \cr
+#'   PAVDDSE \tab Average daily dose administered in W2-W24 (mg)            \cr
+#'   PDOSE   \tab Total dose administered in W2-W2 (mg)4                    \cr
+#'   PDOSINT \tab W2-24 dose intensity (%)                                  \cr
+#'   PDURD   \tab Overall duration in W2-W24 (days)                         \cr
+#'   PLDOSE  \tab Planned dose during constant dosing interval (mg)         \cr
+#'   PPDOSE  \tab Total planned dose in W2-W24 (mg)                         \cr
+#'   TADJ    \tab Dose adjusted during study                                \cr
+#'   TADJAE  \tab Dose adjusted during study due to AE                      \cr
+#'   TDOSE   \tab Total dose administered (mg)                              \cr
+#'   TDOSINT \tab Overall dose intensity (%)                                \cr
+#'   TDURD   \tab Overall duration (days)                                   \cr
+#'   TPDOSE  \tab Total planned dose (mg)                                   
+#' }
+
 #'
 #' @source Generated from admiral package (template ad_adex.R).
 #' @references None

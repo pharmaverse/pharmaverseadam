@@ -5,7 +5,7 @@
 #' @name adae
 #' @title Adverse Events Analysis
 #' @docType data
-#' @format A data frame with 105 columns:
+#' @format A data frame with 107 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ DOMAIN }{Domain Abbreviation}
@@ -59,6 +59,8 @@
 #'     \item{ ADURN }{Analysis Duration (N)}
 #'     \item{ ADURU }{Analysis Duration Units}
 #'     \item{ LDOSEDTM }{End Date/Time of Last Dose}
+#'     \item{ DOSEON }{Treatment Dose}
+#'     \item{ DOSEU }{Treatment Dose Unit}
 #'     \item{ ASEV }{Analysis Severity/Intensity}
 #'     \item{ AREL }{Analysis Causality}
 #'     \item{ TRTEMFL }{Treatment Emergent Analysis Flag}

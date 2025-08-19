@@ -135,6 +135,12 @@
 #'     \item{ DTHA30FL }{Over 30  Group}
 #'     \item{ DTHB30FL }{Over 30 plus 30 days Group}
 #'   }
+#' @details Contains a set of 2 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   DOSE \tab Xanomeline Patch Dose                      \cr
+#'   XAN  \tab Pharmacokinetic concentration of Xanomeline
+#' }
+
 #'
 #' @source Generated from admiral package (template ad_adpc.R).
 #' @references None

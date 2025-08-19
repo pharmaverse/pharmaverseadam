@@ -97,6 +97,21 @@
 #'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
 #'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
+#' @details Contains a set of 11 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   QBCSCORE \tab Composite Score        \cr
+#'   QR01     \tab Recoded Item - 01      \cr
+#'   QR02     \tab Recoded Item - 02      \cr
+#'   QR03     \tab Recoded Item - 03      \cr
+#'   QR04     \tab Recoded Item - 04      \cr
+#'   QSG01    \tab General Score 01       \cr
+#'   QSG02    \tab General Score 02       \cr
+#'   VFQ1     \tab Overall Health         \cr
+#'   VFQ2     \tab Eyesight in Both Eyes  \cr
+#'   VFQ3     \tab Worry About Eyesight   \cr
+#'   VFQ4     \tab Pain in and Around Eyes
+#' }
+
 #'
 #' @source Generated from admiralophtha package (template ad_advfq.R).
 #' @references None

@@ -88,6 +88,24 @@
 #'     \item{ TRTDURD }{Total Treatment Duration (Days)}
 #'     \item{ ASEQ }{Analysis Sequence Number}
 #'   }
+#' @details Contains a set of 14 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   BMI      \tab Body Mass Index(kg/m^2)              \cr
+#'   BMIPCTL  \tab BMI-for-age percentile               \cr
+#'   BMISDS   \tab BMI-for-age z-score                  \cr
+#'   HDCIRC   \tab Head Circumference (cm)              \cr
+#'   HDCPCTL  \tab Head Circumference-for-age percentile\cr
+#'   HDCSDS   \tab Head Circumference-for-age z-score   \cr
+#'   HEIGHT   \tab Height (cm)                          \cr
+#'   HGTPCTL  \tab Height-for-age percentile            \cr
+#'   HGTSDS   \tab Height-for-age z-score               \cr
+#'   WEIGHT   \tab Weight (kg)                          \cr
+#'   WGTAPCTL \tab Weight-for-age percentile            \cr
+#'   WGTASDS  \tab Weight-for-age z-score               \cr
+#'   WGTHPCTL \tab Weight-for-length/height Percentile  \cr
+#'   WGTHSDS  \tab Weight-for-length/height Z-Score     
+#' }
+
 #'
 #' @source Generated from admiralpeds package (template ad_advs.R).
 #' @references None

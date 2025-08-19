@@ -116,6 +116,18 @@
 #'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
 #'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
+#' @details Contains a set of 8 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   EGINTP \tab ECG Interpretation                                   \cr
+#'   HR     \tab Heart Rate (beats/min)                               \cr
+#'   QT     \tab QT Duration (ms)                                     \cr
+#'   QTCBR  \tab QTcB - Bazett's Correction Formula Rederived (ms)    \cr
+#'   QTCFR  \tab QTcF - Fridericia's Correction Formula Rederived (ms)\cr
+#'   QTLCR  \tab QTlc - Sagie's Correction Formula Rederived (ms)     \cr
+#'   RR     \tab RR Duration (ms)                                     \cr
+#'   RRR    \tab RR Duration Rederived (ms)                           
+#' }
+
 #'
 #' @source Generated from admiral package (template ad_adeg.R).
 #' @references None

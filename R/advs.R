@@ -113,6 +113,19 @@
 #'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
 #'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
+#' @details Contains a set of 9 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   BMI    \tab Body Mass Index(kg/m^2)        \cr
+#'   BSA    \tab Body Surface Area(m^2)         \cr
+#'   DIABP  \tab Diastolic Blood Pressure (mmHg)\cr
+#'   HEIGHT \tab Height (cm)                    \cr
+#'   MAP    \tab Mean Arterial Pressure (mmHg)  \cr
+#'   PULSE  \tab Pulse Rate (beats/min)         \cr
+#'   SYSBP  \tab Systolic Blood Pressure (mmHg) \cr
+#'   TEMP   \tab Temperature (C)                \cr
+#'   WEIGHT \tab Weight (kg)                    
+#' }
+
 #'
 #' @source Generated from admiral package (template ad_advs.R).
 #' @references None
