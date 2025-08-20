@@ -18,6 +18,8 @@
   
   - Added parameter code and parameter (`PARAMCD` / `PARAM`) description in the "Details" section, when available. (#101)
 
+  - Updated the installation instructions in `README.md`. (#124)
+
 <details>
 <summary>Developer Notes</summary>
 
