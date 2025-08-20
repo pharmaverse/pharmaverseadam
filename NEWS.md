@@ -15,6 +15,8 @@
   - Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
   - Added labels to variables within datasets that were missing them. (#100)
+  
+  - Updated the installation instructions in `README.md`. (#124)
 
 <details>
 <summary>Developer Notes</summary>
