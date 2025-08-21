@@ -5,7 +5,7 @@
 \alias{adoe_ophtha}
 \title{Exam Analysis for Ophthalmology}
 \format{
-A data frame with 102 columns:
+A data frame with 103 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ DOMAIN }{Domain Abbreviation}
@@ -51,6 +51,7 @@ A data frame with 102 columns:
 \item{ AVISIT }{Analysis Visit}
 \item{ AVISITN }{Analysis Visit (N)}
 \item{ BASETYPE }{Baseline Type}
+\item{ PARAMN }{Parameter (N)}
 \item{ ONTRTFL }{On Treatment Record Flag}
 \item{ ABLFL }{Baseline Record Flag}
 \item{ ANL01FL }{Analysis Flag 01}
@@ -119,6 +120,19 @@ adoe_ophtha
 }
 \description{
 Exam Analysis for Ophthalmology
+}
+\details{
+Contains a set of 8 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+FCSUBTH \tab Fellow Eye Center Subfield Thickness (um)  \cr
+FDRSSR  \tab Fellow Eye Diabetic Retinopathy Severity   \cr
+FIOP    \tab Fellow Eye IOP (mmHg)                      \cr
+FIOPCHG \tab Fellow Eye IOP Pre to Post Dose Diff (mmHg)\cr
+SCSUBTH \tab Study Eye Center Subfield Thickness (um)   \cr
+SDRSSR  \tab Study Eye Diabetic Retinopathy Severity    \cr
+SIOP    \tab Study Eye IOP (mmHg)                       \cr
+SIOPCHG \tab Study Eye IOP Pre to Post Dose Diff (mmHg)
+}
 }
 \examples{
 data("adoe_ophtha")

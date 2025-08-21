@@ -16,6 +16,8 @@
 
   - Added labels to variables within datasets that were missing them. (#100)
   
+  - Added parameter code and parameter (`PARAMCD` / `PARAM`) description in the "Details" section, when available. (#101)
+
   - Updated the installation instructions in `README.md`. (#124)
 
 <details>
@@ -85,5 +87,4 @@ The first stable version of `{pharmaverseadam}`!
 ## New Features
 
   - Test ADaM data created from `{admiral}` templates are added.
-
-
+  

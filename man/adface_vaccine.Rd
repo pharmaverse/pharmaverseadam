@@ -79,6 +79,41 @@ adface_vaccine
 \description{
 Findings About Clinical Events Analysis
 }
+\details{
+Contains a set of 30 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+DIARE    \tab Redness diameter deltoid muscle left                           \cr
+DIASWEL  \tab Swelling diameter deltoid muscle left                          \cr
+MAXREDN  \tab Redness maximum severity deltoid muscle left                   \cr
+MAXSFAT  \tab Fatigue maximum severity                                       \cr
+MAXSHEA  \tab Headache maximum severity                                      \cr
+MAXSPIS  \tab Pain at injection site maximum severity deltoid muscle left    \cr
+MAXSWEL  \tab Swelling maximum severity deltoid muscle left                  \cr
+MAXTEMP  \tab Fever maximum temperature                                      \cr
+MDIRE    \tab Redness maximum diameter deltoid muscle left                   \cr
+MDISW    \tab Swelling maximum diameter deltoid muscle left                  \cr
+MSEVNWJP \tab New or worsened joint pain maximum severity                    \cr
+MSEVNWMP \tab New or worsened muscle pain maximum severity                   \cr
+OCCHILLS \tab Chills occurrence indicator                                    \cr
+OCCNWJP  \tab New or worsened joint pain occurrence indicator                \cr
+OCCNWMP  \tab New or worsened muscle pain occurrence indicator               \cr
+OCCVOM   \tab Vomiting occurrence indicator                                  \cr
+OCDIAR   \tab Diarrhea occurrence indicator                                  \cr
+OCFATIG  \tab Fatigue occurrence indicator                                   \cr
+OCFEVER  \tab Fever occurrence indicator                                     \cr
+OCHEAD   \tab Headache occurrence indicator                                  \cr
+OCINS    \tab Swelling occurrence indicator deltoid muscle left              \cr
+OCISR    \tab Redness occurrence indicator deltoid muscle left               \cr
+OCPIS    \tab Pain at injection site occurrence indicator deltoid muscle left\cr
+SEVFAT   \tab Fatigue severity/intensity                                     \cr
+SEVHEAD  \tab Headache severity/intensity                                    \cr
+SEVNWJP  \tab New or worsened joint pain severity/intensity                  \cr
+SEVNWMP  \tab New or worsened muscle pain severity/intensity                 \cr
+SEVPIS   \tab Pain at injection site severity/intensity deltoid muscle left  \cr
+SEVREDN  \tab Redness severity/intensity deltoid muscle left                 \cr
+SEVSWEL  \tab Swelling severity/intensity deltoid muscle left
+}
+}
 \examples{
 data("adface_vaccine")
 }

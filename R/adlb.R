@@ -123,6 +123,57 @@
 #'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
 #'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 #'   }
+#' @details Contains a set of 47 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   ALB     \tab Albumin (g/L)                                   \cr
+#'   ALKPH   \tab Alkaline Phosphatase (U/L)                      \cr
+#'   ALT     \tab Alanine Aminotransferase (U/L)                  \cr
+#'   ANISO   \tab Anisocytes                                      \cr
+#'   AST     \tab Aspartate Aminotransferase (U/L)                \cr
+#'   BASO    \tab Basophils Abs (10^9/L)                          \cr
+#'   BASOLE  \tab Basophils/Leukocytes (FRACTION)                 \cr
+#'   BILI    \tab Bilirubin (umol/L)                              \cr
+#'   BUN     \tab Blood Urea Nitrogen (mmol/L)                    \cr
+#'   CA      \tab Calcium (mmol/L)                                \cr
+#'   CHOLES  \tab Cholesterol (mmol/L)                            \cr
+#'   CK      \tab Creatinine Kinase (U/L)                         \cr
+#'   CL      \tab Chloride (mmol/L)                               \cr
+#'   COLOR   \tab Color                                           \cr
+#'   CREAT   \tab Creatinine (umol/L)                             \cr
+#'   EOS     \tab Eosinophils (10^9/L)                            \cr
+#'   EOSLE   \tab Eosinophils/Leukocytes (FRACTION)               \cr
+#'   GGT     \tab Gamma Glutamyl Transferase (U/L)                \cr
+#'   GLUC    \tab Glucose (mmol/L)                                \cr
+#'   HBA1C   \tab Hemoglobin A1C (1)                              \cr
+#'   HCT     \tab Hematocrit (1)                                  \cr
+#'   HGB     \tab Hemoglobin (mmol/L)                             \cr
+#'   KETON   \tab Ketones                                         \cr
+#'   LYMPH   \tab Lymphocytes Abs (10^9/L)                        \cr
+#'   LYMPHLE \tab Lymphocytes/Leukocytes (FRACTION)               \cr
+#'   MACROC  \tab Macrocytes                                      \cr
+#'   MCH     \tab Ery. Mean Corpuscular Hemoglobin (fmol(Fe))     \cr
+#'   MCHC    \tab Ery. Mean Corpuscular HGB Concentration (mmol/L)\cr
+#'   MCV     \tab Ery. Mean Corpuscular Volume (f/L)              \cr
+#'   MICROC  \tab Microcytes                                      \cr
+#'   MONO    \tab Monocytes (10^9/L)                              \cr
+#'   MONOLE  \tab Monocytes/Leukocytes (FRACTION)                 \cr
+#'   PH      \tab pH                                              \cr
+#'   PHOS    \tab Phosphate (mmol/L)                              \cr
+#'   PLAT    \tab Platelet (10^9/L)                               \cr
+#'   POIKIL  \tab Poikilocytes                                    \cr
+#'   POLYCH  \tab Polychromasia                                   \cr
+#'   POTAS   \tab Potassium (mmol/L)                              \cr
+#'   PROT    \tab Protein (g/L)                                   \cr
+#'   RBC     \tab Erythrocytes (TI/L)                             \cr
+#'   SODIUM  \tab Sodium (mmol/L)                                 \cr
+#'   SPGRAV  \tab Specific Gravity                                \cr
+#'   TSH     \tab Thyrotropin (mU/L)                              \cr
+#'   URATE   \tab Urate (umol/L)                                  \cr
+#'   UROBIL  \tab Urobilinogen                                    \cr
+#'   VITB12  \tab Vitamin B12 (pmol/L)                            \cr
+#'   WBC     \tab Leukocytes (10^9/L)
+#' }
+
 #'
 #' @source Generated from admiral package (template ad_adlb.R).
 #' @references None

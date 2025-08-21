@@ -840,6 +840,24 @@
     {
       "Order": "53",
       "Dataset": "ADAE",
+      "Variable": "DOSEON",
+      "Label": "Treatment Dose",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "54",
+      "Dataset": "ADAE",
+      "Variable": "DOSEU",
+      "Label": "Treatment Dose Unit",
+      "Data Type": "text",
+      "Length": "2",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "55",
+      "Dataset": "ADAE",
       "Variable": "ASEV",
       "Label": "Analysis Severity/Intensity",
       "Data Type": "text",
@@ -849,7 +867,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "54",
+      "Order": "56",
       "Dataset": "ADAE",
       "Variable": "AREL",
       "Label": "Analysis Causality",
@@ -860,7 +878,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "55",
+      "Order": "57",
       "Dataset": "ADAE",
       "Variable": "TRTEMFL",
       "Label": "Treatment Emergent Analysis Flag",
@@ -871,7 +889,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "56",
+      "Order": "58",
       "Dataset": "ADAE",
       "Variable": "ASEVN",
       "Label": "Analysis Severity/Intensity (N)",
@@ -882,7 +900,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "57",
+      "Order": "59",
       "Dataset": "ADAE",
       "Variable": "AOCCIFL",
       "Label": "1st Max Sev./Int. Occurrence Flag",
@@ -893,7 +911,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "58",
+      "Order": "60",
       "Dataset": "ADAE",
       "Variable": "SUBJID",
       "Label": "Subject Identifier for the Study",
@@ -904,7 +922,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "59",
+      "Order": "61",
       "Dataset": "ADAE",
       "Variable": "RFSTDTC",
       "Label": "Subject Reference Start Date/Time",
@@ -913,7 +931,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "60",
+      "Order": "62",
       "Dataset": "ADAE",
       "Variable": "RFENDTC",
       "Label": "Subject Reference End Date/Time",
@@ -922,7 +940,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "61",
+      "Order": "63",
       "Dataset": "ADAE",
       "Variable": "RFXSTDTC",
       "Label": "Date/Time of First Study Treatment",
@@ -931,7 +949,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "62",
+      "Order": "64",
       "Dataset": "ADAE",
       "Variable": "RFXENDTC",
       "Label": "Date/Time of Last Study Treatment",
@@ -940,7 +958,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "63",
+      "Order": "65",
       "Dataset": "ADAE",
       "Variable": "RFICDTC",
       "Label": "Date/Time of Informed Consent",
@@ -950,7 +968,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "64",
+      "Order": "66",
       "Dataset": "ADAE",
       "Variable": "RFPENDTC",
       "Label": "Date/Time of End of Participation",
@@ -959,7 +977,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "65",
+      "Order": "67",
       "Dataset": "ADAE",
       "Variable": "DTHDTC",
       "Label": "Date/Time of Death",
@@ -968,7 +986,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "66",
+      "Order": "68",
       "Dataset": "ADAE",
       "Variable": "DTHFL",
       "Label": "Subject Death Flag",
@@ -978,7 +996,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "67",
+      "Order": "69",
       "Dataset": "ADAE",
       "Variable": "SITEID",
       "Label": "Study Site Identifier",
@@ -989,7 +1007,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "68",
+      "Order": "70",
       "Dataset": "ADAE",
       "Variable": "AGE",
       "Label": "Age",
@@ -1000,7 +1018,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "69",
+      "Order": "71",
       "Dataset": "ADAE",
       "Variable": "AGEU",
       "Label": "Age Units",
@@ -1011,7 +1029,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "70",
+      "Order": "72",
       "Dataset": "ADAE",
       "Variable": "SEX",
       "Label": "Sex",
@@ -1022,7 +1040,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "71",
+      "Order": "73",
       "Dataset": "ADAE",
       "Variable": "RACE",
       "Label": "Race",
@@ -1033,7 +1051,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "72",
+      "Order": "74",
       "Dataset": "ADAE",
       "Variable": "ETHNIC",
       "Label": "Ethnicity",
@@ -1043,7 +1061,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "73",
+      "Order": "75",
       "Dataset": "ADAE",
       "Variable": "ARMCD",
       "Label": "Planned Arm Code",
@@ -1053,7 +1071,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "74",
+      "Order": "76",
       "Dataset": "ADAE",
       "Variable": "ARM",
       "Label": "Description of Planned Arm",
@@ -1064,7 +1082,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "75",
+      "Order": "77",
       "Dataset": "ADAE",
       "Variable": "ACTARMCD",
       "Label": "Actual Arm Code",
@@ -1074,7 +1092,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "76",
+      "Order": "78",
       "Dataset": "ADAE",
       "Variable": "ACTARM",
       "Label": "Description of Actual Arm",
@@ -1085,7 +1103,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "77",
+      "Order": "79",
       "Dataset": "ADAE",
       "Variable": "COUNTRY",
       "Label": "Country",
@@ -1095,7 +1113,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "78",
+      "Order": "80",
       "Dataset": "ADAE",
       "Variable": "DMDTC",
       "Label": "Date/Time of Collection",
@@ -1104,7 +1122,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "79",
+      "Order": "81",
       "Dataset": "ADAE",
       "Variable": "DMDY",
       "Label": "Study Day of Collection",
@@ -1114,7 +1132,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "80",
+      "Order": "82",
       "Dataset": "ADAE",
       "Variable": "TRT01P",
       "Label": "Planned Treatment for Period 01",
@@ -1124,7 +1142,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "81",
+      "Order": "83",
       "Dataset": "ADAE",
       "Variable": "TRT01A",
       "Label": "Actual Treatment for Period 01",
@@ -1134,7 +1152,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "82",
+      "Order": "84",
       "Dataset": "ADAE",
       "Variable": "TRTSDTM",
       "Label": "Datetime of First Exposure to Treatment",
@@ -1146,7 +1164,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "83",
+      "Order": "85",
       "Dataset": "ADAE",
       "Variable": "TRTSTMF",
       "Label": "Time of First Exposure Imput. Flag",
@@ -1157,7 +1175,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "84",
+      "Order": "86",
       "Dataset": "ADAE",
       "Variable": "TRTEDTM",
       "Label": "Datetime of Last Exposure to Treatment",
@@ -1169,7 +1187,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "85",
+      "Order": "87",
       "Dataset": "ADAE",
       "Variable": "TRTETMF",
       "Label": "Time of Last Exposure Imput. Flag",
@@ -1180,7 +1198,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "86",
+      "Order": "88",
       "Dataset": "ADAE",
       "Variable": "TRTDURD",
       "Label": "Total Treatment Duration (Days)",
@@ -1191,7 +1209,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "87",
+      "Order": "89",
       "Dataset": "ADAE",
       "Variable": "SCRFDT",
       "Label": "Screen Failure Date",
@@ -1202,7 +1220,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "88",
+      "Order": "90",
       "Dataset": "ADAE",
       "Variable": "EOSSTT",
       "Label": "End of Study Status",
@@ -1213,7 +1231,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "89",
+      "Order": "91",
       "Dataset": "ADAE",
       "Variable": "FRVDT",
       "Label": "Final Retrieval Visit Date",
@@ -1224,7 +1242,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "90",
+      "Order": "92",
       "Dataset": "ADAE",
       "Variable": "RANDDT",
       "Label": "Date of Randomization",
@@ -1236,7 +1254,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "91",
+      "Order": "93",
       "Dataset": "ADAE",
       "Variable": "DTHADY",
       "Label": "Relative Day of Death",
@@ -1246,7 +1264,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "92",
+      "Order": "94",
       "Dataset": "ADAE",
       "Variable": "LDDTHELD",
       "Label": "Elapsed Days from Last Dose to Death",
@@ -1256,7 +1274,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "93",
+      "Order": "95",
       "Dataset": "ADAE",
       "Variable": "LSTALVDT",
       "Label": "Date Last Known Alive",
@@ -1268,7 +1286,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "94",
+      "Order": "96",
       "Dataset": "ADAE",
       "Variable": "AGEGR1",
       "Label": "Pooled Age Group 1",
@@ -1278,7 +1296,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "95",
+      "Order": "97",
       "Dataset": "ADAE",
       "Variable": "SAFFL",
       "Label": "Safety Population Flag",
@@ -1289,7 +1307,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "96",
+      "Order": "98",
       "Dataset": "ADAE",
       "Variable": "RACEGR1",
       "Label": "Pooled Race Group 1",
@@ -1299,7 +1317,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "97",
+      "Order": "99",
       "Dataset": "ADAE",
       "Variable": "REGION1",
       "Label": "Geographic Region 1",
@@ -1309,7 +1327,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "98",
+      "Order": "100",
       "Dataset": "ADAE",
       "Variable": "LDDTHGR1",
       "Label": "Last Dose to Death - Days Elapsed Grp 1",
@@ -1319,7 +1337,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "99",
+      "Order": "101",
       "Dataset": "ADAE",
       "Variable": "DTH30FL",
       "Label": "Death Within 30 Days of Last Trt Flag",
@@ -1329,7 +1347,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "100",
+      "Order": "102",
       "Dataset": "ADAE",
       "Variable": "DTHA30FL",
       "Label": "Death After 30 Days from Last Trt Flag",
@@ -1339,7 +1357,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "101",
+      "Order": "103",
       "Dataset": "ADAE",
       "Variable": "DTHB30FL",
       "Label": "Death Within 30 Days of First Trt Flag",
@@ -1349,7 +1367,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "102",
+      "Order": "104",
       "Dataset": "ADAE",
       "Variable": "DTHDTF",
       "Label": "Date of Death Imputation Flag",
@@ -1360,7 +1378,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "103",
+      "Order": "105",
       "Dataset": "ADAE",
       "Variable": "DTHCAUS",
       "Label": "Cause of Death",
@@ -1370,7 +1388,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "104",
+      "Order": "106",
       "Dataset": "ADAE",
       "Variable": "DTHDOM",
       "Label": "Domain for Date of Death Collection",
@@ -1380,7 +1398,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "105",
+      "Order": "107",
       "Dataset": "ADAE",
       "Variable": "DTHCGR1",
       "Label": "Cause of Death Reason 1",
@@ -10852,6 +10870,15 @@
     {
       "Order": "37",
       "Dataset": "ADOE_P",
+      "Variable": "PARAMN",
+      "Label": "Parameter (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "38",
+      "Dataset": "ADOE_P",
       "Variable": "PARAMCD",
       "Label": "Parameter Code",
       "Data Type": "text",
@@ -10861,7 +10888,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "38",
+      "Order": "39",
       "Dataset": "ADOE_P",
       "Variable": "ADT",
       "Label": "Analysis Date",
@@ -10873,7 +10900,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "39",
+      "Order": "40",
       "Dataset": "ADOE_P",
       "Variable": "ADY",
       "Label": "Analysis Relative Day",
@@ -10884,7 +10911,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "40",
+      "Order": "41",
       "Dataset": "ADOE_P",
       "Variable": "ATPTN",
       "Label": "Analysis Timepoint (N)",
@@ -10895,7 +10922,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "41",
+      "Order": "42",
       "Dataset": "ADOE_P",
       "Variable": "ATPT",
       "Label": "Analysis Timepoint",
@@ -10906,7 +10933,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "42",
+      "Order": "43",
       "Dataset": "ADOE_P",
       "Variable": "AVISIT",
       "Label": "Analysis Visit",
@@ -10917,7 +10944,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "43",
+      "Order": "44",
       "Dataset": "ADOE_P",
       "Variable": "AVISITN",
       "Label": "Analysis Visit (N)",
@@ -10928,7 +10955,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "44",
+      "Order": "45",
       "Dataset": "ADOE_P",
       "Variable": "BASETYPE",
       "Label": "Baseline Type",
@@ -10939,7 +10966,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "45",
+      "Order": "46",
       "Dataset": "ADOE_P",
       "Variable": "ONTRTFL",
       "Label": "On Treatment Record Flag",
@@ -10950,7 +10977,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "46",
+      "Order": "47",
       "Dataset": "ADOE_P",
       "Variable": "ABLFL",
       "Label": "Baseline Record Flag",
@@ -10961,7 +10988,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "47",
+      "Order": "48",
       "Dataset": "ADOE_P",
       "Variable": "ANL01FL",
       "Label": "Analysis Flag 01",
@@ -10971,7 +10998,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "48",
+      "Order": "49",
       "Dataset": "ADOE_P",
       "Variable": "ANL02FL",
       "Label": "Analysis Flag 02",
@@ -10981,7 +11008,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "49",
+      "Order": "50",
       "Dataset": "ADOE_P",
       "Variable": "WORS01FL",
       "Label": "Worst Post Baseline Obs",
@@ -10991,7 +11018,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "50",
+      "Order": "51",
       "Dataset": "ADOE_P",
       "Variable": "BASE",
       "Label": "Baseline Value",
@@ -11002,7 +11029,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "51",
+      "Order": "52",
       "Dataset": "ADOE_P",
       "Variable": "BASEC",
       "Label": "Baseline Value (C)",
@@ -11013,7 +11040,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "52",
+      "Order": "53",
       "Dataset": "ADOE_P",
       "Variable": "CHG",
       "Label": "Change from Baseline",
@@ -11024,7 +11051,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "53",
+      "Order": "54",
       "Dataset": "ADOE_P",
       "Variable": "PCHG",
       "Label": "Percent Change from Baseline",
@@ -11036,7 +11063,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "54",
+      "Order": "55",
       "Dataset": "ADOE_P",
       "Variable": "ASEQ",
       "Label": "Analysis Sequence Number",
@@ -11047,7 +11074,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "55",
+      "Order": "56",
       "Dataset": "ADOE_P",
       "Variable": "SUBJID",
       "Label": "Subject Identifier for the Study",
@@ -11058,7 +11085,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "56",
+      "Order": "57",
       "Dataset": "ADOE_P",
       "Variable": "RFSTDTC",
       "Label": "Subject Reference Start Date/Time",
@@ -11067,7 +11094,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "57",
+      "Order": "58",
       "Dataset": "ADOE_P",
       "Variable": "RFENDTC",
       "Label": "Subject Reference End Date/Time",
@@ -11076,7 +11103,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "58",
+      "Order": "59",
       "Dataset": "ADOE_P",
       "Variable": "RFXSTDTC",
       "Label": "Date/Time of First Study Treatment",
@@ -11085,7 +11112,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "59",
+      "Order": "60",
       "Dataset": "ADOE_P",
       "Variable": "RFXENDTC",
       "Label": "Date/Time of Last Study Treatment",
@@ -11094,7 +11121,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "60",
+      "Order": "61",
       "Dataset": "ADOE_P",
       "Variable": "RFICDTC",
       "Label": "Date/Time of Informed Consent",
@@ -11104,7 +11131,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "61",
+      "Order": "62",
       "Dataset": "ADOE_P",
       "Variable": "RFPENDTC",
       "Label": "Date/Time of End of Participation",
@@ -11113,7 +11140,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "62",
+      "Order": "63",
       "Dataset": "ADOE_P",
       "Variable": "DTHDTC",
       "Label": "Date/Time of Death",
@@ -11122,7 +11149,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "63",
+      "Order": "64",
       "Dataset": "ADOE_P",
       "Variable": "DTHFL",
       "Label": "Subject Death Flag",
@@ -11132,7 +11159,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "64",
+      "Order": "65",
       "Dataset": "ADOE_P",
       "Variable": "SITEID",
       "Label": "Study Site Identifier",
@@ -11143,7 +11170,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "65",
+      "Order": "66",
       "Dataset": "ADOE_P",
       "Variable": "AGE",
       "Label": "Age",
@@ -11154,7 +11181,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "66",
+      "Order": "67",
       "Dataset": "ADOE_P",
       "Variable": "AGEU",
       "Label": "Age Units",
@@ -11165,7 +11192,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "67",
+      "Order": "68",
       "Dataset": "ADOE_P",
       "Variable": "SEX",
       "Label": "Sex",
@@ -11176,7 +11203,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "68",
+      "Order": "69",
       "Dataset": "ADOE_P",
       "Variable": "RACE",
       "Label": "Race",
@@ -11187,7 +11214,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "69",
+      "Order": "70",
       "Dataset": "ADOE_P",
       "Variable": "ETHNIC",
       "Label": "Ethnicity",
@@ -11197,7 +11224,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "70",
+      "Order": "71",
       "Dataset": "ADOE_P",
       "Variable": "ARMCD",
       "Label": "Planned Arm Code",
@@ -11207,7 +11234,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "71",
+      "Order": "72",
       "Dataset": "ADOE_P",
       "Variable": "ARM",
       "Label": "Description of Planned Arm",
@@ -11218,7 +11245,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "72",
+      "Order": "73",
       "Dataset": "ADOE_P",
       "Variable": "ACTARMCD",
       "Label": "Actual Arm Code",
@@ -11228,7 +11255,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "73",
+      "Order": "74",
       "Dataset": "ADOE_P",
       "Variable": "ACTARM",
       "Label": "Description of Actual Arm",
@@ -11239,7 +11266,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "74",
+      "Order": "75",
       "Dataset": "ADOE_P",
       "Variable": "COUNTRY",
       "Label": "Country",
@@ -11249,7 +11276,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "75",
+      "Order": "76",
       "Dataset": "ADOE_P",
       "Variable": "DMDTC",
       "Label": "Date/Time of Collection",
@@ -11258,7 +11285,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "76",
+      "Order": "77",
       "Dataset": "ADOE_P",
       "Variable": "DMDY",
       "Label": "Study Day of Collection",
@@ -11268,7 +11295,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "77",
+      "Order": "78",
       "Dataset": "ADOE_P",
       "Variable": "TRTSDTM",
       "Label": "Datetime of First Exposure to Treatment",
@@ -11280,7 +11307,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "78",
+      "Order": "79",
       "Dataset": "ADOE_P",
       "Variable": "TRTSTMF",
       "Label": "Time of First Exposure Imput. Flag",
@@ -11291,7 +11318,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "79",
+      "Order": "80",
       "Dataset": "ADOE_P",
       "Variable": "TRTEDTM",
       "Label": "Datetime of Last Exposure to Treatment",
@@ -11303,7 +11330,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "80",
+      "Order": "81",
       "Dataset": "ADOE_P",
       "Variable": "TRTETMF",
       "Label": "Time of Last Exposure Imput. Flag",
@@ -11314,7 +11341,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "81",
+      "Order": "82",
       "Dataset": "ADOE_P",
       "Variable": "TRTDURD",
       "Label": "Total Treatment Duration (Days)",
@@ -11325,7 +11352,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "82",
+      "Order": "83",
       "Dataset": "ADOE_P",
       "Variable": "SCRFDT",
       "Label": "Screen Failure Date",
@@ -11336,7 +11363,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "83",
+      "Order": "84",
       "Dataset": "ADOE_P",
       "Variable": "EOSDT",
       "Label": "End of Study Date",
@@ -11348,7 +11375,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "84",
+      "Order": "85",
       "Dataset": "ADOE_P",
       "Variable": "EOSSTT",
       "Label": "End of Study Status",
@@ -11359,7 +11386,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "85",
+      "Order": "86",
       "Dataset": "ADOE_P",
       "Variable": "FRVDT",
       "Label": "Final Retrieval Visit Date",
@@ -11370,7 +11397,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "86",
+      "Order": "87",
       "Dataset": "ADOE_P",
       "Variable": "RANDDT",
       "Label": "Date of Randomization",
@@ -11382,7 +11409,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "87",
+      "Order": "88",
       "Dataset": "ADOE_P",
       "Variable": "DTHDT",
       "Label": "Date of Death",
@@ -11394,7 +11421,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "88",
+      "Order": "89",
       "Dataset": "ADOE_P",
       "Variable": "DTHADY",
       "Label": "Relative Day of Death",
@@ -11404,7 +11431,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "89",
+      "Order": "90",
       "Dataset": "ADOE_P",
       "Variable": "LDDTHELD",
       "Label": "Elapsed Days from Last Dose to Death",
@@ -11414,7 +11441,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "90",
+      "Order": "91",
       "Dataset": "ADOE_P",
       "Variable": "LSTALVDT",
       "Label": "Date Last Known Alive",
@@ -11426,7 +11453,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "91",
+      "Order": "92",
       "Dataset": "ADOE_P",
       "Variable": "AGEGR1",
       "Label": "Pooled Age Group 1",
@@ -11436,7 +11463,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "92",
+      "Order": "93",
       "Dataset": "ADOE_P",
       "Variable": "SAFFL",
       "Label": "Safety Population Flag",
@@ -11447,7 +11474,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "93",
+      "Order": "94",
       "Dataset": "ADOE_P",
       "Variable": "RACEGR1",
       "Label": "Pooled Race Group 1",
@@ -11457,7 +11484,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "94",
+      "Order": "95",
       "Dataset": "ADOE_P",
       "Variable": "REGION1",
       "Label": "Geographic Region 1",
@@ -11467,7 +11494,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "95",
+      "Order": "96",
       "Dataset": "ADOE_P",
       "Variable": "LDDTHGR1",
       "Label": "Last Dose to Death - Days Elapsed Grp 1",
@@ -11477,7 +11504,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "96",
+      "Order": "97",
       "Dataset": "ADOE_P",
       "Variable": "DTH30FL",
       "Label": "Death Within 30 Days of Last Trt Flag",
@@ -11487,7 +11514,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "97",
+      "Order": "98",
       "Dataset": "ADOE_P",
       "Variable": "DTHA30FL",
       "Label": "Death After 30 Days from Last Trt Flag",
@@ -11497,7 +11524,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "98",
+      "Order": "99",
       "Dataset": "ADOE_P",
       "Variable": "DTHB30FL",
       "Label": "Death Within 30 Days of First Trt Flag",
@@ -11507,7 +11534,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "99",
+      "Order": "100",
       "Dataset": "ADOE_P",
       "Variable": "DTHDTF",
       "Label": "Date of Death Imputation Flag",
@@ -11518,7 +11545,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "100",
+      "Order": "101",
       "Dataset": "ADOE_P",
       "Variable": "DTHCAUS",
       "Label": "Cause of Death",
@@ -11528,7 +11555,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "101",
+      "Order": "102",
       "Dataset": "ADOE_P",
       "Variable": "DTHDOM",
       "Label": "Domain for Date of Death Collection",
@@ -11538,7 +11565,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "102",
+      "Order": "103",
       "Dataset": "ADOE_P",
       "Variable": "DTHCGR1",
       "Label": "Cause of Death Reason 1",

@@ -38,6 +38,14 @@ adtte_onco
 \description{
 Time to Event Analysis for Oncology
 }
+\details{
+Contains a set of 3 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+OS  \tab Overall Survival         \cr
+PFS \tab Progression Free Survival\cr
+RSD \tab Duration of Response
+}
+}
 \examples{
 data("adtte_onco")
 }
