@@ -82,8 +82,14 @@ CETERM
 CETPT
 CETPTNUM
 CETPTREF
+CHGB
 CHOLES
 CICD
+COEQ
+COEQCRCO
+COEQCRSA
+COEQCRSW
+COEQPOMO
 CREAT
 CRIT
 CRSP
@@ -123,6 +129,7 @@ FCSUBTH
 FDRSSR
 FIOP
 FIOPCHG
+FLI
 FN
 GGT
 GLUC
@@ -134,6 +141,8 @@ HDCSDS
 HGB
 HGTPCTL
 HGTSDS
+HIPCIR
+HOMAIR
 HYSLAW
 IG
 INVID
@@ -277,12 +286,14 @@ USUBJID
 VFQ
 VISITNUM
 VITB
+WAISTHIP
 WBC
 WGTAPCTL
 WGTASDS
 WGTHPCTL
 WGTHSDS
 WORD
+WSTCIR
 XAN
 XLSX
 ADaM
@@ -340,6 +351,7 @@ Retinopathy
 Retrieval
 Sadchla
 Sagie's
+Savoury
 Sev
 Signif
 Subfield
@@ -359,6 +371,7 @@ adam
 adbcva
 adce
 adcm
+adcoeq
 adeg
 adex
 adface
@@ -366,6 +379,7 @@ adis
 adlb
 adlbhy
 admh
+admiralmetabolic
 admiralonco
 admiralophtha
 admiralpeds
@@ -382,10 +396,14 @@ advfq
 advs
 deltoid
 diffs
+dL
+flavoured
 fmol
 funder
+mIU
 mmHg
 mmol
+mol
 mU
 onco
 ophtha
@@ -394,8 +412,10 @@ pharamverseadam
 pharmaverse
 pharmaversesdtm
 pmol
+savoury
 sero
 seropositivity
 tibble
 umol
 viewable
+yoghurts
