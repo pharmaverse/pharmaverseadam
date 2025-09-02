@@ -293,7 +293,7 @@
     },
     {
       "Dataset": "ADCOEQ_M",
-      "Label": "Control of Eating Questionnaire Analysis for Metabolic",
+      "Label": "Questionnaires Analysis for Metabolic",
       "Class": "BASIC DATA STRUCTURE",
       "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
       "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
