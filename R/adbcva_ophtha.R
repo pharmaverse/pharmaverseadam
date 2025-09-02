@@ -79,6 +79,14 @@
 #'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}
 #'     \item{ AVALCAT1 }{Analysis Value Category 1}
 #'   }
+#' @details Contains a set of 4 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   FBCVA    \tab Fellow Eye Visual Acuity Score (letters)\cr
+#'   FBCVALOG \tab Fellow Eye Visual Acuity LogMAR Score   \cr
+#'   SBCVA    \tab Study Eye Visual Acuity Score (letters) \cr
+#'   SBCVALOG \tab Study Eye Visual Acuity LogMAR Score
+#' }
+
 #'
 #' @source Generated from admiralophtha package (template ad_adbcva.R).
 #' @references None

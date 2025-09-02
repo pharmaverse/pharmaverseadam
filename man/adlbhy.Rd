@@ -11,6 +11,7 @@ A data frame with 14 columns:
 \item{ USUBJID }{Unique Subject Identifier}
 \item{ TRT01A }{Actual Treatment for Period 01}
 \item{ PARAMCD }{Parameter Code}
+\item{ PARAM }{Parameter}
 \item{ LBSEQ }{Sequence Number}
 \item{ ADT }{Analysis Date}
 \item{ AVISIT }{Analysis Visit}
@@ -20,7 +21,6 @@ A data frame with 14 columns:
 \item{ CRIT1 }{Analysis Criterion 1}
 \item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
 \item{ AVALC }{Analysis Value (C)}
-\item{ PARAM }{Parameter}
 }
 }
 \source{
@@ -31,6 +31,15 @@ adlbhy
 }
 \description{
 Analysis of Lab Hy's Law
+}
+\details{
+Contains a set of 4 unique Parameter Codes and Parameters: \tabular{ll}{
+\strong{PARAMCD} \tab \strong{PARAM} \cr
+ALT    \tab Alanine Aminotransferase (U/L)    \cr
+AST    \tab Aspartate Aminotransferase (U/L)  \cr
+BILI   \tab Bilirubin (umol/L)                \cr
+HYSLAW \tab ALT/AST >= 3xULN and BILI >= 2xULN
+}
 }
 \examples{
 data("adlbhy")

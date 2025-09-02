@@ -24,14 +24,16 @@ Please check the [Changelog](https://pharmaverse.github.io/pharmaverseadam/news/
 
 ## Installation
 
-The package is available from CRAN and can be installed by running `install.packages("pharmaverseadam")`. To install the latest development version of the package directly from GitHub use the following code:
+The package is available from CRAN and can be installed with:
 
-```         
-if (!requireNamespace("remotes", quietly = TRUE)) {
-      install.packages("remotes")
-    }
-    
-remotes::install_github("pharmaverse/pharmaverseadam", ref = "main")
+```r
+install.packages("pharmaverseadam")
+```
+
+To install the development version of the package from GitHub run:
+
+```r         
+pak::pkg_install("pharmaverse/pharmaverseadam", dependencies = TRUE)
 ```
 
 ## Dataset Creation and Documentation Process {#doc}

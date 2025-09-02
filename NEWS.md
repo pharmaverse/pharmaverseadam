@@ -17,21 +17,19 @@
   - Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
   - Added labels to variables within datasets that were missing them. (#100)
+  
+  - Added parameter code and parameter (`PARAMCD` / `PARAM`) description in the "Details" section, when available. (#101)
+
+  - Updated the installation instructions in `README.md`. (#124)
 
 <details>
 <summary>Developer Notes</summary>
 
 - Imported `{tibble}` so that tibble formatting is not lost. (#95)
 
-- Added alternative text to the pharmaverse badge and logo (#114)
+- Added clearer error messages for template failures. (#121)
 
-</details>
-
-## Various
-
-<details>
-
-<summary>Developer Notes</summary>
+- Added alternative text to the pharmaverse badge and logo. (#114)
 
 - Added copyright holder logos. (#113)
 
@@ -91,5 +89,4 @@ The first stable version of `{pharmaverseadam}`!
 ## New Features
 
   - Test ADaM data created from `{admiral}` templates are added.
-
-
+  

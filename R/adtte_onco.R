@@ -28,6 +28,13 @@
 #'     \item{ AGE }{Age}
 #'     \item{ SEX }{Sex}
 #'   }
+#' @details Contains a set of 3 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   OS  \tab Overall Survival         \cr
+#'   PFS \tab Progression Free Survival\cr
+#'   RSD \tab Duration of Response
+#' }
+
 #'
 #' @source Generated from admiralonco package (template ad_adtte.R).
 #' @references None

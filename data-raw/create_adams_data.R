@@ -1,8 +1,11 @@
 # Save specs as JSON file for traceability of changes ----
 
+# Load required library
 library(readxl)
 library(jsonlite)
+library(cli)
 
+# Load metadata
 json_file <- "inst/extdata/adams-specs.json"
 excel_file <- "inst/extdata/adams-specs.xlsx"
 
@@ -42,6 +45,11 @@ load_rda <- function(fileName) {
   get(ls()[ls() != "fileName"])
 }
 
+# Helper function to retrieve the label attribute for a column
+#' @description Retrieve column label attribute or return a default.
+#' @param data The dataset containing the column.
+#' @param col_name The name of the column.
+#' @return A string containing the label attribute or "undocumented field".
 get_attr <- function(data, col_name) {
   att <- attr(data[[col_name]], "label")
   if (is.null(att)) {
@@ -53,7 +61,7 @@ get_attr <- function(data, col_name) {
 }
 
 # Create documentation ----
-write_doc <- function(data, dataset_name, dataset_label, pkg, template_name) {
+write_doc <- function(data, dataset_name, dataset_label, pkg, template_name, dataset_paramnames = NULL) {
   # create documentation for the current dataset
   # TODO: use metatools/metacore for doc  ?
   dataset_label <- str_replace(dataset_label, "Hys Law", "Hy's Law")
@@ -71,12 +79,24 @@ write_doc <- function(data, dataset_name, dataset_label, pkg, template_name) {
       paste(sprintf("#'     \\item{ %s }{%s}", col_name, get_attr(data, col_name)))
     }, USE.NAMES = FALSE), collapse = "\n"),
     "#'   }",
+    sep = "\n"
+  )
+
+  # Add PARAM and PARAMCD in details section if available
+  if (!is.null(dataset_paramnames) && dataset_paramnames != "") {
+    doc_string <- paste(doc_string, sprintf("#' @details %s", dataset_paramnames), sep = "\n")
+  }
+
+  # Append source, references and examples after Details section
+  doc_string <- paste(
+    doc_string,
     "#'", sprintf("#' @source Generated from %s package (template %s).", pkg, template_name),
     "#' @references None",
     "#'", sprintf("#' @examples\n#' data(\"%s\")", dataset_name),
     sep = "\n",
     sprintf("\"%s\"", dataset_name)
   )
+
   writeLines(doc_string, con = file.path("R", paste0(dataset_name, ".R")))
 }
 
@@ -129,6 +149,41 @@ run_template <- function(tp) {
       output_adam_path <- file.path("data", filename)
       dataset_name <- gsub("\\.rda$", "", filename)
 
+      # add PARAM and PARAMCD details
+      # check if data contains PARAMCD/PARAM variables
+      param_col <- names(data)[grepl("PARAM$", names(data))]
+      paramcd_col <- names(data)[grepl("PARAMCD", names(data))]
+
+      if (length(param_col) == 1 && length(paramcd_col) == 1) {
+        # Check both columns exist
+        unique_params <- unique(data[c(paramcd_col, param_col)])
+        unique_params <- unique_params[order(unique_params[[paramcd_col]]), ]
+
+        tabular <- function(df, ...) {
+          stopifnot(is.data.frame(df))
+
+          align <- function(x) if (is.numeric(x)) "r" else "l"
+          col_align <- vapply(df, align, character(1))
+
+          cols <- lapply(df, format, ...)
+          contents <- do.call(
+            "paste",
+            c(cols, list(sep = " \\tab ", collapse = "\\cr\n#'   "))
+          )
+
+          paste(sprintf("Contains a set of %d unique Parameter Code%s and Parameter%s: ", nrow(unique_params), ifelse(nrow(unique_params) == 1, "", "s"), ifelse(nrow(unique_params) == 1, "", "s")),
+            "\\tabular{", paste(col_align, collapse = ""), "}{\n#'   ",
+            paste0("\\strong{", names(df), "}", sep = "", collapse = " \\tab "), " \\cr\n#'   ",
+            trimws(contents), "\n#' }\n",
+            sep = ""
+          )
+        }
+
+        paramnames <- tabular(unique_params)
+      } else {
+        paramnames <- NULL
+      }
+
       # write labels
       data <- write_labels(data, dataset_name, suffix)
 
@@ -137,7 +192,12 @@ run_template <- function(tp) {
 
       # write doc
       dataset_label <- attributes(data)$label
-      write_doc(data, dataset_name, dataset_label, pkg, tp_basename)
+      if (is.null(paramnames)) {
+        dataset_paramnames <- NULL
+      } else {
+        dataset_paramnames <- if (!is.null(paramnames) && paramnames != "") paramnames else NULL
+      }
+      write_doc(data, dataset_name, dataset_label, pkg, tp_basename, dataset_paramnames)
     }
 
     # return output cmd from templates
@@ -148,6 +208,25 @@ run_template <- function(tp) {
   }
 }
 
+# Wrapper Function for Error Handling
+safe_run_template <- function(tp) {
+  tryCatch(
+    run_template(tp),
+    error = function(e) {
+      list(
+        pkg = pkg,
+        template = tp,
+        exit_code = 1,
+        output = paste(
+          "ERROR in template:", tp, "\n",
+          "Package:", pkg, "\n",
+          "Message:", e$message, "\n",
+          "Call:", paste(capture.output(traceback()), collapse = "\n")
+        )
+      )
+    }
+  )
+}
 
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
@@ -198,18 +277,24 @@ for (pkg in packages_list) {
   # for (tp in templates) {
   #   run_template(tp)
   # }
-  results <- parallel::mclapply(templates, run_template, mc.cores = length(templates))
+  results <- parallel::mclapply(templates, safe_run_template, mc.cores = length(templates))
   all_results <- c(all_results, results)
 }
 
-
+# Display error message when a template fails
+cli_div(theme = list(".error-detail" = list(color = "red")))
 for (res in all_results) {
-  if (!is.null(res$exit_code)) {
-    print(sprintf("template %s failed - package %s", res$template, res$pkg))
-    print("error:")
-    cat(sprintf("%s\n\n", res$output))
+  if (!is.null(res$exit_code) && res$exit_code != 0) {
+    cli_alert_danger("template {.val {res$template}} failed - package {.pkg {res$pkg}}")
+    cli_alert_danger("Error details:")
+    error_lines <- strsplit(res$output, "\n")[[1]]
+    for (line in error_lines) {
+      cli_text("{.error-detail {line}}")
+    }
+    cli_text("")
   }
 }
+cli_end()
 
 # Generate the documentation ----
 roxygen2::roxygenize(".", roclets = c("rd", "collate", "namespace"))
