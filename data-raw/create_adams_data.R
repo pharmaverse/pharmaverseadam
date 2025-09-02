@@ -239,7 +239,7 @@ if (update_pkg) {
 }
 
 # dict to match admiral xlsx specs suffixes
-suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E",  "_metabolic" = "_M")
+suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E", "_metabolic" = "_M")
 mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   where_sep_sheet = FALSE,
   quiet = TRUE
