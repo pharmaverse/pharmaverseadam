@@ -27,7 +27,8 @@ write(json_data, file = json_file)
 library(stringr)
 update_pkg <- TRUE
 ignore_templates <- list(
-  "admiralonco" = c("ad_adrs_basic.R")
+  "admiralonco" = c("ad_adrs_basic.R"),
+  "admiralmetabolic" = c("ad_adsl_metabolic.R")
 )
 
 save_rda <- function(data, file_path, new_name) {
@@ -238,13 +239,13 @@ if (update_pkg) {
 }
 
 # dict to match admiral xlsx specs suffixes
-suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E")
+suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E", "_metabolic" = "_M")
 mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   where_sep_sheet = FALSE,
   quiet = TRUE
 )
 
-packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds")
+packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds", "admiralmetabolic")
 
 all_results <- c()
 for (pkg in packages_list) {
