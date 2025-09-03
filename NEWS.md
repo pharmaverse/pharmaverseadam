@@ -2,9 +2,9 @@
 
 ## New features
 
-  - Added `ADVS`, `ADLB` and `ADCOEQ` from `{admiralmetabolic}` using package version 0.2.0.9000.
-  _Note: This uses the development version 0.2.0.9000, in which the templates directory issue has been fixed._ (#105)
+  - Added `ADVS`, `ADLB` and `ADCOEQ` from `{admiralmetabolic}` using package version 0.2.0.9000. (#105)
   
+    _Note: This uses the development version 0.2.0.9000, in which the templates directory issue has been fixed._
   
   - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9019 (development version) `{admiralophtha}` 1.2.0.9001 (development version), `{admiralonco}` 1.2.0, `{admiralvaccine}` 0.4.0, `{pharmaversesdtm}` 1.2.0 (development version). (#103)
 
