@@ -2,7 +2,7 @@
 
 ## New features
 
-  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.3.1.9006 (development version), `{admiralonco}` 1.2.0, `{admiralophtha}` 1.3.0, `{admiralvaccine}` 0.5.0.9000 (development version), `{admiralpeds}` 0.2.1, `{admiralmetabolic}` 0.2.0.9000 (development version), `{pharmaversesdtm}` 1.3.1. (#123)
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.3.1.9006 (development version), `{admiralonco}` 1.3.0, `{admiralophtha}` 1.3.0, `{admiralvaccine}` 0.5.0.9000 (development version), `{admiralpeds}` 0.2.1, `{admiralmetabolic}` 0.2.0.9000 (development version), `{pharmaversesdtm}` 1.3.1. (#123)
 
   - Added `ADVS`, `ADLB` and `ADCOEQ` from `{admiralmetabolic}` using package version 0.2.0.9000. (#105)
   
