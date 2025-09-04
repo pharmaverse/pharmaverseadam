@@ -5,7 +5,7 @@
 #' @name adis_vaccine
 #' @title Immunogenicity Specimen Assessments
 #' @docType data
-#' @format A data frame with 102 columns:
+#' @format A data frame with 104 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ DOMAIN }{Domain Abbreviation}
@@ -31,6 +31,7 @@
 #'     \item{ ISDTC }{Date/Time of Collection}
 #'     \item{ ISDY }{Study Day of Visit/Collection/Exam}
 #'     \item{ ISULOQ }{Upper Limit of Quantitation}
+#'     \item{ IDVARVAL }{Identifying Variable Value}
 #'     \item{ LOD }{Limit of Detection}
 #'     \item{ AVISITN }{Analysis Visit (N)}
 #'     \item{ AVISIT }{Analysis Visit}
@@ -41,6 +42,7 @@
 #'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
 #'     \item{ PPROTFL }{Per-Protocol Population Flag}
 #'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ DERIVED }{Derivation Method}
 #'     \item{ PARAMCD }{Parameter Code}
 #'     \item{ PARAM }{Parameter}
 #'     \item{ PARAMN }{Parameter (N)}
@@ -52,15 +54,15 @@
 #'     \item{ SERCAT1 }{Pre-vaccination seropositivity status}
 #'     \item{ SERCAT1N }{Pre-vaccination sero status (n)}
 #'     \item{ DTYPE }{Derivation Type}
-#'     \item{ BASETYPE }{Baseline Type}
-#'     \item{ BASE }{Baseline Value}
 #'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ BASETYPE }{Baseline Type}
 #'     \item{ BASECAT1 }{Baseline Category 1}
 #'     \item{ CHG }{Change from Baseline}
 #'     \item{ R2BASE }{Ratio to Baseline}
 #'     \item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
-#'     \item{ CRIT1FN }{Criterion 1 Evaluation Result Flag (N)}
 #'     \item{ CRIT1 }{Analysis Criterion 1}
+#'     \item{ CRIT1FN }{Criterion 1 Evaluation Result Flag (N)}
 #'     \item{ APERIOD }{Period}
 #'     \item{ APERSDT }{Period Start Date}
 #'     \item{ APEREDT }{Period End Date}
@@ -110,6 +112,26 @@
 #'     \item{ AP02SDT }{Period 02 Start Date}
 #'     \item{ AP02EDT }{Period 02 End Date}
 #'   }
+#' @details Contains a set of 16 unique Parameter Codes and Parameters: \tabular{ll}{
+#'   \strong{PARAMCD} \tab \strong{PARAM} \cr
+#'   I0019NLF \tab LOG10 4FOLD (I0019NT Antibody)\cr
+#'   I0019NT  \tab I0019NT Antibody              \cr
+#'   I0019NTF \tab 4FOLD (I0019NT Antibody)      \cr
+#'   I0019NTL \tab LOG10 (I0019NT Antibody)      \cr
+#'   J0033VLF \tab LOG10 4FOLD (J0033VN Antibody)\cr
+#'   J0033VN  \tab J0033VN Antibody              \cr
+#'   J0033VNF \tab 4FOLD (J0033VN Antibody)      \cr
+#'   J0033VNL \tab LOG10 (J0033VN Antibody)      \cr
+#'   M0019LLF \tab LOG10 4FOLD (M0019LN Antibody)\cr
+#'   M0019LN  \tab M0019LN Antibody              \cr
+#'   M0019LNF \tab 4FOLD (M0019LN Antibody)      \cr
+#'   M0019LNL \tab LOG10 (M0019LN Antibody)      \cr
+#'   R0003MA  \tab R0003MA Antibody              \cr
+#'   R0003MAF \tab 4FOLD (R0003MA Antibody)      \cr
+#'   R0003MAL \tab LOG10 (R0003MA Antibody)      \cr
+#'   R0003MLF \tab LOG10 4FOLD (R0003MA Antibody)
+#' }
+
 #'
 #' @source Generated from admiralvaccine package (template ad_adis.R).
 #' @references None
