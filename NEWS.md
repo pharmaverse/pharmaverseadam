@@ -2,12 +2,12 @@
 
 ## New features
 
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.3.1.9006 (development version), `{admiralonco}` 1.3.0, `{admiralophtha}` 1.3.0, `{admiralvaccine}` 0.5.0.9000 (development version), `{admiralpeds}` 0.2.1, `{admiralmetabolic}` 0.2.0.9000 (development version), `{pharmaversesdtm}` 1.3.1. (#123)
+
   - Added `ADVS`, `ADLB` and `ADCOEQ` from `{admiralmetabolic}` using package version 0.2.0.9000. (#105)
   
-    _Note: This uses the development version 0.2.0.9000, in which the templates directory issue has been fixed._
+  _Note: This release uses development version 1.3.1.9006 of `{admiral}` (with the updated `ADLBHY` template), as well as development versions 0.5.0.9000 of `{admiralvaccine}` and 0.2.0.9000 of `{admiralmetabolic}` (with the templates directory issues fixed)._
   
-  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9019 (development version) `{admiralophtha}` 1.2.0.9001 (development version), `{admiralonco}` 1.2.0, `{admiralvaccine}` 0.4.0, `{pharmaversesdtm}` 1.2.0 (development version). (#103)
-
 ## Documentation
 
   - The package maintainer was updated from Edoardo Mancini to Fanny Gautier. (#115)
@@ -45,7 +45,7 @@ Ad-hoc release.
 
   - Added `ADVS` from `{admiralpeds}` using version 0.1.1.9001 of the package.
 
-  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9012 (development version) `{admiralophtha}` 1.1.0.9004 (development version), `{admiralonco}` 1.1.0, `{admiralvaccine}` 0.2.0, `{pharmaversesdtm}` 1.1.0. (#85)
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.1.1.9012 (development version), `{admiralophtha}` 1.1.0.9004 (development version), `{admiralonco}` 1.1.0, `{admiralvaccine}` 0.2.0, `{pharmaversesdtm}` 1.1.0. (#85)
 
 ## Documentation
 

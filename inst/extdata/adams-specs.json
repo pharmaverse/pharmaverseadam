@@ -7181,6 +7181,15 @@
     {
       "Order": "25",
       "Dataset": "ADIS_V",
+      "Variable": "IDVARVAL",
+      "Label": "Identifying Variable Value",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "26",
+      "Dataset": "ADIS_V",
       "Variable": "LOD",
       "Label": "Limit of Detection",
       "Data Type": "text",
@@ -7189,7 +7198,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "26",
+      "Order": "27",
       "Dataset": "ADIS_V",
       "Variable": "AVISITN",
       "Label": "Analysis Visit (N)",
@@ -7200,7 +7209,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "27",
+      "Order": "28",
       "Dataset": "ADIS_V",
       "Variable": "AVISIT",
       "Label": "Analysis Visit",
@@ -7211,7 +7220,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "28",
+      "Order": "29",
       "Dataset": "ADIS_V",
       "Variable": "ATPTN",
       "Label": "Analysis Timepoint (N)",
@@ -7222,7 +7231,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "29",
+      "Order": "30",
       "Dataset": "ADIS_V",
       "Variable": "ATPT",
       "Label": "Analysis Timepoint",
@@ -7233,7 +7242,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "30",
+      "Order": "31",
       "Dataset": "ADIS_V",
       "Variable": "ATPTREF",
       "Label": "Analysis Timepoint Reference",
@@ -7244,7 +7253,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "31",
+      "Order": "32",
       "Dataset": "ADIS_V",
       "Variable": "ADT",
       "Label": "Analysis Date",
@@ -7256,7 +7265,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "32",
+      "Order": "33",
       "Dataset": "ADIS_V",
       "Variable": "RFSTDTC",
       "Label": "Subject Reference Start Date/Time",
@@ -7265,7 +7274,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "33",
+      "Order": "34",
       "Dataset": "ADIS_V",
       "Variable": "PPROTFL",
       "Label": "Per-Protocol Population Flag",
@@ -7276,7 +7285,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "34",
+      "Order": "35",
       "Dataset": "ADIS_V",
       "Variable": "ADY",
       "Label": "Analysis Relative Day",
@@ -7287,7 +7296,16 @@
       "Has No Data": "No"
     },
     {
-      "Order": "35",
+      "Order": "36",
+      "Dataset": "ADIS_V",
+      "Variable": "DERIVED",
+      "Label": "Derivation Method",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "37",
       "Dataset": "ADIS_V",
       "Variable": "PARAMCD",
       "Label": "Parameter Code",
@@ -7298,7 +7316,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "36",
+      "Order": "38",
       "Dataset": "ADIS_V",
       "Variable": "PARAM",
       "Label": "Parameter",
@@ -7309,7 +7327,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "37",
+      "Order": "39",
       "Dataset": "ADIS_V",
       "Variable": "PARAMN",
       "Label": "Parameter (N)",
@@ -7320,7 +7338,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "38",
+      "Order": "40",
       "Dataset": "ADIS_V",
       "Variable": "PARCAT1",
       "Label": "Parameter Category 1",
@@ -7330,7 +7348,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "39",
+      "Order": "41",
       "Dataset": "ADIS_V",
       "Variable": "CUTOFF02",
       "Label": "First Cutoff Value",
@@ -7340,7 +7358,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "40",
+      "Order": "42",
       "Dataset": "ADIS_V",
       "Variable": "CUTOFF03",
       "Label": "Second Cutoff Value",
@@ -7350,7 +7368,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "41",
+      "Order": "43",
       "Dataset": "ADIS_V",
       "Variable": "AVAL",
       "Label": "Analysis Value",
@@ -7362,7 +7380,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "42",
+      "Order": "44",
       "Dataset": "ADIS_V",
       "Variable": "AVALU",
       "Label": "Analysis Value Unit",
@@ -7372,7 +7390,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "43",
+      "Order": "45",
       "Dataset": "ADIS_V",
       "Variable": "SERCAT1",
       "Label": "Pre-vaccination seropositivity status",
@@ -7382,7 +7400,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "44",
+      "Order": "46",
       "Dataset": "ADIS_V",
       "Variable": "SERCAT1N",
       "Label": "Pre-vaccination sero status (n)",
@@ -7392,7 +7410,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "45",
+      "Order": "47",
       "Dataset": "ADIS_V",
       "Variable": "DTYPE",
       "Label": "Derivation Type",
@@ -7403,7 +7421,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "46",
+      "Order": "48",
       "Dataset": "ADIS_V",
       "Variable": "BASETYPE",
       "Label": "Baseline Type",
@@ -7414,7 +7432,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "47",
+      "Order": "49",
       "Dataset": "ADIS_V",
       "Variable": "BASE",
       "Label": "Baseline Value",
@@ -7426,7 +7444,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "48",
+      "Order": "50",
       "Dataset": "ADIS_V",
       "Variable": "ABLFL",
       "Label": "Baseline Record Flag",
@@ -7437,7 +7455,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "49",
+      "Order": "51",
       "Dataset": "ADIS_V",
       "Variable": "BASECAT1",
       "Label": "Baseline Category 1",
@@ -7447,7 +7465,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "50",
+      "Order": "52",
       "Dataset": "ADIS_V",
       "Variable": "CHG",
       "Label": "Change from Baseline",
@@ -7459,7 +7477,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "51",
+      "Order": "53",
       "Dataset": "ADIS_V",
       "Variable": "R2BASE",
       "Label": "Ratio to Baseline",
@@ -7471,7 +7489,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "52",
+      "Order": "54",
       "Dataset": "ADIS_V",
       "Variable": "CRIT1FL",
       "Label": "Criterion 1 Evaluation Result Flag",
@@ -7481,7 +7499,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "53",
+      "Order": "55",
       "Dataset": "ADIS_V",
       "Variable": "CRIT1FN",
       "Label": "Criterion 1 Evaluation Result Flag (N)",
@@ -7491,7 +7509,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "54",
+      "Order": "56",
       "Dataset": "ADIS_V",
       "Variable": "CRIT1",
       "Label": "Analysis Criterion 1",
@@ -7501,7 +7519,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "55",
+      "Order": "57",
       "Dataset": "ADIS_V",
       "Variable": "APERIOD",
       "Label": "Period",
@@ -7512,7 +7530,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "56",
+      "Order": "58",
       "Dataset": "ADIS_V",
       "Variable": "APERSDT",
       "Label": "Period Start Date",
@@ -7524,7 +7542,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "57",
+      "Order": "59",
       "Dataset": "ADIS_V",
       "Variable": "APEREDT",
       "Label": "Period End Date",
@@ -7536,7 +7554,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "58",
+      "Order": "60",
       "Dataset": "ADIS_V",
       "Variable": "TRTA",
       "Label": "Actual Treatment",
@@ -7547,7 +7565,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "59",
+      "Order": "61",
       "Dataset": "ADIS_V",
       "Variable": "TRTP",
       "Label": "Planned Treatment",
@@ -7558,7 +7576,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "60",
+      "Order": "62",
       "Dataset": "ADIS_V",
       "Variable": "PPSRFL",
       "Label": "Per-Protocol Record-Level Flag",
@@ -7568,7 +7586,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "61",
+      "Order": "63",
       "Dataset": "ADIS_V",
       "Variable": "SUBJID",
       "Label": "Subject Identifier for the Study",
@@ -7579,7 +7597,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "62",
+      "Order": "64",
       "Dataset": "ADIS_V",
       "Variable": "RFENDTC",
       "Label": "Subject Reference End Date/Time",
@@ -7588,7 +7606,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "63",
+      "Order": "65",
       "Dataset": "ADIS_V",
       "Variable": "RFXSTDTC",
       "Label": "Date/Time of First Study Treatment",
@@ -7597,7 +7615,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "64",
+      "Order": "66",
       "Dataset": "ADIS_V",
       "Variable": "RFXENDTC",
       "Label": "Date/Time of Last Study Treatment",
@@ -7606,7 +7624,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "65",
+      "Order": "67",
       "Dataset": "ADIS_V",
       "Variable": "RFICDTC",
       "Label": "Date/Time of Informed Consent",
@@ -7615,7 +7633,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "66",
+      "Order": "68",
       "Dataset": "ADIS_V",
       "Variable": "RFPENDTC",
       "Label": "Date/Time of End of Participation",
@@ -7624,7 +7642,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "67",
+      "Order": "69",
       "Dataset": "ADIS_V",
       "Variable": "DTHDTC",
       "Label": "Date/Time of Death",
@@ -7634,7 +7652,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "68",
+      "Order": "70",
       "Dataset": "ADIS_V",
       "Variable": "DTHFL",
       "Label": "Subject Death Flag",
@@ -7644,7 +7662,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "69",
+      "Order": "71",
       "Dataset": "ADIS_V",
       "Variable": "SITEID",
       "Label": "Study Site Identifier",
@@ -7655,7 +7673,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "70",
+      "Order": "72",
       "Dataset": "ADIS_V",
       "Variable": "INVID",
       "Label": "Investigator Identifier",
@@ -7665,7 +7683,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "71",
+      "Order": "73",
       "Dataset": "ADIS_V",
       "Variable": "INVNAM",
       "Label": "Investigator Name",
@@ -7675,7 +7693,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "72",
+      "Order": "74",
       "Dataset": "ADIS_V",
       "Variable": "BRTHDTC",
       "Label": "Date/Time of Birth",
@@ -7684,7 +7702,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "73",
+      "Order": "75",
       "Dataset": "ADIS_V",
       "Variable": "AGE",
       "Label": "Age",
@@ -7695,7 +7713,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "74",
+      "Order": "76",
       "Dataset": "ADIS_V",
       "Variable": "AGEU",
       "Label": "Age Units",
@@ -7706,7 +7724,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "75",
+      "Order": "77",
       "Dataset": "ADIS_V",
       "Variable": "SEX",
       "Label": "Sex",
@@ -7717,7 +7735,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "76",
+      "Order": "78",
       "Dataset": "ADIS_V",
       "Variable": "RACE",
       "Label": "Race",
@@ -7728,7 +7746,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "77",
+      "Order": "79",
       "Dataset": "ADIS_V",
       "Variable": "ETHNIC",
       "Label": "Ethnicity",
@@ -7738,7 +7756,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "78",
+      "Order": "80",
       "Dataset": "ADIS_V",
       "Variable": "ARMCD",
       "Label": "Planned Arm Code",
@@ -7748,7 +7766,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "79",
+      "Order": "81",
       "Dataset": "ADIS_V",
       "Variable": "ARM",
       "Label": "Description of Planned Arm",
@@ -7759,7 +7777,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "80",
+      "Order": "82",
       "Dataset": "ADIS_V",
       "Variable": "ACTARMCD",
       "Label": "Actual Arm Code",
@@ -7769,7 +7787,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "81",
+      "Order": "83",
       "Dataset": "ADIS_V",
       "Variable": "ACTARM",
       "Label": "Description of Actual Arm",
@@ -7780,7 +7798,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "82",
+      "Order": "84",
       "Dataset": "ADIS_V",
       "Variable": "COUNTRY",
       "Label": "Country",
@@ -7790,7 +7808,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "83",
+      "Order": "85",
       "Dataset": "ADIS_V",
       "Variable": "DMDTC",
       "Label": "Date/Time of Collection",
@@ -7800,7 +7818,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "84",
+      "Order": "86",
       "Dataset": "ADIS_V",
       "Variable": "DMDY",
       "Label": "Study Day of Collection",
@@ -7810,7 +7828,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "85",
+      "Order": "87",
       "Dataset": "ADIS_V",
       "Variable": "TRT01P",
       "Label": "Planned Treatment for Period 01",
@@ -7820,7 +7838,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "86",
+      "Order": "88",
       "Dataset": "ADIS_V",
       "Variable": "TRT02P",
       "Label": "Planned Treatment for Period 02",
@@ -7830,7 +7848,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "87",
+      "Order": "89",
       "Dataset": "ADIS_V",
       "Variable": "TRT01A",
       "Label": "Actual Treatment for Period 01",
@@ -7840,7 +7858,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "88",
+      "Order": "90",
       "Dataset": "ADIS_V",
       "Variable": "TRT02A",
       "Label": "Actual Treatment for Period 02",
@@ -7850,7 +7868,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "89",
+      "Order": "91",
       "Dataset": "ADIS_V",
       "Variable": "TRTSDTM",
       "Label": "Datetime of First Exposure to Treatment",
@@ -7862,7 +7880,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "90",
+      "Order": "92",
       "Dataset": "ADIS_V",
       "Variable": "TRTEDTM",
       "Label": "Datetime of Last Exposure to Treatment",
@@ -7874,7 +7892,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "91",
+      "Order": "93",
       "Dataset": "ADIS_V",
       "Variable": "TRTSDT",
       "Label": "Date of First Exposure to Treatment",
@@ -7886,7 +7904,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "92",
+      "Order": "94",
       "Dataset": "ADIS_V",
       "Variable": "TRTEDT",
       "Label": "Date of Last Exposure to Treatment",
@@ -7898,7 +7916,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "93",
+      "Order": "95",
       "Dataset": "ADIS_V",
       "Variable": "TRTDURD",
       "Label": "Total Treatment Duration (Days)",
@@ -7909,7 +7927,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "94",
+      "Order": "96",
       "Dataset": "ADIS_V",
       "Variable": "SAFFL",
       "Label": "Safety Population Flag",
@@ -7920,7 +7938,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "95",
+      "Order": "97",
       "Dataset": "ADIS_V",
       "Variable": "RACEGR1",
       "Label": "Pooled Race Group 1",
@@ -7930,7 +7948,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "96",
+      "Order": "98",
       "Dataset": "ADIS_V",
       "Variable": "AGEGR1",
       "Label": "Pooled Age Group 1",
@@ -7940,7 +7958,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "97",
+      "Order": "99",
       "Dataset": "ADIS_V",
       "Variable": "REGION1",
       "Label": "Geographic Region 1",
@@ -7950,7 +7968,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "98",
+      "Order": "100",
       "Dataset": "ADIS_V",
       "Variable": "VAX01DT",
       "Label": "Vaccination Date 01",
@@ -7961,7 +7979,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "99",
+      "Order": "101",
       "Dataset": "ADIS_V",
       "Variable": "VAX02DT",
       "Label": "Vaccination Date 02",
@@ -7972,7 +7990,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "100",
+      "Order": "102",
       "Dataset": "ADIS_V",
       "Variable": "AP01SDT",
       "Label": "Period 01 Start Date",
@@ -7983,7 +8001,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "101",
+      "Order": "103",
       "Dataset": "ADIS_V",
       "Variable": "AP01EDT",
       "Label": "Period 01 End Date",
@@ -7994,7 +8012,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "102",
+      "Order": "104",
       "Dataset": "ADIS_V",
       "Variable": "AP02SDT",
       "Label": "Period 02 Start Date",
@@ -8005,7 +8023,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "103",
+      "Order": "105",
       "Dataset": "ADIS_V",
       "Variable": "AP02EDT",
       "Label": "Period 02 End Date",
