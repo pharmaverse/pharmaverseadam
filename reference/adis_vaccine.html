@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">pharmaverseadam</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0.9012</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0.9013</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 102 columns:</p><dl><dt> STUDYID </dt>
+    <p>A data frame with 104 columns:</p><dl><dt> STUDYID </dt>
 <dd><p>Study Identifier</p></dd>
 
 <dt> DOMAIN </dt>
@@ -115,6 +115,9 @@
 <dt> ISULOQ </dt>
 <dd><p>Upper Limit of Quantitation</p></dd>
 
+<dt> IDVARVAL </dt>
+<dd><p>Identifying Variable Value</p></dd>
+
 <dt> LOD </dt>
 <dd><p>Limit of Detection</p></dd>
 
@@ -144,6 +147,9 @@
 
 <dt> ADY </dt>
 <dd><p>Analysis Relative Day</p></dd>
+
+<dt> DERIVED </dt>
+<dd><p>Derivation Method</p></dd>
 
 <dt> PARAMCD </dt>
 <dd><p>Parameter Code</p></dd>
@@ -178,14 +184,14 @@
 <dt> DTYPE </dt>
 <dd><p>Derivation Type</p></dd>
 
-<dt> BASETYPE </dt>
-<dd><p>Baseline Type</p></dd>
+<dt> ABLFL </dt>
+<dd><p>Baseline Record Flag</p></dd>
 
 <dt> BASE </dt>
 <dd><p>Baseline Value</p></dd>
 
-<dt> ABLFL </dt>
-<dd><p>Baseline Record Flag</p></dd>
+<dt> BASETYPE </dt>
+<dd><p>Baseline Type</p></dd>
 
 <dt> BASECAT1 </dt>
 <dd><p>Baseline Category 1</p></dd>
@@ -199,11 +205,11 @@
 <dt> CRIT1FL </dt>
 <dd><p>Criterion 1 Evaluation Result Flag</p></dd>
 
-<dt> CRIT1FN </dt>
-<dd><p>Criterion 1 Evaluation Result Flag (N)</p></dd>
-
 <dt> CRIT1 </dt>
 <dd><p>Analysis Criterion 1</p></dd>
+
+<dt> CRIT1FN </dt>
+<dd><p>Criterion 1 Evaluation Result Flag (N)</p></dd>
 
 <dt> APERIOD </dt>
 <dd><p>Period</p></dd>
@@ -355,6 +361,9 @@
     <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
     <p>Generated from admiralvaccine package (template ad_adis.R).</p>
     </div>
+    <div class="section level2">
+    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
+    <p>Contains a set of 16 unique Parameter Codes and Parameters:</p><table class="table table"><tr><td><strong>PARAMCD</strong></td><td><strong>PARAM</strong></td></tr><tr><td>I0019NLF</td><td>LOG10 4FOLD (I0019NT Antibody)</td></tr><tr><td>I0019NT</td><td>I0019NT Antibody</td></tr><tr><td>I0019NTF</td><td>4FOLD (I0019NT Antibody)</td></tr><tr><td>I0019NTL</td><td>LOG10 (I0019NT Antibody)</td></tr><tr><td>J0033VLF</td><td>LOG10 4FOLD (J0033VN Antibody)</td></tr><tr><td>J0033VN</td><td>J0033VN Antibody</td></tr><tr><td>J0033VNF</td><td>4FOLD (J0033VN Antibody)</td></tr><tr><td>J0033VNL</td><td>LOG10 (J0033VN Antibody)</td></tr><tr><td>M0019LLF</td><td>LOG10 4FOLD (M0019LN Antibody)</td></tr><tr><td>M0019LN</td><td>M0019LN Antibody</td></tr><tr><td>M0019LNF</td><td>4FOLD (M0019LN Antibody)</td></tr><tr><td>M0019LNL</td><td>LOG10 (M0019LN Antibody)</td></tr><tr><td>R0003MA</td><td>R0003MA Antibody</td></tr><tr><td>R0003MAF</td><td>4FOLD (R0003MA Antibody)</td></tr><tr><td>R0003MAL</td><td>LOG10 (R0003MA Antibody)</td></tr><tr><td>R0003MLF</td><td>LOG10 4FOLD (R0003MA Antibody)</td></tr></table></div>
     <div class="section level2">
     <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
     <p>None</p>
