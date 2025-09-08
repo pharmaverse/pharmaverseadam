@@ -1,4 +1,4 @@
-# pharmaverseadam (development version)
+# pharmaverseadam 1.2.0
 
 ## New features
 
@@ -14,7 +14,7 @@
 
   - `Cytel Inc.` was added to the `LICENSE.md`. (#116)
 
-  - Added more details to README "Documentation Process" section. (#103)
+  - Added more details to `README.md` "Documentation Process" section. (#103)
 
   - Improved reference page so that dataset labels are displayed under each dataset name. (#103)
 
@@ -74,7 +74,7 @@ The first stable version of `{pharmaverseadam}`!
 
 ## New Features
 
-  - ADPC, ADPPK and ADPP were updated to handle urine records. (#57)
+  - `ADPC`, `ADPPK` and `ADPP` were updated to handle urine records. (#57)
   
 ## Documentation
 
