@@ -8,8 +8,89 @@
 A data frame with 105 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
-\item{ DOMAIN }{Domain Abbreviation}
 \item{ USUBJID }{Unique Subject Identifier}
+\item{ SUBJID }{Subject Identifier for the Study}
+\item{ SITEID }{Study Site Identifier}
+\item{ COUNTRY }{Country}
+\item{ DOMAIN }{Domain Abbreviation}
+\item{ RFSTDTC }{Subject Reference Start Date/Time}
+\item{ RFENDTC }{Subject Reference End Date/Time}
+\item{ RFXSTDTC }{Date/Time of First Study Treatment}
+\item{ RFXENDTC }{Date/Time of Last Study Treatment}
+\item{ RFPENDTC }{Date/Time of End of Participation}
+\item{ SCRFDT }{Screen Failure Date}
+\item{ FRVDT }{Final Retrieval Visit Date}
+\item{ DTHDTC }{Date/Time of Death}
+\item{ DTHADY }{Relative Day of Death}
+\item{ DTHFL }{Subject Death Flag}
+\item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
+\item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
+\item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
+\item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+\item{ DTHDOM }{Domain for Date of Death Collection}
+\item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
+\item{ ASEQ }{Analysis Sequence Number}
+\item{ REGION1 }{Geographic Region 1}
+\item{ DMDTC }{Date/Time of Collection}
+\item{ DMDY }{Study Day of Collection}
+\item{ AGE }{Age}
+\item{ AGEU }{Age Units}
+\item{ AGEGR1 }{Pooled Age Group 1}
+\item{ SEX }{Sex}
+\item{ RACE }{Race}
+\item{ RACEGR1 }{Pooled Race Group 1}
+\item{ ETHNIC }{Ethnicity}
+\item{ SAFFL }{Safety Population Flag}
+\item{ ARM }{Description of Planned Arm}
+\item{ ARMCD }{Planned Arm Code}
+\item{ ACTARM }{Description of Actual Arm}
+\item{ ACTARMCD }{Actual Arm Code}
+\item{ TRTP }{Planned Treatment}
+\item{ TRTA }{Actual Treatment}
+\item{ TRT01P }{Planned Treatment for Period 01}
+\item{ TRT01A }{Actual Treatment for Period 01}
+\item{ TRTSDT }{Date of First Exposure to Treatment}
+\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+\item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+\item{ TRTEDT }{Date of Last Exposure to Treatment}
+\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+\item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+\item{ EOSSTT }{End of Study Status}
+\item{ EOSDT }{End of Study Date}
+\item{ RFICDTC }{Date/Time of Informed Consent}
+\item{ RANDDT }{Date of Randomization}
+\item{ LSTALVDT }{Date Last Known Alive}
+\item{ TRTDURD }{Total Treatment Duration (Days)}
+\item{ DTHDT }{Date of Death}
+\item{ DTHDTF }{Date of Death Imputation Flag}
+\item{ DTHCAUS }{Cause of Death}
+\item{ DTHCGR1 }{Cause of Death Reason 1}
+\item{ ADT }{Analysis Date}
+\item{ ADY }{Analysis Relative Day}
+\item{ AVISIT }{Analysis Visit}
+\item{ AVISITN }{Analysis Visit (N)}
+\item{ ATPT }{Analysis Timepoint}
+\item{ ATPTN }{Analysis Timepoint (N)}
+\item{ PARAM }{Parameter}
+\item{ PARAMCD }{Parameter Code}
+\item{ PARAMN }{Parameter (N)}
+\item{ AVAL }{Analysis Value}
+\item{ AVALCAT1 }{Analysis Value Category 1}
+\item{ AVALCA1N }{Analysis Value Category 1 (N)}
+\item{ BASE }{Baseline Value}
+\item{ BASETYPE }{Baseline Type}
+\item{ CHG }{Change from Baseline}
+\item{ PCHG }{Percent Change from Baseline}
+\item{ DTYPE }{Derivation Type}
+\item{ ANRIND }{Analysis Reference Range Indicator}
+\item{ BNRIND }{Baseline Reference Range Indicator}
+\item{ ANRLO }{Analysis Normal Range Lower Limit}
+\item{ ANRHI }{Analysis Normal Range Upper Limit}
+\item{ A1LO }{Analysis Range 1 Lower Limit}
+\item{ A1HI }{Analysis Range 1 Upper Limit}
+\item{ ABLFL }{Baseline Record Flag}
+\item{ ANL01FL }{Analysis Flag 01}
+\item{ ONTRTFL }{On Treatment Record Flag}
 \item{ VSSEQ }{Sequence Number}
 \item{ VSTESTCD }{Vital Signs Test Short Name}
 \item{ VSTEST }{Vital Signs Test Name}
@@ -31,87 +112,6 @@ A data frame with 105 columns:
 \item{ VSTPTNUM }{Planned Time Point Number}
 \item{ VSELTM }{Planned Elapsed Time from Time Point Ref}
 \item{ VSTPTREF }{Time Point Reference}
-\item{ TRTSDT }{Date of First Exposure to Treatment}
-\item{ TRTEDT }{Date of Last Exposure to Treatment}
-\item{ TRT01A }{Actual Treatment for Period 01}
-\item{ TRT01P }{Planned Treatment for Period 01}
-\item{ ADT }{Analysis Date}
-\item{ ADY }{Analysis Relative Day}
-\item{ PARAMCD }{Parameter Code}
-\item{ AVAL }{Analysis Value}
-\item{ ATPTN }{Analysis Timepoint (N)}
-\item{ ATPT }{Analysis Timepoint}
-\item{ AVISIT }{Analysis Visit}
-\item{ AVISITN }{Analysis Visit (N)}
-\item{ DTYPE }{Derivation Type}
-\item{ ONTRTFL }{On Treatment Record Flag}
-\item{ ANRLO }{Analysis Normal Range Lower Limit}
-\item{ ANRHI }{Analysis Normal Range Upper Limit}
-\item{ A1LO }{Analysis Range 1 Lower Limit}
-\item{ A1HI }{Analysis Range 1 Upper Limit}
-\item{ ANRIND }{Analysis Reference Range Indicator}
-\item{ BASETYPE }{Baseline Type}
-\item{ ABLFL }{Baseline Record Flag}
-\item{ BASE }{Baseline Value}
-\item{ BNRIND }{Baseline Reference Range Indicator}
-\item{ CHG }{Change from Baseline}
-\item{ PCHG }{Percent Change from Baseline}
-\item{ ANL01FL }{Analysis Flag 01}
-\item{ TRTP }{Planned Treatment}
-\item{ TRTA }{Actual Treatment}
-\item{ ASEQ }{Analysis Sequence Number}
-\item{ AVALCAT1 }{Analysis Value Category 1}
-\item{ AVALCA1N }{Analysis Value Category 1 (N)}
-\item{ PARAM }{Parameter}
-\item{ PARAMN }{Parameter (N)}
-\item{ SUBJID }{Subject Identifier for the Study}
-\item{ RFSTDTC }{Subject Reference Start Date/Time}
-\item{ RFENDTC }{Subject Reference End Date/Time}
-\item{ RFXSTDTC }{Date/Time of First Study Treatment}
-\item{ RFXENDTC }{Date/Time of Last Study Treatment}
-\item{ RFICDTC }{Date/Time of Informed Consent}
-\item{ RFPENDTC }{Date/Time of End of Participation}
-\item{ DTHDTC }{Date/Time of Death}
-\item{ DTHFL }{Subject Death Flag}
-\item{ SITEID }{Study Site Identifier}
-\item{ AGE }{Age}
-\item{ AGEU }{Age Units}
-\item{ SEX }{Sex}
-\item{ RACE }{Race}
-\item{ ETHNIC }{Ethnicity}
-\item{ ARMCD }{Planned Arm Code}
-\item{ ARM }{Description of Planned Arm}
-\item{ ACTARMCD }{Actual Arm Code}
-\item{ ACTARM }{Description of Actual Arm}
-\item{ COUNTRY }{Country}
-\item{ DMDTC }{Date/Time of Collection}
-\item{ DMDY }{Study Day of Collection}
-\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
-\item{ TRTSTMF }{Time of First Exposure Imput. Flag}
-\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
-\item{ TRTETMF }{Time of Last Exposure Imput. Flag}
-\item{ TRTDURD }{Total Treatment Duration (Days)}
-\item{ SCRFDT }{Screen Failure Date}
-\item{ EOSDT }{End of Study Date}
-\item{ EOSSTT }{End of Study Status}
-\item{ FRVDT }{Final Retrieval Visit Date}
-\item{ RANDDT }{Date of Randomization}
-\item{ DTHDT }{Date of Death}
-\item{ DTHDTF }{Date of Death Imputation Flag}
-\item{ DTHADY }{Relative Day of Death}
-\item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
-\item{ DTHCAUS }{Cause of Death}
-\item{ DTHDOM }{Domain for Date of Death Collection}
-\item{ DTHCGR1 }{Cause of Death Reason 1}
-\item{ LSTALVDT }{Date Last Known Alive}
-\item{ SAFFL }{Safety Population Flag}
-\item{ RACEGR1 }{Pooled Race Group 1}
-\item{ AGEGR1 }{Pooled Age Group 1}
-\item{ REGION1 }{Geographic Region 1}
-\item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
-\item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
-\item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
-\item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
 }
 }
 \source{

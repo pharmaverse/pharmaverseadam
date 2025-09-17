@@ -8,8 +8,25 @@
 A data frame with 43 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
-\item{ DOMAIN }{Domain Abbreviation}
 \item{ USUBJID }{Unique Subject Identifier}
+\item{ DOMAIN }{Domain Abbreviation}
+\item{ TRT01P }{Planned Treatment for Period 01}
+\item{ TRT01A }{Actual Treatment for Period 01}
+\item{ TRTSDT }{Date of First Exposure to Treatment}
+\item{ TRTEDT }{Date of Last Exposure to Treatment}
+\item{ ADT }{Analysis Date}
+\item{ ADY }{Analysis Relative Day}
+\item{ AVISIT }{Analysis Visit}
+\item{ AVISITN }{Analysis Visit (N)}
+\item{ PARAM }{Parameter}
+\item{ PARAMCD }{Parameter Code}
+\item{ PARAMN }{Parameter (N)}
+\item{ PARCAT1 }{Parameter Category 1}
+\item{ PARCAT2 }{Parameter Category 2}
+\item{ AVAL }{Analysis Value}
+\item{ AVALC }{Analysis Value (C)}
+\item{ ANRLO }{Analysis Normal Range Lower Limit}
+\item{ ANRHI }{Analysis Normal Range Upper Limit}
 \item{ LBSEQ }{Sequence Number}
 \item{ LBTESTCD }{Lab Test or Examination Short Name}
 \item{ LBTEST }{Lab Test or Examination Name}
@@ -31,23 +48,6 @@ A data frame with 43 columns:
 \item{ VISITDY }{Planned Study Day of Visit}
 \item{ LBDTC }{Date/Time of Specimen Collection}
 \item{ LBDY }{Study Day of Specimen Collection}
-\item{ TRTSDT }{Date of First Exposure to Treatment}
-\item{ TRTEDT }{Date of Last Exposure to Treatment}
-\item{ TRT01A }{Actual Treatment for Period 01}
-\item{ TRT01P }{Planned Treatment for Period 01}
-\item{ PARAMCD }{Parameter Code}
-\item{ PARAM }{Parameter}
-\item{ PARAMN }{Parameter (N)}
-\item{ ADT }{Analysis Date}
-\item{ ADY }{Analysis Relative Day}
-\item{ AVISIT }{Analysis Visit}
-\item{ AVISITN }{Analysis Visit (N)}
-\item{ PARCAT1 }{Parameter Category 1}
-\item{ AVAL }{Analysis Value}
-\item{ AVALC }{Analysis Value (C)}
-\item{ ANRLO }{Analysis Normal Range Lower Limit}
-\item{ ANRHI }{Analysis Normal Range Upper Limit}
-\item{ PARCAT2 }{Parameter Category 2}
 \item{ BMI }{Body Mass Index (kg/m2)}
 \item{ WSTCIR }{Waist Circumference (cm)}
 }

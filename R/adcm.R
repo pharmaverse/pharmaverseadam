@@ -8,100 +8,100 @@
 #' @format A data frame with 95 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
-#'     \item{ DOMAIN }{Domain Abbreviation}
 #'     \item{ USUBJID }{Unique Subject Identifier}
-#'     \item{ CMSEQ }{Sequence Number}
-#'     \item{ CMSPID }{Sponsor-Defined Identifier}
-#'     \item{ CMTRT }{Reported Name of Drug, Med, or Therapy}
-#'     \item{ CMDECOD }{Standardized Medication Name}
-#'     \item{ CMINDC }{Indication}
-#'     \item{ CMCLAS }{Medication Class}
-#'     \item{ CMDOSE }{Dose per Administration}
-#'     \item{ CMDOSU }{Dose Units}
-#'     \item{ CMDOSFRQ }{Dosing Frequency per Interval}
-#'     \item{ CMROUTE }{Route of Administration}
-#'     \item{ VISITNUM }{Visit Number}
-#'     \item{ VISIT }{Visit Name}
-#'     \item{ VISITDY }{Planned Study Day of Visit}
-#'     \item{ CMDTC }{Date/Time of Collection}
-#'     \item{ CMSTDTC }{Start Date/Time of Medication}
-#'     \item{ CMENDTC }{End Date/Time of Medication}
-#'     \item{ CMSTDY }{Study Day of Start of Medication}
-#'     \item{ CMENDY }{Study Day of End of Medication}
-#'     \item{ CMENRTPT }{End Relative to Reference Time Point}
-#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
-#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
-#'     \item{ DTHDT }{Date of Death}
-#'     \item{ EOSDT }{End of Study Date}
-#'     \item{ TRT01P }{Planned Treatment for Period 01}
-#'     \item{ TRT01A }{Actual Treatment for Period 01}
-#'     \item{ ASTDTM }{Analysis Start Date/Time}
-#'     \item{ ASTDTF }{Analysis Start Date Imputation Flag}
-#'     \item{ ASTTMF }{Analysis Start Time Imputation Flag}
-#'     \item{ AENDTM }{Analysis End Date/Time}
-#'     \item{ AENDTF }{Analysis End Date Imputation Flag}
-#'     \item{ AENTMF }{Analysis End Time Imputation Flag}
-#'     \item{ ASTDT }{Analysis Start Date}
-#'     \item{ AENDT }{Analysis End Date}
-#'     \item{ ASTDY }{Analysis Start Relative Day}
-#'     \item{ AENDY }{Analysis End Relative Day}
-#'     \item{ ADURN }{Analysis Duration (N)}
-#'     \item{ ADURU }{Analysis Duration Units}
-#'     \item{ ONTRTFL }{On Treatment Record Flag}
-#'     \item{ PREFL }{Pre-treatment Flag}
-#'     \item{ FUPFL }{Follow-up Flag}
-#'     \item{ ANL01FL }{Analysis Flag 01}
-#'     \item{ AOCCPFL }{1st Occurrence of Preferred Term Flag}
-#'     \item{ APHASE }{Phase}
-#'     \item{ APHASEN }{Description of Phase N}
-#'     \item{ TRTP }{Planned Treatment}
-#'     \item{ TRTA }{Actual Treatment}
 #'     \item{ SUBJID }{Subject Identifier for the Study}
+#'     \item{ SITEID }{Study Site Identifier}
+#'     \item{ COUNTRY }{Country}
+#'     \item{ DOMAIN }{Domain Abbreviation}
 #'     \item{ RFSTDTC }{Subject Reference Start Date/Time}
 #'     \item{ RFENDTC }{Subject Reference End Date/Time}
 #'     \item{ RFXSTDTC }{Date/Time of First Study Treatment}
 #'     \item{ RFXENDTC }{Date/Time of Last Study Treatment}
-#'     \item{ RFICDTC }{Date/Time of Informed Consent}
 #'     \item{ RFPENDTC }{Date/Time of End of Participation}
-#'     \item{ DTHDTC }{Date/Time of Death}
-#'     \item{ DTHFL }{Subject Death Flag}
-#'     \item{ SITEID }{Study Site Identifier}
-#'     \item{ AGE }{Age}
-#'     \item{ AGEU }{Age Units}
-#'     \item{ SEX }{Sex}
-#'     \item{ RACE }{Race}
-#'     \item{ ETHNIC }{Ethnicity}
-#'     \item{ ARMCD }{Planned Arm Code}
-#'     \item{ ARM }{Description of Planned Arm}
-#'     \item{ ACTARMCD }{Actual Arm Code}
-#'     \item{ ACTARM }{Description of Actual Arm}
-#'     \item{ COUNTRY }{Country}
-#'     \item{ DMDTC }{Date/Time of Collection}
-#'     \item{ DMDY }{Study Day of Collection}
-#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
-#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
-#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
-#'     \item{ TRTETMF }{Treatment End Datetime Imput Flag}
-#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
 #'     \item{ SCRFDT }{Screen Failure Date}
-#'     \item{ EOSSTT }{End of Study Status}
 #'     \item{ FRVDT }{Final Retrieval Visit Date}
-#'     \item{ RANDDT }{Date of Randomization}
-#'     \item{ DTHDTF }{Date of Death Imputation Flag}
+#'     \item{ DTHDTC }{Date/Time of Death}
 #'     \item{ DTHADY }{Relative Day of Death}
+#'     \item{ DTHFL }{Subject Death Flag}
 #'     \item{ LDDTHELD }{Elapsed Days from Last Dose to Death}
-#'     \item{ DTHCAUS }{Cause of Death}
-#'     \item{ DTHDOM }{Domain for Date of Death Collection}
-#'     \item{ DTHCGR1 }{Cause of Death Reason 1}
-#'     \item{ LSTALVDT }{Date Last Known Alive}
-#'     \item{ SAFFL }{Safety Population Flag}
-#'     \item{ RACEGR1 }{Pooled Race Group 1}
-#'     \item{ AGEGR1 }{Pooled Age Group 1}
-#'     \item{ REGION1 }{Geographic Region 1}
 #'     \item{ LDDTHGR1 }{Last Dose to Death - Days Elapsed Grp 1}
 #'     \item{ DTH30FL }{Death Within 30 Days of Last Trt Flag}
 #'     \item{ DTHA30FL }{Death After 30 Days from Last Trt Flag}
+#'     \item{ DTHDOM }{Domain for Date of Death Collection}
 #'     \item{ DTHB30FL }{Death Within 30 Days of First Trt Flag}
+#'     \item{ REGION1 }{Geographic Region 1}
+#'     \item{ DMDTC }{Date/Time of Collection}
+#'     \item{ DMDY }{Study Day of Collection}
+#'     \item{ AGE }{Age}
+#'     \item{ AGEU }{Age Units}
+#'     \item{ AGEGR1 }{Pooled Age Group 1}
+#'     \item{ SEX }{Sex}
+#'     \item{ RACE }{Race}
+#'     \item{ RACEGR1 }{Pooled Race Group 1}
+#'     \item{ ETHNIC }{Ethnicity}
+#'     \item{ SAFFL }{Safety Population Flag}
+#'     \item{ ARM }{Description of Planned Arm}
+#'     \item{ ARMCD }{Planned Arm Code}
+#'     \item{ ACTARM }{Description of Actual Arm}
+#'     \item{ ACTARMCD }{Actual Arm Code}
+#'     \item{ TRTP }{Planned Treatment}
+#'     \item{ TRTA }{Actual Treatment}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+#'     \item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+#'     \item{ TRTETMF }{Treatment End Datetime Imput Flag}
+#'     \item{ APHASE }{Phase}
+#'     \item{ APHASEN }{Description of Phase N}
+#'     \item{ EOSSTT }{End of Study Status}
+#'     \item{ EOSDT }{End of Study Date}
+#'     \item{ RFICDTC }{Date/Time of Informed Consent}
+#'     \item{ RANDDT }{Date of Randomization}
+#'     \item{ LSTALVDT }{Date Last Known Alive}
+#'     \item{ TRTDURD }{Total Treatment Duration (Days)}
+#'     \item{ DTHDT }{Date of Death}
+#'     \item{ DTHDTF }{Date of Death Imputation Flag}
+#'     \item{ DTHCAUS }{Cause of Death}
+#'     \item{ DTHCGR1 }{Cause of Death Reason 1}
+#'     \item{ CMSEQ }{Sequence Number}
+#'     \item{ CMDECOD }{Standardized Medication Name}
+#'     \item{ CMTRT }{Reported Name of Drug, Med, or Therapy}
+#'     \item{ CMCLAS }{Medication Class}
+#'     \item{ CMSTDTC }{Start Date/Time of Medication}
+#'     \item{ ASTDT }{Analysis Start Date}
+#'     \item{ ASTDTM }{Analysis Start Date/Time}
+#'     \item{ ASTDTF }{Analysis Start Date Imputation Flag}
+#'     \item{ ASTTMF }{Analysis Start Time Imputation Flag}
+#'     \item{ CMENDTC }{End Date/Time of Medication}
+#'     \item{ AENDT }{Analysis End Date}
+#'     \item{ AENDTM }{Analysis End Date/Time}
+#'     \item{ AENDTF }{Analysis End Date Imputation Flag}
+#'     \item{ AENTMF }{Analysis End Time Imputation Flag}
+#'     \item{ ASTDY }{Analysis Start Relative Day}
+#'     \item{ CMSTDY }{Study Day of Start of Medication}
+#'     \item{ AENDY }{Analysis End Relative Day}
+#'     \item{ CMENDY }{Study Day of End of Medication}
+#'     \item{ ADURN }{Analysis Duration (N)}
+#'     \item{ ADURU }{Analysis Duration Units}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
+#'     \item{ PREFL }{Pre-treatment Flag}
+#'     \item{ FUPFL }{Follow-up Flag}
+#'     \item{ AOCCPFL }{1st Occurrence of Preferred Term Flag}
+#'     \item{ CMINDC }{Indication}
+#'     \item{ CMDOSE }{Dose per Administration}
+#'     \item{ CMDOSU }{Dose Units}
+#'     \item{ CMDOSFRQ }{Dosing Frequency per Interval}
+#'     \item{ CMROUTE }{Route of Administration}
+#'     \item{ CMSPID }{Sponsor-Defined Identifier}
+#'     \item{ CMENRTPT }{End Relative to Reference Time Point}
+#'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISIT }{Visit Name}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
+#'     \item{ CMDTC }{Date/Time of Collection}
 #'   }
 #'
 #' @source Generated from admiral package (template ad_adcm.R).

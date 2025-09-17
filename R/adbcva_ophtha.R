@@ -8,8 +8,51 @@
 #' @format A data frame with 71 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
-#'     \item{ DOMAIN }{Domain Abbreviation}
 #'     \item{ USUBJID }{Unique Subject Identifier}
+#'     \item{ DOMAIN }{Domain Abbreviation}
+#'     \item{ TRT01P }{Planned Treatment for Period 01}
+#'     \item{ TRT01A }{Actual Treatment for Period 01}
+#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
+#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
+#'     \item{ ADT }{Analysis Date}
+#'     \item{ ADY }{Analysis Relative Day}
+#'     \item{ AVISIT }{Analysis Visit}
+#'     \item{ AVISITN }{Analysis Visit (N)}
+#'     \item{ ATPT }{Analysis Timepoint}
+#'     \item{ ATPTN }{Analysis Timepoint (N)}
+#'     \item{ PARAM }{Parameter}
+#'     \item{ PARAMCD }{Parameter Code}
+#'     \item{ AVAL }{Analysis Value}
+#'     \item{ AVALC }{Analysis Value (C)}
+#'     \item{ AVALU }{Analysis Value Unit}
+#'     \item{ AVALCAT1 }{Analysis Value Category 1}
+#'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}
+#'     \item{ BASE }{Baseline Value}
+#'     \item{ BASEC }{Baseline Value (C)}
+#'     \item{ BASETYPE }{Baseline Type}
+#'     \item{ CHG }{Change from Baseline}
+#'     \item{ PCHG }{Percent Change from Baseline}
+#'     \item{ CRIT1 }{Analysis Criterion 1}
+#'     \item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
+#'     \item{ CRIT2 }{Analysis Criterion 2}
+#'     \item{ CRIT2FL }{Criterion 2 Evaluation Result Flag}
+#'     \item{ CRIT3 }{Analysis Criterion 3}
+#'     \item{ CRIT3FL }{Criterion 3 Evaluation Result Flag}
+#'     \item{ CRIT4 }{Analysis Criterion 4}
+#'     \item{ CRIT4FL }{Criterion 4 Evaluation Result Flag}
+#'     \item{ CRIT5 }{Analysis Criterion 5}
+#'     \item{ CRIT5FL }{Criterion 5 Evaluation Result Flag}
+#'     \item{ CRIT6 }{Analysis Criterion 6}
+#'     \item{ CRIT6FL }{Criterion 6 Evaluation Result Flag}
+#'     \item{ CRIT7 }{Analysis Criterion 7}
+#'     \item{ CRIT7FL }{Criterion 7 Evaluation Result Flag}
+#'     \item{ CRIT8 }{Analysis Criterion 8}
+#'     \item{ CRIT8FL }{Criterion 8 Evaluation Result Flag}
+#'     \item{ DTYPE }{Derivation Type}
+#'     \item{ ABLFL }{Baseline Record Flag}
+#'     \item{ ANL01FL }{Analysis Flag 01}
+#'     \item{ ANL02FL }{Analysis Flag 02}
+#'     \item{ ONTRTFL }{On Treatment Record Flag}
 #'     \item{ OESEQ }{Sequence Number}
 #'     \item{ OECAT }{Category for Ophthalmic Test or Exam}
 #'     \item{ OESCAT }{Subcategory for Ophthalmic Test or Exam}
@@ -32,52 +75,9 @@
 #'     \item{ OESTAT }{Completion Status}
 #'     \item{ OETPT }{Planned Time Point Name}
 #'     \item{ OETPTNUM }{Planned Time Point Number}
-#'     \item{ TRTSDT }{Date of First Exposure to Treatment}
-#'     \item{ TRTEDT }{Date of Last Exposure to Treatment}
-#'     \item{ TRT01A }{Actual Treatment for Period 01}
-#'     \item{ TRT01P }{Planned Treatment for Period 01}
 #'     \item{ STUDYEYE }{Study Eye Location}
-#'     \item{ AVAL }{Analysis Value}
-#'     \item{ AVALU }{Analysis Value Unit}
-#'     \item{ DTYPE }{Derivation Type}
 #'     \item{ AFEYE }{Affected Eye}
-#'     \item{ PARAM }{Parameter}
-#'     \item{ PARAMCD }{Parameter Code}
-#'     \item{ AVALC }{Analysis Value (C)}
-#'     \item{ ADT }{Analysis Date}
-#'     \item{ ADY }{Analysis Relative Day}
-#'     \item{ ATPTN }{Analysis Timepoint (N)}
-#'     \item{ ATPT }{Analysis Timepoint}
-#'     \item{ AVISIT }{Analysis Visit}
-#'     \item{ AVISITN }{Analysis Visit (N)}
-#'     \item{ BASETYPE }{Baseline Type}
-#'     \item{ ONTRTFL }{On Treatment Record Flag}
-#'     \item{ ABLFL }{Baseline Record Flag}
-#'     \item{ ANL01FL }{Analysis Flag 01}
-#'     \item{ ANL02FL }{Analysis Flag 02}
 #'     \item{ WORS01FL }{Worst Post Baseline Obs}
-#'     \item{ BASE }{Baseline Value}
-#'     \item{ BASEC }{Baseline Value (C)}
-#'     \item{ CHG }{Change from Baseline}
-#'     \item{ PCHG }{Percent Change from Baseline}
-#'     \item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
-#'     \item{ CRIT1 }{Analysis Criterion 1}
-#'     \item{ CRIT2FL }{Criterion 2 Evaluation Result Flag}
-#'     \item{ CRIT2 }{Analysis Criterion 2}
-#'     \item{ CRIT3FL }{Criterion 3 Evaluation Result Flag}
-#'     \item{ CRIT3 }{Analysis Criterion 3}
-#'     \item{ CRIT4FL }{Criterion 4 Evaluation Result Flag}
-#'     \item{ CRIT4 }{Analysis Criterion 4}
-#'     \item{ CRIT5FL }{Criterion 5 Evaluation Result Flag}
-#'     \item{ CRIT5 }{Analysis Criterion 5}
-#'     \item{ CRIT6FL }{Criterion 6 Evaluation Result Flag}
-#'     \item{ CRIT6 }{Analysis Criterion 6}
-#'     \item{ CRIT7FL }{Criterion 7 Evaluation Result Flag}
-#'     \item{ CRIT7 }{Analysis Criterion 7}
-#'     \item{ CRIT8FL }{Criterion 8 Evaluation Result Flag}
-#'     \item{ CRIT8 }{Analysis Criterion 8}
-#'     \item{ AVALCA1N }{Analysis Value Category 1 (N)}
-#'     \item{ AVALCAT1 }{Analysis Value Category 1}
 #'   }
 #' @details Contains a set of 4 unique Parameter Codes and Parameters: \tabular{ll}{
 #'   \strong{PARAMCD} \tab \strong{PARAM} \cr
