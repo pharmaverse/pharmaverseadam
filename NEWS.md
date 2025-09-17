@@ -1,5 +1,9 @@
 # pharmaverseadam (development version)
 
+## Documentation
+
+  - The dataset variables on reference page are ordered and grouped as per the ADaM IG standards. (#128)
+
 # pharmaverseadam 1.2.0
 
 ## New features
