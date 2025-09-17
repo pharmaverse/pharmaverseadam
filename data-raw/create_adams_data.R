@@ -124,7 +124,7 @@ write_labels <- function(data, dataset_name, suffix) {
   return(data)
 }
 
-order_data <- function(data, dataset_name, suffix){
+order_data <- function(data, dataset_name, suffix) {
   print(dataset_name)
   print(suffix)
   if (suffix != "") {
