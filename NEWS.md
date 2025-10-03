@@ -2,7 +2,7 @@
 
 ## Documentation
 
-  - The dataset variables on reference page are ordered and grouped as per the ADaM IG standards. (#128)
+  - The dataset variables and specifications are ordered and grouped according to ADaM IG standards, and the reference page reflects this updated structure. (#128)
 
 # pharmaverseadam 1.2.0
 
