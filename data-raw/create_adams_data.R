@@ -29,7 +29,7 @@ update_pkg <- TRUE
 ignore_templates <- list(
   "admiralonco" = c("ad_adrs_basic.R"),
   "admiralmetabolic" = c("ad_adsl_metabolic.R")
-  )
+)
 
 save_rda <- function(data, file_path, new_name) {
   if (missing(new_name)) {
