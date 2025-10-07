@@ -28,9 +28,8 @@ library(stringr)
 update_pkg <- TRUE
 ignore_templates <- list(
   "admiralonco" = c("ad_adrs_basic.R"),
-  "admiralmetabolic" = c("ad_adsl_metabolic.R"),
-  "admiralvaccine" = c("ad_adsl.R") # This is ignored temporarily, once the adsl_vaccine template is updated it will be removed
-)
+  "admiralmetabolic" = c("ad_adsl_metabolic.R")
+  )
 
 save_rda <- function(data, file_path, new_name) {
   if (missing(new_name)) {
