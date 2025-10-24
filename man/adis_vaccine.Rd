@@ -5,11 +5,79 @@
 \alias{adis_vaccine}
 \title{Immunogenicity Specimen Assessments}
 \format{
-A data frame with 104 columns:
+A data frame with 103 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
-\item{ DOMAIN }{Domain Abbreviation}
 \item{ USUBJID }{Unique Subject Identifier}
+\item{ SUBJID }{Subject Identifier for the Study}
+\item{ SITEID }{Study Site Identifier}
+\item{ COUNTRY }{Country}
+\item{ DOMAIN }{Domain Abbreviation}
+\item{ RFSTDTC }{Subject Reference Start Date/Time}
+\item{ RFENDTC }{Subject Reference End Date/Time}
+\item{ RFXSTDTC }{Date/Time of First Study Treatment}
+\item{ RFXENDTC }{Date/Time of Last Study Treatment}
+\item{ RFPENDTC }{Date/Time of End of Participation}
+\item{ DTHDTC }{Date/Time of Death}
+\item{ DTHFL }{Subject Death Flag}
+\item{ REGION1 }{Geographic Region 1}
+\item{ BRTHDTC }{Date/Time of Birth}
+\item{ DMDTC }{Date/Time of Collection}
+\item{ DMDY }{Study Day of Collection}
+\item{ AGE }{Age}
+\item{ AGEU }{Age Units}
+\item{ AGEGR1 }{Pooled Age Group 1}
+\item{ SEX }{Sex}
+\item{ RACE }{Race}
+\item{ RACEGR1 }{Pooled Race Group 1}
+\item{ ETHNIC }{Ethnicity}
+\item{ SAFFL }{Safety Population Flag}
+\item{ PPROTFL }{Per-Protocol Population Flag}
+\item{ ARM }{Description of Planned Arm}
+\item{ ARMCD }{Planned Arm Code}
+\item{ ACTARM }{Description of Actual Arm}
+\item{ ACTARMCD }{Actual Arm Code}
+\item{ TRTP }{Planned Treatment}
+\item{ TRTA }{Actual Treatment}
+\item{ TRT01P }{Planned Treatment for Period 01}
+\item{ TRT01A }{Actual Treatment for Period 01}
+\item{ TRT02P }{Planned Treatment for Period 02}
+\item{ TRT02A }{Actual Treatment for Period 02}
+\item{ TRTSDT }{Date of First Exposure to Treatment}
+\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+\item{ TRTEDT }{Date of Last Exposure to Treatment}
+\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+\item{ AP01SDT }{Period 01 Start Date}
+\item{ AP01EDT }{Period 01 End Date}
+\item{ AP02SDT }{Period 02 Start Date}
+\item{ AP02EDT }{Period 02 End Date}
+\item{ APERSDT }{Period Start Date}
+\item{ APEREDT }{Period End Date}
+\item{ RFICDTC }{Date/Time of Informed Consent}
+\item{ ADT }{Analysis Date}
+\item{ ADY }{Analysis Relative Day}
+\item{ AVISIT }{Analysis Visit}
+\item{ AVISITN }{Analysis Visit (N)}
+\item{ ATPT }{Analysis Timepoint}
+\item{ ATPTN }{Analysis Timepoint (N)}
+\item{ ATPTREF }{Analysis Timepoint Reference}
+\item{ APERIOD }{Period}
+\item{ PARAM }{Parameter}
+\item{ PARAMCD }{Parameter Code}
+\item{ PARAMN }{Parameter (N)}
+\item{ PARCAT1 }{Parameter Category 1}
+\item{ AVAL }{Analysis Value}
+\item{ AVALU }{Analysis Value Unit}
+\item{ BASE }{Baseline Value}
+\item{ BASECAT1 }{Baseline Category 1}
+\item{ BASETYPE }{Baseline Type}
+\item{ CHG }{Change from Baseline}
+\item{ R2BASE }{Ratio to Baseline}
+\item{ CRIT1 }{Analysis Criterion 1}
+\item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
+\item{ CRIT1FN }{Criterion 1 Evaluation Result Flag (N)}
+\item{ DTYPE }{Derivation Type}
+\item{ ABLFL }{Baseline Record Flag}
 \item{ ISSEQ }{Sequence Number}
 \item{ ISTESTCD }{Immunogenicity Test/Exam Short Name}
 \item{ ISTEST }{Immunogenicity Test or Examination Name}
@@ -31,86 +99,17 @@ A data frame with 104 columns:
 \item{ ISDTC }{Date/Time of Collection}
 \item{ ISDY }{Study Day of Visit/Collection/Exam}
 \item{ ISULOQ }{Upper Limit of Quantitation}
-\item{ IDVARVAL }{Identifying Variable Value}
 \item{ LOD }{Limit of Detection}
-\item{ AVISITN }{Analysis Visit (N)}
-\item{ AVISIT }{Analysis Visit}
-\item{ ATPTN }{Analysis Timepoint (N)}
-\item{ ATPT }{Analysis Timepoint}
-\item{ ATPTREF }{Analysis Timepoint Reference}
-\item{ ADT }{Analysis Date}
-\item{ RFSTDTC }{Subject Reference Start Date/Time}
-\item{ PPROTFL }{Per-Protocol Population Flag}
-\item{ ADY }{Analysis Relative Day}
 \item{ DERIVED }{Derivation Method}
-\item{ PARAMCD }{Parameter Code}
-\item{ PARAM }{Parameter}
-\item{ PARAMN }{Parameter (N)}
-\item{ PARCAT1 }{Parameter Category 1}
 \item{ CUTOFF02 }{First Cutoff Value}
 \item{ CUTOFF03 }{Second Cutoff Value}
-\item{ AVAL }{Analysis Value}
-\item{ AVALU }{Analysis Value Unit}
 \item{ SERCAT1 }{Pre-vaccination seropositivity status}
 \item{ SERCAT1N }{Pre-vaccination sero status (n)}
-\item{ DTYPE }{Derivation Type}
-\item{ ABLFL }{Baseline Record Flag}
-\item{ BASE }{Baseline Value}
-\item{ BASETYPE }{Baseline Type}
-\item{ BASECAT1 }{Baseline Category 1}
-\item{ CHG }{Change from Baseline}
-\item{ R2BASE }{Ratio to Baseline}
-\item{ CRIT1FL }{Criterion 1 Evaluation Result Flag}
-\item{ CRIT1 }{Analysis Criterion 1}
-\item{ CRIT1FN }{Criterion 1 Evaluation Result Flag (N)}
-\item{ APERIOD }{Period}
-\item{ APERSDT }{Period Start Date}
-\item{ APEREDT }{Period End Date}
-\item{ TRTA }{Actual Treatment}
-\item{ TRTP }{Planned Treatment}
 \item{ PPSRFL }{Per-Protocol Record-Level Flag}
-\item{ SUBJID }{Subject Identifier for the Study}
-\item{ RFENDTC }{Subject Reference End Date/Time}
-\item{ RFXSTDTC }{Date/Time of First Study Treatment}
-\item{ RFXENDTC }{Date/Time of Last Study Treatment}
-\item{ RFICDTC }{Date/Time of Informed Consent}
-\item{ RFPENDTC }{Date/Time of End of Participation}
-\item{ DTHDTC }{Date/Time of Death}
-\item{ DTHFL }{Subject Death Flag}
-\item{ SITEID }{Study Site Identifier}
 \item{ INVID }{Investigator Identifier}
 \item{ INVNAM }{Investigator Name}
-\item{ BRTHDTC }{Date/Time of Birth}
-\item{ AGE }{Age}
-\item{ AGEU }{Age Units}
-\item{ SEX }{Sex}
-\item{ RACE }{Race}
-\item{ ETHNIC }{Ethnicity}
-\item{ ARMCD }{Planned Arm Code}
-\item{ ARM }{Description of Planned Arm}
-\item{ ACTARMCD }{Actual Arm Code}
-\item{ ACTARM }{Description of Actual Arm}
-\item{ COUNTRY }{Country}
-\item{ DMDTC }{Date/Time of Collection}
-\item{ DMDY }{Study Day of Collection}
-\item{ TRT01P }{Planned Treatment for Period 01}
-\item{ TRT02P }{Planned Treatment for Period 02}
-\item{ TRT01A }{Actual Treatment for Period 01}
-\item{ TRT02A }{Actual Treatment for Period 02}
-\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
-\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
-\item{ TRTSDT }{Date of First Exposure to Treatment}
-\item{ TRTEDT }{Date of Last Exposure to Treatment}
-\item{ SAFFL }{Safety Population Flag}
-\item{ RACEGR1 }{Pooled Race Group 1}
-\item{ AGEGR1 }{Pooled Age Group 1}
-\item{ REGION1 }{Geographic Region 1}
 \item{ VAX01DT }{Vaccination Date 01}
 \item{ VAX02DT }{Vaccination Date 02}
-\item{ AP01SDT }{Period 01 Start Date}
-\item{ AP01EDT }{Period 01 End Date}
-\item{ AP02SDT }{Period 02 Start Date}
-\item{ AP02EDT }{Period 02 End Date}
 }
 }
 \source{

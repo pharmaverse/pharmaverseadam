@@ -8,8 +8,60 @@
 A data frame with 80 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
-\item{ DOMAIN }{Domain Abbreviation}
 \item{ USUBJID }{Unique Subject Identifier}
+\item{ SUBJID }{Subject Identifier for the Study}
+\item{ SITEID }{Study Site Identifier}
+\item{ COUNTRY }{Country}
+\item{ DOMAIN }{Domain Abbreviation}
+\item{ RFSTDTC }{Subject Reference Start Date/Time}
+\item{ RFENDTC }{Subject Reference End Date/Time}
+\item{ RFXSTDTC }{Date/Time of First Study Treatment}
+\item{ RFXENDTC }{Date/Time of Last Study Treatment}
+\item{ RFPENDTC }{Date/Time of End of Participation}
+\item{ DTHDTC }{Date/Time of Death}
+\item{ DTHFL }{Subject Death Flag}
+\item{ ASEQ }{Analysis Sequence Number}
+\item{ BRTHDTC }{Date/Time of Birth (Character)}
+\item{ BRTHDT }{Date/Time of Birth}
+\item{ DMDTC }{Date/Time of Collection}
+\item{ DMDY }{Study Day of Collection}
+\item{ AGE }{Age}
+\item{ AGEU }{Age Units}
+\item{ SEX }{Sex}
+\item{ RACE }{Race}
+\item{ ETHNIC }{Ethnicity}
+\item{ ARM }{Description of Planned Arm}
+\item{ ARMCD }{Planned Arm Code}
+\item{ ACTARM }{Description of Actual Arm}
+\item{ ACTARMCD }{Actual Arm Code}
+\item{ TRT01P }{Planned Treatment for Period 01}
+\item{ TRT01A }{Actual Treatment for Period 01}
+\item{ TRTSDT }{Date of First Exposure to Treatment}
+\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
+\item{ TRTSTMF }{Time of First Exposure Imput. Flag}
+\item{ TRTEDT }{Date of Last Exposure to Treatment}
+\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
+\item{ TRTETMF }{Time of Last Exposure Imput. Flag}
+\item{ RFICDTC }{Date/Time of Informed Consent}
+\item{ TRTDURD }{Total Treatment Duration (Days)}
+\item{ ADT }{Analysis Date}
+\item{ ADY }{Analysis Relative Day}
+\item{ AVISIT }{Analysis Visit}
+\item{ AVISITN }{Analysis Visit (N)}
+\item{ ATPT }{Analysis Timepoint}
+\item{ ATPTN }{Analysis Timepoint (N)}
+\item{ PARAM }{Parameter}
+\item{ PARAMCD }{Parameter Code}
+\item{ PARAMN }{Parameter (N)}
+\item{ AVAL }{Analysis Value}
+\item{ BASE }{Baseline Value}
+\item{ CHG }{Change from Baseline}
+\item{ PCHG }{Percent Change from Baseline}
+\item{ ABLFL }{Baseline Record Flag}
+\item{ ANL01FL }{Analysis Flag 01}
+\item{ ONTRTFL }{On Treatment Record Flag}
+\item{ EPOCH }{Epoch}
+\item{ VSEVAL }{Evaluator}
 \item{ VSSEQ }{Sequence Number}
 \item{ VSTESTCD }{Vital Signs Test Short Name}
 \item{ VSTEST }{Vital Signs Test Name}
@@ -31,62 +83,10 @@ A data frame with 80 columns:
 \item{ VSTPTNUM }{Planned Time Point Number}
 \item{ VSELTM }{Planned Elapsed Time from Time Point Ref}
 \item{ VSTPTREF }{Time Point Reference}
-\item{ VSEVAL }{Evaluator}
-\item{ EPOCH }{Epoch}
-\item{ SEX }{Sex}
-\item{ BRTHDTC }{Date/Time of Birth (Character)}
-\item{ TRTSDT }{Date of First Exposure to Treatment}
-\item{ TRTEDT }{Date of Last Exposure to Treatment}
-\item{ TRT01A }{Actual Treatment for Period 01}
-\item{ TRT01P }{Planned Treatment for Period 01}
-\item{ BRTHDT }{Date/Time of Birth}
-\item{ ADT }{Analysis Date}
-\item{ ADY }{Analysis Relative Day}
 \item{ AAGECUR }{Current Analysis Age (Days)}
 \item{ AAGECURU }{Current Analysis Age Units}
-\item{ PARAMCD }{Parameter Code}
-\item{ AVAL }{Analysis Value}
-\item{ ATPTN }{Analysis Timepoint (N)}
-\item{ ATPT }{Analysis Timepoint}
-\item{ AVISIT }{Analysis Visit}
-\item{ AVISITN }{Analysis Visit (N)}
 \item{ HGTTMP }{Temporary Height at Timepoint}
 \item{ HGTTMPU }{Temporary Height at Timepoint Units}
-\item{ PARAM }{Parameter}
-\item{ PARAMN }{Parameter (N)}
-\item{ ABLFL }{Baseline Record Flag}
-\item{ BASE }{Baseline Value}
-\item{ CHG }{Change from Baseline}
-\item{ PCHG }{Percent Change from Baseline}
-\item{ ONTRTFL }{On Treatment Record Flag}
-\item{ ANL01FL }{Analysis Flag 01}
-\item{ SUBJID }{Subject Identifier for the Study}
-\item{ RFSTDTC }{Subject Reference Start Date/Time}
-\item{ RFENDTC }{Subject Reference End Date/Time}
-\item{ RFXSTDTC }{Date/Time of First Study Treatment}
-\item{ RFXENDTC }{Date/Time of Last Study Treatment}
-\item{ RFICDTC }{Date/Time of Informed Consent}
-\item{ RFPENDTC }{Date/Time of End of Participation}
-\item{ DTHDTC }{Date/Time of Death}
-\item{ DTHFL }{Subject Death Flag}
-\item{ SITEID }{Study Site Identifier}
-\item{ AGE }{Age}
-\item{ AGEU }{Age Units}
-\item{ RACE }{Race}
-\item{ ETHNIC }{Ethnicity}
-\item{ ARMCD }{Planned Arm Code}
-\item{ ARM }{Description of Planned Arm}
-\item{ ACTARMCD }{Actual Arm Code}
-\item{ ACTARM }{Description of Actual Arm}
-\item{ COUNTRY }{Country}
-\item{ DMDTC }{Date/Time of Collection}
-\item{ DMDY }{Study Day of Collection}
-\item{ TRTSDTM }{Datetime of First Exposure to Treatment}
-\item{ TRTSTMF }{Time of First Exposure Imput. Flag}
-\item{ TRTEDTM }{Datetime of Last Exposure to Treatment}
-\item{ TRTETMF }{Time of Last Exposure Imput. Flag}
-\item{ TRTDURD }{Total Treatment Duration (Days)}
-\item{ ASEQ }{Analysis Sequence Number}
 }
 }
 \source{

@@ -123,6 +123,28 @@ write_labels <- function(data, dataset_name, suffix) {
   return(data)
 }
 
+order_data <- function(data, dataset_name, suffix) {
+  print(dataset_name)
+  print(suffix)
+  if (suffix != "") {
+    dataset_name <- gsub(suffix, suffixes_dict[suffix], dataset_name)
+  }
+  dataset_name <- toupper(dataset_name)
+  tryCatch(
+    {
+      spec <- metacore::select_dataset(mc, dataset_name)
+      data <- metatools::order_cols(data, spec)
+    },
+    error = function(e) {
+      warning(sprintf(
+        "Error retrieving dataset %s specs - Please check adams-specs.xlsx file",
+        dataset_name
+      ))
+    }
+  )
+  return(data)
+}
+
 run_template <- function(tp) {
   if (!tp %in% ignore_templates_pkg) {
     print(sprintf("Running template %s", tp))
@@ -186,6 +208,9 @@ run_template <- function(tp) {
 
       # write labels
       data <- write_labels(data, dataset_name, suffix)
+
+      # Order columns as per specs
+      data <- order_data(data, dataset_name, suffix)
 
       # save it to pharmaverseadam data package
       save_rda(data, file_path = output_adam_path, new_name = dataset_name)
