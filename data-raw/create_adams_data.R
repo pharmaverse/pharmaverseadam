@@ -173,8 +173,8 @@ run_template <- function(tp) {
 
       # add PARAM and PARAMCD details
       # check if data contains PARAMCD/PARAM variables
-      param_col <- names(data)[grepl("PARAM$", names(data))]
-      paramcd_col <- names(data)[grepl("PARAMCD", names(data))]
+      param_col <- names(data)[stringr::str_detect("PARAM$", names(data))]
+      paramcd_col <- names(data)[stringr::str_detect("PARAMCD", names(data))]
 
       if (length(param_col) == 1 && length(paramcd_col) == 1) {
         # Check both columns exist
