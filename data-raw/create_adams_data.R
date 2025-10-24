@@ -182,7 +182,11 @@ run_template <- function(tp) {
         unique_params <- unique_params[order(unique_params[[paramcd_col]]), ]
 
         tabular <- function(df, ...) {
-          stopifnot(is.data.frame(df))
+          if (!is.data.frame(df)) {
+            cli_abort(
+              "{.val {deparse(substitute(df))}} must be a dataframe, but is {.cls {class(df)}}"
+              )
+          }
 
           align <- function(x) if (is.numeric(x)) "r" else "l"
           col_align <- vapply(df, align, character(1))
