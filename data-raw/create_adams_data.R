@@ -114,7 +114,7 @@ write_labels <- function(data, dataset_name, suffix) {
       data <- xportr::xportr_df_label(data, spec, domain = dataset_name)
     },
     error = function(e) {
-      warning(sprintf(
+      cli_warn(sprintf(
         "Error retrieving dataset %s specs - Please check adams-specs.xlsx file",
         dataset_name
       ))
@@ -136,7 +136,7 @@ order_data <- function(data, dataset_name, suffix) {
       data <- metatools::order_cols(data, spec)
     },
     error = function(e) {
-      warning(sprintf(
+      cli_warn(sprintf(
         "Error retrieving dataset %s specs - Please check adams-specs.xlsx file",
         dataset_name
       ))
