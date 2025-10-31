@@ -4,12 +4,14 @@
 library(readxl)
 library(jsonlite)
 library(cli)
+library(stringr)
+library(dplyr)
 
 # Load metadata
 json_file <- "inst/extdata/adams-specs.json"
 excel_file <- "inst/extdata/adams-specs.xlsx"
 
-specs_xlsx <- readxl::read_excel(excel_file)
+specs_xlsx <- read_excel(excel_file)
 specs_json <- toJSON(specs_xlsx, pretty = TRUE)
 
 sheet_names <- excel_sheets(excel_file)
@@ -173,8 +175,8 @@ run_template <- function(tp) {
 
       # add PARAM and PARAMCD details
       # check if data contains PARAMCD/PARAM variables
-      param_col <- names(data)[stringr::str_detect("PARAM$", names(data))]
-      paramcd_col <- names(data)[stringr::str_detect("PARAMCD", names(data))]
+      param_col <- names(data)[str_detect(string = names(data), pattern = "PARAM$")]
+      paramcd_col <- names(data)[str_detect(string = names(data), pattern = "PARAMCD")]
 
       if (length(param_col) == 1 && length(paramcd_col) == 1) {
         # Check both columns exist
