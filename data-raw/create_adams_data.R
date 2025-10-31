@@ -185,7 +185,7 @@ run_template <- function(tp) {
           if (!is.data.frame(df)) {
             cli_abort(
               "{.val {deparse(substitute(df))}} must be a dataframe, but is {.cls {class(df)}}"
-              )
+            )
           }
 
           align <- function(x) if (is.numeric(x)) "r" else "l"
