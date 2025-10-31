@@ -28,7 +28,8 @@ URL: https://pharmaverse.github.io/pharmaverseadam/,
 Depends: 
     R (>= 3.5)
 Imports:
-    tibble
+    tibble,
+    admiraldev (>= 1.0.0)
 Suggests:
     cli,
     covr,
