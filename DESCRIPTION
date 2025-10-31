@@ -32,7 +32,8 @@ Imports:
     admiral (>= 1.0.0),
     admiraldev (>= 1.0.0),
     cli (>= 3.6.2),
-    dplyr (>= 1.0.5)
+    dplyr (>= 1.0.5),
+    stringr (>= 1.4.0)
 Suggests:
     covr,
     devtools,
