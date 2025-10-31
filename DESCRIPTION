@@ -31,7 +31,8 @@ Imports:
     tibble,
     admiral (>= 1.0.0),
     admiraldev (>= 1.0.0),
-    cli (>= 3.6.2)
+    cli (>= 3.6.2),
+    dplyr (>= 1.0.5)
 Suggests:
     covr,
     devtools,
