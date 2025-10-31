@@ -5,7 +5,7 @@ source(system.file("lintr/linters.R", package = "admiraldev"))
 linters <- admiral_linters()
 
 exclusions <- list(
-  "data-raw" = Inf,
+  "data-raw" = list(undesirable_function_linter = Inf),
   "R/data.R" = Inf,
   "R/pharmaverseadam-package.R" = Inf,
   "inst" = list(undesirable_function_linter = Inf),

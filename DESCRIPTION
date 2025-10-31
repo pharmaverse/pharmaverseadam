@@ -29,9 +29,10 @@ Depends:
     R (>= 3.5)
 Imports:
     tibble,
-    admiraldev (>= 1.0.0)
+    admiral (>= 1.0.0),
+    admiraldev (>= 1.0.0),
+    cli (>= 3.6.2)
 Suggests:
-    cli,
     covr,
     devtools,
     diffdf,
