@@ -6,7 +6,7 @@
 ^pkgdown$
 ^_pkgdown\.yml$
 ^.github$
-^.lintr.R$
+^.lintr\.R$
 ^docs$
 ^Meta$
 ^codecov\.yml$
