@@ -84,6 +84,13 @@ jobs:
       skip-multiversion-docs: true
     secrets:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+  linter:
+    name: Lint
+    uses: pharmaverse/admiralci/.github/workflows/lintr.yml@main
+    needs: get_r_version
+    if: github.event_name == 'pull_request'
+    with:
+      r-version: "${{ needs.get_r_version.outputs.r-version }}"
   links:
     name: Links
     uses: pharmaverse/admiralci/.github/workflows/links.yml@main
