@@ -1,8 +1,14 @@
 library(lintr)
 
-source(system.file("lintr/linters.R", package = "admiraldev"))
+# source in temporary environment to avoid changing the global environment
+temp_env <- new.env(parent = globalenv())
 
-linters <- admiral_linters()
+source(system.file("lintr/linters.R", package = "admiraldev"), local = temp_env)
+
+linters <- temp_env$admiral_linters()
+
+# remove temporary environment to avoid lintr warning regarding "unused settings"
+rm(temp_env)
 
 exclusions <- list(
   "data-raw/create_adams_data.R" = Inf,
