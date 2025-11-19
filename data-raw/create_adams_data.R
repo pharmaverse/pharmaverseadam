@@ -4,12 +4,14 @@
 library(readxl)
 library(jsonlite)
 library(cli)
+library(stringr)
+library(dplyr)
 
 # Load metadata
 json_file <- "inst/extdata/adams-specs.json"
 excel_file <- "inst/extdata/adams-specs.xlsx"
 
-specs_xlsx <- readxl::read_excel(excel_file)
+specs_xlsx <- read_excel(excel_file)
 specs_json <- toJSON(specs_xlsx, pretty = TRUE)
 
 sheet_names <- excel_sheets(excel_file)
@@ -114,7 +116,7 @@ write_labels <- function(data, dataset_name, suffix) {
       data <- xportr::xportr_df_label(data, spec, domain = dataset_name)
     },
     error = function(e) {
-      warning(sprintf(
+      cli_warn(sprintf(
         "Error retrieving dataset %s specs - Please check adams-specs.xlsx file",
         dataset_name
       ))
@@ -136,7 +138,7 @@ order_data <- function(data, dataset_name, suffix) {
       data <- metatools::order_cols(data, spec)
     },
     error = function(e) {
-      warning(sprintf(
+      cli_warn(sprintf(
         "Error retrieving dataset %s specs - Please check adams-specs.xlsx file",
         dataset_name
       ))
@@ -173,8 +175,8 @@ run_template <- function(tp) {
 
       # add PARAM and PARAMCD details
       # check if data contains PARAMCD/PARAM variables
-      param_col <- names(data)[grepl("PARAM$", names(data))]
-      paramcd_col <- names(data)[grepl("PARAMCD", names(data))]
+      param_col <- names(data)[str_detect(string = names(data), pattern = "PARAM$")]
+      paramcd_col <- names(data)[str_detect(string = names(data), pattern = "PARAMCD")]
 
       if (length(param_col) == 1 && length(paramcd_col) == 1) {
         # Check both columns exist
@@ -182,7 +184,11 @@ run_template <- function(tp) {
         unique_params <- unique_params[order(unique_params[[paramcd_col]]), ]
 
         tabular <- function(df, ...) {
-          stopifnot(is.data.frame(df))
+          if (!is.data.frame(df)) {
+            cli_abort(
+              "{.val {deparse(substitute(df))}} must be a dataframe, but is {.cls {class(df)}}"
+            )
+          }
 
           align <- function(x) if (is.numeric(x)) "r" else "l"
           col_align <- vapply(df, align, character(1))
@@ -193,7 +199,7 @@ run_template <- function(tp) {
             c(cols, list(sep = " \\tab ", collapse = "\\cr\n#'   "))
           )
 
-          paste(sprintf("Contains a set of %d unique Parameter Code%s and Parameter%s: ", nrow(unique_params), ifelse(nrow(unique_params) == 1, "", "s"), ifelse(nrow(unique_params) == 1, "", "s")),
+          paste(sprintf("Contains a set of %d unique Parameter Code%s and Parameter%s: ", nrow(unique_params), if_else(nrow(unique_params) == 1, "", "s"), if_else(nrow(unique_params) == 1, "", "s")),
             "\\tabular{", paste(col_align, collapse = ""), "}{\n#'   ",
             paste0("\\strong{", names(df), "}", sep = "", collapse = " \\tab "), " \\cr\n#'   ",
             trimws(contents), "\n#' }\n",
