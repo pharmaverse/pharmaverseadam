@@ -3,6 +3,13 @@
 ## Documentation
 
   - The dataset variables and specifications are ordered and grouped according to ADaM IG standards, and the reference page reflects this updated structure. (#128)
+  
+<details>
+<summary>Developer Notes</summary>
+
+- Updated `{lintr}` configurations to use central configurations from `{admiraldev}`. (#133)
+
+</details>
 
 # pharmaverseadam 1.2.0
 
