@@ -1,5 +1,3 @@
-library(lintr)
-
 # source in temporary environment to avoid changing the global environment
 temp_env <- new.env(parent = globalenv())
 
@@ -14,6 +12,5 @@ exclusions <- list(
   "data-raw/create_adams_data.R" = Inf,
   "R/pharmaverseadam-package.R" = Inf,
   "inst" = list(undesirable_function_linter = Inf),
-  "vignettes" = list(undesirable_function_linter = Inf),
-  "R/data.R" = Inf
+  "vignettes" = list(undesirable_function_linter = Inf)
 )
