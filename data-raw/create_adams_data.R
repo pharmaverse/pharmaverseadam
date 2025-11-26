@@ -120,8 +120,7 @@ write_doc <- function(data,
                       pkg,
                       template_name,
                       dataset_paramnames = NULL,
-                      dataset_keyword = "generic"
-                      ) {
+                      dataset_keyword = "generic") {
   # Create documentation for the current dataset
   # TODO: use metatools/metacore for doc  ?
   dataset_label <- str_replace(dataset_label, "Hys Law", "Hy's Law")
