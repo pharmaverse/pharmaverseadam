@@ -64,7 +64,7 @@ get_attr <- function(data, col_name) {
 
 # Create documentation ----
 write_doc <- function(data, dataset_name, dataset_label, pkg, template_name, dataset_paramnames = NULL) {
-  # create documentation for the current dataset
+  # Create documentation for the current dataset
   # TODO: use metatools/metacore for doc  ?
   dataset_label <- str_replace(dataset_label, "Hys Law", "Hy's Law")
   doc_string <- paste(
@@ -150,7 +150,7 @@ order_data <- function(data, dataset_name, suffix) {
 run_template <- function(tp) {
   if (!tp %in% ignore_templates_pkg) {
     print(sprintf("Running template %s", tp))
-    # run template
+    # Run template
     cmd <- c("Rscript", file.path(templates_path, tp))
     system_result <- system2(cmd, stdout = TRUE, stderr = TRUE)
     exit_code <- attr(system_result, "status")
@@ -168,13 +168,13 @@ run_template <- function(tp) {
       if (pkg != "admiral") {
         suffix <- sprintf("_%s", gsub("admiral", "", pkg))
       }
-      # add suffix in case of != admiral
+      # Add suffix in case of != admiral
       filename <- gsub("\\.rda$", sprintf("%s.rda", suffix), rda_file)
       output_adam_path <- file.path("data", filename)
       dataset_name <- gsub("\\.rda$", "", filename)
 
-      # add PARAM and PARAMCD details
-      # check if data contains PARAMCD/PARAM variables
+      # Add PARAM and PARAMCD details
+      # Check if data contains PARAMCD/PARAM variables
       param_col <- names(data)[str_detect(string = names(data), pattern = "PARAM$")]
       paramcd_col <- names(data)[str_detect(string = names(data), pattern = "PARAMCD")]
 
@@ -212,16 +212,16 @@ run_template <- function(tp) {
         paramnames <- NULL
       }
 
-      # write labels
+      # Write labels
       data <- write_labels(data, dataset_name, suffix)
 
       # Order columns as per specs
       data <- order_data(data, dataset_name, suffix)
 
-      # save it to pharmaverseadam data package
+      # Save it to pharmaverseadam data package
       save_rda(data, file_path = output_adam_path, new_name = dataset_name)
 
-      # write doc
+      # Write doc
       dataset_label <- attributes(data)$label
       if (is.null(paramnames)) {
         dataset_paramnames <- NULL
@@ -231,7 +231,7 @@ run_template <- function(tp) {
       write_doc(data, dataset_name, dataset_label, pkg, tp_basename, dataset_paramnames)
     }
 
-    # return output cmd from templates
+    # Return output cmd from templates
     return(list(
       pkg = pkg, template = tp, exit_code = exit_code,
       output = paste(system_result, collapse = "\n")
@@ -261,7 +261,7 @@ safe_run_template <- function(tp) {
 
 if (update_pkg) {
   github_pat <- Sys.getenv("GITHUB_TOKEN") # in case of run through github workflows
-  # install pharmaversesdtm dep: TODO: see if we install from github or latest release?
+  # Install pharmaversesdtm dep: TODO: see if we install from github or latest release?
   remotes::install_github(
     "pharmaverse/pharmaversesdtm",
     ref = "main",
@@ -269,7 +269,7 @@ if (update_pkg) {
   )
 }
 
-# dict to match admiral xlsx specs suffixes
+# Dict to match admiral xlsx specs suffixes
 suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E", "_metabolic" = "_M")
 mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   where_sep_sheet = FALSE,
@@ -281,7 +281,7 @@ packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", 
 all_results <- c()
 for (pkg in packages_list) {
   ignore_templates_pkg <- ignore_templates[pkg]
-  # get latest version of the package (current templates from main branch)
+  # Get latest version of the package (current templates from main branch)
   if (update_pkg) {
     # TODO: replace by main once done
     remotes::install_github(sprintf("pharmaverse/%s", pkg),
@@ -293,17 +293,17 @@ for (pkg in packages_list) {
       upgrade = "always", force = TRUE
     )
   }
-  # get templates scripts
+  # Get templates scripts
   templates_path <- file.path(system.file(package = pkg), "templates")
   templates <- list.files(templates_path)
-  # copy paste pkg/data folder content to pharmaverseadam/data (some templates have dependency with their internal data,
+  # Copy paste pkg/data folder content to pharmaverseadam/data (some templates have dependency with their internal data,
   # for example admiral templates have all dependencies with admiral_adsl dataset)
   data_path <- file.path(system.file(package = pkg), "data")
   data_files <- list.files(data_path)
 
   print(sprintf("Processing templates from %s package", pkg))
 
-  # run templates in parallel
+  # Run templates in parallel
   # TODO: reput parallel debug
   # for (tp in templates) {
   #   run_template(tp)
