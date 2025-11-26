@@ -4,6 +4,7 @@
 #'
 #' @name adce_vaccine
 #' @title Clinical Events Analysis for Vaccine
+#' @keywords dataset vaccine
 #' @docType data
 #' @format A data frame with 56 columns:
 #'   \describe{

@@ -4,6 +4,7 @@
 #'
 #' @name advs_metabolic
 #' @title Vital Signs Analysis for Metabolic
+#' @keywords dataset metabolic
 #' @docType data
 #' @format A data frame with 101 columns:
 #'   \describe{

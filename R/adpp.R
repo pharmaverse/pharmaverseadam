@@ -4,6 +4,7 @@
 #'
 #' @name adpp
 #' @title Pharmacokinetic Parameters
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 79 columns:
 #'   \describe{

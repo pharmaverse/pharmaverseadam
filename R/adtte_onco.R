@@ -4,6 +4,7 @@
 #'
 #' @name adtte_onco
 #' @title Time to Event Analysis for Oncology
+#' @keywords dataset oncology
 #' @docType data
 #' @format A data frame with 20 columns:
 #'   \describe{

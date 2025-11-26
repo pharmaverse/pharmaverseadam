@@ -158,4 +158,5 @@ data("adpc")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{generic}

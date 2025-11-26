@@ -83,4 +83,5 @@ data("adlb_metabolic")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{metabolic}

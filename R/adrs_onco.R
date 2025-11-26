@@ -4,6 +4,7 @@
 #'
 #' @name adrs_onco
 #' @title Tumor Response Analysis
+#' @keywords dataset oncology
 #' @docType data
 #' @format A data frame with 79 columns:
 #'   \describe{

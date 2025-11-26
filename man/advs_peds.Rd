@@ -123,4 +123,5 @@ data("advs_peds")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{pediatrics}

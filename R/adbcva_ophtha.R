@@ -4,6 +4,7 @@
 #'
 #' @name adbcva_ophtha
 #' @title Best Corrected Visual Acuity Analysis
+#' @keywords dataset ophthalmology
 #' @docType data
 #' @format A data frame with 71 columns:
 #'   \describe{

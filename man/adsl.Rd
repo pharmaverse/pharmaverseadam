@@ -5,7 +5,7 @@
 \alias{adsl}
 \title{Subject Level Analysis}
 \format{
-A data frame with 54 columns:
+A data frame with 55 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -61,6 +61,7 @@ A data frame with 54 columns:
 \item{ DTHDTF }{Date of Death Imputation Flag}
 \item{ DTHCAUS }{Cause of Death}
 \item{ DTHCGR1 }{Cause of Death Reason 1}
+\item{ BRTHDTC }{Date/Time of Birth}
 }
 }
 \source{
@@ -78,4 +79,5 @@ data("adsl")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{generic}

@@ -145,4 +145,5 @@ data("adeg")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{generic}
