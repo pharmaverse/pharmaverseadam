@@ -4,10 +4,14 @@
 
 ### Documentation
 
-- The dataset variables and specifications are ordered and grouped
-  according to ADaM IG standards, and the reference page reflects this
+- The dataset variables and specifications were ordered and grouped
+  according to ADaM IG standards, and the reference page reflected this
   updated structure.
   ([\#128](https://github.com/pharmaverse/pharmaverseadam/issues/128))
+
+- The reference page was updated to categorize datasets by therapeutic
+  areas.
+  ([\#137](https://github.com/pharmaverse/pharmaverseadam/issues/137))
 
 Developer Notes
 

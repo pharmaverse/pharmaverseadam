@@ -10,7 +10,7 @@ adsl
 
 ## Format
 
-A data frame with 54 columns:
+A data frame with 55 columns:
 
 - STUDYID :
 
@@ -227,6 +227,10 @@ A data frame with 54 columns:
 - DTHCGR1 :
 
   Cause of Death Reason 1
+
+- BRTHDTC :
+
+  Date/Time of Birth
 
 ## Source
 
