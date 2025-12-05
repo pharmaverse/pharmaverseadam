@@ -143,4 +143,5 @@ data("advs")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{generic}

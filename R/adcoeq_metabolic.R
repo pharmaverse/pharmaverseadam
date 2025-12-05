@@ -4,6 +4,7 @@
 #'
 #' @name adcoeq_metabolic
 #' @title Questionnaires Analysis for Metabolic
+#' @keywords dataset metabolic
 #' @docType data
 #' @format A data frame with 85 columns:
 #'   \describe{

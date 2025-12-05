@@ -4,6 +4,7 @@
 #'
 #' @name advs
 #' @title Vital Signs Analysis
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 105 columns:
 #'   \describe{

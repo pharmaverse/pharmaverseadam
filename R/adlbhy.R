@@ -4,6 +4,7 @@
 #'
 #' @name adlbhy
 #' @title Analysis of Lab Hy's Law
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 14 columns:
 #'   \describe{

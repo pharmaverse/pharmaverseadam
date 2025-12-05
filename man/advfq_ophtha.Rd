@@ -129,4 +129,5 @@ data("advfq_ophtha")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{ophthalmology}

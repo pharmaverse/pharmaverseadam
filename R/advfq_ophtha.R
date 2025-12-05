@@ -4,6 +4,7 @@
 #'
 #' @name advfq_ophtha
 #' @title Visual Function Questionnaire Analysis
+#' @keywords dataset ophthalmology
 #' @docType data
 #' @format A data frame with 89 columns:
 #'   \describe{

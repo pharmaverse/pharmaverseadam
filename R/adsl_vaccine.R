@@ -4,6 +4,7 @@
 #'
 #' @name adsl_vaccine
 #' @title Subject Level Analysis for Vaccine
+#' @keywords dataset vaccine
 #' @docType data
 #' @format A data frame with 46 columns:
 #'   \describe{

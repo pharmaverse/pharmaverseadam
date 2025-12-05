@@ -92,4 +92,5 @@ data("adppk")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{generic}

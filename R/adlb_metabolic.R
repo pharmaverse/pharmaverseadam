@@ -4,6 +4,7 @@
 #'
 #' @name adlb_metabolic
 #' @title Laboratory Analysis for Metabolic
+#' @keywords dataset metabolic
 #' @docType data
 #' @format A data frame with 43 columns:
 #'   \describe{

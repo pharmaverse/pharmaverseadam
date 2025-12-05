@@ -36,3 +36,32 @@ navbar:
     reference:
        text: Reference
        href: reference/index.html
+
+reference:
+  - title: "Generic Datasets"
+    contents:
+      - has_keyword("generic")
+
+  - title: "Metabolism Datasets"
+    contents:
+      - has_keyword("metabolic")
+
+  # - title: "Neurology Datasets"
+  #   contents:
+  #     - has_keyword("neurology")
+
+  - title: "Oncology Datasets"
+    contents:
+      - has_keyword("oncology")
+
+  - title: "Ophthalmology Datasets"
+    contents:
+      - has_keyword("ophthalmology")
+
+  - title: "Pediatrics Datasets"
+    contents:
+      - has_keyword("pediatrics")
+
+  - title: "Vaccine Datasets"
+    contents:
+      - has_keyword("vaccine")
