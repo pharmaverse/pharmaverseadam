@@ -11,6 +11,8 @@
 
 - Updated `{lintr}` configurations to use central configurations from `{admiraldev}`. (#133)
 
+- Generated different sites for the development and released versions of the package. (#139)
+
 </details>
 
 # pharmaverseadam 1.2.0
