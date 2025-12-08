@@ -1,0 +1,203 @@
+# pharmaverseadam
+
+Test data (ADaM) for the pharmaverse family of packages
+
+## Purpose
+
+To provide a one-stop-shop for ADaM test data in the pharmaverse family
+of packages.
+
+## Package Contents
+
+The ADaM contents of this package is populated by an script that
+executes the [admiral](https://pharmaverse.github.io/admiral/),
+[admiralonco](https://pharmaverse.github.io/admiralonco/),
+[admiralophtha](https://pharmaverse.github.io/admiralophtha/),
+[admiralvaccine](https://pharmaverse.github.io/admiralvaccine/),
+[admiralpeds](https://pharmaverse.github.io/admiralpeds/) and
+[admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
+templates and saves the resulting datasets here. This script can be
+executed by the package maintainers in two scenarios:
+
+- Regularly, upon new releases of these packages;
+- Ad-hoc, whenever templates in the above packages have been updated but
+  releases are far away in the calendar. In this case, the ADaM datasets
+  are created using a development version of the templates.
+
+Please check the
+[Changelog](https://pharmaverse.github.io/pharmaverseadam/news/index.html)
+to see the versions of the packages used to generate the ADaM datasets
+in current or past version of
+[pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/).
+Please see the [Dataset Creation and Documentation Process](#doc) for
+details on the script.
+
+## Installation
+
+The package is available from CRAN and can be installed with:
+
+``` r
+install.packages("pharmaverseadam")
+```
+
+To install the development version of the package from GitHub run:
+
+``` r
+pak::pkg_install("pharmaverse/pharmaverseadam", dependencies = TRUE)
+```
+
+## Dataset Creation and Documentation Process
+
+The execution of the ADaM templates and creation of the package
+documentation in
+[pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/) is
+semi-automated for consistency and ease of maintenance. Metadata for
+each dataset such as names, labels, descriptions, authors, and sources,
+is managed in a centralized XLSX file (`inst/extdata/adams-specs.xlsx`)
+and used to generate `.R` documentation files. These are then used to
+populate the [reference
+pages](https://pharmaverse.github.io/pharmaverseadam/reference/index.html)
+in the package documentation.
+
+The workflow consists of two main steps:
+
+### 1. Metadata Preparation
+
+Firstly, the user reviews `inst/extdata/adams-specs.xlsx` and ensures
+its contents is up-to-date. If a new template has been added to an
+existing package, or if a new extension package has been created whose
+ADaM templates they wish to execute in
+[pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/), then
+the user should update `adams-specs.xlsx` with specifications for the
+new dataset(s). Note that any missing metadata fields will be set by
+default to “No label/description/source available.”
+
+### 2. Execute `create_adams_data.R`
+
+Secondly, the user runs `data-raw/create_adams_data.R`. This script
+handles the installation of each package, the execution of the
+templates, the saving of the ADaM datasets and the creation of the
+documentation pages.
+
+#### Script steps
+
+1.  **Save specs as JSON**  
+    The script saves the specs stored in `inst/extdata/adams-specs.xlsx`
+    as a JSON file located here: `inst/extdata/adams-specs.json`. This
+    is so that the specs themselves, as well as any diffs across
+    commits, are easily viewable on Github and R Studio.
+
+2.  **Installs Required Packages**  
+    The script installs the following packages:
+
+    - [admiral](https://pharmaverse.github.io/admiral/)
+    - [admiralonco](https://pharmaverse.github.io/admiralonco/)
+    - [admiralophtha](https://pharmaverse.github.io/admiralophtha/)
+    - [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/)
+    - [admiralpeds](https://pharmaverse.github.io/admiralpeds/)
+    - [admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
+    - [pharmaversesdtm](https://pharmaverse.github.io/pharmaversesdtm/)
+
+    By default, the latest development versions of each package will be
+    used, but the user can also select a different version instead
+    (e.g. a released version) with which to refresh
+    [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/).
+    The user may also deselect some packages whose templates they do not
+    wish to run. If a new extension package has been created, this
+    should be added to the script in each relevant section (see the
+    script itself for more details).
+
+3.  **Executes Templates from Each Package**
+
+4.  **Processes and Saves Datasets into {pharmaverseadam}**
+
+5.  **Generates Dataset Documentation**  
+    For every dataset, a matching `.R` file is created in the `R/`
+    folder containing:
+
+    - Dataset name and title,
+    - Variable-level documentation (names and labels),
+    - Source information indicating which template and package generated
+      it,
+    - Example usage with `data("<dataset>")`.
+
+## Acknowledgments
+
+Along with the authors and contributors, thanks to the following people
+for their work on the package:
+
+G Gayatri, Daphne Grassely, Sadchla Mascary, Kangjie Zhang and Zelos
+Zhu.
+
+# Package index
+
+## Generic Datasets
+
+- [`adae`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adae.md)
+  : Adverse Events Analysis
+- [`adcm`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adcm.md)
+  : Concomitant Medications Analysis
+- [`adeg`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adeg.md)
+  : Electrocardiogram Tests Analysis
+- [`adex`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adex.md)
+  : Exposure Analysis
+- [`adlb`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adlb.md)
+  : Laboratory Analysis
+- [`adlbhy`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adlbhy.md)
+  : Analysis of Lab Hy's Law
+- [`admh`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/admh.md)
+  : Medical History Analysis
+- [`adpc`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adpc.md)
+  : Pharmacokinetic Concentrations
+- [`adpp`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adpp.md)
+  : Pharmacokinetic Parameters
+- [`adppk`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adppk.md)
+  : Population Pharmacokinetic
+- [`adsl`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adsl.md)
+  : Subject Level Analysis
+- [`advs`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/advs.md)
+  : Vital Signs Analysis
+
+## Metabolism Datasets
+
+- [`adcoeq_metabolic`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adcoeq_metabolic.md)
+  : Questionnaires Analysis for Metabolic
+- [`adlb_metabolic`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adlb_metabolic.md)
+  : Laboratory Analysis for Metabolic
+- [`advs_metabolic`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/advs_metabolic.md)
+  : Vital Signs Analysis for Metabolic
+
+## Oncology Datasets
+
+- [`adrs_onco`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adrs_onco.md)
+  : Tumor Response Analysis
+- [`adtr_onco`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adtr_onco.md)
+  : Tumor Results Analysis for Oncology
+- [`adtte_onco`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adtte_onco.md)
+  : Time to Event Analysis for Oncology
+
+## Ophthalmology Datasets
+
+- [`adbcva_ophtha`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adbcva_ophtha.md)
+  : Best Corrected Visual Acuity Analysis
+- [`adoe_ophtha`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adoe_ophtha.md)
+  : Exam Analysis for Ophthalmology
+- [`advfq_ophtha`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/advfq_ophtha.md)
+  : Visual Function Questionnaire Analysis
+
+## Pediatrics Datasets
+
+- [`advs_peds`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/advs_peds.md)
+  : Vital Signs Analysis for Pediatrics
+
+## Vaccine Datasets
+
+- [`adce_vaccine`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adce_vaccine.md)
+  : Clinical Events Analysis for Vaccine
+- [`adface_vaccine`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adface_vaccine.md)
+  : Findings About Clinical Events Analysis
+- [`adis_vaccine`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adis_vaccine.md)
+  : Immunogenicity Specimen Assessments
+- [`adsl_vaccine`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adsl_vaccine.md)
+  : Subject Level Analysis for Vaccine
+
