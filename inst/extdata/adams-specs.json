@@ -301,6 +301,17 @@
       "Has No Data": "No",
       "Repeating": "Yes",
       "Reference Data": "No"
+    },
+    {
+      "Dataset": "ADAB",
+      "Label": "Anti-Drug Antibody Data",
+      "Class": "BASIC DATA STRUCTURE",
+      "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
+      "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
+      "Standard": "ADaM-IG 1.1",
+      "Has No Data": "No",
+      "Repeating": "Yes",
+      "Reference Data": "No"
     }
   ],
   "Variables": [
@@ -2484,7 +2495,7 @@
       "Order": "100",
       "Dataset": "ADBCVA_P",
       "Variable": "OESTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "3",
       "Mandatory": "No",
@@ -5163,7 +5174,7 @@
       "Order": "94",
       "Dataset": "ADEG",
       "Variable": "EGSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
@@ -7766,7 +7777,7 @@
       "Order": "79",
       "Dataset": "ADIS_V",
       "Variable": "ISSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "5",
       "Mandatory": "No",
@@ -9133,7 +9144,7 @@
       "Order": "104",
       "Dataset": "ADLB",
       "Variable": "LBSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
@@ -11459,7 +11470,7 @@
       "Order": "87",
       "Dataset": "ADOE_P",
       "Variable": "OESTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "14",
       "Mandatory": "No",
@@ -12662,7 +12673,7 @@
       "Order": "97",
       "Dataset": "ADPC",
       "Variable": "PCSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "18",
       "Mandatory": "No",
@@ -13645,7 +13656,7 @@
       "Order": "63",
       "Dataset": "ADPP",
       "Variable": "AVALC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "float",
       "Length": "10",
       "Significant Digits": "8",
@@ -15214,7 +15225,7 @@
       "Order": "73",
       "Dataset": "ADRS_O",
       "Variable": "RSSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "13",
       "Mandatory": "No",
@@ -17211,7 +17222,7 @@
       "Order": "87",
       "Dataset": "ADTR_O",
       "Variable": "TRSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "4",
       "Mandatory": "No",
@@ -18439,7 +18450,7 @@
       "Order": "80",
       "Dataset": "ADVFQ_P",
       "Variable": "QSSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "10",
       "Mandatory": "No",
@@ -19519,7 +19530,7 @@
       "Order": "93",
       "Dataset": "ADVS",
       "Variable": "VSSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "6",
       "Mandatory": "No",
@@ -19809,7 +19820,7 @@
       "Order": "15",
       "Dataset": "ADVS_E",
       "Variable": "BRTHDTC",
-      "Label": "Date/Time of Birth (Character)",
+      "Label": "Date/Time of Birth (text)",
       "Data Type": "text",
       "Length": "20",
       "Mandatory": "No"
@@ -20310,7 +20321,7 @@
       "Order": "62",
       "Dataset": "ADVS_E",
       "Variable": "VSSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "6",
       "Mandatory": "No",
@@ -21279,7 +21290,7 @@
       "Order": "87",
       "Dataset": "ADVS_M",
       "Variable": "VSSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "6",
       "Mandatory": "No"
@@ -21674,7 +21685,7 @@
       "Order": "29",
       "Dataset": "ADLB_M",
       "Variable": "LBSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No"
@@ -22551,7 +22562,7 @@
       "Order": "82",
       "Dataset": "ADCOEQ_M",
       "Variable": "QSSTRESC",
-      "Label": "Character Result/Finding in Std Format",
+      "Label": "text Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No"
@@ -22582,6 +22593,662 @@
       "Label": "Sequence Number",
       "Data Type": "integer",
       "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "1",
+      "Dataset": "ADAB",
+      "Variable": "STUDYID",
+      "Label": "Study Identifier",
+      "Data Type": "text",
+      "Length": "12",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "2",
+      "Dataset": "ADAB",
+      "Variable": "USUBJID",
+      "Label": "Unique Subject Identifier",
+      "Data Type": "text",
+      "Length": "11",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "3",
+      "Dataset": "ADAB",
+      "Variable": "SUBJID",
+      "Label": "Subject Identifier for the Study",
+      "Data Type": "text",
+      "Length": "4",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "4",
+      "Dataset": "ADAB",
+      "Variable": "SITEID",
+      "Label": "Study Site Identifier",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "5",
+      "Dataset": "ADAB",
+      "Variable": "ASEQ",
+      "Label": "Analysis Sequence Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "6",
+      "Dataset": "ADAB",
+      "Variable": "REGION1",
+      "Label": "Geographic Region 1",
+      "Data Type": "text",
+      "Length": "2",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "7",
+      "Dataset": "ADAB",
+      "Variable": "COUNTRY",
+      "Label": "Country",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "8",
+      "Dataset": "ADAB",
+      "Variable": "ETHNIC",
+      "Label": "Ethnicity",
+      "Data Type": "text",
+      "Length": "22",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "9",
+      "Dataset": "ADAB",
+      "Variable": "AGE",
+      "Label": "Age",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "10",
+      "Dataset": "ADAB",
+      "Variable": "AGEU",
+      "Label": "Age Units",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "11",
+      "Dataset": "ADAB",
+      "Variable": "SEX",
+      "Label": "Sex",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "12",
+      "Dataset": "ADAB",
+      "Variable": "RACE",
+      "Label": "Race",
+      "Data Type": "text",
+      "Length": "32",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "13",
+      "Dataset": "ADAB",
+      "Variable": "SAFFL",
+      "Label": "Safety Population Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "14",
+      "Dataset": "ADAB",
+      "Variable": "TRT01P",
+      "Label": "Description of Planned Arm",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "15",
+      "Dataset": "ADAB",
+      "Variable": "TRT01A",
+      "Label": "Description of Actual Arm",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "16",
+      "Dataset": "ADAB",
+      "Variable": "TRTSDTM",
+      "Label": "Datetime of First Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "17",
+      "Dataset": "ADAB",
+      "Variable": "TRTSDT",
+      "Label": "Date of First Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "18",
+      "Dataset": "ADAB",
+      "Variable": "TRTEDTM",
+      "Label": "Datetime of Last Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "19",
+      "Dataset": "ADAB",
+      "Variable": "TRTEDT",
+      "Label": "Date of Last Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "20",
+      "Dataset": "ADAB",
+      "Variable": "ISSEQ",
+      "Label": "Sequence Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "21",
+      "Dataset": "ADAB",
+      "Variable": "ISTESTCD",
+      "Label": "Immunogenicity Test/Exam Short Name",
+      "Data Type": "text",
+      "Length": "7",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "22",
+      "Dataset": "ADAB",
+      "Variable": "ISTEST",
+      "Label": "Immunogenicity Test or Examination Name",
+      "Data Type": "text",
+      "Length": "38",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "23",
+      "Dataset": "ADAB",
+      "Variable": "ISCAT",
+      "Label": "Category for Immunogenicity Test",
+      "Data Type": "text",
+      "Length": "14",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "24",
+      "Dataset": "ADAB",
+      "Variable": "ISBDAGNT",
+      "Label": "Binding Agent",
+      "Data Type": "text",
+      "Length": "10",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "25",
+      "Dataset": "ADAB",
+      "Variable": "ISSTRESC",
+      "Label": "Character Result/Finding in Std Format",
+      "Data Type": "text",
+      "Length": "21",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "26",
+      "Dataset": "ADAB",
+      "Variable": "ISSTRESN",
+      "Label": "Numeric Results/Findings in Std. Units",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "27",
+      "Dataset": "ADAB",
+      "Variable": "ISSTRESU",
+      "Label": "Standard Units",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "28",
+      "Dataset": "ADAB",
+      "Variable": "ISSTAT",
+      "Label": "Completion Status",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "29",
+      "Dataset": "ADAB",
+      "Variable": "ISREASND",
+      "Label": "Reason Not Done",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "30",
+      "Dataset": "ADAB",
+      "Variable": "ISSPEC",
+      "Label": "Specimen Type",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "31",
+      "Dataset": "ADAB",
+      "Variable": "DTL",
+      "Label": "Drug Tolerance Level",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "32",
+      "Dataset": "ADAB",
+      "Variable": "MRT",
+      "Label": "Minimum Reportable Titer",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "33",
+      "Dataset": "ADAB",
+      "Variable": "VISITNUM",
+      "Label": "Visit Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "34",
+      "Dataset": "ADAB",
+      "Variable": "VISIT",
+      "Label": "Visit Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "35",
+      "Dataset": "ADAB",
+      "Variable": "VISITDY",
+      "Label": "Planned Study Day of Visit",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "36",
+      "Dataset": "ADAB",
+      "Variable": "EPOCH",
+      "Label": "Epoch",
+      "Data Type": "text",
+      "Length": "9",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "37",
+      "Dataset": "ADAB",
+      "Variable": "ISDTC",
+      "Label": "Date/Time of Collection",
+      "Data Type": "datetime",
+      "Length": "19",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "38",
+      "Dataset": "ADAB",
+      "Variable": "ISDY",
+      "Label": "Study Day of Visit/Collection/Exam",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "39",
+      "Dataset": "ADAB",
+      "Variable": "ISTPT",
+      "Label": "Planned Time Point Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "40",
+      "Dataset": "ADAB",
+      "Variable": "ISTPTNUM",
+      "Label": "Planned Time Point Number",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "41",
+      "Dataset": "ADAB",
+      "Variable": "PARAM",
+      "Label": "Parameter",
+      "Data Type": "text",
+      "Length": "76",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "42",
+      "Dataset": "ADAB",
+      "Variable": "PARAMCD",
+      "Label": "Parameter Code",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "43",
+      "Dataset": "ADAB",
+      "Variable": "PARCAT1",
+      "Label": "Parameter Category 1",
+      "Data Type": "text",
+      "Length": "37",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "44",
+      "Dataset": "ADAB",
+      "Variable": "AVAL",
+      "Label": "Analysis Value",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "45",
+      "Dataset": "ADAB",
+      "Variable": "AVALC",
+      "Label": "Analysis Value (C)",
+      "Data Type": "text",
+      "Length": "18",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "46",
+      "Dataset": "ADAB",
+      "Variable": "AVALU",
+      "Label": "Analysis Value Unit",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "47",
+      "Dataset": "ADAB",
+      "Variable": "BASETYPE",
+      "Label": "Baseline Type",
+      "Data Type": "text",
+      "Length": "14",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "48",
+      "Dataset": "ADAB",
+      "Variable": "BASE",
+      "Label": "Baseline Value",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "49",
+      "Dataset": "ADAB",
+      "Variable": "CHG",
+      "Label": "Change from Baseline",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "50",
+      "Dataset": "ADAB",
+      "Variable": "DTYPE",
+      "Label": "Derivation Type",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "51",
+      "Dataset": "ADAB",
+      "Variable": "ADTM",
+      "Label": "Analysis Datetime",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "52",
+      "Dataset": "ADAB",
+      "Variable": "ADT",
+      "Label": "Analysis Date",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "53",
+      "Dataset": "ADAB",
+      "Variable": "ADY",
+      "Label": "Analysis Relative Day",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "54",
+      "Dataset": "ADAB",
+      "Variable": "ATMF",
+      "Label": "Analysis Time Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "55",
+      "Dataset": "ADAB",
+      "Variable": "AVISIT",
+      "Label": "Analysis Visit",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "56",
+      "Dataset": "ADAB",
+      "Variable": "AVISITN",
+      "Label": "Analysis Visit (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "57",
+      "Dataset": "ADAB",
+      "Variable": "ATPT",
+      "Label": "Analysis Timepoint",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "58",
+      "Dataset": "ADAB",
+      "Variable": "APHASE",
+      "Label": "Phase",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "59",
+      "Dataset": "ADAB",
+      "Variable": "APHASEN",
+      "Label": "Phase (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "60",
+      "Dataset": "ADAB",
+      "Variable": "APERIOD",
+      "Label": "Period",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "61",
+      "Dataset": "ADAB",
+      "Variable": "APERIODC",
+      "Label": "Period (C)",
+      "Data Type": "text",
+      "Length": "9",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "62",
+      "Dataset": "ADAB",
+      "Variable": "FANLDTM",
+      "Label": "First Datetime of Dose for Analyte",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "63",
+      "Dataset": "ADAB",
+      "Variable": "FANLDT",
+      "Label": "First Date of Dose for Analyte",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "64",
+      "Dataset": "ADAB",
+      "Variable": "FANLTM",
+      "Label": "First Time of Dose for Analyte",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "65",
+      "Dataset": "ADAB",
+      "Variable": "FANLTMF",
+      "Label": "First Time of Dose for Analyte ImputeFL",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "66",
+      "Dataset": "ADAB",
+      "Variable": "NFRLT",
+      "Label": "Nom. Rel. Time from Analyte First Dose",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "67",
+      "Dataset": "ADAB",
+      "Variable": "AFRLT",
+      "Label": "Act. Rel. Time from Analyte First Dose",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "68",
+      "Dataset": "ADAB",
+      "Variable": "FRLTU",
+      "Label": "Rel. Time from First Dose Unit",
+      "Data Type": "text",
+      "Length": "4",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "69",
+      "Dataset": "ADAB",
+      "Variable": "ABLFL",
+      "Label": "Baseline Record Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "70",
+      "Dataset": "ADAB",
+      "Variable": "ADABLPFL",
+      "Label": "Baseline ADA Eval. Param-Level Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "71",
+      "Dataset": "ADAB",
+      "Variable": "ADPBLPFL",
+      "Label": "Post-Baseline ADA Eval. Param-Level Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "72",
+      "Dataset": "ADAB",
+      "Variable": "ADAFL",
+      "Label": "ADA Population Flag",
+      "Data Type": "text",
+      "Length": "1",
       "Mandatory": "No"
     }
   ],
