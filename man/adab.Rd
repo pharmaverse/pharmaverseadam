@@ -3,7 +3,7 @@
 \docType{data}
 \name{adab}
 \alias{adab}
-\title{Anti-Drug Antibody Data}
+\title{Anti-Drug Antibody Analysis Dataset}
 \format{
 A data frame with 72 columns:
 \describe{
@@ -88,7 +88,7 @@ Generated from admiral package (template ad_adab.R).
 adab
 }
 \description{
-Anti-Drug Antibody Data
+Anti-Drug Antibody Analysis Dataset
 }
 \details{
 Contains a set of 22 unique Parameter Codes and Parameters: \tabular{ll}{

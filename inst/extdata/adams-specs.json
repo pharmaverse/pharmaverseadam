@@ -304,7 +304,7 @@
     },
     {
       "Dataset": "ADAB",
-      "Label": "Anti-Drug Antibody Data",
+      "Label": "Anti-Drug Antibody Analysis Dataset",
       "Class": "BASIC DATA STRUCTURE",
       "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
       "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",

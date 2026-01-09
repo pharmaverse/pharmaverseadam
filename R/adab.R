@@ -3,7 +3,7 @@
 # Manual edits are not recommended, as changes may be overwritten.
 #'
 #' @name adab
-#' @title Anti-Drug Antibody Data
+#' @title Anti-Drug Antibody Analysis Dataset
 #' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 72 columns:
