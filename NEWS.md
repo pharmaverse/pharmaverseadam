@@ -5,6 +5,8 @@
   - The dataset variables and specifications were ordered and grouped according to ADaM IG standards, and the reference page reflected this updated structure. (#128)
   
   - The reference page was updated to categorize datasets by therapeutic areas. (#137)  
+
+  - Update `create_adams_data.R` for cross-platform functionality. (#145)  
   
 <details>
 <summary>Developer Notes</summary>
