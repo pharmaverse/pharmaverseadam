@@ -301,6 +301,17 @@
       "Has No Data": "No",
       "Repeating": "Yes",
       "Reference Data": "No"
+    },
+    {
+      "Dataset": "ADAB",
+      "Label": "Anti-Drug Antibody Data",
+      "Class": "BASIC DATA STRUCTURE",
+      "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
+      "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
+      "Standard": "ADaM-IG 1.1",
+      "Has No Data": "No",
+      "Repeating": "Yes",
+      "Reference Data": "No"
     }
   ],
   "Variables": [

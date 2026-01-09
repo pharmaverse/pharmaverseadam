@@ -2,6 +2,8 @@
 
 ## Documentation
 
+  - Add new `{admiral}` template for Anti-Drug Antibody data `ADAB`. (#143)
+
   - The dataset variables and specifications were ordered and grouped according to ADaM IG standards, and the reference page reflected this updated structure. (#128)
   
   - The reference page was updated to categorize datasets by therapeutic areas. (#137)  
