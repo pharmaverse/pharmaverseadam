@@ -24,6 +24,9 @@ Developer Notes
   the package.
   ([\#139](https://github.com/pharmaverse/pharmaverseadam/issues/139))
 
+- Updated `create_adams_data.R` for cross-platform functionality.
+  ([\#145](https://github.com/pharmaverse/pharmaverseadam/issues/145))
+
 ## pharmaverseadam 1.2.0
 
 CRAN release: 2025-09-06

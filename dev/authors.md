@@ -31,15 +31,15 @@
 Source:
 [`DESCRIPTION`](https://github.com/pharmaverse/pharmaverseadam/blob/main/DESCRIPTION)
 
-Gautier F, Bundfuss S, Mancini E, Patil L, Shuliar V (2025).
+Gautier F, Bundfuss S, Mancini E, Patil L, Shuliar V (2026).
 *pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of
-Packages*. R package version 1.2.0.9003,
+Packages*. R package version 1.2.0.9004,
 <https://pharmaverse.github.io/pharmaverseadam/>.
 
     @Manual{,
       title = {pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of Packages},
       author = {Fanny Gautier and Stefan Bundfuss and Edoardo Mancini and Lina Patil and Vladyslav Shuliar},
-      year = {2025},
-      note = {R package version 1.2.0.9003},
+      year = {2026},
+      note = {R package version 1.2.0.9004},
       url = {https://pharmaverse.github.io/pharmaverseadam/},
     }
