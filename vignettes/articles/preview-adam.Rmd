@@ -1,0 +1,65 @@
+---
+title: "Explore ADAM Datasets"
+date: "2026-01-17"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Explore ADAM Datasets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Datasets Preview
+
+Here is a preview of all datasets included in the `{pharmaverseadam}` package. Each dataset is displayed in a collapsible panel with filtering options. For simplicity, only the first 50 rows of each dataset are shown.
+
+```{r echo=FALSE}
+library(pharmaverseadam)
+library(htmltools)
+library(reactable)
+
+dataset_summary <- data(package = "pharmaverseadam")
+dataset_names <- dataset_summary$results[, "Item"]
+dataset_titles <- dataset_summary$results[, "Title"]
+
+collapsibles <- lapply(seq_along(dataset_names), function(ix) {
+  dataset_name <- dataset_names[ix]
+  dataset_title <- dataset_titles[ix]
+  dataset <- get(dataset_name, envir = asNamespace("pharmaverseadam"))
+
+  # Convert all character columns to valid UTF-8
+  if (is.data.frame(dataset)) {
+    for (col in names(dataset)) {
+      if (is.character(dataset[[col]])) {
+        dataset[[col]] <- iconv(dataset[[col]], to = "UTF-8", sub = "?")
+      }
+    }
+  }
+
+  panel <- tags$details(
+    tags$summary(paste0(dataset_name, ": ", dataset_title)),
+    tags$a(
+      href = paste0("https://pharmaverse.github.io/pharmaverseadam/reference/", dataset_name, ".html"),
+        target = "_blank",
+        "Reference link"
+    ),
+    reactable(
+      head(dataset, 50),
+      defaultPageSize = 50,
+      height = 500,
+      filterable = TRUE,
+      pagination = TRUE,
+      wrap = FALSE,
+      resizable = TRUE,
+      striped = TRUE,
+      defaultColDef = colDef(
+        minWidth = 120,
+        align = "center"
+      )
+    )
+  )
+  panel
+})
+
+browsable(tagList(collapsibles))
+```
