@@ -4,6 +4,7 @@
 #'
 #' @name advs_peds
 #' @title Vital Signs Analysis for Pediatrics
+#' @keywords dataset pediatrics
 #' @docType data
 #' @format A data frame with 80 columns:
 #'   \describe{

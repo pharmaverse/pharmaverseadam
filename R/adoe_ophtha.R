@@ -4,6 +4,7 @@
 #'
 #' @name adoe_ophtha
 #' @title Exam Analysis for Ophthalmology
+#' @keywords dataset ophthalmology
 #' @docType data
 #' @format A data frame with 103 columns:
 #'   \describe{

@@ -120,4 +120,5 @@ data("adface_vaccine")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{vaccine}

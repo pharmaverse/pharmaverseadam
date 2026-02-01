@@ -4,6 +4,7 @@
 #'
 #' @name adeg
 #' @title Electrocardiogram Tests Analysis
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 108 columns:
 #'   \describe{

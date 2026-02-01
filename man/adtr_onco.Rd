@@ -139,4 +139,5 @@ data("adtr_onco")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{oncology}

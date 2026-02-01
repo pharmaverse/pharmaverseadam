@@ -4,6 +4,7 @@
 #'
 #' @name admh
 #' @title Medical History Analysis
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 114 columns:
 #'   \describe{

@@ -4,6 +4,7 @@
 #'
 #' @name adpc
 #' @title Pharmacokinetic Concentrations
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 127 columns:
 #'   \describe{

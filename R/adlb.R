@@ -4,6 +4,7 @@
 #'
 #' @name adlb
 #' @title Laboratory Analysis
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 115 columns:
 #'   \describe{

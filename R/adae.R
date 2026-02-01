@@ -4,6 +4,7 @@
 #'
 #' @name adae
 #' @title Adverse Events Analysis
+#' @keywords dataset generic
 #' @docType data
 #' @format A data frame with 107 columns:
 #'   \describe{

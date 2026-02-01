@@ -4,6 +4,7 @@
 #'
 #' @name adtr_onco
 #' @title Tumor Results Analysis for Oncology
+#' @keywords dataset oncology
 #' @docType data
 #' @format A data frame with 99 columns:
 #'   \describe{

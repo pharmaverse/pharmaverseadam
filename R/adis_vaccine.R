@@ -4,6 +4,7 @@
 #'
 #' @name adis_vaccine
 #' @title Immunogenicity Specimen Assessments
+#' @keywords dataset vaccine
 #' @docType data
 #' @format A data frame with 103 columns:
 #'   \describe{

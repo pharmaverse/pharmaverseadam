@@ -138,4 +138,5 @@ data("admh")
 \references{
 None
 }
-\keyword{datasets}
+\keyword{dataset}
+\keyword{generic}
