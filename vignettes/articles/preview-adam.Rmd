@@ -40,8 +40,8 @@ collapsibles <- lapply(seq_along(dataset_names), function(ix) {
     tags$summary(paste0(dataset_name, ": ", dataset_title)),
     tags$a(
       href = paste0("https://pharmaverse.github.io/pharmaverseadam/reference/", dataset_name, ".html"),
-        target = "_blank",
-        "Reference link"
+      target = "_blank",
+      "Reference link"
     ),
     reactable(
       head(dataset, 50),
