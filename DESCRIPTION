@@ -30,7 +30,7 @@ Depends:
 Imports:
     tibble
 Suggests:
-    admiraldev (>= 1.2.0),
+    admiraldev (>= 1.4.0),
     cli,
     covr,
     devtools,
