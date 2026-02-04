@@ -2,11 +2,14 @@
 
 ## Documentation
 
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.4.1, `{admiralonco}` 1.4.0, `{admiralophtha}` 1.4.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.3.0,
+  `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.4.0. (#147)
+  
   - Added new `{admiral}` template for Anti-Drug Antibody data `ADAB`. (#143)
 
-  - The dataset variables and specifications were ordered and grouped according to ADaM IG standards, and the reference page reflected this updated structure. (#128)
+  - The reference page was updated to categorize datasets by therapeutic areas. (#137)
   
-  - The reference page was updated to categorize datasets by therapeutic areas. (#137)  
+  - The dataset variables and specifications were ordered and grouped according to ADaM IG standards, and the reference page reflected this updated structure. (#128)
   
 <details>
 <summary>Developer Notes</summary>
