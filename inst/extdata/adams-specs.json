@@ -12732,16 +12732,6 @@
       "Has No Data": "No"
     },
     {
-      "Order": "103",
-      "Dataset": "ADPC",
-      "Variable": "VISIT",
-      "Label": "Visit Name",
-      "Data Type": "text",
-      "Length": "8",
-      "Mandatory": "No",
-      "Has No Data": "No"
-    },
-    {
       "Order": "104",
       "Dataset": "ADPC",
       "Variable": "VISITNUM",
@@ -12752,7 +12742,27 @@
       "Has No Data": "No"
     },
     {
+      "Order": "103",
+      "Dataset": "ADPC",
+      "Variable": "VISIT",
+      "Label": "Visit Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "105",
+      "Dataset": "ADPC",
+      "Variable": "VISITDY",
+      "Label": "Planned Study Day of Visit",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "106",
       "Dataset": "ADPC",
       "Variable": "PCDTC",
       "Label": "Date/Time of Specimen Collection",
@@ -12761,7 +12771,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "106",
+      "Order": "107",
       "Dataset": "ADPC",
       "Variable": "PCDY",
       "Label": "Actual Study Day of Specimen Collection",
@@ -12771,7 +12781,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "107",
+      "Order": "108",
       "Dataset": "ADPC",
       "Variable": "PCTPT",
       "Label": "Planned Time Point Name",
@@ -12781,7 +12791,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "108",
+      "Order": "109",
       "Dataset": "ADPC",
       "Variable": "PCTPTNUM",
       "Label": "Planned Time Point Number",
@@ -12792,7 +12802,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "109",
+      "Order": "110",
       "Dataset": "ADPC",
       "Variable": "FANLDTM",
       "Label": "First Datetime of Dose for Analyte",
@@ -12803,7 +12813,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "110",
+      "Order": "111",
       "Dataset": "ADPC",
       "Variable": "AFRLT",
       "Label": "Act. Rel. Time from Analyte First Dose",
@@ -12814,7 +12824,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "111",
+      "Order": "112",
       "Dataset": "ADPC",
       "Variable": "ARRLT",
       "Label": "Actual Rel. Time from Ref. Dose",
@@ -12825,7 +12835,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "112",
+      "Order": "113",
       "Dataset": "ADPC",
       "Variable": "PCRFTDTM",
       "Label": "Reference Datetime of Dose for Analyte",
@@ -12836,7 +12846,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "113",
+      "Order": "114",
       "Dataset": "ADPC",
       "Variable": "FANLDT",
       "Label": "First Date of Dose for Analyte",
@@ -12847,7 +12857,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "114",
+      "Order": "115",
       "Dataset": "ADPC",
       "Variable": "FANLTM",
       "Label": "First Time of Dose for Analyte",
@@ -12858,7 +12868,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "115",
+      "Order": "116",
       "Dataset": "ADPC",
       "Variable": "PCRFTDT",
       "Label": "Reference Date of Dose for Analyte",
@@ -12869,7 +12879,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "116",
+      "Order": "117",
       "Dataset": "ADPC",
       "Variable": "PCRFTTM",
       "Label": "Reference Time of Dose for Analyte",
@@ -12880,7 +12890,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "117",
+      "Order": "118",
       "Dataset": "ADPC",
       "Variable": "NRRLT",
       "Label": "Nominal Rel. Time from Ref. Dose",
@@ -12891,7 +12901,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "118",
+      "Order": "119",
       "Dataset": "ADPC",
       "Variable": "FRLTU",
       "Label": "Rel. Time from First Dose Unit",
@@ -12901,7 +12911,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "119",
+      "Order": "120",
       "Dataset": "ADPC",
       "Variable": "RRLTU",
       "Label": "Rel. Time from Ref. Dose Unit",
@@ -12911,7 +12921,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "120",
+      "Order": "121",
       "Dataset": "ADPC",
       "Variable": "ALLOQ",
       "Label": "Analysis Lower Limit of Quantitation",
@@ -12922,7 +12932,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "121",
+      "Order": "122",
       "Dataset": "ADPC",
       "Variable": "MRRLT",
       "Label": "Modified Rel. Time from Ref. Dose",
@@ -12933,7 +12943,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "122",
+      "Order": "123",
       "Dataset": "ADPC",
       "Variable": "HTBL",
       "Label": "Numeric Result/Finding in Standard Units",
@@ -12944,7 +12954,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "123",
+      "Order": "124",
       "Dataset": "ADPC",
       "Variable": "HTBLU",
       "Label": "Standard Units",
@@ -12954,7 +12964,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "124",
+      "Order": "125",
       "Dataset": "ADPC",
       "Variable": "WTBL",
       "Label": "Numeric Result/Finding in Standard Units",
@@ -12965,7 +12975,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "125",
+      "Order": "126",
       "Dataset": "ADPC",
       "Variable": "WTBLU",
       "Label": "Standard Units",
@@ -12975,7 +12985,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "126",
+      "Order": "127",
       "Dataset": "ADPC",
       "Variable": "BMIBL",
       "Label": "Baseline Body Mass Index (kg/m2)",
@@ -12986,7 +12996,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "127",
+      "Order": "128",
       "Dataset": "ADPC",
       "Variable": "BMIBLU",
       "Label": "BMI at Baseline (Unit)",
