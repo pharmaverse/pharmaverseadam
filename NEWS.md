@@ -1,11 +1,13 @@
 # pharmaverseadam (development version)
 
-## Documentation
+## New features
 
   - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.4.1, `{admiralonco}` 1.4.0, `{admiralophtha}` 1.4.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.3.0,
   `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.4.0. (#147)
   
   - Added new `{admiral}` template for Anti-Drug Antibody data `ADAB`. (#143)
+  
+## Documentation
 
   - The reference page was updated to categorize datasets by therapeutic areas. (#137)
   
