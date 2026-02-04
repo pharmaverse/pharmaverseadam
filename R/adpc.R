@@ -6,7 +6,7 @@
 #' @title Pharmacokinetic Concentrations
 #' @keywords dataset generic
 #' @docType data
-#' @format A data frame with 127 columns:
+#' @format A data frame with 128 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -112,6 +112,7 @@
 #'     \item{ PCLLOQ }{Lower Limit of Quantitation}
 #'     \item{ VISIT }{Visit Name}
 #'     \item{ VISITNUM }{Visit Number}
+#'     \item{ VISITDY }{Planned Study Day of Visit}
 #'     \item{ PCDTC }{Date/Time of Specimen Collection}
 #'     \item{ PCDY }{Actual Study Day of Specimen Collection}
 #'     \item{ PCTPT }{Planned Time Point Name}
