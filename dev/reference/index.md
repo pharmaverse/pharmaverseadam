@@ -2,6 +2,8 @@
 
 ## Generic Datasets
 
+- [`adab`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adab.md)
+  : Anti-Drug Antibody Analysis Dataset
 - [`adae`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adae.md)
   : Adverse Events Analysis
 - [`adcm`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adcm.md)

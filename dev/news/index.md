@@ -4,6 +4,10 @@
 
 ### Documentation
 
+- Added new [admiral](https://pharmaverse.github.io/admiral/) template
+  for Anti-Drug Antibody data `ADAB`.
+  ([\#143](https://github.com/pharmaverse/pharmaverseadam/issues/143))
+
 - The dataset variables and specifications were ordered and grouped
   according to ADaM IG standards, and the reference page reflected this
   updated structure.
