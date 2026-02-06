@@ -19,6 +19,7 @@ library(htmltools)
 library(reactable)
 library(readxl)
 
+# Define therapeutic area mapping
 ta_df <- data.frame(
   short_suffix = c("E", "P", "M", "N", "O", "V"),
   long_suffix = c("_peds", "_ophtha", "_metabolic", "_neuro", "_onco", "_vaccine"),
@@ -32,6 +33,7 @@ ta_df <- data.frame(
   )
 )
 
+# Read dataset specifications from the Excel file and derive dataset names and areas 
 path_specs <- system.file("extdata/adams-specs.xlsx", package = "pharmaverseadam")
 specs <- read_xlsx(path_specs, sheet = "Datasets")
 specs$short_suffix <- gsub(".*_(.)$", "\\1", specs$Dataset)
@@ -49,6 +51,19 @@ specs$names <- ifelse(
   specs$names
 )
 
+# Make sure all names derived from specs exist in the package
+dataset_summary <- data(package = "pharmaverseadam")
+dataset_names <- dataset_summary$results[, "Item"]
+missing_datasets <- setdiff(specs$names, dataset_names)
+missing_datasets <- c(missing_datasets, setdiff(dataset_names, specs$names))
+if (length(missing_datasets) > 0) {
+  stop(
+    "The following datasets are missing in the package: ",
+    paste(missing_datasets, sep = ", ")
+  )
+}
+
+# Create collapsible panels for each dataset grouped by area 
 areas <- sort(unique(specs$areas))
 collapsible_groups <- lapply(areas, function(area) {
   # Indices of datasets in this area
