@@ -33,7 +33,7 @@ ta_df <- data.frame(
   )
 )
 
-# Read dataset specifications from the Excel file and derive dataset names and areas 
+# Read dataset specifications from the Excel file and derive dataset names and areas
 path_specs <- system.file("extdata/adams-specs.xlsx", package = "pharmaverseadam")
 specs <- read_xlsx(path_specs, sheet = "Datasets")
 specs$short_suffix <- gsub(".*_(.)$", "\\1", specs$Dataset)
@@ -64,7 +64,7 @@ if (length(missing_datasets) > 0) {
   )
 }
 
-# Create collapsible panels for each dataset grouped by area 
+# Create collapsible panels for each dataset grouped by area
 areas <- sort(unique(specs$areas))
 collapsible_groups <- lapply(areas, function(area) {
   # Indices of datasets in this area
