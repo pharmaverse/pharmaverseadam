@@ -50,6 +50,7 @@ specs$names <- ifelse(
   paste0(specs$names, lsuf_ta[specs$areas]),
   specs$names
 )
+specs <- specs[order(specs$areas, specs$names), ]
 
 # Make sure all names derived from specs exist in the package
 dataset_summary <- data(package = "pharmaverseadam")
