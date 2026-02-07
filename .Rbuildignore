@@ -25,3 +25,4 @@
 ^cran-comments\.md$
 ^revdep
 ^.revdeprefs.yaml
+^vignettes/articles$
