@@ -8,7 +8,7 @@
   
   - The reference page was updated to categorize datasets by therapeutic areas. (#137)  
 
-  - Added a new vignette "Datasets Preview" to preview all datasets included in the package. (#102)
+  - Added a new vignette "Explore ADaM Datasets" to preview all datasets included in the package. (#102)
 
 <details>
 <summary>Developer Notes</summary>

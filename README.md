@@ -79,7 +79,9 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - Source information indicating which template and package generated it,
    - Example usage with `data("<dataset>")`.
 
-   Data exploration previews are generated via the vignette at `vignettes/articles/preview-adam.Rmd`. If a new therapeutic area is added to the package, this vignette must also be updated to include the new therapeutic area.
+### 3. Data Exploration
+
+Data exploration previews are generated using the vignette located at `vignettes/articles/preview-adam.Rmd`. If a new therapeutic area is added to the package (in `adams-specs.xlsx` and `create_adams_data.R`), the vignette must also be updated to include the new therapeutic area.
 
 ## Acknowledgments
 
