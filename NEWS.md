@@ -13,6 +13,8 @@
   
   - The dataset variables and specifications were ordered and grouped according to ADaM IG standards, and the reference page reflected this updated structure. (#128)
   
+  - Added a new vignette "Explore ADaM Datasets" to preview all datasets included in the package. (#102)
+
 <details>
 <summary>Developer Notes</summary>
 
@@ -23,6 +25,7 @@
 - Updated `create_adams_data.R` for cross-platform functionality. (#145)  
 
 </details>
+
 
 # pharmaverseadam 1.2.0
 
