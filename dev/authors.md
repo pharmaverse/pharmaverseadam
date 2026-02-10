@@ -11,6 +11,9 @@
 
 - **Lina Patil**. Author.
 
+- **Gerardo Jose Rodriguez**. Author.
+  [](https://orcid.org/0000-0003-1413-0060)
+
 - **Vladyslav Shuliar**. Author.
   [](https://orcid.org/0009-0008-2354-8999)
 
@@ -31,15 +34,15 @@
 Source:
 [`DESCRIPTION`](https://github.com/pharmaverse/pharmaverseadam/blob/main/DESCRIPTION)
 
-Gautier F, Bundfuss S, Mancini E, Patil L, Shuliar V (2026).
-*pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of
-Packages*. R package version 1.2.0.9005,
+Gautier F, Bundfuss S, Mancini E, Patil L, Rodriguez G, Shuliar V
+(2026). *pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of
+Packages*. R package version 1.2.0.9006,
 <https://pharmaverse.github.io/pharmaverseadam/>.
 
     @Manual{,
       title = {pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of Packages},
-      author = {Fanny Gautier and Stefan Bundfuss and Edoardo Mancini and Lina Patil and Vladyslav Shuliar},
+      author = {Fanny Gautier and Stefan Bundfuss and Edoardo Mancini and Lina Patil and Gerardo Jose Rodriguez and Vladyslav Shuliar},
       year = {2026},
-      note = {R package version 1.2.0.9005},
+      note = {R package version 1.2.0.9006},
       url = {https://pharmaverse.github.io/pharmaverseadam/},
     }

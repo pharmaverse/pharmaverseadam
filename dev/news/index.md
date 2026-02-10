@@ -17,6 +17,10 @@
   areas.
   ([\#137](https://github.com/pharmaverse/pharmaverseadam/issues/137))
 
+- Added a new vignette “Explore ADaM Datasets” to preview all datasets
+  included in the package.
+  ([\#102](https://github.com/pharmaverse/pharmaverseadam/issues/102))
+
 Developer Notes
 
 - Updated [lintr](https://lintr.r-lib.org) configurations to use central
