@@ -303,6 +303,17 @@
       "Reference Data": "No"
     },
     {
+      "Dataset": "ADAB",
+      "Label": "Anti-Drug Antibody Analysis Dataset",
+      "Class": "BASIC DATA STRUCTURE",
+      "Structure": "One or more records per subject per analysis parameter per analysis timepoint",
+      "Key Variables": "STUDYID, USUBJID, PARAM, PARAMCD, AVAL",
+      "Standard": "ADaM-IG 1.1",
+      "Has No Data": "No",
+      "Repeating": "Yes",
+      "Reference Data": "No"
+    },
+    {
       "Dataset": "ADAPET_N",
       "Label": "Amyloid PET Scan Analysis Dataset",
       "Class": "BASIC DATA STRUCTURE",
@@ -12754,16 +12765,6 @@
       "Has No Data": "No"
     },
     {
-      "Order": "103",
-      "Dataset": "ADPC",
-      "Variable": "VISIT",
-      "Label": "Visit Name",
-      "Data Type": "text",
-      "Length": "8",
-      "Mandatory": "No",
-      "Has No Data": "No"
-    },
-    {
       "Order": "104",
       "Dataset": "ADPC",
       "Variable": "VISITNUM",
@@ -12774,7 +12775,27 @@
       "Has No Data": "No"
     },
     {
+      "Order": "103",
+      "Dataset": "ADPC",
+      "Variable": "VISIT",
+      "Label": "Visit Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
       "Order": "105",
+      "Dataset": "ADPC",
+      "Variable": "VISITDY",
+      "Label": "Planned Study Day of Visit",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "106",
       "Dataset": "ADPC",
       "Variable": "PCDTC",
       "Label": "Date/Time of Specimen Collection",
@@ -12783,7 +12804,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "106",
+      "Order": "107",
       "Dataset": "ADPC",
       "Variable": "PCDY",
       "Label": "Actual Study Day of Specimen Collection",
@@ -12793,7 +12814,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "107",
+      "Order": "108",
       "Dataset": "ADPC",
       "Variable": "PCTPT",
       "Label": "Planned Time Point Name",
@@ -12803,7 +12824,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "108",
+      "Order": "109",
       "Dataset": "ADPC",
       "Variable": "PCTPTNUM",
       "Label": "Planned Time Point Number",
@@ -12814,7 +12835,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "109",
+      "Order": "110",
       "Dataset": "ADPC",
       "Variable": "FANLDTM",
       "Label": "First Datetime of Dose for Analyte",
@@ -12825,7 +12846,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "110",
+      "Order": "111",
       "Dataset": "ADPC",
       "Variable": "AFRLT",
       "Label": "Act. Rel. Time from Analyte First Dose",
@@ -12836,7 +12857,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "111",
+      "Order": "112",
       "Dataset": "ADPC",
       "Variable": "ARRLT",
       "Label": "Actual Rel. Time from Ref. Dose",
@@ -12847,7 +12868,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "112",
+      "Order": "113",
       "Dataset": "ADPC",
       "Variable": "PCRFTDTM",
       "Label": "Reference Datetime of Dose for Analyte",
@@ -12858,7 +12879,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "113",
+      "Order": "114",
       "Dataset": "ADPC",
       "Variable": "FANLDT",
       "Label": "First Date of Dose for Analyte",
@@ -12869,7 +12890,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "114",
+      "Order": "115",
       "Dataset": "ADPC",
       "Variable": "FANLTM",
       "Label": "First Time of Dose for Analyte",
@@ -12880,7 +12901,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "115",
+      "Order": "116",
       "Dataset": "ADPC",
       "Variable": "PCRFTDT",
       "Label": "Reference Date of Dose for Analyte",
@@ -12891,7 +12912,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "116",
+      "Order": "117",
       "Dataset": "ADPC",
       "Variable": "PCRFTTM",
       "Label": "Reference Time of Dose for Analyte",
@@ -12902,7 +12923,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "117",
+      "Order": "118",
       "Dataset": "ADPC",
       "Variable": "NRRLT",
       "Label": "Nominal Rel. Time from Ref. Dose",
@@ -12913,7 +12934,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "118",
+      "Order": "119",
       "Dataset": "ADPC",
       "Variable": "FRLTU",
       "Label": "Rel. Time from First Dose Unit",
@@ -12923,7 +12944,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "119",
+      "Order": "120",
       "Dataset": "ADPC",
       "Variable": "RRLTU",
       "Label": "Rel. Time from Ref. Dose Unit",
@@ -12933,7 +12954,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "120",
+      "Order": "121",
       "Dataset": "ADPC",
       "Variable": "ALLOQ",
       "Label": "Analysis Lower Limit of Quantitation",
@@ -12944,7 +12965,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "121",
+      "Order": "122",
       "Dataset": "ADPC",
       "Variable": "MRRLT",
       "Label": "Modified Rel. Time from Ref. Dose",
@@ -12955,7 +12976,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "122",
+      "Order": "123",
       "Dataset": "ADPC",
       "Variable": "HTBL",
       "Label": "Numeric Result/Finding in Standard Units",
@@ -12966,7 +12987,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "123",
+      "Order": "124",
       "Dataset": "ADPC",
       "Variable": "HTBLU",
       "Label": "Standard Units",
@@ -12976,7 +12997,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "124",
+      "Order": "125",
       "Dataset": "ADPC",
       "Variable": "WTBL",
       "Label": "Numeric Result/Finding in Standard Units",
@@ -12987,7 +13008,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "125",
+      "Order": "126",
       "Dataset": "ADPC",
       "Variable": "WTBLU",
       "Label": "Standard Units",
@@ -12997,7 +13018,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "126",
+      "Order": "127",
       "Dataset": "ADPC",
       "Variable": "BMIBL",
       "Label": "Baseline Body Mass Index (kg/m2)",
@@ -13008,7 +13029,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "127",
+      "Order": "128",
       "Dataset": "ADPC",
       "Variable": "BMIBLU",
       "Label": "BMI at Baseline (Unit)",
@@ -22619,13 +22640,670 @@
     },
     {
       "Order": "1",
+      "Dataset": "ADAB",
+      "Variable": "STUDYID",
+      "Label": "Study Identifier",
+      "Data Type": "text",
+      "Length": "12",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "2",
+      "Dataset": "ADAB",
+      "Variable": "USUBJID",
+      "Label": "Unique Subject Identifier",
+      "Data Type": "text",
+      "Length": "11",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "3",
+      "Dataset": "ADAB",
+      "Variable": "SUBJID",
+      "Label": "Subject Identifier for the Study",
+      "Data Type": "text",
+      "Length": "4",
+      "Mandatory": "Yes"
+    },
+    {
+      "Order": "4",
+      "Dataset": "ADAB",
+      "Variable": "SITEID",
+      "Label": "Study Site Identifier",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "5",
+      "Dataset": "ADAB",
+      "Variable": "ASEQ",
+      "Label": "Analysis Sequence Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "6",
+      "Dataset": "ADAB",
+      "Variable": "REGION1",
+      "Label": "Geographic Region 1",
+      "Data Type": "text",
+      "Length": "2",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "7",
+      "Dataset": "ADAB",
+      "Variable": "COUNTRY",
+      "Label": "Country",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "8",
+      "Dataset": "ADAB",
+      "Variable": "ETHNIC",
+      "Label": "Ethnicity",
+      "Data Type": "text",
+      "Length": "22",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "9",
+      "Dataset": "ADAB",
+      "Variable": "AGE",
+      "Label": "Age",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "10",
+      "Dataset": "ADAB",
+      "Variable": "AGEU",
+      "Label": "Age Units",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "11",
+      "Dataset": "ADAB",
+      "Variable": "SEX",
+      "Label": "Sex",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "12",
+      "Dataset": "ADAB",
+      "Variable": "RACE",
+      "Label": "Race",
+      "Data Type": "text",
+      "Length": "32",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "13",
+      "Dataset": "ADAB",
+      "Variable": "SAFFL",
+      "Label": "Safety Population Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "14",
+      "Dataset": "ADAB",
+      "Variable": "TRT01P",
+      "Label": "Description of Planned Arm",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "15",
+      "Dataset": "ADAB",
+      "Variable": "TRT01A",
+      "Label": "Description of Actual Arm",
+      "Data Type": "text",
+      "Length": "20",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "16",
+      "Dataset": "ADAB",
+      "Variable": "TRTSDTM",
+      "Label": "Datetime of First Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "17",
+      "Dataset": "ADAB",
+      "Variable": "TRTSDT",
+      "Label": "Date of First Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "18",
+      "Dataset": "ADAB",
+      "Variable": "TRTEDTM",
+      "Label": "Datetime of Last Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "19",
+      "Dataset": "ADAB",
+      "Variable": "TRTEDT",
+      "Label": "Date of Last Exposure to Treatment",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "20",
+      "Dataset": "ADAB",
+      "Variable": "ISSEQ",
+      "Label": "Sequence Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "21",
+      "Dataset": "ADAB",
+      "Variable": "ISTESTCD",
+      "Label": "Immunogenicity Test/Exam Short Name",
+      "Data Type": "text",
+      "Length": "7",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "22",
+      "Dataset": "ADAB",
+      "Variable": "ISTEST",
+      "Label": "Immunogenicity Test or Examination Name",
+      "Data Type": "text",
+      "Length": "38",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "23",
+      "Dataset": "ADAB",
+      "Variable": "ISCAT",
+      "Label": "Category for Immunogenicity Test",
+      "Data Type": "text",
+      "Length": "14",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "24",
+      "Dataset": "ADAB",
+      "Variable": "ISBDAGNT",
+      "Label": "Binding Agent",
+      "Data Type": "text",
+      "Length": "10",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "25",
+      "Dataset": "ADAB",
+      "Variable": "ISSTRESC",
+      "Label": "Character Result/Finding in Std Format",
+      "Data Type": "text",
+      "Length": "21",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "26",
+      "Dataset": "ADAB",
+      "Variable": "ISSTRESN",
+      "Label": "Numeric Results/Findings in Std. Units",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "27",
+      "Dataset": "ADAB",
+      "Variable": "ISSTRESU",
+      "Label": "Standard Units",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "28",
+      "Dataset": "ADAB",
+      "Variable": "ISSTAT",
+      "Label": "Completion Status",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "29",
+      "Dataset": "ADAB",
+      "Variable": "ISREASND",
+      "Label": "Reason Not Done",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "30",
+      "Dataset": "ADAB",
+      "Variable": "ISSPEC",
+      "Label": "Specimen Type",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "31",
+      "Dataset": "ADAB",
+      "Variable": "DTL",
+      "Label": "Drug Tolerance Level",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "32",
+      "Dataset": "ADAB",
+      "Variable": "MRT",
+      "Label": "Minimum Reportable Titer",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "33",
+      "Dataset": "ADAB",
+      "Variable": "VISITNUM",
+      "Label": "Visit Number",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "34",
+      "Dataset": "ADAB",
+      "Variable": "VISIT",
+      "Label": "Visit Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "35",
+      "Dataset": "ADAB",
+      "Variable": "VISITDY",
+      "Label": "Planned Study Day of Visit",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "36",
+      "Dataset": "ADAB",
+      "Variable": "EPOCH",
+      "Label": "Epoch",
+      "Data Type": "text",
+      "Length": "9",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "37",
+      "Dataset": "ADAB",
+      "Variable": "ISDTC",
+      "Label": "Date/Time of Collection",
+      "Data Type": "datetime",
+      "Length": "19",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "38",
+      "Dataset": "ADAB",
+      "Variable": "ISDY",
+      "Label": "Study Day of Visit/Collection/Exam",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "39",
+      "Dataset": "ADAB",
+      "Variable": "ISTPT",
+      "Label": "Planned Time Point Name",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "40",
+      "Dataset": "ADAB",
+      "Variable": "ISTPTNUM",
+      "Label": "Planned Time Point Number",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "41",
+      "Dataset": "ADAB",
+      "Variable": "PARAM",
+      "Label": "Parameter",
+      "Data Type": "text",
+      "Length": "76",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "42",
+      "Dataset": "ADAB",
+      "Variable": "PARAMCD",
+      "Label": "Parameter Code",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "43",
+      "Dataset": "ADAB",
+      "Variable": "PARCAT1",
+      "Label": "Parameter Category 1",
+      "Data Type": "text",
+      "Length": "37",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "44",
+      "Dataset": "ADAB",
+      "Variable": "AVAL",
+      "Label": "Analysis Value",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "45",
+      "Dataset": "ADAB",
+      "Variable": "AVALC",
+      "Label": "Analysis Value (C)",
+      "Data Type": "text",
+      "Length": "18",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "46",
+      "Dataset": "ADAB",
+      "Variable": "AVALU",
+      "Label": "Analysis Value Unit",
+      "Data Type": "text",
+      "Length": "5",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "47",
+      "Dataset": "ADAB",
+      "Variable": "BASETYPE",
+      "Label": "Baseline Type",
+      "Data Type": "text",
+      "Length": "14",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "48",
+      "Dataset": "ADAB",
+      "Variable": "BASE",
+      "Label": "Baseline Value",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "49",
+      "Dataset": "ADAB",
+      "Variable": "CHG",
+      "Label": "Change from Baseline",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "50",
+      "Dataset": "ADAB",
+      "Variable": "DTYPE",
+      "Label": "Derivation Type",
+      "Data Type": "text",
+      "Length": "3",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "51",
+      "Dataset": "ADAB",
+      "Variable": "ADTM",
+      "Label": "Analysis Datetime",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "52",
+      "Dataset": "ADAB",
+      "Variable": "ADT",
+      "Label": "Analysis Date",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "53",
+      "Dataset": "ADAB",
+      "Variable": "ADY",
+      "Label": "Analysis Relative Day",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "54",
+      "Dataset": "ADAB",
+      "Variable": "ATMF",
+      "Label": "Analysis Time Imputation Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "55",
+      "Dataset": "ADAB",
+      "Variable": "AVISIT",
+      "Label": "Analysis Visit",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "56",
+      "Dataset": "ADAB",
+      "Variable": "AVISITN",
+      "Label": "Analysis Visit (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "57",
+      "Dataset": "ADAB",
+      "Variable": "ATPT",
+      "Label": "Analysis Timepoint",
+      "Data Type": "text",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "58",
+      "Dataset": "ADAB",
+      "Variable": "APHASE",
+      "Label": "Phase",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "59",
+      "Dataset": "ADAB",
+      "Variable": "APHASEN",
+      "Label": "Phase (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "60",
+      "Dataset": "ADAB",
+      "Variable": "APERIOD",
+      "Label": "Period",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "61",
+      "Dataset": "ADAB",
+      "Variable": "APERIODC",
+      "Label": "Period (C)",
+      "Data Type": "text",
+      "Length": "9",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "62",
+      "Dataset": "ADAB",
+      "Variable": "FANLDTM",
+      "Label": "First Datetime of Dose for Analyte",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATETIME",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "63",
+      "Dataset": "ADAB",
+      "Variable": "FANLDT",
+      "Label": "First Date of Dose for Analyte",
+      "Data Type": "integer",
+      "Length": "8",
+      "Format": "DATE",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "64",
+      "Dataset": "ADAB",
+      "Variable": "FANLTM",
+      "Label": "First Time of Dose for Analyte",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "65",
+      "Dataset": "ADAB",
+      "Variable": "FANLTMF",
+      "Label": "First Time of Dose for Analyte ImputeFL",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "66",
+      "Dataset": "ADAB",
+      "Variable": "NFRLT",
+      "Label": "Nom. Rel. Time from Analyte First Dose",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "67",
+      "Dataset": "ADAB",
+      "Variable": "AFRLT",
+      "Label": "Act. Rel. Time from Analyte First Dose",
+      "Data Type": "float",
+      "Length": "8",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "68",
+      "Dataset": "ADAB",
+      "Variable": "FRLTU",
+      "Label": "Rel. Time from First Dose Unit",
+      "Data Type": "text",
+      "Length": "4",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "69",
+      "Dataset": "ADAB",
+      "Variable": "ABLFL",
+      "Label": "Baseline Record Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "70",
+      "Dataset": "ADAB",
+      "Variable": "ADABLPFL",
+      "Label": "Baseline ADA Eval. Param-Level Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "71",
+      "Dataset": "ADAB",
+      "Variable": "ADPBLPFL",
+      "Label": "Post-Baseline ADA Eval. Param-Level Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "72",
+      "Dataset": "ADAB",
+      "Variable": "ADAFL",
+      "Label": "ADA Population Flag",
+      "Data Type": "text",
+      "Length": "1",
+      "Mandatory": "No"
+    },
+    {
+      "Order": "1",
       "Dataset": "ADAPET_N",
       "Variable": "STUDYID",
       "Label": "Study Identifier",
       "Data Type": "text",
       "Length": "12",
       "Mandatory": "Yes",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "2",
@@ -22635,7 +23313,8 @@
       "Data Type": "text",
       "Length": "11",
       "Mandatory": "Yes",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "3",
@@ -22644,7 +23323,8 @@
       "Label": "Domain Abbreviation",
       "Data Type": "text",
       "Length": "2",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "4",
@@ -22654,7 +23334,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "5",
@@ -22663,7 +23344,8 @@
       "Label": "Planned Treatment for Period 01",
       "Data Type": "text",
       "Length": "20",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "6",
@@ -22672,7 +23354,8 @@
       "Label": "Actual Treatment for Period 01",
       "Data Type": "text",
       "Length": "20",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "7",
@@ -22683,7 +23366,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "ADSL Treatment Timing Variables"
+      "Role": "ADSL Treatment Timing Variables",
+      "Has No Data": "No"
     },
     {
       "Order": "8",
@@ -22694,7 +23378,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "ADSL Treatment Timing Variables"
+      "Role": "ADSL Treatment Timing Variables",
+      "Has No Data": "No"
     },
     {
       "Order": "9",
@@ -22705,7 +23390,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "10",
@@ -22715,7 +23401,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "11",
@@ -22725,7 +23412,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "12",
@@ -22735,7 +23423,8 @@
       "Data Type": "integer",
       "Length": "2",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "13",
@@ -22745,7 +23434,8 @@
       "Data Type": "text",
       "Length": "73",
       "Mandatory": "Yes",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "14",
@@ -22755,7 +23445,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "Yes",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "15",
@@ -22766,7 +23457,8 @@
       "Length": "9",
       "Significant Digits": "5",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "16",
@@ -22776,7 +23468,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "17",
@@ -22785,7 +23478,8 @@
       "Label": "Analysis Value Unit",
       "Data Type": "text",
       "Length": "2",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "18",
@@ -22795,7 +23489,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "19",
@@ -22805,7 +23500,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "20",
@@ -22814,7 +23510,8 @@
       "Label": "Baseline Type",
       "Data Type": "text",
       "Length": "4",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "21",
@@ -22825,7 +23522,8 @@
       "Length": "8",
       "Significant Digits": "1",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "22",
@@ -22836,7 +23534,8 @@
       "Length": "12",
       "Significant Digits": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "23",
@@ -22845,7 +23544,8 @@
       "Label": "Analysis Criterion 1",
       "Data Type": "text",
       "Length": "16",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "24",
@@ -22854,7 +23554,8 @@
       "Label": "Criterion 1 Evaluation Result Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "25",
@@ -22864,7 +23565,8 @@
       "Data Type": "text",
       "Length": "1",
       "Mandatory": "No",
-      "Role": "Flag Variables for BDS Datasets"
+      "Role": "Flag Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "26",
@@ -22873,7 +23575,8 @@
       "Label": "Analysis Flag 01",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "27",
@@ -22882,7 +23585,8 @@
       "Label": "Analysis Flag 02",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "28",
@@ -22891,7 +23595,8 @@
       "Label": "On Treatment Record Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "29",
@@ -22900,7 +23605,8 @@
       "Label": "Sequence Number",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "30",
@@ -22909,7 +23615,8 @@
       "Label": "Link ID",
       "Data Type": "text",
       "Length": "3",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "31",
@@ -22918,7 +23625,8 @@
       "Label": "Short Name of Nervous System Test",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "32",
@@ -22927,7 +23635,8 @@
       "Label": "Name of Nervous System Test",
       "Data Type": "text",
       "Length": "200",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "33",
@@ -22936,7 +23645,8 @@
       "Label": "Category for Nervous System Test",
       "Data Type": "text",
       "Length": "3",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "34",
@@ -22945,7 +23655,8 @@
       "Label": "Location Used for the Measurement",
       "Data Type": "text",
       "Length": "21",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "35",
@@ -22954,7 +23665,8 @@
       "Label": "Vendor Name",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "36",
@@ -22963,7 +23675,8 @@
       "Label": "Result or Finding in Original Units",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "37",
@@ -22972,7 +23685,8 @@
       "Label": "Original Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "38",
@@ -22981,7 +23695,8 @@
       "Label": "Character Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "39",
@@ -22991,7 +23706,8 @@
       "Data Type": "float",
       "Length": "5",
       "Significant Digits": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "40",
@@ -23000,7 +23716,8 @@
       "Label": "Standard Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "41",
@@ -23009,7 +23726,8 @@
       "Label": "Method of Test or Examination",
       "Data Type": "text",
       "Length": "26",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "42",
@@ -23018,7 +23736,8 @@
       "Label": "Last Observation Before Exposure Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "43",
@@ -23027,7 +23746,8 @@
       "Label": "Reference Region",
       "Data Type": "text",
       "Length": "16",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "44",
@@ -23036,7 +23756,8 @@
       "Label": "Reported Agent Name",
       "Data Type": "text",
       "Length": "15",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "45",
@@ -23045,7 +23766,8 @@
       "Label": "Category for Agent",
       "Data Type": "text",
       "Length": "14",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "46",
@@ -23055,7 +23777,8 @@
       "Data Type": "float",
       "Length": "3",
       "Significant Digits": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "47",
@@ -23064,7 +23787,8 @@
       "Label": "Visit Name",
       "Data Type": "text",
       "Length": "15",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "48",
@@ -23073,7 +23797,8 @@
       "Label": "Date/Time of Collection",
       "Data Type": "text",
       "Length": "10",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "49",
@@ -23082,7 +23807,8 @@
       "Label": "Study Day of Visit/Collection/Exam",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "1",
@@ -23092,7 +23818,8 @@
       "Data Type": "text",
       "Length": "12",
       "Mandatory": "Yes",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "2",
@@ -23102,7 +23829,8 @@
       "Data Type": "text",
       "Length": "11",
       "Mandatory": "Yes",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "3",
@@ -23111,7 +23839,8 @@
       "Label": "Domain Abbreviation",
       "Data Type": "text",
       "Length": "2",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "4",
@@ -23121,7 +23850,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "5",
@@ -23130,7 +23860,8 @@
       "Label": "Planned Treatment for Period 01",
       "Data Type": "text",
       "Length": "20",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "6",
@@ -23139,7 +23870,8 @@
       "Label": "Actual Treatment for Period 01",
       "Data Type": "text",
       "Length": "20",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "7",
@@ -23150,7 +23882,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "ADSL Treatment Timing Variables"
+      "Role": "ADSL Treatment Timing Variables",
+      "Has No Data": "No"
     },
     {
       "Order": "8",
@@ -23161,7 +23894,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "ADSL Treatment Timing Variables"
+      "Role": "ADSL Treatment Timing Variables",
+      "Has No Data": "No"
     },
     {
       "Order": "9",
@@ -23172,7 +23906,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "10",
@@ -23182,7 +23917,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "11",
@@ -23192,7 +23928,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "12",
@@ -23202,7 +23939,8 @@
       "Data Type": "integer",
       "Length": "2",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "13",
@@ -23212,7 +23950,8 @@
       "Data Type": "text",
       "Length": "73",
       "Mandatory": "Yes",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "14",
@@ -23222,7 +23961,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "Yes",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "15",
@@ -23233,7 +23973,8 @@
       "Length": "9",
       "Significant Digits": "5",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "16",
@@ -23243,7 +23984,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "17",
@@ -23253,7 +23995,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "18",
@@ -23263,7 +24006,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "19",
@@ -23272,7 +24016,8 @@
       "Label": "Baseline Type",
       "Data Type": "text",
       "Length": "4",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "20",
@@ -23283,7 +24028,8 @@
       "Length": "8",
       "Significant Digits": "1",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "21",
@@ -23294,7 +24040,8 @@
       "Length": "12",
       "Significant Digits": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "22",
@@ -23304,7 +24051,8 @@
       "Data Type": "text",
       "Length": "1",
       "Mandatory": "No",
-      "Role": "Flag Variables for BDS Datasets"
+      "Role": "Flag Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "23",
@@ -23313,7 +24061,8 @@
       "Label": "Analysis Flag 01",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "24",
@@ -23322,7 +24071,8 @@
       "Label": "Analysis Flag 02",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "25",
@@ -23331,7 +24081,8 @@
       "Label": "On Treatment Record Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "26",
@@ -23340,7 +24091,8 @@
       "Label": "Sequence Number",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "27",
@@ -23349,7 +24101,8 @@
       "Label": "Link ID",
       "Data Type": "text",
       "Length": "3",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "28",
@@ -23358,7 +24111,8 @@
       "Label": "Short Name of Nervous System Test",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "29",
@@ -23367,7 +24121,8 @@
       "Label": "Name of Nervous System Test",
       "Data Type": "text",
       "Length": "31",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "30",
@@ -23376,7 +24131,8 @@
       "Label": "Category for Nervous System Test",
       "Data Type": "text",
       "Length": "3",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "31",
@@ -23385,7 +24141,8 @@
       "Label": "Location Used for the Measurement",
       "Data Type": "text",
       "Length": "21",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "32",
@@ -23394,7 +24151,8 @@
       "Label": "Vendor Name",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "33",
@@ -23403,7 +24161,8 @@
       "Label": "Result or Finding in Original Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "34",
@@ -23412,7 +24171,8 @@
       "Label": "Original Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "35",
@@ -23421,7 +24181,8 @@
       "Label": "Character Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "36",
@@ -23431,7 +24192,8 @@
       "Data Type": "float",
       "Length": "5",
       "Significant Digits": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "37",
@@ -23440,7 +24202,8 @@
       "Label": "Standard Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "38",
@@ -23449,7 +24212,8 @@
       "Label": "Method of Test or Examination",
       "Data Type": "text",
       "Length": "26",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "39",
@@ -23458,7 +24222,8 @@
       "Label": "Last Observation Before Exposure Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "40",
@@ -23467,7 +24232,8 @@
       "Label": "Reference Region",
       "Data Type": "text",
       "Length": "16",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "41",
@@ -23476,7 +24242,8 @@
       "Label": "Reported Agent Name",
       "Data Type": "text",
       "Length": "15",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "42",
@@ -23485,7 +24252,8 @@
       "Label": "Category for Agent",
       "Data Type": "text",
       "Length": "14",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "43",
@@ -23495,7 +24263,8 @@
       "Data Type": "float",
       "Length": "3",
       "Significant Digits": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "44",
@@ -23504,7 +24273,8 @@
       "Label": "Visit Name",
       "Data Type": "text",
       "Length": "15",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "45",
@@ -23513,7 +24283,8 @@
       "Label": "Date/Time of Collection",
       "Data Type": "text",
       "Length": "10",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "46",
@@ -23522,7 +24293,8 @@
       "Label": "Study Day of Visit/Collection/Exam",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "1",
@@ -23532,7 +24304,8 @@
       "Data Type": "text",
       "Length": "12",
       "Mandatory": "Yes",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "2",
@@ -23542,7 +24315,8 @@
       "Data Type": "text",
       "Length": "11",
       "Mandatory": "Yes",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "3",
@@ -23551,7 +24325,8 @@
       "Label": "Domain Abbreviation",
       "Data Type": "text",
       "Length": "2",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "4",
@@ -23561,7 +24336,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Identifier Variables for BDS Datasets"
+      "Role": "Identifier Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "5",
@@ -23570,7 +24346,8 @@
       "Label": "Age",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "6",
@@ -23579,7 +24356,8 @@
       "Label": "Sex",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "7",
@@ -23588,7 +24366,8 @@
       "Label": "Planned Treatment for Period 01",
       "Data Type": "text",
       "Length": "20",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "8",
@@ -23597,7 +24376,8 @@
       "Label": "Actual Treatment for Period 01",
       "Data Type": "text",
       "Length": "20",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
       "Order": "9",
@@ -23608,7 +24388,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "ADSL Treatment Timing Variables"
+      "Role": "ADSL Treatment Timing Variables",
+      "Has No Data": "No"
     },
     {
       "Order": "10",
@@ -23619,7 +24400,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "ADSL Treatment Timing Variables"
+      "Role": "ADSL Treatment Timing Variables",
+      "Has No Data": "No"
     },
     {
       "Order": "11",
@@ -23630,7 +24412,8 @@
       "Length": "8",
       "Format": "DATE",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "12",
@@ -23640,7 +24423,8 @@
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "13",
@@ -23650,7 +24434,8 @@
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "14",
@@ -23660,30 +24445,44 @@
       "Data Type": "integer",
       "Length": "2",
       "Mandatory": "No",
-      "Role": "Timing Variables for BDS Datasets"
+      "Role": "Timing Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
       "Order": "15",
+      "Dataset": "ADNV_N",
+      "Variable": "PARAMN",
+      "Label": "Parameter (N)",
+      "Data Type": "integer",
+      "Length": "8",
+      "Mandatory": "No",
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "16",
       "Dataset": "ADNV_N",
       "Variable": "PARAM",
       "Label": "Parameter",
       "Data Type": "text",
       "Length": "41",
       "Mandatory": "Yes",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "16",
+      "Order": "17",
       "Dataset": "ADNV_N",
       "Variable": "PARAMCD",
       "Label": "Parameter Code",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "Yes",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "17",
+      "Order": "18",
       "Dataset": "ADNV_N",
       "Variable": "AVAL",
       "Label": "Analysis Value",
@@ -23691,58 +24490,64 @@
       "Length": "9",
       "Significant Digits": "5",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "18",
+      "Order": "19",
       "Dataset": "ADNV_N",
       "Variable": "AVALC",
       "Label": "Analysis Value (C)",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "19",
+      "Order": "20",
       "Dataset": "ADNV_N",
       "Variable": "AVALU",
       "Label": "Analysis Value Unit",
       "Data Type": "text",
       "Length": "2",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "20",
+      "Order": "21",
       "Dataset": "ADNV_N",
       "Variable": "BASE",
       "Label": "Baseline Value",
       "Data Type": "integer",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "21",
+      "Order": "22",
       "Dataset": "ADNV_N",
       "Variable": "BASEC",
       "Label": "Baseline Value (C)",
       "Data Type": "text",
       "Length": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "22",
+      "Order": "23",
       "Dataset": "ADNV_N",
       "Variable": "BASETYPE",
       "Label": "Baseline Type",
       "Data Type": "text",
       "Length": "4",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "23",
+      "Order": "24",
       "Dataset": "ADNV_N",
       "Variable": "CHG",
       "Label": "Change from Baseline",
@@ -23750,10 +24555,11 @@
       "Length": "8",
       "Significant Digits": "1",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "24",
+      "Order": "25",
       "Dataset": "ADNV_N",
       "Variable": "PCHG",
       "Label": "Percent Change from Baseline",
@@ -23761,226 +24567,251 @@
       "Length": "12",
       "Significant Digits": "8",
       "Mandatory": "No",
-      "Role": "Analysis Parameter Variables for BDS Datasets"
+      "Role": "Analysis Parameter Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "25",
+      "Order": "26",
       "Dataset": "ADNV_N",
       "Variable": "CRIT1",
       "Label": "Analysis Criterion 1",
       "Data Type": "text",
       "Length": "13",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "26",
+      "Order": "27",
       "Dataset": "ADNV_N",
       "Variable": "CRIT1FL",
       "Label": "Criterion 1 Evaluation Result Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "27",
+      "Order": "28",
       "Dataset": "ADNV_N",
       "Variable": "ABLFL",
       "Label": "Baseline Record Flag",
       "Data Type": "text",
       "Length": "1",
       "Mandatory": "No",
-      "Role": "Flag Variables for BDS Datasets"
+      "Role": "Flag Variables for BDS Datasets",
+      "Has No Data": "No"
     },
     {
-      "Order": "28",
+      "Order": "29",
       "Dataset": "ADNV_N",
       "Variable": "ANL01FL",
       "Label": "Analysis Flag 01",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "29",
+      "Order": "30",
       "Dataset": "ADNV_N",
       "Variable": "ANL02FL",
       "Label": "Analysis Flag 02",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "30",
+      "Order": "31",
       "Dataset": "ADNV_N",
       "Variable": "ONTRTFL",
       "Label": "On Treatment Record Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "31",
+      "Order": "32",
       "Dataset": "ADNV_N",
       "Variable": "NVSEQ",
       "Label": "Sequence Number",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "32",
+      "Order": "33",
       "Dataset": "ADNV_N",
       "Variable": "NVLNKID",
       "Label": "Link ID",
       "Data Type": "text",
       "Length": "3",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "33",
+      "Order": "34",
       "Dataset": "ADNV_N",
       "Variable": "NVTESTCD",
       "Label": "Short Name of Nervous System Test",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "34",
+      "Order": "35",
       "Dataset": "ADNV_N",
       "Variable": "NVTEST",
       "Label": "Name of Nervous System Test",
       "Data Type": "text",
       "Length": "200",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "35",
+      "Order": "36",
       "Dataset": "ADNV_N",
       "Variable": "NVCAT",
       "Label": "Category for Nervous System Test",
       "Data Type": "text",
       "Length": "3",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "36",
+      "Order": "37",
       "Dataset": "ADNV_N",
       "Variable": "NVLOC",
       "Label": "Location Used for the Measurement",
       "Data Type": "text",
       "Length": "21",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "37",
+      "Order": "38",
       "Dataset": "ADNV_N",
       "Variable": "NVNAM",
       "Label": "Vendor Name",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "38",
+      "Order": "39",
       "Dataset": "ADNV_N",
       "Variable": "NVORRES",
       "Label": "Result or Finding in Original Units",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "39",
+      "Order": "40",
       "Dataset": "ADNV_N",
       "Variable": "NVORRESU",
       "Label": "Original Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "40",
+      "Order": "41",
       "Dataset": "ADNV_N",
       "Variable": "NVSTRESC",
       "Label": "Character Result/Finding in Std Format",
       "Data Type": "text",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "41",
+      "Order": "42",
       "Dataset": "ADNV_N",
       "Variable": "NVSTRESN",
       "Label": "Numeric Result/Finding in Standard Units",
       "Data Type": "float",
       "Length": "5",
       "Significant Digits": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "42",
+      "Order": "43",
       "Dataset": "ADNV_N",
       "Variable": "NVSTRESU",
       "Label": "Standard Units",
       "Data Type": "text",
       "Length": "5",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "43",
+      "Order": "44",
       "Dataset": "ADNV_N",
       "Variable": "NVMETHOD",
       "Label": "Method of Test or Examination",
       "Data Type": "text",
       "Length": "26",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "44",
+      "Order": "45",
       "Dataset": "ADNV_N",
       "Variable": "NVLOBXFL",
       "Label": "Last Observation Before Exposure Flag",
       "Data Type": "text",
       "Length": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "45",
+      "Order": "46",
       "Dataset": "ADNV_N",
       "Variable": "VISITNUM",
       "Label": "Visit Number",
       "Data Type": "float",
       "Length": "3",
       "Significant Digits": "1",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "46",
+      "Order": "47",
       "Dataset": "ADNV_N",
       "Variable": "VISIT",
       "Label": "Visit Name",
       "Data Type": "text",
       "Length": "15",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "47",
+      "Order": "48",
       "Dataset": "ADNV_N",
       "Variable": "NVDTC",
       "Label": "Date/Time of Collection",
       "Data Type": "text",
       "Length": "10",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     },
     {
-      "Order": "48",
+      "Order": "49",
       "Dataset": "ADNV_N",
       "Variable": "NVDY",
       "Label": "Study Day of Visit/Collection/Exam",
       "Data Type": "integer",
       "Length": "8",
-      "Mandatory": "No"
+      "Mandatory": "No",
+      "Has No Data": "No"
     }
   ],
   "ValueLevel": [],
