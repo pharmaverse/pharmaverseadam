@@ -1,5 +1,9 @@
 # pharmaverseadam (development version)
 
+## New features
+
+  - Added `ADAPET`, `ADTPET` and `ADNV` from `{admiralneuro}` using package version 0.2.1. (#138)
+
 ## Documentation
 
   - The dataset variables and specifications were ordered and grouped according to ADaM IG standards, and the reference page reflected this updated structure. (#128)
