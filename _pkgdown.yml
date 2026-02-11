@@ -52,9 +52,9 @@ reference:
     contents:
       - has_keyword("metabolic")
 
-  # - title: "Neurology Datasets"
-  #   contents:
-  #     - has_keyword("neurology")
+  - title: "Neurology Datasets"
+    contents:
+      - has_keyword("neurology")
 
   - title: "Oncology Datasets"
     contents:
