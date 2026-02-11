@@ -7,6 +7,10 @@ library(cli)
 library(stringr)
 library(dplyr)
 
+# Fix PATH to include Rscript (platform-aware)
+path_sep <- if (.Platform$OS.type == "windows") ";" else ":"
+Sys.setenv(PATH = paste(R.home("bin"), Sys.getenv("PATH"), sep = path_sep))
+
 # Load metadata
 json_file <- "inst/extdata/adams-specs.json"
 excel_file <- "inst/extdata/adams-specs.xlsx"
@@ -367,12 +371,17 @@ for (pkg in packages_list) {
 
   print(sprintf("Processing templates from %s package", pkg))
 
-  # Run templates in parallel
-  # TODO: reput parallel debug
-  # for (tp in templates) {
-  #   run_template(tp)
-  # }
-  results <- parallel::mclapply(templates, safe_run_template, mc.cores = length(templates))
+  # Run templates in parallel (cross-platform approach)
+  if (.Platform$OS.type == "windows") {
+    cli_alert_info("Windows detected: Processing {length(templates)} template{?s} sequentially")
+    results <- lapply(templates, safe_run_template)
+  } else {
+    # Unix/Linux/macOS: use parallel processing with forking
+    num_cores <- min(parallel::detectCores() - 1, length(templates))
+    cli_alert_info("Processing {length(templates)} template{?s} in parallel using {num_cores} core{?s}")
+    results <- parallel::mclapply(templates, safe_run_template, mc.cores = num_cores)
+  }
+
   all_results <- c(all_results, results)
 }
 

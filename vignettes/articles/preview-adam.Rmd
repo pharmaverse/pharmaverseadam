@@ -1,0 +1,116 @@
+---
+title: "Explore ADAM Datasets"
+date: "2026-01-17"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Explore ADAM Datasets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Datasets Preview
+
+Here is a preview of all datasets included in the `{pharmaverseadam}` package. Each dataset is displayed in a collapsible panel with filtering options. For simplicity, only the first 50 rows of each dataset are shown.
+
+```{r echo=FALSE}
+library(pharmaverseadam)
+library(htmltools)
+library(reactable)
+library(readxl)
+
+# Define therapeutic area mapping
+ta_df <- data.frame(
+  short_suffix = c("E", "P", "M", "N", "O", "V"),
+  long_suffix = c("_peds", "_ophtha", "_metabolic", "_neuro", "_onco", "_vaccine"),
+  proper_name = c(
+    "Pediatrics",
+    "Ophthalmology",
+    "Metabolic",
+    "Neurology",
+    "Oncology",
+    "Vaccine"
+  )
+)
+
+# Read dataset specifications from the Excel file and derive dataset names and areas
+path_specs <- system.file("extdata/adams-specs.xlsx", package = "pharmaverseadam")
+specs <- read_xlsx(path_specs, sheet = "Datasets")
+specs$short_suffix <- gsub(".*_(.)$", "\\1", specs$Dataset)
+specs$areas <- ifelse(
+  specs$short_suffix %in% ta_df$short_suffix,
+  ta_df$proper_name[match(specs$short_suffix, ta_df$short_suffix)],
+  "General"
+)
+specs$names <- gsub("^(.*)_(.)$", "\\1", specs$Dataset)
+specs$names <- tolower(specs$names)
+lsuf_ta <- setNames(ta_df$long_suffix, ta_df$proper_name)
+specs$names <- ifelse(
+  specs$areas %in% names(lsuf_ta),
+  paste0(specs$names, lsuf_ta[specs$areas]),
+  specs$names
+)
+specs <- specs[order(specs$areas, specs$names), ]
+
+# Make sure all names derived from specs exist in the package
+dataset_summary <- data(package = "pharmaverseadam")
+dataset_names <- dataset_summary$results[, "Item"]
+missing_datasets <- setdiff(specs$names, dataset_names)
+missing_datasets <- c(missing_datasets, setdiff(dataset_names, specs$names))
+if (length(missing_datasets) > 0) {
+  stop(
+    "The following datasets are missing in the package: ",
+    paste(missing_datasets, sep = ", ")
+  )
+}
+
+# Create collapsible panels for each dataset grouped by area
+areas <- sort(unique(specs$areas))
+collapsible_groups <- lapply(areas, function(area) {
+  # Indices of datasets in this area
+  area_indices <- which(specs$areas == area)
+  # Create collapsibles for this area
+  area_panels <- lapply(area_indices, function(ix) {
+    dataset_name <- specs$names[ix]
+    dataset_title <- specs$Label[ix]
+    # Ensure valid UTF-8 dataset content
+    dataset <- get(dataset_name, envir = asNamespace("pharmaverseadam"))
+    if (is.data.frame(dataset)) {
+      for (col in names(dataset)) {
+        if (is.character(dataset[[col]])) {
+          dataset[[col]] <- iconv(dataset[[col]], to = "UTF-8", sub = "?")
+        }
+      }
+    }
+    tags$details(
+      style = "margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 5px;",
+      tags$summary(
+        style = "cursor: pointer; font-weight: bold;",
+        paste0(dataset_name, ": ", dataset_title)
+      ),
+      tags$a(
+        href = paste0("https://pharmaverse.github.io/pharmaverseadam/reference/", dataset_name, ".html"),
+        target = "_blank",
+        "Reference link"
+      ),
+      reactable(
+        head(dataset, 50),
+        defaultPageSize = 50,
+        height = 500,
+        filterable = TRUE,
+        pagination = TRUE,
+        wrap = FALSE,
+        resizable = TRUE,
+        striped = TRUE,
+        defaultColDef = colDef(
+          minWidth = 120,
+          align = "center"
+        )
+      )
+    )
+  })
+  tagList(tags$h3(area), area_panels)
+})
+
+browsable(tagList(collapsible_groups))
+```
