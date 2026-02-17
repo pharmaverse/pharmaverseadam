@@ -92,6 +92,23 @@ advs_metabolic: Vital Signs Analysis for Metabolic
 [Reference
 link](https://pharmaverse.github.io/pharmaverseadam/reference/advs_metabolic.html)
 
+#### Neurology
+
+adapet_neuro: Amyloid PET Scan Analysis Dataset
+
+[Reference
+link](https://pharmaverse.github.io/pharmaverseadam/reference/adapet_neuro.html)
+
+adnv_neuro: Nervous System Analysis Dataset
+
+[Reference
+link](https://pharmaverse.github.io/pharmaverseadam/reference/adnv_neuro.html)
+
+adtpet_neuro: Tau PET Scan Analysis Dataset
+
+[Reference
+link](https://pharmaverse.github.io/pharmaverseadam/reference/adtpet_neuro.html)
+
 #### Oncology
 
 adrs_onco: Tumor Response Analysis

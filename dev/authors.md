@@ -36,13 +36,13 @@ Source:
 
 Gautier F, Bundfuss S, Mancini E, Patil L, Rodriguez G, Shuliar V
 (2026). *pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of
-Packages*. R package version 1.2.0.9006,
+Packages*. R package version 1.2.0.9007,
 <https://pharmaverse.github.io/pharmaverseadam/>.
 
     @Manual{,
       title = {pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of Packages},
       author = {Fanny Gautier and Stefan Bundfuss and Edoardo Mancini and Lina Patil and Gerardo Jose Rodriguez and Vladyslav Shuliar},
       year = {2026},
-      note = {R package version 1.2.0.9006},
+      note = {R package version 1.2.0.9007},
       url = {https://pharmaverse.github.io/pharmaverseadam/},
     }

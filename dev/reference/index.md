@@ -38,6 +38,15 @@
 - [`advs_metabolic`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/advs_metabolic.md)
   : Vital Signs Analysis for Metabolic
 
+## Neurology Datasets
+
+- [`adapet_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adapet_neuro.md)
+  : Amyloid PET Scan Analysis Dataset
+- [`adnv_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adnv_neuro.md)
+  : Nervous System Analysis Dataset
+- [`adtpet_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adtpet_neuro.md)
+  : Tau PET Scan Analysis Dataset
+
 ## Oncology Datasets
 
 - [`adrs_onco`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adrs_onco.md)

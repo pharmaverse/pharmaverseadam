@@ -14,10 +14,11 @@ executes the [admiral](https://pharmaverse.github.io/admiral/),
 [admiralonco](https://pharmaverse.github.io/admiralonco/),
 [admiralophtha](https://pharmaverse.github.io/admiralophtha/),
 [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/),
-[admiralpeds](https://pharmaverse.github.io/admiralpeds/) and
-[admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
-templates and saves the resulting datasets here. This script can be
-executed by the package maintainers in two scenarios:
+[admiralpeds](https://pharmaverse.github.io/admiralpeds/),
+[admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/) and
+[admiralneuro](https://pharmaverse.github.io/admiralneuro/) templates
+and saves the resulting datasets here. This script can be executed by
+the package maintainers in two scenarios:
 
 - Regularly, upon new releases of these packages;
 - Ad-hoc, whenever templates in the above packages have been updated but
@@ -72,7 +73,18 @@ the user should update `adams-specs.xlsx` with specifications for the
 new dataset(s). Note that any missing metadata fields will be set by
 default to “No label/description/source available.”
 
-### 2. Execute `create_adams_data.R`
+### 2. New Therapeutic Area Addition
+
+The addition of a new Therapeutic Area to the package requires its
+inclusion in:
+
+- `_pkgdown.yml` and `data-raw/create_adams_data.R`, where it is used
+  for the titles and grouping on the `Reference` page.
+- `vignettes/articles/preview-adam.Rmd`, which is used to generate Data
+  Exploration previews. The grouping of datasets in this vignette is
+  based on the Therapeutic Area.
+
+### 3. Execute `create_adams_data.R`
 
 Secondly, the user runs `data-raw/create_adams_data.R`. This script
 handles the installation of each package, the execution of the
@@ -96,6 +108,7 @@ documentation pages.
     - [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/)
     - [admiralpeds](https://pharmaverse.github.io/admiralpeds/)
     - [admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
+    - [admiralneuro](https://pharmaverse.github.io/admiralneuro/)
     - [pharmaversesdtm](https://pharmaverse.github.io/pharmaversesdtm/)
 
     By default, the latest development versions of each package will be
@@ -120,13 +133,6 @@ documentation pages.
     - Source information indicating which template and package generated
       it,
     - Example usage with `data("<dataset>")`.
-
-### 3. Data Exploration
-
-Data exploration previews are generated using the vignette located at
-`vignettes/articles/preview-adam.Rmd`. If a new therapeutic area is
-added to the package (in `adams-specs.xlsx` and `create_adams_data.R`),
-the vignette must also be updated to include the new therapeutic area.
 
 ## Acknowledgments
 
@@ -175,6 +181,15 @@ Zhu.
   : Laboratory Analysis for Metabolic
 - [`advs_metabolic`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/advs_metabolic.md)
   : Vital Signs Analysis for Metabolic
+
+## Neurology Datasets
+
+- [`adapet_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adapet_neuro.md)
+  : Amyloid PET Scan Analysis Dataset
+- [`adnv_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adnv_neuro.md)
+  : Nervous System Analysis Dataset
+- [`adtpet_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adtpet_neuro.md)
+  : Tau PET Scan Analysis Dataset
 
 ## Oncology Datasets
 
