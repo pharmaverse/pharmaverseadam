@@ -15,7 +15,7 @@ To provide a one-stop-shop for ADaM test data in the pharmaverse family of packa
 
 ## Package Contents
 
-The ADaM contents of this package is populated by an script that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}`, `{admiralpeds}` and `{admiralmetabolic}` templates and saves the resulting datasets here. This script can be executed by the package maintainers in two scenarios:
+The ADaM contents of this package is populated by an script that executes the `{admiral}`, `{admiralonco}`, `{admiralophtha}`, `{admiralvaccine}`, `{admiralpeds}`, `{admiralmetabolic}` and `{admiralneuro}` templates and saves the resulting datasets here. This script can be executed by the package maintainers in two scenarios:
 
 *   Regularly, upon new releases of these packages;
 *   Ad-hoc, whenever templates in the above packages have been updated but releases are far away in the calendar. In this case, the ADaM datasets are created using a development version of the templates.
@@ -46,7 +46,14 @@ The workflow consists of two main steps:
 
 Firstly, the user reviews `inst/extdata/adams-specs.xlsx` and ensures its contents is up-to-date. If a new template has been added to an existing package, or if a new extension package has been created whose ADaM templates they wish to execute in `{pharmaverseadam}`, then the user should update `adams-specs.xlsx` with specifications for the new dataset(s). Note that any missing metadata fields will be set by default to "No label/description/source available."
 
-### 2. Execute `create_adams_data.R`
+### 2. New Therapeutic Area Addition
+
+The addition of a new Therapeutic Area to the package requires its inclusion in:
+  
+  - `_pkgdown.yml` and `data-raw/create_adams_data.R`, where it is used for the titles and grouping on the `Reference` page.
+  - `vignettes/articles/preview-adam.Rmd`, which is used to generate Data Exploration previews. The grouping of datasets in this vignette is based on the Therapeutic Area.
+
+### 3. Execute `create_adams_data.R`
 
 Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the installation of each package, the execution of the templates, the saving of the ADaM datasets and the creation of the documentation pages.
 
@@ -64,6 +71,7 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - `{admiralvaccine}`
    - `{admiralpeds}`
    - `{admiralmetabolic}`
+   - `{admiralneuro}`
    - `{pharmaversesdtm}`
    
    By default, the latest development versions of each package will be used, but the user can also select a different version instead (e.g. a released version) with which to refresh `{pharmaverseadam}`. The user may also deselect some packages whose templates they do not wish to run. If a new extension package has been created, this should be added to the script in each relevant section (see the script itself for more details).
@@ -78,10 +86,6 @@ Secondly, the user runs `data-raw/create_adams_data.R`. This script handles the 
    - Variable-level documentation (names and labels),
    - Source information indicating which template and package generated it,
    - Example usage with `data("<dataset>")`.
-
-### 3. Data Exploration
-
-Data exploration previews are generated using the vignette located at `vignettes/articles/preview-adam.Rmd`. If a new therapeutic area is added to the package (in `adams-specs.xlsx` and `create_adams_data.R`), the vignette must also be updated to include the new therapeutic area.
 
 ## Acknowledgments
 

@@ -86,14 +86,15 @@ get_dataset_keyword <- function(dataset_name, suffix) {
   ds <- as.character(dataset_name)
 
   # Map suffix codes (used in dataset names from the specs) to TA keyword
-  # These are the suffix codes used in this script: _P, _O, _V, _E, _M
+  # These are the suffix codes used in this script: _P, _O, _V, _E, _M, _N
   # Update as necessary while adding Extension Packages
   keyword_map <- c(
     "_P" = "ophthalmology",
     "_O" = "oncology",
     "_V" = "vaccine",
     "_E" = "pediatrics",
-    "_M" = "metabolic"
+    "_M" = "metabolic",
+    "_N" = "neurology"
   )
 
   # Check for a matching suffix (case-insensitive)
@@ -337,13 +338,13 @@ if (update_pkg) {
 }
 
 # Dict to match admiral xlsx specs suffixes
-suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E", "_metabolic" = "_M")
+suffixes_dict <- list("_ophtha" = "_P", "_onco" = "_O", "_vaccine" = "_V", "_peds" = "_E", "_metabolic" = "_M", "_neuro" = "_N")
 mc <- metacore::spec_to_metacore("inst/extdata/adams-specs.xlsx",
   where_sep_sheet = FALSE,
   quiet = TRUE
 )
 
-packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds", "admiralmetabolic")
+packages_list <- c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralpeds", "admiralmetabolic", "admiralneuro")
 
 all_results <- c()
 for (pkg in packages_list) {

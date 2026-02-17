@@ -1,5 +1,9 @@
 # pharmaverseadam (development version)
 
+## New features
+
+  - Added `ADAPET`, `ADTPET` and `ADNV` from `{admiralneuro}` using package version 0.2.1. (#138)
+
 ## Documentation
 
   - Added new `{admiral}` template for Anti-Drug Antibody data `ADAB`. (#143)
