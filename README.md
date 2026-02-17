@@ -4,6 +4,7 @@
 
 [![pharmaverse adam Badge](http://pharmaverse.org/shields/pharmaverseadam.svg)](https://pharmaverse.org)
 [![CRAN status](https://www.r-pkg.org/badges/version/pharmaverseadam)](https://CRAN.R-project.org/package=pharmaverseadam)
+[![Total Downloads](http://cranlogs.r-pkg.org/badges/grand-total/pharmaverseadam?color=green)](https://cran.r-project.org/package=pharmaverseadam)
 
 <!-- badges: end -->
 
