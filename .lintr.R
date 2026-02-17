@@ -11,6 +11,7 @@ rm(temp_env)
 exclusions <- list(
   "data-raw/create_adams_data.R" = Inf,
   "R/pharmaverseadam-package.R" = Inf,
+  "R/adtpet_neuro.R" = Inf,
   "inst" = list(undesirable_function_linter = Inf),
   "vignettes" = list(undesirable_function_linter = Inf)
 )

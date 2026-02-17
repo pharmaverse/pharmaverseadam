@@ -2,10 +2,14 @@
 
 ## New features
 
+  - Added `ADAPET`, `ADTPET` and `ADNV` from `{admiralneuro}` using package version 0.2.1. (#138)
+  
+  - Added new `{admiral}` dataset for Anti-Drug Antibody data `ADAB`. (#143)  
+
+## Documentation
+
   - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.4.1, `{admiralonco}` 1.4.0, `{admiralophtha}` 1.4.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.3.0,
   `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.4.0. (#147)
-  
-  - Added new `{admiral}` dataset for Anti-Drug Antibody data `ADAB`. (#143)
   
 ## Documentation
 
