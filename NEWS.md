@@ -21,10 +21,11 @@
 
 - Generated different sites for the development and released versions of the package. (#139)
 
-- Updated `create_adams_data.R` for cross-platform functionality. (#145)  
+- Updated `create_adams_data.R` for cross-platform functionality. (#145)
+
+- Added downloads badge to the website. (#151)
 
 </details>
-
 
 # pharmaverseadam 1.2.0
 
