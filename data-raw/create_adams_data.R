@@ -390,10 +390,13 @@ versions_msg <- "\n==== Package Versions Used ====\n"
 for (pkg in packages_list) {
   versions_msg <- paste0(versions_msg, sprintf("%s: %s\n", pkg, as.character(utils::packageVersion(pkg))))
 }
+
+# Add pharmaversesdtm version to the list
+versions_msg <- paste0(versions_msg, sprintf("pharmaversesdtm: %s\n", as.character(utils::packageVersion("pharmaversesdtm"))))
 versions_msg <- paste0(versions_msg, "==============================\n\n")
 cat(versions_msg)
 
-# Display error message when a template fails
+# Display error message when a template fails ----
 cli_div(theme = list(".error-detail" = list(color = "red")))
 for (res in all_results) {
   if (!is.null(res$exit_code) && res$exit_code != 0) {
