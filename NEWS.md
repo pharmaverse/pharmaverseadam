@@ -1,4 +1,4 @@
-# pharmaverseadam (development version)
+# pharmaverseadam 1.3.0
 
 ## New features
 
