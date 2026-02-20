@@ -46,6 +46,7 @@ Suggests:
     methods,
     miniUI,
     pkgdown,
+    reactable,
     readxl,
     rmarkdown,
     roxygen2,
