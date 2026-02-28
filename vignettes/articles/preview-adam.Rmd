@@ -1,6 +1,5 @@
 ---
-title: "Explore ADAM Datasets"
-date: "2026-01-17"
+title: "Explore ADaM Datasets"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Explore ADAM Datasets}
