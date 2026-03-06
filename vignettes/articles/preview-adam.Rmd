@@ -2,7 +2,7 @@
 title: "Explore ADaM Datasets"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Explore ADAM Datasets}
+  %\VignetteIndexEntry{Explore ADaM Datasets}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
