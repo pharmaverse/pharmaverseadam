@@ -40,7 +40,7 @@ navbar:
        text: Reference
        href: reference/index.html
     preview:
-       text: Explore ADAM Datasets
+       text: Explore ADaM Datasets
        href: articles/preview-adam.html
 
 reference:
