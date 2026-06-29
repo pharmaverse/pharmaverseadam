@@ -67,6 +67,8 @@
 
 - Added copyright holder logos. (#113)
 
+- Updated Explore ADaM Dataset Vignette (ADAM -> ADaM) (#156)
+
 </details>
 
 # pharmaverseadam 1.1.0
