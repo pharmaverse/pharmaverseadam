@@ -23,6 +23,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Fanny Gautier \email{fanny.gautier@cytel.com} (\href{https://orcid.org/0009-0004-3581-0131}{ORCID})
   \item Stefan Bundfuss (\href{https://orcid.org/0009-0005-0027-1198}{ORCID})
   \item Edoardo Mancini \email{edoardo.mancini@roche.com} (\href{https://orcid.org/0009-0006-4899-8641}{ORCID})
   \item Lina Patil \email{lina.patil@cytel.com}
