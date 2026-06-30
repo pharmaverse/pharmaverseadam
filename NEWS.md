@@ -28,6 +28,8 @@
 
 - Added downloads badge to the website. (#151)
 
+- Updated title of the vignette Explore ADaM datasets. (ADAM -> ADaM) (#156) 
+
 </details>
 
 # pharmaverseadam 1.2.0
