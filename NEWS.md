@@ -1,3 +1,12 @@
+# pharmaverseadam (development version)
+
+<details>
+<summary>Developer Notes</summary>
+
+- Updated the links in the PR template, and updated the `RoxygenNote` field of the DESCRIPTION file. (#160)  
+
+</details>
+
 # pharmaverseadam 1.3.0
 
 ## New features
