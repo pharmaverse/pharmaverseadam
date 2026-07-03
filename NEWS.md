@@ -1,3 +1,13 @@
+
+# pharmaverseadam (development version)  
+
+<details>  
+<summary>Developer Notes</summary>  
+
+- Updated title of the vignette Explore ADaM datasets. (#156) 
+
+</details>  
+
 # pharmaverseadam 1.3.0
 
 ## New features
@@ -27,8 +37,6 @@
 - Updated `create_adams_data.R` for cross-platform functionality. (#145)
 
 - Added downloads badge to the website. (#151)
-
-- Updated title of the vignette Explore ADaM datasets. (ADAM -> ADaM) (#156) 
 
 </details>
 
