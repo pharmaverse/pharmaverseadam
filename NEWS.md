@@ -1,4 +1,3 @@
-
 # pharmaverseadam (development version)  
 
 <details>  
@@ -76,8 +75,6 @@
 - Added alternative text to the pharmaverse badge and logo. (#114)
 
 - Added copyright holder logos. (#113)
-
-- Updated Explore ADaM Dataset Vignette (ADAM -> ADaM) (#156)
 
 </details>
 
