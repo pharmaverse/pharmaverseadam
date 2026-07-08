@@ -2,6 +2,19 @@
 
 ## pharmaverseadam (development version)
 
+Developer Notes
+
+- Updated title of the vignette Explore ADaM datasets.
+  ([\#156](https://github.com/pharmaverse/pharmaverseadam/issues/156))
+
+- Updated the links in the PR template, and up versioned to `{roxygen}`
+  8.0.0.
+  ([\#160](https://github.com/pharmaverse/pharmaverseadam/issues/160))
+
+## pharmaverseadam 1.3.0
+
+CRAN release: 2026-02-20
+
 ### New features
 
 - Added `ADAPET`, `ADTPET` and `ADNV` from
@@ -9,20 +22,34 @@
   package version 0.2.1.
   ([\#138](https://github.com/pharmaverse/pharmaverseadam/issues/138))
 
-### Documentation
-
-- Added new [admiral](https://pharmaverse.github.io/admiral/) template
+- Added new [admiral](https://pharmaverse.github.io/admiral/) dataset
   for Anti-Drug Antibody data `ADAB`.
   ([\#143](https://github.com/pharmaverse/pharmaverseadam/issues/143))
+
+### Documentation
+
+- Refreshed
+  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
+  datasets using [admiral](https://pharmaverse.github.io/admiral/)
+  1.4.1, [admiralonco](https://pharmaverse.github.io/admiralonco/)
+  1.4.0, [admiralophtha](https://pharmaverse.github.io/admiralophtha/)
+  1.4.0, [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/)
+  0.6.0, [admiralpeds](https://pharmaverse.github.io/admiralpeds/)
+  0.3.0,
+  [admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
+  0.3.0,
+  [pharmaversesdtm](https://pharmaverse.github.io/pharmaversesdtm/)
+  1.4.0.
+  ([\#147](https://github.com/pharmaverse/pharmaverseadam/issues/147))
+
+- The reference page was updated to categorize datasets by therapeutic
+  areas.
+  ([\#137](https://github.com/pharmaverse/pharmaverseadam/issues/137))
 
 - The dataset variables and specifications were ordered and grouped
   according to ADaM IG standards, and the reference page reflected this
   updated structure.
   ([\#128](https://github.com/pharmaverse/pharmaverseadam/issues/128))
-
-- The reference page was updated to categorize datasets by therapeutic
-  areas.
-  ([\#137](https://github.com/pharmaverse/pharmaverseadam/issues/137))
 
 - Added a new vignette “Explore ADaM Datasets” to preview all datasets
   included in the package.
@@ -41,6 +68,9 @@ Developer Notes
 
 - Updated `create_adams_data.R` for cross-platform functionality.
   ([\#145](https://github.com/pharmaverse/pharmaverseadam/issues/145))
+
+- Added downloads badge to the website.
+  ([\#151](https://github.com/pharmaverse/pharmaverseadam/issues/151))
 
 ## pharmaverseadam 1.2.0
 

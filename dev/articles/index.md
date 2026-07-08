@@ -2,5 +2,5 @@
 
 ### All vignettes
 
-- [Explore ADAM
+- [Explore ADaM
   Datasets](https://pharmaverse.github.io/pharmaverseadam/dev/articles/preview-adam.md):

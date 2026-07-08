@@ -1,4 +1,4 @@
-# Explore ADAM Datasets
+# Explore ADaM Datasets
 
 ## Datasets Preview
 

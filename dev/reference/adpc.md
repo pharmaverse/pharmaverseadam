@@ -10,7 +10,7 @@ adpc
 
 ## Format
 
-A data frame with 127 columns:
+A data frame with 128 columns:
 
 - STUDYID :
 
@@ -427,6 +427,10 @@ A data frame with 127 columns:
 - VISITNUM :
 
   Visit Number
+
+- VISITDY :
+
+  Planned Study Day of Visit
 
 - PCDTC :
 
