@@ -1,3 +1,12 @@
+# pharmaverseadam (development version)
+
+<details>
+<summary>Developer Notes</summary>
+
+- Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)  
+
+</details>
+
 # pharmaverseadam 1.3.0
 
 ## New features
