@@ -7,6 +7,8 @@
 
 - Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)  
 
+- Clickable links to personal websites or GitHub profiles were added in the home page sidebar for every `{pharmaverseadam}` author. (#162)
+
 </details>
 
 # pharmaverseadam 1.3.0
