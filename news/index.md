@@ -1,6 +1,16 @@
 # Changelog
 
+## pharmaverseadam (development version)
+
+Developer Notes
+
+- Updated the links in the PR template, and up versioned to `{roxygen}`
+  8.0.0.
+  ([\#160](https://github.com/pharmaverse/pharmaverseadam/issues/160))
+
 ## pharmaverseadam 1.3.0
+
+CRAN release: 2026-02-20
 
 ### New features
 
