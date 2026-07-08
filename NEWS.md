@@ -1,7 +1,9 @@
-# pharmaverseadam (development version)
+# pharmaverseadam (development version)  
 
-<details>
-<summary>Developer Notes</summary>
+<details>  
+<summary>Developer Notes</summary>  
+
+- Updated title of the vignette Explore ADaM datasets. (#156) 
 
 - Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)  
 
