@@ -11,6 +11,13 @@ Developer Notes
   8.0.0.
   ([\#160](https://github.com/pharmaverse/pharmaverseadam/issues/160))
 
+- Up-versioned [admiraldev](https://pharmaverse.github.io/admiraldev/)
+  to 1.5.0, as the custom
+  [admiral](https://pharmaverse.github.io/admiral/) roclets (i.e.,
+  `roxygen_*()` functions) have now been moved to
+  [admiraldev](https://pharmaverse.github.io/admiraldev/).
+  ([\#163](https://github.com/pharmaverse/pharmaverseadam/issues/163))
+
 ## pharmaverseadam 1.3.0
 
 CRAN release: 2026-02-20
