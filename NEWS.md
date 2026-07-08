@@ -1,11 +1,13 @@
-# pharmaverseadam (development version)  
+# pharmaverseadam (development version)
 
 <details>  
 <summary>Developer Notes</summary>  
 
-- Updated title of the vignette Explore ADaM datasets. (#156) 
+- Updated title of the vignette Explore ADaM datasets. (#156)
 
-- Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)  
+- Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)
+
+- Up-versioned `{admiraldev}` to 1.5.0, as the custom `{admiral}` roclets (i.e., `roxygen_*()` functions) have now been moved to `{admiraldev}`. (#163)
 
 - Clickable links to personal websites or GitHub profiles were added in the home page sidebar for every `{pharmaverseadam}` author. (#162)
 
@@ -17,7 +19,7 @@
 
   - Added `ADAPET`, `ADTPET` and `ADNV` from `{admiralneuro}` using package version 0.2.1. (#138)
   
-  - Added new `{admiral}` dataset for Anti-Drug Antibody data `ADAB`. (#143)  
+  - Added new `{admiral}` dataset for Anti-Drug Antibody data `ADAB`. (#143)
 
 ## Documentation
 
