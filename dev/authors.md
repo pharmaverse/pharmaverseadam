@@ -2,19 +2,21 @@
 
 ## Authors
 
-- **Fanny Gautier**. Author, maintainer.
-  [](https://orcid.org/0009-0004-3581-0131)
+- **[Fanny Gautier](https://github.com/Fanny-Gautier)**. Author,
+  maintainer. [](https://orcid.org/0009-0004-3581-0131)
 
-- **Stefan Bundfuss**. Author. [](https://orcid.org/0009-0005-0027-1198)
+- **[Stefan Bundfuss](https://github.com/bundfussr)**. Author.
+  [](https://orcid.org/0009-0005-0027-1198)
 
-- **Edoardo Mancini**. Author. [](https://orcid.org/0009-0006-4899-8641)
+- **[Edoardo Mancini](https://manciniedoardo.github.io/)**. Author.
+  [](https://orcid.org/0009-0006-4899-8641)
 
-- **Lina Patil**. Author.
+- **[Lina Patil](https://github.com/Lina2689)**. Author.
 
-- **Gerardo Jose Rodriguez**. Author.
+- **[Gerardo Jose Rodriguez](https://github.com/Gero1999)**. Author.
   [](https://orcid.org/0000-0003-1413-0060)
 
-- **Vladyslav Shuliar**. Author.
+- **[Vladyslav Shuliar](https://github.com/vbshuliar)**. Author.
   [](https://orcid.org/0009-0008-2354-8999)
 
 - **[](https://www.cytel.com/)[![Cytel
@@ -36,13 +38,13 @@ Source:
 
 Gautier F, Bundfuss S, Mancini E, Patil L, Rodriguez G, Shuliar V
 (2026). *pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of
-Packages*. R package version 1.3.0.9001,
+Packages*. R package version 1.3.0.9002,
 <https://pharmaverse.github.io/pharmaverseadam/>.
 
     @Manual{,
       title = {pharmaverseadam: ADaM Test Data for the 'Pharmaverse' Family of Packages},
       author = {Fanny Gautier and Stefan Bundfuss and Edoardo Mancini and Lina Patil and Gerardo Jose Rodriguez and Vladyslav Shuliar},
       year = {2026},
-      note = {R package version 1.3.0.9001},
+      note = {R package version 1.3.0.9002},
       url = {https://pharmaverse.github.io/pharmaverseadam/},
     }

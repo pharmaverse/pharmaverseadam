@@ -18,6 +18,12 @@ Developer Notes
   [admiraldev](https://pharmaverse.github.io/admiraldev/).
   ([\#163](https://github.com/pharmaverse/pharmaverseadam/issues/163))
 
+- Clickable links to personal websites or GitHub profiles were added in
+  the home page sidebar for every
+  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
+  author.
+  ([\#162](https://github.com/pharmaverse/pharmaverseadam/issues/162))
+
 ## pharmaverseadam 1.3.0
 
 CRAN release: 2026-02-20
