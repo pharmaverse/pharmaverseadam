@@ -9,6 +9,8 @@
 
 - Up-versioned `{admiraldev}` to 1.5.0, as the custom `{admiral}` roclets (i.e., `roxygen_*()` functions) have now been moved to `{admiraldev}`. (#163)
 
+- Clickable links to personal websites or GitHub profiles were added in the home page sidebar for every `{pharmaverseadam}` author. (#162)
+
 </details>
 
 # pharmaverseadam 1.3.0
