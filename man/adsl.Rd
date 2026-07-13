@@ -5,7 +5,7 @@
 \alias{adsl}
 \title{Subject Level Analysis}
 \format{
-A data frame with 55 columns:
+A data frame with 57 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -62,6 +62,8 @@ A data frame with 55 columns:
 \item{ DTHCAUS }{Cause of Death}
 \item{ DTHCGR1 }{Cause of Death Reason 1}
 \item{ BRTHDTC }{Date/Time of Birth}
+\item{ ARMNRS }{Reason Arm and/or Actual Arm is Null}
+\item{ ACTARMUD }{Description of Unplanned Actual Arm}
 }
 }
 \source{
