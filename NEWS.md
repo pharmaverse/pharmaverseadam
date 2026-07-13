@@ -5,11 +5,14 @@
 
 - Updated title of the vignette Explore ADaM datasets. (#156)
 
+- Added Dark Mode and icon tooltips to the website, and implemented a new PR website workflow, accessible by adding the "[create website]" keyword to PR titles. (#158)
+
 - Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)
+
+- Clickable links to personal websites or GitHub profiles were added in the home page sidebar for every `{pharmaverseadam}` author. (#162)
 
 - Up-versioned `{admiraldev}` to 1.5.0, as the custom `{admiral}` roclets (i.e., `roxygen_*()` functions) have now been moved to `{admiraldev}`. (#163)
 
-- Clickable links to personal websites or GitHub profiles were added in the home page sidebar for every `{pharmaverseadam}` author. (#162)
 
 </details>
 
