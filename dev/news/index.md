@@ -7,9 +7,20 @@ Developer Notes
 - Updated title of the vignette Explore ADaM datasets.
   ([\#156](https://github.com/pharmaverse/pharmaverseadam/issues/156))
 
+- Added Dark Mode and icon tooltips to the website, and implemented a
+  new PR website workflow, accessible by adding the “\[create website\]”
+  keyword to PR titles.
+  ([\#158](https://github.com/pharmaverse/pharmaverseadam/issues/158))
+
 - Updated the links in the PR template, and up versioned to `{roxygen}`
   8.0.0.
   ([\#160](https://github.com/pharmaverse/pharmaverseadam/issues/160))
+
+- Clickable links to personal websites or GitHub profiles were added in
+  the home page sidebar for every
+  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
+  author.
+  ([\#162](https://github.com/pharmaverse/pharmaverseadam/issues/162))
 
 - Up-versioned [admiraldev](https://pharmaverse.github.io/admiraldev/)
   to 1.5.0, as the custom
@@ -17,12 +28,6 @@ Developer Notes
   `roxygen_*()` functions) have now been moved to
   [admiraldev](https://pharmaverse.github.io/admiraldev/).
   ([\#163](https://github.com/pharmaverse/pharmaverseadam/issues/163))
-
-- Clickable links to personal websites or GitHub profiles were added in
-  the home page sidebar for every
-  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
-  author.
-  ([\#162](https://github.com/pharmaverse/pharmaverseadam/issues/162))
 
 ## pharmaverseadam 1.3.0
 
