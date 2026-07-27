@@ -7,6 +7,8 @@
 
 - Added Dark Mode and icon tooltips to the website, and implemented a new PR website workflow, accessible by adding the "[create website]" keyword to PR titles. (#158)
 
+- Added `ADLB_NEURO` to adams-specs.xlsx (#159)
+
 - Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)
 
 - Clickable links to personal websites or GitHub profiles were added in the home page sidebar for every `{pharmaverseadam}` author. (#162)
