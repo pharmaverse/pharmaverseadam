@@ -1,5 +1,9 @@
 # pharmaverseadam (development version)
 
+## Documentation
+
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.5.0, `{admiralonco}` 1.4.1, `{admiralophtha}` 1.5.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.4.0, `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.5.0. (#168)
+
 <details>  
 <summary>Developer Notes</summary>  
 
@@ -25,8 +29,7 @@
 
 ## Documentation
 
-  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.4.1, `{admiralonco}` 1.4.0, `{admiralophtha}` 1.4.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.3.0,
-  `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.4.0. (#147)
+  - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.4.1, `{admiralonco}` 1.4.0, `{admiralophtha}` 1.4.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.3.0, `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.4.0. (#147)
   
   - The reference page was updated to categorize datasets by therapeutic areas. (#137)
   
