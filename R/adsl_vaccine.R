@@ -6,7 +6,7 @@
 #' @title Subject Level Analysis for Vaccine
 #' @keywords dataset vaccine
 #' @docType data
-#' @format A data frame with 46 columns:
+#' @format A data frame with 48 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -54,6 +54,8 @@
 #'     \item{ INVNAM }{Investigator Name}
 #'     \item{ VAX01DT }{Vaccination Date 01}
 #'     \item{ VAX02DT }{Vaccination Date 02}
+#'     \item{ ARMNRS }{Reason Arm and/or Actual Arm is Null}
+#'     \item{ ACTARMUD }{Description of Unplanned Actual Arm}
 #'   }
 #'
 #' @source Generated from admiralvaccine package (template ad_adsl.R).

@@ -5,7 +5,7 @@
 \alias{adsl_vaccine}
 \title{Subject Level Analysis for Vaccine}
 \format{
-A data frame with 46 columns:
+A data frame with 48 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -53,6 +53,8 @@ A data frame with 46 columns:
 \item{ INVNAM }{Investigator Name}
 \item{ VAX01DT }{Vaccination Date 01}
 \item{ VAX02DT }{Vaccination Date 02}
+\item{ ARMNRS }{Reason Arm and/or Actual Arm is Null}
+\item{ ACTARMUD }{Description of Unplanned Actual Arm}
 }
 }
 \source{
