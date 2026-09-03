@@ -1,13 +1,15 @@
 # pharmaverseadam (development version)
 
+## New features
+
+- Added `ADLB`, from `{admiralneuro}` using package version 0.3.0. (#159)
+
 <details>  
 <summary>Developer Notes</summary>  
 
 - Updated title of the vignette Explore ADaM datasets. (#156)
 
 - Added Dark Mode and icon tooltips to the website, and implemented a new PR website workflow, accessible by adding the "[create website]" keyword to PR titles. (#158)
-
-- Added `ADLB`, from `{admiralneuro}` using package version 0.3.0. (#159)
 
 - Updated the links in the PR template, and up versioned to `{roxygen}` 8.0.0. (#160)
 
