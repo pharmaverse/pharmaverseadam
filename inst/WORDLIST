@@ -5,10 +5,12 @@ ADJAE
 ADaM
 AE
 ALKPH
+AMYLB
 ANISO
 ANRHI
 ANRLO
 AST
+ASYNASAA
 AVDDSE
 Alanine
 Aminotransferase
@@ -42,6 +44,7 @@ COEQCRSW
 COEQPOMO
 CREAT
 CRSP
+CSF
 Centiloid
 Changelog
 Creatinine
@@ -58,6 +61,7 @@ EMERPOS
 ENHANC
 EOS
 EOSLE
+Elecsys
 Ery
 Eval
 FBB
@@ -103,6 +107,7 @@ ImputeFL
 JSON
 KETON
 Kangjie
+LAMYLB
 LDIAM
 LLC
 LLF
@@ -113,6 +118,7 @@ LSTA
 LYMPHLE
 Laterality
 LogMAR
+Lumipulse
 MACROC
 MAF
 MAL
@@ -178,11 +184,14 @@ POLYCH
 POTAS
 PPDOSE
 PROT
+PTAB
+PTAU
 Param
 Pharmacodynamic
 Pharmacokinetic
 Pharmaverse
 Phosphatase
+Phosphorylated
 Poikilocytes
 Polychromasia
 Pos
@@ -236,6 +245,7 @@ Savoury
 Sev
 Signif
 Subfield
+Synuclein
 TADJ
 TADJAE
 TDOSE
@@ -319,10 +329,12 @@ flavoured
 fmol
 funder
 mIU
+mL
 mU
 mmHg
 mmol
 mol
+pTau
 pharmaverse
 pharmaversesdtm
 pmol
