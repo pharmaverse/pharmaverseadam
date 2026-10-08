@@ -4,6 +4,10 @@
 
   - Refreshed `{pharmaverseadam}` datasets using `{admiral}` 1.5.0, `{admiralonco}` 1.4.1, `{admiralophtha}` 1.5.0, `{admiralvaccine}` 0.6.0, `{admiralpeds}` 0.4.0, `{admiralmetabolic}` 0.3.0, `{pharmaversesdtm}` 1.5.0. (#168)
 
+## New features
+
+  - Added `ADLB`, from `{admiralneuro}` using package version 0.3.0. (#159)
+
 <details>  
 <summary>Developer Notes</summary>  
 
