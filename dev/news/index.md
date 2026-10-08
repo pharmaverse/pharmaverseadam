@@ -2,6 +2,13 @@
 
 ## pharmaverseadam (development version)
 
+### New features
+
+- Added `ADLB`, from
+  [admiralneuro](https://pharmaverse.github.io/admiralneuro/) using
+  package version 0.3.0.
+  ([\#159](https://github.com/pharmaverse/pharmaverseadam/issues/159))
+
 Developer Notes
 
 - Updated title of the vignette Explore ADaM datasets.

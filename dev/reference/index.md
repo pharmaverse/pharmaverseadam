@@ -42,6 +42,8 @@
 
 - [`adapet_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adapet_neuro.md)
   : Amyloid PET Scan Analysis Dataset
+- [`adlb_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adlb_neuro.md)
+  : Laboratory Analysis for Neuroscience
 - [`adnv_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adnv_neuro.md)
   : Nervous System Analysis Dataset
 - [`adtpet_neuro`](https://pharmaverse.github.io/pharmaverseadam/dev/reference/adtpet_neuro.md)
