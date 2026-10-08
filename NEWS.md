@@ -1,5 +1,9 @@
 # pharmaverseadam (development version)
 
+## New features
+
+- Added `ADLB`, from `{admiralneuro}` using package version 0.3.0. (#159)
+
 <details>  
 <summary>Developer Notes</summary>  
 
