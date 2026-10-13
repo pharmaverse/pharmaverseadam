@@ -2,6 +2,22 @@
 
 ## pharmaverseadam (development version)
 
+### Documentation
+
+- Refreshed
+  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
+  datasets using [admiral](https://pharmaverse.github.io/admiral/)
+  1.5.0, [admiralonco](https://pharmaverse.github.io/admiralonco/)
+  1.5.0, [admiralophtha](https://pharmaverse.github.io/admiralophtha/)
+  1.5.0, [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/)
+  0.6.0, [admiralpeds](https://pharmaverse.github.io/admiralpeds/)
+  0.4.0,
+  [admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
+  0.3.0,
+  [pharmaversesdtm](https://pharmaverse.github.io/pharmaversesdtm/)
+  1.5.0.
+  ([\#168](https://github.com/pharmaverse/pharmaverseadam/issues/168))
+
 ### New features
 
 - Added `ADLB`, from
