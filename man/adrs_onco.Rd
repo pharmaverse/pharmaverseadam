@@ -5,7 +5,7 @@
 \alias{adrs_onco}
 \title{Tumor Response Analysis}
 \format{
-A data frame with 79 columns:
+A data frame with 80 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -86,6 +86,7 @@ A data frame with 79 columns:
 \item{ RSDTC }{Date/Time of Assessment}
 \item{ RSSEQ }{Sequence Number}
 \item{ DTHDTF }{Date of Death Imputation Flag}
+\item{ BRTHDTC }{Date/Time of Birth}
 }
 }
 \source{

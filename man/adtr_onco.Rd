@@ -5,7 +5,7 @@
 \alias{adtr_onco}
 \title{Tumor Results Analysis for Oncology}
 \format{
-A data frame with 99 columns:
+A data frame with 100 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -106,6 +106,7 @@ A data frame with 99 columns:
 \item{ LSEXP }{Lesion IDs Expected}
 \item{ LSASS }{Lesion IDs Assessed}
 \item{ DTHDTF }{Date of Death Imputation Flag}
+\item{ BRTHDTC }{Date/Time of Birth}
 }
 }
 \source{
