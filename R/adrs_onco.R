@@ -6,7 +6,7 @@
 #' @title Tumor Response Analysis
 #' @keywords dataset oncology
 #' @docType data
-#' @format A data frame with 79 columns:
+#' @format A data frame with 80 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -87,6 +87,7 @@
 #'     \item{ RSDTC }{Date/Time of Assessment}
 #'     \item{ RSSEQ }{Sequence Number}
 #'     \item{ DTHDTF }{Date of Death Imputation Flag}
+#'     \item{ BRTHDTC }{Date/Time of Birth}
 #'   }
 #' @details Contains a set of 13 unique Parameter Codes and Parameters: \tabular{ll}{
 #'   \strong{PARAMCD} \tab \strong{PARAM} \cr

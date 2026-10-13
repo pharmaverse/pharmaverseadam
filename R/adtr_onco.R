@@ -6,7 +6,7 @@
 #' @title Tumor Results Analysis for Oncology
 #' @keywords dataset oncology
 #' @docType data
-#' @format A data frame with 99 columns:
+#' @format A data frame with 100 columns:
 #'   \describe{
 #'     \item{ STUDYID }{Study Identifier}
 #'     \item{ USUBJID }{Unique Subject Identifier}
@@ -107,6 +107,7 @@
 #'     \item{ LSEXP }{Lesion IDs Expected}
 #'     \item{ LSASS }{Lesion IDs Assessed}
 #'     \item{ DTHDTF }{Date of Death Imputation Flag}
+#'     \item{ BRTHDTC }{Date/Time of Birth}
 #'   }
 #' @details Contains a set of 11 unique Parameter Codes and Parameters: \tabular{ll}{
 #'   \strong{PARAMCD} \tab \strong{PARAM} \cr

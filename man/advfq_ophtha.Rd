@@ -5,7 +5,7 @@
 \alias{advfq_ophtha}
 \title{Visual Function Questionnaire Analysis}
 \format{
-A data frame with 89 columns:
+A data frame with 93 columns:
 \describe{
 \item{ STUDYID }{Study Identifier}
 \item{ USUBJID }{Unique Subject Identifier}
@@ -71,8 +71,12 @@ A data frame with 89 columns:
 \item{ PARAMCD }{Parameter Code}
 \item{ PARCAT1 }{Parameter Category 1}
 \item{ PARCAT2 }{Parameter Category 2}
+\item{ PARCAT3 }{Parameter Category 3}
+\item{ PARCAT4 }{Parameter Category 4}
+\item{ PARCAT5 }{Parameter Category 5}
 \item{ AVAL }{Analysis Value}
 \item{ AVALC }{Analysis Value (C)}
+\item{ BASETYPE }{Baseline Type}
 \item{ BASE }{Baseline Value}
 \item{ CHG }{Change from Baseline}
 \item{ PCHG }{Percent Change from Baseline}
@@ -108,19 +112,89 @@ advfq_ophtha
 Visual Function Questionnaire Analysis
 }
 \details{
-Contains a set of 11 unique Parameter Codes and Parameters: \tabular{ll}{
+Contains a set of 81 unique Parameter Codes and Parameters: \tabular{ll}{
 \strong{PARAMCD} \tab \strong{PARAM} \cr
-QBCSCORE \tab Composite Score        \cr
-QR01     \tab Recoded Item - 01      \cr
-QR02     \tab Recoded Item - 02      \cr
-QR03     \tab Recoded Item - 03      \cr
-QR04     \tab Recoded Item - 04      \cr
-QSG01    \tab General Score 01       \cr
-QSG02    \tab General Score 02       \cr
-VFQ1     \tab Overall Health         \cr
-VFQ2     \tab Eyesight in Both Eyes  \cr
-VFQ3     \tab Worry About Eyesight   \cr
-VFQ4     \tab Pain in and Around Eyes
+QBCSCORE \tab Composite Score                                                 \cr
+QOCSCORE \tab Composite Score (incl. Optional Items)                          \cr
+QR01     \tab Transformed - Your Overall Health Is                            \cr
+QR02     \tab Transformed - Eyesight Using Both Eyes Is                       \cr
+QR03     \tab Transformed - How Often You Worry About Eyesight                \cr
+QR04     \tab Transformed - How Much Pain in and Around Eyes                  \cr
+QR05     \tab Transformed - Difficulty Reading Newspapers                     \cr
+QR06     \tab Transformed - Difficulty Doing Work/Hobbies                     \cr
+QR07     \tab Transformed - Difficulty Finding on Crowded Shelf               \cr
+QR08     \tab Transformed - Difficulty Reading Street Signs                   \cr
+QR09     \tab Transformed - Difficulty Going Down Step at Night               \cr
+QR10     \tab Transformed - Difficulty Noticing Objects to Side               \cr
+QR11     \tab Transformed - Difficulty Seeing How People React                \cr
+QR12     \tab Transformed - Difficulty Picking Out Own Clothes                \cr
+QR13     \tab Transformed - Difficulty Visiting With People                   \cr
+QR14     \tab Transformed - Difficulty Going Out to See Movies                \cr
+QR15C    \tab Transformed - Main Reason You Gave Up Driving                   \cr
+QR16     \tab Transformed - Difficulty Driving at Night                       \cr
+QR16A    \tab Transformed - Driving in Difficult Conditions                   \cr
+QR19     \tab Transformed - Eye Pain Keep From Doing What Like                \cr
+QR20     \tab Transformed - I Stay Home Most of the Time                      \cr
+QR21     \tab Transformed - I Feel Frustrated a Lot of the Time               \cr
+QR24     \tab Transformed - I Need a Lot of Help From Others                  \cr
+QR25     \tab Transformed - Worry I'll Do Embarrassing Things                 \cr
+QRA03    \tab Transformed - Difficulty Reading Small Print                    \cr
+QRA04    \tab Transformed - Difficulty Figure Out Bill Accuracy               \cr
+QRA05    \tab Transformed - Difficulty Shaving or Styling Hair                \cr
+QRA06    \tab Transformed - Difficulty Recognizing People                     \cr
+QRA07    \tab Transformed - Difficulty Taking Part in Sports                  \cr
+QRA08    \tab Transformed - Difficulty Seeing Programs on TV                  \cr
+QSBCV    \tab Color Vision Score                                              \cr
+QSBDA    \tab Distance Activities Score                                       \cr
+QSBDP    \tab Vision Specific: Dependency Score                               \cr
+QSBDR    \tab Driving Score                                                   \cr
+QSBGH    \tab General Health Score                                            \cr
+QSBGV    \tab General Vision Score                                            \cr
+QSBMH    \tab Vision Specific: Mental Health Score                            \cr
+QSBNA    \tab Near Activities Score                                           \cr
+QSBOP    \tab Ocular Pain Score                                               \cr
+QSBPV    \tab Peripheral Vision Score                                         \cr
+QSBSF    \tab Vision Specific: Social Functioning Score                       \cr
+QSOCV    \tab Color Vision Score (incl. Optional Items)                       \cr
+QSODA    \tab Distance Activities Score (incl. Optional Items)                \cr
+QSODP    \tab Vision Specific: Dependency Score (incl. Optional Items)        \cr
+QSODR    \tab Driving Score (incl. Optional Items)                            \cr
+QSOGH    \tab General Health Score (incl. Optional Items)                     \cr
+QSOGV    \tab General Vision Score (incl. Optional Items)                     \cr
+QSOMH    \tab Vision Specific: Mental Health Score (incl. Optional Items)     \cr
+QSONA    \tab Near Activities Score (incl. Optional Items)                    \cr
+QSOOP    \tab Ocular Pain Score (incl. Optional Items)                        \cr
+QSOPV    \tab Peripheral Vision Score (incl. Optional Items)                  \cr
+QSOSF    \tab Vision Specific: Social Functioning Score (incl. Optional Items)\cr
+VFQ101   \tab Your Overall Health Is                                          \cr
+VFQ102   \tab Eyesight Using Both Eyes Is                                     \cr
+VFQ103   \tab How Often You Worry About Eyesight                              \cr
+VFQ104   \tab How Much Pain in and Around Eyes                                \cr
+VFQ105   \tab Difficulty Reading Newspapers                                   \cr
+VFQ106   \tab Difficulty Doing Work/Hobbies                                   \cr
+VFQ107   \tab Difficulty Finding on Crowded Shelf                             \cr
+VFQ108   \tab Difficulty Reading Street Signs                                 \cr
+VFQ109   \tab Difficulty Going Down Step at Night                             \cr
+VFQ110   \tab Difficulty Noticing Objects to Side                             \cr
+VFQ111   \tab Difficulty Seeing How People React                              \cr
+VFQ112   \tab Difficulty Picking Out Own Clothes                              \cr
+VFQ113   \tab Difficulty Visiting With People                                 \cr
+VFQ114   \tab Difficulty Going Out to See Movies                              \cr
+VFQ115   \tab Are You Currently Driving                                       \cr
+VFQ115C  \tab Difficulty Driving During Daytime                               \cr
+VFQ116   \tab Difficulty Driving at Night                                     \cr
+VFQ116A  \tab Driving in Difficult Conditions                                 \cr
+VFQ119   \tab Eye Pain Keep From Doing What Like                              \cr
+VFQ120   \tab I Stay Home Most of the Time                                    \cr
+VFQ121   \tab I Feel Frustrated a Lot of the Time                             \cr
+VFQ124   \tab I Need a Lot of Help From Others                                \cr
+VFQ125   \tab Worry I'll Do Embarrassing Things                               \cr
+VFQ1A03  \tab Difficulty Reading Small Print                                  \cr
+VFQ1A04  \tab Difficulty Figure Out Bill Accuracy                             \cr
+VFQ1A05  \tab Difficulty Shaving or Styling Hair                              \cr
+VFQ1A06  \tab Difficulty Recognizing People                                   \cr
+VFQ1A07  \tab Difficulty Taking Part in Sports                                \cr
+VFQ1A08  \tab Difficulty Seeing Programs on TV
 }
 }
 \examples{
