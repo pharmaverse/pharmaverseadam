@@ -18342,6 +18342,36 @@
     {
       "Order": "65",
       "Dataset": "ADVFQ_P",
+      "Variable": "PARCAT3",
+      "Label": "Parameter Category 3",
+      "Data Type": "text",
+      "Length": "19",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "66",
+      "Dataset": "ADVFQ_P",
+      "Variable": "PARCAT4",
+      "Label": "Parameter Category 4",
+      "Data Type": "text",
+      "Length": "35",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "67",
+      "Dataset": "ADVFQ_P",
+      "Variable": "PARCAT5",
+      "Label": "Parameter Category 5",
+      "Data Type": "text",
+      "Length": "13",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "68",
+      "Dataset": "ADVFQ_P",
       "Variable": "AVAL",
       "Label": "Analysis Value",
       "Data Type": "float",
@@ -18352,7 +18382,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "66",
+      "Order": "69",
       "Dataset": "ADVFQ_P",
       "Variable": "AVALC",
       "Label": "Analysis Value (C)",
@@ -18363,7 +18393,17 @@
       "Has No Data": "No"
     },
     {
-      "Order": "67",
+      "Order": "70",
+      "Dataset": "ADVFQ_P",
+      "Variable": "BASETYPE",
+      "Label": "Baseline Type",
+      "Data Type": "text",
+      "Length": "14",
+      "Mandatory": "No",
+      "Has No Data": "No"
+    },
+    {
+      "Order": "71",
       "Dataset": "ADVFQ_P",
       "Variable": "BASE",
       "Label": "Baseline Value",
@@ -18375,7 +18415,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "68",
+      "Order": "72",
       "Dataset": "ADVFQ_P",
       "Variable": "CHG",
       "Label": "Change from Baseline",
@@ -18387,7 +18427,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "69",
+      "Order": "73",
       "Dataset": "ADVFQ_P",
       "Variable": "PCHG",
       "Label": "Percent Change from Baseline",
@@ -18399,7 +18439,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "70",
+      "Order": "74",
       "Dataset": "ADVFQ_P",
       "Variable": "ABLFL",
       "Label": "Baseline Record Flag",
@@ -18410,7 +18450,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "71",
+      "Order": "75",
       "Dataset": "ADVFQ_P",
       "Variable": "ANL01FL",
       "Label": "Analysis Flag 01",
@@ -18420,7 +18460,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "72",
+      "Order": "76",
       "Dataset": "ADVFQ_P",
       "Variable": "ONTRTFL",
       "Label": "On Treatment Record Flag",
@@ -18431,7 +18471,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "73",
+      "Order": "77",
       "Dataset": "ADVFQ_P",
       "Variable": "QSSEQ",
       "Label": "Sequence Number",
@@ -18441,7 +18481,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "74",
+      "Order": "78",
       "Dataset": "ADVFQ_P",
       "Variable": "QSTESTCD",
       "Label": "Question Short Name",
@@ -18451,7 +18491,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "75",
+      "Order": "79",
       "Dataset": "ADVFQ_P",
       "Variable": "QSTEST",
       "Label": "Question Name",
@@ -18461,7 +18501,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "76",
+      "Order": "80",
       "Dataset": "ADVFQ_P",
       "Variable": "QSCAT",
       "Label": "Category of Question",
@@ -18471,7 +18511,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "77",
+      "Order": "81",
       "Dataset": "ADVFQ_P",
       "Variable": "QSSCAT",
       "Label": "Subcategory for Question",
@@ -18481,7 +18521,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "78",
+      "Order": "82",
       "Dataset": "ADVFQ_P",
       "Variable": "QSORRES",
       "Label": "Finding in Original Units",
@@ -18491,7 +18531,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "79",
+      "Order": "83",
       "Dataset": "ADVFQ_P",
       "Variable": "QSORRESU",
       "Label": "Original Units",
@@ -18501,7 +18541,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "80",
+      "Order": "84",
       "Dataset": "ADVFQ_P",
       "Variable": "QSSTRESC",
       "Label": "Character Result/Finding in Std Format",
@@ -18511,7 +18551,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "81",
+      "Order": "85",
       "Dataset": "ADVFQ_P",
       "Variable": "QSSTRESN",
       "Label": "Numeric Finding in Standard Units",
@@ -18521,7 +18561,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "82",
+      "Order": "86",
       "Dataset": "ADVFQ_P",
       "Variable": "QSSTRESU",
       "Label": "Standard Units",
@@ -18531,7 +18571,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "83",
+      "Order": "87",
       "Dataset": "ADVFQ_P",
       "Variable": "QSBLFL",
       "Label": "Baseline Flag",
@@ -18541,7 +18581,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "84",
+      "Order": "88",
       "Dataset": "ADVFQ_P",
       "Variable": "QSDRVFL",
       "Label": "Derived Flag",
@@ -18551,7 +18591,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "85",
+      "Order": "89",
       "Dataset": "ADVFQ_P",
       "Variable": "VISITNUM",
       "Label": "Visit Number",
@@ -18562,7 +18602,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "86",
+      "Order": "90",
       "Dataset": "ADVFQ_P",
       "Variable": "VISIT",
       "Label": "Visit Name",
@@ -18572,7 +18612,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "87",
+      "Order": "91",
       "Dataset": "ADVFQ_P",
       "Variable": "VISITDY",
       "Label": "Planned Study Day of Visit",
@@ -18582,7 +18622,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "88",
+      "Order": "92",
       "Dataset": "ADVFQ_P",
       "Variable": "QSDTC",
       "Label": "Date/Time of Finding",
@@ -18591,7 +18631,7 @@
       "Has No Data": "No"
     },
     {
-      "Order": "89",
+      "Order": "93",
       "Dataset": "ADVFQ_P",
       "Variable": "QSDY",
       "Label": "Study Day of Finding",
