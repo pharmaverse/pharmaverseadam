@@ -10,7 +10,7 @@ adtr_onco
 
 ## Format
 
-A data frame with 99 columns:
+A data frame with 100 columns:
 
 - STUDYID :
 
@@ -407,6 +407,10 @@ A data frame with 99 columns:
 - DTHDTF :
 
   Date of Death Imputation Flag
+
+- BRTHDTC :
+
+  Date/Time of Birth
 
 ## Source
 

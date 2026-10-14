@@ -186,6 +186,8 @@ Zhu.
 
 - [`adapet_neuro`](https://pharmaverse.github.io/pharmaverseadam/reference/adapet_neuro.md)
   : Amyloid PET Scan Analysis Dataset
+- [`adlb_neuro`](https://pharmaverse.github.io/pharmaverseadam/reference/adlb_neuro.md)
+  : Laboratory Analysis for Neuroscience
 - [`adnv_neuro`](https://pharmaverse.github.io/pharmaverseadam/reference/adnv_neuro.md)
   : Nervous System Analysis Dataset
 - [`adtpet_neuro`](https://pharmaverse.github.io/pharmaverseadam/reference/adtpet_neuro.md)
@@ -229,5 +231,5 @@ Zhu.
 
 ### All vignettes
 
-- [Explore ADAM
+- [Explore ADaM
   Datasets](https://pharmaverse.github.io/pharmaverseadam/articles/preview-adam.md):

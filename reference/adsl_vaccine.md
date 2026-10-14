@@ -10,7 +10,7 @@ adsl_vaccine
 
 ## Format
 
-A data frame with 46 columns:
+A data frame with 48 columns:
 
 - STUDYID :
 
@@ -195,6 +195,14 @@ A data frame with 46 columns:
 - VAX02DT :
 
   Vaccination Date 02
+
+- ARMNRS :
+
+  Reason Arm and/or Actual Arm is Null
+
+- ACTARMUD :
+
+  Description of Unplanned Actual Arm
 
 ## Source
 

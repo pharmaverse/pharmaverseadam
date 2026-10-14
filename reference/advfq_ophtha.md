@@ -10,7 +10,7 @@ advfq_ophtha
 
 ## Format
 
-A data frame with 89 columns:
+A data frame with 93 columns:
 
 - STUDYID :
 
@@ -268,6 +268,18 @@ A data frame with 89 columns:
 
   Parameter Category 2
 
+- PARCAT3 :
+
+  Parameter Category 3
+
+- PARCAT4 :
+
+  Parameter Category 4
+
+- PARCAT5 :
+
+  Parameter Category 5
+
 - AVAL :
 
   Analysis Value
@@ -275,6 +287,10 @@ A data frame with 89 columns:
 - AVALC :
 
   Analysis Value (C)
+
+- BASETYPE :
+
+  Baseline Type
 
 - BASE :
 
@@ -374,22 +390,92 @@ Generated from admiralophtha package (template ad_advfq.R).
 
 ## Details
 
-Contains a set of 11 unique Parameter Codes and Parameters:
+Contains a set of 81 unique Parameter Codes and Parameters:
 
-|             |                         |
-|-------------|-------------------------|
-| **PARAMCD** | **PARAM**               |
-| QBCSCORE    | Composite Score         |
-| QR01        | Recoded Item - 01       |
-| QR02        | Recoded Item - 02       |
-| QR03        | Recoded Item - 03       |
-| QR04        | Recoded Item - 04       |
-| QSG01       | General Score 01        |
-| QSG02       | General Score 02        |
-| VFQ1        | Overall Health          |
-| VFQ2        | Eyesight in Both Eyes   |
-| VFQ3        | Worry About Eyesight    |
-| VFQ4        | Pain in and Around Eyes |
+|             |                                                                  |
+|-------------|------------------------------------------------------------------|
+| **PARAMCD** | **PARAM**                                                        |
+| QBCSCORE    | Composite Score                                                  |
+| QOCSCORE    | Composite Score (incl. Optional Items)                           |
+| QR01        | Transformed - Your Overall Health Is                             |
+| QR02        | Transformed - Eyesight Using Both Eyes Is                        |
+| QR03        | Transformed - How Often You Worry About Eyesight                 |
+| QR04        | Transformed - How Much Pain in and Around Eyes                   |
+| QR05        | Transformed - Difficulty Reading Newspapers                      |
+| QR06        | Transformed - Difficulty Doing Work/Hobbies                      |
+| QR07        | Transformed - Difficulty Finding on Crowded Shelf                |
+| QR08        | Transformed - Difficulty Reading Street Signs                    |
+| QR09        | Transformed - Difficulty Going Down Step at Night                |
+| QR10        | Transformed - Difficulty Noticing Objects to Side                |
+| QR11        | Transformed - Difficulty Seeing How People React                 |
+| QR12        | Transformed - Difficulty Picking Out Own Clothes                 |
+| QR13        | Transformed - Difficulty Visiting With People                    |
+| QR14        | Transformed - Difficulty Going Out to See Movies                 |
+| QR15C       | Transformed - Main Reason You Gave Up Driving                    |
+| QR16        | Transformed - Difficulty Driving at Night                        |
+| QR16A       | Transformed - Driving in Difficult Conditions                    |
+| QR19        | Transformed - Eye Pain Keep From Doing What Like                 |
+| QR20        | Transformed - I Stay Home Most of the Time                       |
+| QR21        | Transformed - I Feel Frustrated a Lot of the Time                |
+| QR24        | Transformed - I Need a Lot of Help From Others                   |
+| QR25        | Transformed - Worry I'll Do Embarrassing Things                  |
+| QRA03       | Transformed - Difficulty Reading Small Print                     |
+| QRA04       | Transformed - Difficulty Figure Out Bill Accuracy                |
+| QRA05       | Transformed - Difficulty Shaving or Styling Hair                 |
+| QRA06       | Transformed - Difficulty Recognizing People                      |
+| QRA07       | Transformed - Difficulty Taking Part in Sports                   |
+| QRA08       | Transformed - Difficulty Seeing Programs on TV                   |
+| QSBCV       | Color Vision Score                                               |
+| QSBDA       | Distance Activities Score                                        |
+| QSBDP       | Vision Specific: Dependency Score                                |
+| QSBDR       | Driving Score                                                    |
+| QSBGH       | General Health Score                                             |
+| QSBGV       | General Vision Score                                             |
+| QSBMH       | Vision Specific: Mental Health Score                             |
+| QSBNA       | Near Activities Score                                            |
+| QSBOP       | Ocular Pain Score                                                |
+| QSBPV       | Peripheral Vision Score                                          |
+| QSBSF       | Vision Specific: Social Functioning Score                        |
+| QSOCV       | Color Vision Score (incl. Optional Items)                        |
+| QSODA       | Distance Activities Score (incl. Optional Items)                 |
+| QSODP       | Vision Specific: Dependency Score (incl. Optional Items)         |
+| QSODR       | Driving Score (incl. Optional Items)                             |
+| QSOGH       | General Health Score (incl. Optional Items)                      |
+| QSOGV       | General Vision Score (incl. Optional Items)                      |
+| QSOMH       | Vision Specific: Mental Health Score (incl. Optional Items)      |
+| QSONA       | Near Activities Score (incl. Optional Items)                     |
+| QSOOP       | Ocular Pain Score (incl. Optional Items)                         |
+| QSOPV       | Peripheral Vision Score (incl. Optional Items)                   |
+| QSOSF       | Vision Specific: Social Functioning Score (incl. Optional Items) |
+| VFQ101      | Your Overall Health Is                                           |
+| VFQ102      | Eyesight Using Both Eyes Is                                      |
+| VFQ103      | How Often You Worry About Eyesight                               |
+| VFQ104      | How Much Pain in and Around Eyes                                 |
+| VFQ105      | Difficulty Reading Newspapers                                    |
+| VFQ106      | Difficulty Doing Work/Hobbies                                    |
+| VFQ107      | Difficulty Finding on Crowded Shelf                              |
+| VFQ108      | Difficulty Reading Street Signs                                  |
+| VFQ109      | Difficulty Going Down Step at Night                              |
+| VFQ110      | Difficulty Noticing Objects to Side                              |
+| VFQ111      | Difficulty Seeing How People React                               |
+| VFQ112      | Difficulty Picking Out Own Clothes                               |
+| VFQ113      | Difficulty Visiting With People                                  |
+| VFQ114      | Difficulty Going Out to See Movies                               |
+| VFQ115      | Are You Currently Driving                                        |
+| VFQ115C     | Difficulty Driving During Daytime                                |
+| VFQ116      | Difficulty Driving at Night                                      |
+| VFQ116A     | Driving in Difficult Conditions                                  |
+| VFQ119      | Eye Pain Keep From Doing What Like                               |
+| VFQ120      | I Stay Home Most of the Time                                     |
+| VFQ121      | I Feel Frustrated a Lot of the Time                              |
+| VFQ124      | I Need a Lot of Help From Others                                 |
+| VFQ125      | Worry I'll Do Embarrassing Things                                |
+| VFQ1A03     | Difficulty Reading Small Print                                   |
+| VFQ1A04     | Difficulty Figure Out Bill Accuracy                              |
+| VFQ1A05     | Difficulty Shaving or Styling Hair                               |
+| VFQ1A06     | Difficulty Recognizing People                                    |
+| VFQ1A07     | Difficulty Taking Part in Sports                                 |
+| VFQ1A08     | Difficulty Seeing Programs on TV                                 |
 
 ## References
 

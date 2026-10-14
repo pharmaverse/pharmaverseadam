@@ -1,12 +1,56 @@
 # Changelog
 
-## pharmaverseadam (development version)
+## pharmaverseadam 1.4.0
+
+### Documentation
+
+- Refreshed
+  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
+  datasets using [admiral](https://pharmaverse.github.io/admiral/)
+  1.5.0, [admiralonco](https://pharmaverse.github.io/admiralonco/)
+  1.5.0, [admiralophtha](https://pharmaverse.github.io/admiralophtha/)
+  1.5.0, [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/)
+  0.6.0, [admiralpeds](https://pharmaverse.github.io/admiralpeds/)
+  0.4.0,
+  [admiralmetabolic](https://pharmaverse.github.io/admiralmetabolic/)
+  0.3.0,
+  [pharmaversesdtm](https://pharmaverse.github.io/pharmaversesdtm/)
+  1.5.0.
+  ([\#168](https://github.com/pharmaverse/pharmaverseadam/issues/168))
+
+### New features
+
+- Added `ADLB`, from
+  [admiralneuro](https://pharmaverse.github.io/admiralneuro/) using
+  package version 0.3.0.
+  ([\#159](https://github.com/pharmaverse/pharmaverseadam/issues/159))
 
 Developer Notes
+
+- Updated title of the vignette Explore ADaM datasets.
+  ([\#156](https://github.com/pharmaverse/pharmaverseadam/issues/156))
+
+- Added Dark Mode and icon tooltips to the website, and implemented a
+  new PR website workflow, accessible by adding the “\[create website\]”
+  keyword to PR titles.
+  ([\#158](https://github.com/pharmaverse/pharmaverseadam/issues/158))
 
 - Updated the links in the PR template, and up versioned to `{roxygen}`
   8.0.0.
   ([\#160](https://github.com/pharmaverse/pharmaverseadam/issues/160))
+
+- Clickable links to personal websites or GitHub profiles were added in
+  the home page sidebar for every
+  [pharmaverseadam](https://pharmaverse.github.io/pharmaverseadam/)
+  author.
+  ([\#162](https://github.com/pharmaverse/pharmaverseadam/issues/162))
+
+- Up-versioned [admiraldev](https://pharmaverse.github.io/admiraldev/)
+  to 1.5.0, as the custom
+  [admiral](https://pharmaverse.github.io/admiral/) roclets (i.e.,
+  `roxygen_*()` functions) have now been moved to
+  [admiraldev](https://pharmaverse.github.io/admiraldev/).
+  ([\#163](https://github.com/pharmaverse/pharmaverseadam/issues/163))
 
 ## pharmaverseadam 1.3.0
 

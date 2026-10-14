@@ -10,7 +10,7 @@ adsl
 
 ## Format
 
-A data frame with 55 columns:
+A data frame with 57 columns:
 
 - STUDYID :
 
@@ -231,6 +231,14 @@ A data frame with 55 columns:
 - BRTHDTC :
 
   Date/Time of Birth
+
+- ARMNRS :
+
+  Reason Arm and/or Actual Arm is Null
+
+- ACTARMUD :
+
+  Description of Unplanned Actual Arm
 
 ## Source
 

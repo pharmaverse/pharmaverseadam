@@ -1,4 +1,4 @@
-# Explore ADAM Datasets
+# Explore ADaM Datasets
 
 ## Datasets Preview
 
@@ -98,6 +98,11 @@ adapet_neuro: Amyloid PET Scan Analysis Dataset
 
 [Reference
 link](https://pharmaverse.github.io/pharmaverseadam/reference/adapet_neuro.html)
+
+adlb_neuro: Laboratory Analysis for Neuroscience
+
+[Reference
+link](https://pharmaverse.github.io/pharmaverseadam/reference/adlb_neuro.html)
 
 adnv_neuro: Nervous System Analysis Dataset
 
