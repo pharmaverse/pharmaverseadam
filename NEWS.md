@@ -1,4 +1,4 @@
-# pharmaverseadam (development version)
+# pharmaverseadam 1.4.0
 
 ## Documentation
 
